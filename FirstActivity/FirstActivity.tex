@@ -1,0 +1,78 @@
+\documentclass{ximera}
+\title{Calculus and the Quadratic Formula}
+
+\begin{document}
+\begin{abstract}
+We use calculus to gain insight into information encoded in the quadratic formula.
+\end{abstract}
+\maketitle
+
+\begin{exercise}  
+  Choose the best place to work on mathematics.  
+  \begin{multipleChoice}  
+    \choice{At the library}  
+    \choice[correct]{At the cafe}  
+    \choice{In your office}  
+  \end{multipleChoice}  
+\end{exercise}  
+
+\begin{exploration}\label{exp:orth2}
+Let $W =\mbox{span}\left({\bf v}_1,{\bf v}_2\right)$. $W$ is a plane through the origin in $\mathbb{R}^3$.  Use the navigation bar at the bottom of the interactive window to go through the steps of constructing an orthogonal basis for $W$.  RIGHT-CLICK and DRAG to rotate the image for a better view.
+ 
+\pdfOnly{
+Access GeoGebra interactives through the online version of this text at
+ 
+\href{https://ximera.osu.edu/oerlinalg}{https://ximera.osu.edu/oerlinalg}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{zghsfkym}{900}{600}
+\end{center}
+\end{onlineOnly}
+\end{exploration}
+
+
+
+Units should play a more prominent role in our classes, particularly in places where they seem not to play any role at all.
+
+The quadratic formula, for example, comes without units. But in any application the coefficients have meaning and it pays to at least verify the formula is dimensionally correct. And this kind of dimensional thinking can lead to some unexpected insights. %might change the way you look at the quadratic formula.
+
+In its most basic application, the formula
+\[
+   x = -\frac{b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a}
+\]
+tells us how to locate the $x$-intercepts of the parabola 
+\begin{equation}
+ y=ax^2+bx+c.   \label{Eq:Parabola}
+ \end{equation}
+ The coordinates $x,y$ and the constant term $c$ have dimensions of length. The coefficient $b$ is dimensionless and gives the slope of the tangent line at the $y$-intercept $Q(0,c)$. Since the product $ax^2$ is a length, so is the reciprocal $a^{-1}$ of the leading coefficient. This reciprocal has several interpretations, each describing the parabola's size. One is related to the parabola's radius of curvature, $(2a)^{-1}$, at the vertex and another to the focal length, $1/(4a)$. But a third, our focus here, is encoded in the quadratic formula itself.
+
+
+%It determines the parabola's size. Thhe parabola's focal length is $(4a)^{-1}$ and its radius of curvature at the vertex is $(2a)^{-1}$. 
+
+In moving from $Q$ to the axis of symmetry along the normal (with slope $m_\perp = -1/b$) at $Q$, the $x$-coordinate increases by $\Delta x = -b/2a$ and the $y$-coordinate by
+\begin{equation}
+ \Delta y = m_\perp \Delta x = \left( -\frac{1}{b}\right) \left(- \frac{b}{2a}  \right)= \frac{1}{2a} .  \label{Eq:Subnormal}
+\end{equation}
+Because $\Delta y$ is independent of $b$, (\ref{Eq:Subnormal}) also records the change in the $y$-coordinate in moving from \emph{any} point $P$ of the parabola (\ref{Eq:Parabola}) to the axis of symmetry along the normal at $P$.
+
+In Leibniz's terminology, the parabola $a^* x=y^2$ has a constant \emph{subnormal} $2a^*$. At a point $P$ on a given curve, the subnormal is the \emph{signed} distance $ON$ from $O$, the foot of the perpendicular from $P$ to the $x$-axis, to $x$-intercept of the normal at $P$. %the point $N$ where the normal at $P$ intersects the $x$-axis.
+(Reference: David Dennis, Jere Confrey, Functions of a Curve :
+Leibniz's Original Notion of Functions and its Meaning for the Parabola, \emph{CMJ}, March 1995, v.26 (2), pp.124-130.) 
+
+This property of parabolas, that they have constant subnormals, is encoded twice in the quadratic formula. Once in the first term as we have just seen, and again in the second term because the slopes of the tangents to the parabola (\ref{Eq:Parabola}) at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. 
+
+
+
+\begin{exploration}\label{exp:orth1}
+Drawing a cube
+\begin{center}
+\desmos{64a5f6cf8761ebbaaa07aea9}{800}{600}
+\end{center}
+\end{exploration}
+
+
+%https://teacher.desmos.com/activitybuilder/custom/64a5f6cf8761ebbaaa07aea9
+
+\end{document}
