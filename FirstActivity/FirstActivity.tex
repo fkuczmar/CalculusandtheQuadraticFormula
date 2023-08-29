@@ -1,6 +1,8 @@
 \documentclass{ximera}
 \title{Calculus and the Quadratic Formula}
 
+\newcommand{\pskip}{\vskip 0.1 in}
+
 \begin{document}
 \begin{abstract}
 We use calculus to gain insight into information encoded in the quadratic formula.
@@ -14,6 +16,7 @@ We use calculus to gain insight into information encoded in the quadratic formul
     \choice[correct]{$\frac{(b^2-4ac)^{3/2}}{12a^2}$}  
     \choice{$a^2(b^2-4ac)^{3/2}$} 
     \choice{$\frac{(b^2-4ac)^{3/2}}{a^3}$} 
+   \choice{All of the above}
   \end{multipleChoice}  
 \end{exercise}  
 
@@ -35,11 +38,9 @@ We use calculus to gain insight into information encoded in the quadratic formul
 
 
 
-Units could play a more prominent role in our classes, particularly in places where they seem not to play any role at all.
+Units could play a more prominent role in our classes, particularly in places where they seem not to play any role at all. The quadratic formula, for example, comes without units. But in any application the coefficients have meaning and it pays to at least verify the formula is dimensionally correct. And this kind of dimensional thinking can lead to some insights. %might change the way you look at the quadratic formula.
 
-The quadratic formula, for example, comes without units. But in any application the coefficients have meaning and it pays to at least verify the formula is dimensionally correct. And this kind of dimensional thinking can lead to some unexpected insights. %might change the way you look at the quadratic formula.
-
-In its most basic application, the formula
+In its most basic application, the quadratic formula
 \[
    x = -\frac{b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a}
 \]
@@ -52,37 +53,54 @@ tells us how to locate the $x$-intercepts of the parabola
 
 %It determines the parabola's size. Thhe parabola's focal length is $(4a)^{-1}$ and its radius of curvature at the vertex is $(2a)^{-1}$. 
 
-In moving from $Q$ to the axis of symmetry along the normal (with slope $m_\perp = -1/b$) at $Q$, the $x$-coordinate increases by $\Delta x = -b/2a$ and the $y$-coordinate by
+In moving from $Q$ to the axis of symmetry along the normal with slope $m_\perp = -1/b$ at $Q$, the $x$-coordinate increases by $\Delta x = -b/2a$ and the $y$-coordinate by
 \begin{equation}
  \Delta y = m_\perp \Delta x = \left( -\frac{1}{b}\right) \left(- \frac{b}{2a}  \right)= \frac{1}{2a} .  \label{Eq:Subnormal}
 \end{equation}
-Because $\Delta y$ is independent of $b$, (\ref{Eq:Subnormal}) also records the change in the $y$-coordinate in moving from \emph{any} point $P$ of the parabola (\ref{Eq:Parabola}) to the axis of symmetry along the normal at $P$.
+But because $\Delta y$ is independent of $b$, (\ref{Eq:Subnormal}) also records the change in the $y$-coordinate in moving from \emph{any} point $P$ of the parabola (\ref{Eq:Parabola}) to the axis of symmetry along the normal at $P$.
 
 \begin{exploration}\label{exp:cq1}
-Drag the slider $s$ to move the point $P$ along the parabola $y=ax^2 +bx+c$ and check that the length of segment $AB$ remains unchanged.
+Drag the slider $b$ to move the parabola $y=ax^2 +bx+c$ and check that the length of segment $AB$ remains unchanged. Also drag the sliders $a$ and $c$ and watch what changes and what remains the same.
  
 \pdfOnly{
-Access GeoGebra interactives through the online version of this text at
+Access Desmos interactives through the online version of this text at
  
-\href{https://ximera.osu.edu/oerlinalg}{https://ximera.osu.edu/oerlinalg}.
+\href{https://www.desmos.com/calculator/2apdkp8rwe}.
 }
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{tpoeadrwnt}{900}{600}
+\desmos{2apdkp8rwe}{900}{600}
 \end{center}
 \end{onlineOnly}
 \end{exploration}
 
-In Leibniz's terminology, the parabola $a^* x=y^2$ has a constant \emph{subnormal} $2a^*$. At a point $P$ on a given curve, the subnormal is the \emph{signed} distance $ON$ from $O$, the foot of the perpendicular from $P$ to the $x$-axis, to $x$-intercept of the normal at $P$. %the point $N$ where the normal at $P$ intersects the $x$-axis.
-(Reference: David Dennis, Jere Confrey, Functions of a Curve :
-Leibniz's Original Notion of Functions and its Meaning for the Parabola, \emph{CMJ}, March 1995, v.26 (2), pp.124-130.) 
 
-This property of parabolas, that they have constant subnormals, is encoded twice in the quadratic formula. Once in the first term as we have just seen, and again in the second term because the slopes of the tangents to the parabola (\ref{Eq:Parabola}) at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. 
+%In Leibniz's terminology, the parabola $a^* x=y^2$ has a constant \emph{subnormal} $2a^*$. At a point $P$ on a given curve, the subnormal is the \emph{signed} distance $ON$ from $O$, the foot of the perpendicular from $P$ to the $x$-axis, to $x$-intercept of the normal at $P$. %the point $N$ where the normal at $P$ intersects the $x$-axis.
+%(Reference: David Dennis, Jere Confrey, Functions of a Curve :
+%Leibniz's Original Notion of Functions and its Meaning for the Parabola, \emph{CMJ}, March 1995, v.26 (2), pp.124-130.) 
 
-NOT SURE WHY THIS DESMOS LINK DOES NOT WORK. FOURTH TRY
+%This property of parabolas, that they have constant subnormals, is encoded twice in the quadratic formula. Once in the first term as we have just seen, and again in the second term because the slopes of the tangents to the parabola (\ref{Eq:Parabola}) at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. 
 
-NOW THE FIFTH TRY
+This constant change (\ref{Eq:Subnormal}) in the $y$-coordinate is encoded again in the second term of the quadratic formula because the slopes of the tangents to the parabola at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. So we can regard the formula as telling us how to locate the $x$-intercepts:
+
+\pskip
+
+a. Start at the $y$-intercept $Q(0,c)$.
+
+\pskip
+
+b. Move along the normal at $Q$ until the $y$-coordinate increases by $1/(2a)$, thereby landing on the axis of symmetry. 
+
+\pskip
+
+c. Move along the axis of symmetry to the point with $y$-coordinate $y=1/(2a)$.
+
+\pskip
+
+d. Move to the $x$-axis, along the lines with slopes $\pm \sqrt{b^2-4ac}$, thereby landing at the intercepts.
+
+
 
 \begin{exploration}\label{exp:orth1}
 Cylinder
