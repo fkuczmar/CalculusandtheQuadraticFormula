@@ -1,14 +1,67 @@
 \documentclass{ximera}
-\title{Calculus and the Quadratic Formula}
+\title{Pointed Tangents to Conics}
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
 \begin{document}
 \begin{abstract}
-We use calculus to gain insight into information encoded in the quadratic formula.
+Two problems from Salmon's \emph{Conic Sections}.
 \end{abstract}
 \maketitle
 
-Nothing here yet, just a test.
+Article 92 of George Salmons' masterful work \emph{Conic Sections} addresses the following problem:
+
+\pskip
+
+\emph{92. To find the equations of the tangents from a given point to a given circle.}
+
+\pskip
+
+I like this problem because it allows for a variety of solutions that span our curriculum, from precalculus to vector calculus. It also requires grit. 
+
+But too much grit can try the soul, and Salmon's next problem appears to do just that in asking to find equations for the tangents from a given point to the general conic
+\[
+   ax^2 + 2hxy + by^2 + 2gx + 2fy + c = 0.
+\]
+\pskip
+
+He writes
+
+\emph{The process used in this and the preceeding article is equally applicable to the general equation.}
+
+\pskip
+
+While he omits many of the details, Salmon has set things up so carefully, making it possible to use the answer to the first question to intuit the answer to the second. Still, the algebra and the final result is complicated enough that it seems unlikely for there to be a simpler approach. Yet, it turns out that there is, and with an equation of the general tangent to the above conic and some geometric/algebraic reasoning, we can almost immediately find the equations of the required tangents.
+
+We'll start with the simpler version and address it from a precalculus perspective.
+
+\section{A Pre-Trigonometry Approach}
+To get started, students need to know that the tangent to a circle is perpendicular to the radius at the point of tangency. Many students seem to know this fact, or at least accept it, but still as Sarah pointed out in our little desmos group, it would be better to start with what we mean by a tangent line.
+
+Saying that the tangent to a circle is a line that intersects the circle at just one point might be a bit misleading, but with this notion the orthogonality follows from symmetry. In just the same way that the tangent to the vertex of a parabola must be normal to the axis of symmetry, a tangent to a circle must be normal to the diameter through the point of tangency. This evokes Euclid's definition of a right angle.
+
+\pskip
+
+\emph{When a straight line standing on a straight line makes the adjacent angles equal to one another, each of the equal angles is right, and the straight line standing on the other is called a perpendicular to that on which it stands.}
+
+\pskip
+
+A more sophisticated approach, one which Michael Vincent has had success with in Math 141, is to express the above notion of tangency algebraically. So, for example to find an equation of the tangent to the circle $x^2 +y^2  = 25$ at the point $(3,4)$, we would solve the system
+ 
+\pskip
+
+to think of a tangent as a line which intersects a curve in at least two points that happen to coincide.
+
+\pskip
+
+But in Article 85 Salmon gives another approach.
+
+\pskip
+
+\emph{85. To find the equation of the tangent at the point $(x_1,y_1)$ to a given circle.}
+
+\pskip
+
+\emph{The tangent having been defined as the line joining two infinitely near points on the curve, its equation will be found by first forming the equation of the line joining any to points $(x_1, y_1)$, $(x_2, y_2)$ on the curve, and then making $x_1=x_2$ and $y_1=y_2$ in that equation.}
 
 \end{document}
