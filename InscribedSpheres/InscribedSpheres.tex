@@ -9,7 +9,49 @@ We use vectors to ind an equation of the sphere inscribed in a given tetrahedron
 \end{abstract}
 \maketitle
 
-Nothing yet.
+Let $V_1$, $V_2$, $V_3$, and $O$ be the vertices of a tetrahedron, $O$ the origin, and let ${\bf v}_i$ ($i$=1,2,3) be the vectors from $O$ to the three other vertices. How can we find a coordinate -free equation of the sphere inscribed in tetrahedron $OABCD$.
+
+The first step is to find the direction of the ray that bisects the trihedral? angle at $O$ in the sense that the points of the ray are equidistant from the planes $OV_1V_2$, $OV_2V_3$, and $OV_3V_1$. The key idea is to express this direction as a linear combination
+\[
+   {\bf v} = \lambda_1 {\bf v}_1 + \lambda_2 {\bf v}_2 + \lambda_3 {\bf v}_3  .
+\]
+
+The distance from a point $V$ to the plane $OV_1V_2$ is
+\[
+       \rho_3 = \frac{|{\bf v}\cdot ({\bf v}_1\times {\bf v}_2)|}{| {\bf v}_1\times {\bf v}_2 |} ,
+\]
+with similar expressions for the two other distances. But the three triple products 
+\[
+ {\bf v}_i\cdot ({\bf v}_j\times {\bf v}_k)
+\]
+have equal magnitudes, so
+\[
+  {\bf v} = | {\bf v}_2\times {\bf v}_3 | {\bf v}_1 + |{\bf v}_3\times {\bf v}_1 | {\bf v}_2 + | {\bf v}_1\times {\bf v}_2| {\bf v}_3  .
+\]
+Check that 
+\[
+    \rho_1 = \rho_2 = \rho_3 = |  {\bf v}_i\cdot ({\bf v}_j\times {\bf v}_k)   | 
+\]
+
+This is not dimensionally correct.
+
+Continuing on.
+
+To find the radius $r$ of the inscribed sphere
+\[
+   r \sum | {\bf v}_i \times {\bf v}_j   | = 3 |{\bf v}_1\cdot ({\bf v}_2\times {\bf v}_3)|.
+\]
+
+
+The distance from the incenter $I$ to the origin is
+\[
+    \rho = r  \frac{|{\bf v}||{\bf v}_1\times {\bf v}_2 |}{| {\bf v}\cdot ({\bf v}_1\times {\bf v}_2)  |} .
+\]
+
+
+Not sure if this is correct
+
+
 
 
 \end{document}
