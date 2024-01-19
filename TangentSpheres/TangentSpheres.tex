@@ -168,28 +168,67 @@ Access Desmos interactives through the online version of this text at
 \end{onlineOnly}
 \end{exploration}
 
+Just to recap:
 
-There is a relationship among the curvatures of four mutually tangent circles in the plane, that
+\begin{itemize}
+\item{The center set of circles tangent to both the $x$-axis and the circle
+\[
+     {\cal C}_1: x^2 + (y-r_1)^2 = r_1^2
+\] 
+is the parabola
+\[
+    {\cal P}_1: 4r_1 y = x^2 .
+\]
+}
+
+\item{The center set of circles tangent to both the $x$-axis and the circle
+\[
+     {\cal C}_2: (x-2\sqrt{r_1r_2})^2 + (y-r_2)^2 = r_2^2
+\] 
+is the parabola
+\[
+    {\cal P}_2: 4r_2 y = (x-2\sqrt{r_1r_2})^2 .
+\]
+}
+
+\item{If $r_1\neq r_2$, there are two circles tangent to ${\cal C}_1$, ${\cal C}_2$, and the x-axis, with centers
+\[
+      \left( \frac{2r_1\sqrt{r_2}}{\sqrt{r_1} -\sqrt{r_2}} , \frac{r_1 r_2}{(\sqrt{r_1} -\sqrt{r_2})^2}  \right) 
+\]
+and
+\[
+      \left( \frac{2r_1\sqrt{r_2}}{\sqrt{r_1} +\sqrt{r_2}} , \frac{r_1 r_2}{(\sqrt{r_1} +\sqrt{r_2})^2}  \right) .
+\]
+The $y$-coordinates of these centers give the respective radii.
+}
+\end{itemize}
+
+
+\begin{question} \label{Q43ttgt:Spheres}
+What happens if $r_1=r_2$?
+\end{question}
+
+One final point. There is a relationship among the curvatures of four mutually tangent circles in the plane, namely that
 \[
     \left( \sum_{i=0}^3 \kappa_i \right)^2 = 2 \sum_{i=0}^3 \kappa_i^2 .     \label{Eq:Q1TangentSpheres}
 \]
 
-Or, as Frederick Soddy wrote in the poem \it{The Kiss Precise}
+%Or, as Frederick Soddy wrote in the poem \it{The Kiss Precise}
 
-\pskip
+%\pskip
 
-The sum of the squares of all four bends 
+%The sum of the squares of all four bends 
 
-Is half the square of their sum
+%Is half the square of their sum
 
-\pskip
+%\pskip
 
-We can regard the $x$-axis as our fourth circle with curvature $\kappa_0 = 0$. It looks difficult to verify this relationship even for our two families of mutually tangent circles. The better approach would be to solve the quadratic equation above for $\kappa_3$ to get
+We can regard the $x$-axis as our fourth circle with curvature $\kappa_0 = 0$. It looks difficult to verify this relationship for our two families of mutually tangent circles. The easier approach would be to solve the quadratic equation above for $\kappa_3$ to get
 \begin{align*}
    \kappa_3   &= \kappa_1 + \kappa_2 \pm 2\sqrt{\kappa_1\kappa_2}  \\
                    &= \frac{r_1 r_2}{(\sqrt{r_1} \pm\sqrt{r_2})^2} ,
 \end{align*}
-as we just saw above.
+as we just saw.
 
 For a lot more on this see
 
