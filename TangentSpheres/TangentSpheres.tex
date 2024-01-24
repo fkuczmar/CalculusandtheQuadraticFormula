@@ -336,7 +336,7 @@ Our next step is to give precise descriptions of the center and tangent sets. It
 \]
 and enter it below.
 \[
-    \answer{(r_1 - r_2)x^2 + 4 r_1\sqrt{r_1r_2}x + (r_1-r_2)y^2 = - 4r_1^2 r_2}
+    \answer{(r_2 - r_1)x^2 + 4 r_1\sqrt{r_1r_2}x + (r_2-r_1)y^2 =  4r_1^2 r_2}
 \]
 
 (c) What can you conclude from the two equations above if $r_1\neq r_2$? Check all that apply.
@@ -381,7 +381,42 @@ For a Desmos version of a similar animation:
 \href{https://www.desmos.com/3d/7fb88aea41}{Mutually Tangent Spheres}
 
 
+To summarize what we know so far:
 
+\begin{itemize}
+
+\item{The center set is the curve where the plane
+\[
+    \sqrt{r_1 r_2}x + (r_2 - r_1) z = r_1 r_2
+\]
+intersects the paraboloid
+\[
+   4r_1z = x^2 + y^2 .
+\]
+It is an ellipse if $r_1\neq r_2$ and otherwise a parabola.
+}
+
+\item{The center set is also the curve where the plane above intersect the surface
+\[
+       (r_2 - r_1)x^2 + 4 r_1\sqrt{r_1r_2}x + (r_2-r_1)y^2 =  4r_1^2 r_2 .
+\]
+The surface is a circular cylinder if $r_1\neq r_2$. But if $r_1=r_2$ the surface is the plane $x=\sqrt{r_1r_2}$. 
+}
+
+\end{itemize}
+
+To animate the variable third sphere, we need only parameterize the center set and the family of variable tangent spheres. We turn to this next.
+
+One approach would be to use the cosine and sine functions to paramaterize the tangent set when $r_1\neq r_2$ and then lift this parameterization to the ellipse. But it takes some work to find the center and radius of the tangent set and this parameterization fails when $r_1=r_2$. For the record, when $r_1\neq r_2$, the tangent set is a circle with radius
+\[
+     \frac{2r_1r_2}{|r_1 - r_2|}
+\] 
+centered at
+\[
+   \left( \frac{2r_1 \sqrt{r_1r_2}}{r_1-r_2} , 0   \right) .
+\]
+
+We'll take a simpler approach and parametrize the center set by the radius $r$ of the variable sphere. This has the advantage of working when $r_1=r_2$, but the disadvantage of needing to split the parameterization into two parts (since there are usually two variable spheres, symmetric about the $xz$-plane, with a given radius).
 
 
 
