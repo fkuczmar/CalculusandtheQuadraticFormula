@@ -230,7 +230,7 @@ One final point. There is a relationship among the curvatures $\kappa_i$ of four
 As a special case, we can regard the $x$-axis as our fourth circle with curvature $\kappa_0 = 0$. We can verify this curvature relationship for each of our two families of four mutually tangent circles by solving the quadratic equation above for $\kappa_3$. The result is that
 \begin{align*}
    \kappa_3   &= \kappa_1 + \kappa_2 \pm 2\sqrt{\kappa_1\kappa_2}  \\
-                   &= \frac{r_1 r_2}{(\sqrt{r_1} \pm\sqrt{r_2})^2} ,
+                   &= \frac{(\sqrt{r_1} \pm\sqrt{r_2})^2}{r_1 r_2} ,
 \end{align*}
 as we just saw.
 
@@ -322,7 +322,7 @@ Access Geogebra interactives through the online version of this text at
 
 \begin{question} \label{Q5r43rd:Spheres}
 
-Our next step is to give precise descriptions of the center and tangent sets. It would be nice to do this geometrically, but I don't know how. So instead, we'll continue with our algebraic approach.
+Our next step is to give precise descriptions of the center and tangent sets. % It would be nice to do this geometrically, but I don't know how. So instead, we'll continue with our algebraic approach.
 
 (a) Using the equations of the two paraboloids above, eliminate the variable $y$ to get a relation between $x$ and $z$. Write this relation below in a simplfied form that you can recognize and that works even if $r_1 = r_2$.
 
@@ -403,11 +403,20 @@ It is an ellipse if $r_1\neq r_2$ and a parabola otherwise.
 The surface is a circular cylinder if $r_1\neq r_2$. But if $r_1=r_2$ the surface is the plane $x=\sqrt{r_1r_2}$. 
 }
 
+\item{If $r_1 \neq r_2$, the tangent set is the circle
+\[
+    \{ (x,y,0) \, | \,     (r_2 - r_1)x^2 + 4 r_1\sqrt{r_1r_2}x + (r_2-r_1)y^2 =  4r_1^2 r_2           \} .
+\]
+Otherwise it is the line 
+\[
+       \{ (x,y,0) \, | \, x=\sqrt{r_1 r_2} \} .
+\]
+}
 \end{itemize}
 
 To animate the variable third sphere, we need only parameterize the center set and the family of variable tangent spheres. We turn to this next.
 
-One approach would be to use the cosine and sine functions to paramaterize the tangent set when $r_1\neq r_2$ and then lift this parameterization to the ellipse. But it takes some work to find the center and radius of the tangent set and this parameterization fails when $r_1=r_2$. For the record, when $r_1\neq r_2$, the tangent set is a circle with radius
+One approach would be to use the cosine and sine functions to paramaterize the tangent set when $r_1\neq r_2$ and then lift this parameterization to the ellipse. But this parameterization fails when $r_1=r_2$. Just for the record, when $r_1\neq r_2$, the tangent set is a circle with radius
 \[
      \frac{2r_1r_2}{|r_1 - r_2|}
 \] 
@@ -416,7 +425,23 @@ centered at
    \left( \frac{2r_1 \sqrt{r_1r_2}}{r_1-r_2} , 0   \right) .
 \]
 
-We'll take a simpler approach and parameterize the center set by the radius $r$ of the variable sphere. This has the advantage of working when $r_1=r_2$, but the disadvantage of needing to split the parameterization into two parts (since there are usually two variable spheres, symmetric about the $xz$-plane, with a given radius).
+We'll take a simpler approach and parameterize the center set by the radius $r$ of the variable sphere. This has the advantage of working when $r_1=r_2$, but the disadvantage of needing two parameterizations (since except for the smallest and largest, there are two spheres, symmetric about the $xz$-plane, with a given radius).
+
+
+\pdfOnly{
+Access Geogebra interactives through the online version of this text at
+ 
+\href{https://www.geogebra.org/classic/g2bhhrvz}.
+}
+ 
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{g2bhhrvz}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+
+
 
 
 
