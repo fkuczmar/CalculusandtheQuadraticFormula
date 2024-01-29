@@ -400,7 +400,7 @@ It is an ellipse if $r_1\neq r_2$ and a parabola otherwise.
 \[
        (r_2 - r_1)x^2 + 4 r_1\sqrt{r_1r_2}x + (r_2-r_1)y^2 =  4r_1^2 r_2 .
 \]
-The surface is a circular cylinder if $r_1\neq r_2$. But if $r_1=r_2$ the surface is the plane $x=\sqrt{r_1r_2}$. 
+The surface is a circular cylinder if $r_1\neq r_2$. But if $r_1=r_2$ the surface is the plane $x=\sqrt{r_1r_2} =r_1$. 
 }
 
 \item{If $r_1 \neq r_2$, the tangent set is the circle
@@ -409,14 +409,14 @@ The surface is a circular cylinder if $r_1\neq r_2$. But if $r_1=r_2$ the surfac
 \]
 Otherwise it is the line 
 \[
-       \{ (x,y,0) \, | \, x=\sqrt{r_1 r_2} \} .
+       \{ (r_1,t,0) \, | \, t\in \mathbb{R} \} .
 \]
 }
 \end{itemize}
 
 To animate the variable third sphere, we need only parameterize the center set and the family of variable tangent spheres. We turn to this next.
 
-One approach would be to use the cosine and sine functions to paramaterize the tangent set when $r_1\neq r_2$ and then lift this parameterization to the ellipse. But this parameterization fails when $r_1=r_2$. Just for the record, when $r_1\neq r_2$, the tangent set is a circle with radius
+One approach would be to use the cosine and sine functions to paramaterize the tangent set when $r_1\neq r_2$ and then lift this parameterization to the ellipse. But this parameterization fails when $r_1=r_2$. By completing the square, we find that when $r_1\neq r_2$, the tangent set is a circle with radius
 \[
      \frac{2r_1r_2}{|r_1 - r_2|}
 \] 
@@ -425,7 +425,9 @@ centered at
    \left( \frac{2r_1 \sqrt{r_1r_2}}{r_1-r_2} , 0   \right) .
 \]
 
-We'll take a simpler approach and parameterize the center set by the radius $r$ of the variable sphere. This has the advantage of working when $r_1=r_2$, but the disadvantage of needing two parameterizations (since except for the smallest and largest, there are two spheres, symmetric about the $xz$-plane, with a given radius).
+But we'll take a simpler approach and parameterize the center set by the radius $r$ of the variable sphere. This has the advantage of working when $r_1=r_2$, but the disadvantage of needing two parameterizations (since except for the smallest and largest, there are two spheres, symmetric about the $xz$-plane, with a given radius).
+
+
 
 
 \pdfOnly{
@@ -441,6 +443,9 @@ Access Geogebra interactives through the online version of this text at
 \end{onlineOnly}
 
 
+For a desmos version of a similar animation:
+
+\href{https://www.desmos.com/3d/89832f7500}{Mutually Tangent Spheres Simple}
 
 
 
