@@ -5,23 +5,26 @@
 
 \begin{document}
 \begin{abstract}
-We use calculus to gain insight into information encoded in the quadratic formula.
+We use calculus to gain insight into the quadratic formula.
 \end{abstract}
 \maketitle
 
-123435
+ Here we offer several interpretations of the quadratic formula from the perspectives of differential and integral calculus.
 
-\begin{exercise}  
-  One of the following expressions gives the area bounded by the $x$-axis and the parabola $y=ax^2+bx+c$. Which one?  
-  \begin{multipleChoice}  
-    \choice{$(b^2-4ac)^{3/2}$}  
-    \choice[correct]{$\frac{(b^2-4ac)^{3/2}}{12a^2}$}  
-    \choice{$a^2(b^2-4ac)^{3/2}$} 
-    \choice{$\frac{(b^2-4ac)^{3/2}}{a^3}$} 
-   \choice{None of the above}
-\choice{All of the above}
-  \end{multipleChoice}  
-\end{exercise}  
+\section*{Subnormals and the Quadratic Formula}
+Our first approach came about in checking that the quadratic formula is dimensionally correct and reveals a property of parabolas hidden in the formula itself.
+
+%\begin{exercise}  
+%  One of the following expressions gives the area bounded by the $x$-axis and the parabola $y=ax^2+bx+c$. Which one?  
+%  \begin{multipleChoice}  
+%    \choice{$(b^2-4ac)^{3/2}$}  
+%    \choice[correct]{$\frac{(b^2-4ac)^{3/2}}{12a^2}$}  
+%    \choice{$a^2(b^2-4ac)^{3/2}$} 
+%    \choice{$\frac{(b^2-4ac)^{3/2}}{a^3}$} 
+%   \choice{None of the above}
+%\choice{All of the above}
+%  \end{multipleChoice}  
+%\end{exercise}  
 
 %\begin{exploration}\label{exp:orth2}
 %Let $W =\mbox{span}\left({\bf v}_1,{\bf v}_2\right)$. $W$ is a plane through the origin in $\mathbb{R}^3$.  Use the navigation bar at the bottom of the interactive window to go through the steps of constructing an orthogonal basis for $W$.  RIGHT-CLICK and DRAG to rotate the image for a better view.
@@ -41,26 +44,50 @@ We use calculus to gain insight into information encoded in the quadratic formul
 
 
 
-Units could play a more prominent role in our classes, particularly in places where they seem not to play any role at all. The quadratic formula, for example, comes without units. But in any application the coefficients have meaning and it pays to at least verify the formula is dimensionally correct. And this kind of dimensional thinking can lead to some insights. %might change the way you look at the quadratic formula.
+%Units should play a more prominent role in our classes, particularly in places where they seem not to play any role at all. The quadratic formula, for example, comes without units. But in any application the coefficients have meaning and it pays to at least verify the formula is dimensionally correct. And this kind of dimensional thinking can lead to some unexpected insights. %might change the way you look at the quadratic formula.
 
 In its most basic application, the quadratic formula
 \[
    x = -\frac{b}{2a}\pm \frac{\sqrt{b^2-4ac}}{2a}
 \]
-tells us how to locate the $x$-intercepts of the parabola 
+describes how to locate the $x$-intercepts of the parabola 
 \begin{equation}
  y=ax^2+bx+c.   \label{Eq:Parabola}
  \end{equation}
- The coordinates $x,y$ and the constant term $c$ have dimensions of length. The coefficient $b$ is dimensionless and gives the slope of the tangent line at the $y$-intercept $Q(0,c)$. Since the product $ax^2$ is a length, so is the reciprocal $a^{-1}$ of the leading coefficient. This reciprocal has several interpretations, each describing the parabola's size. One is related to the parabola's radius of curvature, $(2a)^{-1}$, at the vertex and another to the focal length, $1/(4a)$. But a third, our focus here, is encoded in the quadratic formula itself.
+ The coordinates $x,y$ and the constant term $c$ have dimensions of length. The coefficient $b$ is dimensionless and gives the slope of the tangent line at the $y$-intercept $Q(0,c)$. Since the product $ax^2$ is a length, so is the reciprocal $a^{-1}$ of the leading coefficient. This reciprocal has several interpretations, each describing the parabola's size. One is related to the parabola's radius of curvature $(2a)^{-1}$ at the vertex and another to the focal length, $(4a)^{-1}$. 
 
+But a third interpretation, our focus here, is encoded in the quadratic formula. It also plays a key role in the solution to the following problem.
 
-%It determines the parabola's size. Thhe parabola's focal length is $(4a)^{-1}$ and its radius of curvature at the vertex is $(2a)^{-1}$. 
+\begin{exercise}
+Let $P$ be a point on the parabola $y=ax^2$ different from the origin $O$. Let $Q$ be the point where the normal lines to the parabola at $P$ and $O$ intersect. Find the limiting position of $Q$ as $P\to O$.
 
-In moving from $Q$ to the axis of symmetry along the normal with slope $m_\perp = -1/b$ at $Q$, the $x$-coordinate increases by $\Delta x = -b/2a$ and the $y$-coordinate by
+\begin{onlineOnly}
+    \begin{center}
+\desmos{dkbavb5xzf}{450}{600} 
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/dkbavb5xzf}{151: Normals to Parabola 2}
+
+\end{exercise}
+
+Just the first part 
+\[
+    x = -\frac{b}{2a}
+\]
+of the formula, an equation for the axis of symmetry, is enough to suggest this interpretation. The key is to realize that in moving from $Q(0,c)$ to the axis of symmetry along the normal line with slope $m_\perp = -1/b$ at $Q$, the $x$-coordinate changes by $\Delta x = -b/2a$ and the $y$-coordinate by
 \begin{equation}
  \Delta y = m_\perp \Delta x = \left( -\frac{1}{b}\right) \left(- \frac{b}{2a}  \right)= \frac{1}{2a} .  \label{Eq:Subnormal}
 \end{equation}
 But because $\Delta y$ is independent of $b$, (\ref{Eq:Subnormal}) also records the change in the $y$-coordinate in moving from \emph{any} point $P$ of the parabola (\ref{Eq:Parabola}) to the axis of symmetry along the normal at $P$.
+
+We can prove this same property of parabolas more directly by considering just the parabola $y=ax^2$. The normal at the point $P(x_0, ax_0^2)$ has slope $m_\perp = -1/(2ax_0)$. So in moving from $P$ to the axis of symmetry along the normal, the $y$-coordinate changes by
+\[
+        \Delta y = m_\perp \Delta x = \left( -\frac{1}{2ax_0}\right) \left(-x_0\right)= \frac{1}{2a}   .
+\]
+
+This constant change (\ref{Eq:Subnormal}) in the $y$-coordinate is encoded again in the second term of the quadratic formula because the slopes of the tangents to the parabola at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. So the $x$-intercepts of the parabola (\ref{Eq:Parabola}) are the points where the non-vertical normal lines from the point $(-b/(2a), 1/(2a))$ intersect the parabola.
+
 
 \begin{exploration}\label{exp:cq1}
 Drag the slider $b$ to move the parabola $y=ax^2 +bx+c$ and check that the length of segment $AB$ remains unchanged. Also drag the sliders $a$ and $c$ and watch what changes and what remains the same.
@@ -93,7 +120,7 @@ a. Start at the $y$-intercept $Q(0,c)$.
 
 \pskip
 
-b. Move along the normal at $Q$ until the $y$-coordinate increases by $1/(2a)$, thereby landing on the axis of symmetry. 
+b. Move along the normal at $Q$ until the $y$-coordinate changes by $1/(2a)$, thereby landing on the axis of symmetry. 
 
 \pskip
 
