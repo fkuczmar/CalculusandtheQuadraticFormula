@@ -65,17 +65,17 @@ Let $P$ be a point on the parabola $y=ax^2$ different from the origin $O$. Let $
 First guess what happens to $Q$ as $P$ approaches $O$. Then drag the slider $x_0$ in Line 2 to zero to see if you were correct.
 \begin{onlineOnly}
     \begin{center}
-\desmos{4noszgo6dj}{450}{600} 
+\desmos{wuazgkeukm}{450}{600} 
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/4noszgo6dj}{151: Normals to Parabola 2}
+\href{https://www.desmos.com/calculator/wuazgkeukm}{151: Normals to Parabola 2}
 \end{exploration}
 
 \begin{explanation}
-I like this problem because the result is surprising. It seems natural to guess $Q$ is that goes off to infinity, probably because the normal lines at $P$ and $O$ tend toward being parallel. This would be correct for any curve $y=a|x|^p$ with $p>2$, but not for the parabola $y=ax^2$.
+I like this problem because the result is surprising. It seems natural to guess $Q$ goes off to infinity because the normal lines at $P$ and $O$ tend toward being parallel. This would be correct for any curve $y=a|x|^p$ with $p>2$, but not for the parabola $y=ax^2$.
 
-For the paraobola, because the normal line at $P(x_0,ax_0^2)$ has slope
+For the parabola, because the normal line at $P(x_0,ax_0^2)$ has slope
 \[
         m_\perp = -\frac{1}{2ax_0} ,
 \] 
@@ -113,9 +113,21 @@ But because $\Delta y$ is independent of $b$, (\ref{Eq:Subnormal}) also records 
 %        \Delta y = m_\perp \Delta x = \left( -\frac{1}{2ax_0}\right) \left(-x_0\right)= \frac{1}{2a}   .
 %\]
 
-For the same reason, the constant subnormal property is encoded again in the second term of the quadratic formula because the slopes of the tangents to the parabola at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. So the $x$-intercepts of the parabola (\ref{Eq:Parabola}), if distinct, are the points where the non-vertical normal lines from the point $(-b/(2a), 1/(2a))$ intersect the parabola.
+For the same reason, the constant subnormal property is encoded again in the second term of the quadratic formula because the tangents to the parabola at its $x$-intercepts have slopes $\pm \sqrt{b^2-4ac}$. So the $x$-intercepts of the parabola (\ref{Eq:Parabola}), if distinct, are the points where the non-vertical normal lines from the point $(-b/(2a), 1/(2a))$ intersect the parabola.
 
-\emph{Note:} In Leibniz's terminology, the parabola $a^* x=y^2$ has a constant \emph{subnormal} $2a^*$. At a point $P$ on a given curve, the subnormal is the \emph{signed} distance $ON$ from $O$, the foot of the perpendicular from $P$ to the $x$-axis, to $x$-intercept of the normal at $P$. %the point $N$ where the normal at $P$ intersects the $x$-axis.
+\emph{Note:} In Leibniz's terminology, the \emph{subnormal} at a point $P$ of a curve is the segment $ON$ in the figure below, where $PN$ is normal to the curve and $PO$ is normal to the $x$-axis $CA$. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{yizwz5sfrf}{450}{600} 
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/yizwz5sfrf}{151: Leibniz Subnormal}
+
+
+
+parabola $ax=y^2$ has a constant \emph{subnormal} $2a^*$. At a point $P$ on a given curve, the subnormal is the \emph{signed} distance $ON$ from $O$, the foot of the perpendicular from $P$ to the $x$-axis, to $x$-intercept of the normal at $P$. %the point $N$ where the normal at $P$ intersects the $x$-axis.
 
 \begin{exploration}\label{exp:cq1}
 Drag the slider $b$ to move the parabola $y=ax^2 +bx+c$ and check that the length of segment $AB$ remains unchanged. Also drag the sliders $a$ and $c$ and watch what changes and what remains the same.
