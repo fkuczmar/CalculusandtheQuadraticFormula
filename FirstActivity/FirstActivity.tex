@@ -12,7 +12,7 @@ We use calculus to gain insight into the quadratic formula.
  We offer several interpretations of the quadratic formula from the perspectives of differential and integral calculus.
 
 \section*{Subnormals and the Quadratic Formula}
-Our first approach came about in checking that the quadratic formula is dimensionally correct and reveals a property of parabolas hidden in the formula itself.
+Our first interpretation came about in checking that the quadratic formula is dimensionally correct and reveals a property of parabolas hidden in the formula itself.
 
 %\begin{exercise}  
 %  One of the following expressions gives the area bounded by the $x$-axis and the parabola $y=ax^2+bx+c$. Which one?  
@@ -65,13 +65,31 @@ Let $P$ be a point on the parabola $y=ax^2$ different from the origin $O$. Let $
 First guess what happens to $Q$ as $P$ approaches $O$. Then drag the slider $b$ in Line 2 to zero to see if you were correct.
 \begin{onlineOnly}
     \begin{center}
-\desmos{2xaqqvvv7p}{450}{600} 
+\desmos{4noszgo6dj}{450}{600} 
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/2xaqqvvv7p}{151: Normals to Parabola 2}
+\href{https://www.desmos.com/calculator/4noszgo6dj}{151: Normals to Parabola 2}
 \end{exploration}
 
+\begin{explanation}
+I like this problem because the result is not intuitive. The most common guess $Q$ is that goes off to infinity, probably because the normal lines at $P$ and $O$ tend toward being parallel. This si in fact be correct for any curve $y=a|x|^p$ where $p>2$, but not for the parabola $y=ax^2$.
+
+Because the normal line at $P(b,ab^2)$ has slope
+\[
+        m_\perp = -\frac{1}{2ab} ,
+\] 
+the change in the $y$-coordinate in moving from $P$ to $Q$ is the \emph{constant}
+\[
+ \Delta y =  m_\perp (\Delta x) =  \left( -\frac{1}{2ab}\right)(-b)  = \frac{1}{2a} .
+\]
+
+So $Q$ has $y$-coordinate
+\[
+     y_Q = b + \frac{1}{2a}
+\]
+and as $P$ approaches the origin, $Q$ approaches the point with coordinates $(0,1/(2a))$.
+\end{explanation}
 
 
 \end{exercise}
