@@ -62,7 +62,7 @@ But a third interpretation, our focus here, is encoded in the formula and plays 
 Let $P$ be a point on the parabola $y=ax^2$ different from the origin $O$. Let $Q$ be the point where the normal lines to the parabola at $P$ and $O$ intersect. Find the limiting position of $Q$ as $P\to O$.
 
 \begin{exploration}
-First guess what happens to $Q$ as $P$ approaches $O$. Then drag the slider $b$ in Line 2 to zero to see if you were correct.
+First guess what happens to $Q$ as $P$ approaches $O$. Then drag the slider $x_0$ in Line 2 to zero to see if you were correct.
 \begin{onlineOnly}
     \begin{center}
 \desmos{4noszgo6dj}{450}{600} 
@@ -73,48 +73,49 @@ First guess what happens to $Q$ as $P$ approaches $O$. Then drag the slider $b$ 
 \end{exploration}
 
 \begin{explanation}
-I like this problem because the result is surprising. Many people guess $Q$ is that goes off to infinity, probably because the normal lines at $P$ and $O$ tend toward being parallel. This is in fact be correct for any curve $y=a|x|^p$ with $p>2$, but not for the parabola $y=ax^2$.
+I like this problem because the result is surprising. It seems natural to guess $Q$ is that goes off to infinity, probably because the normal lines at $P$ and $O$ tend toward being parallel. This would be correct for any curve $y=a|x|^p$ with $p>2$, but not for the parabola $y=ax^2$.
 
-For the paraobola, because the normal line at $P(b,ab^2)$ has slope
+For the paraobola, because the normal line at $P(x_0,ax_0^2)$ has slope
 \[
-        m_\perp = -\frac{1}{2ab} ,
+        m_\perp = -\frac{1}{2ax_0} ,
 \] 
 the change in the $y$-coordinate in moving from $P$ to $Q$ is %the \emph{constant}
 \[
- \Delta y =  m_\perp (\Delta x) =  \left( -\frac{1}{2ab}\right)(-b)  = \frac{1}{2a} .
+ \Delta y =  m_\perp (\Delta x) =  \left( -\frac{1}{2ax_0}\right)(-x_0)  = \frac{1}{2a} .
 \]
 
 So $Q$ has $y$-coordinate
 \[
-     y_Q = b + \frac{1}{2a}
+     y_Q = ax_0^2 + \frac{1}{2a}
 \]
 and as $P$ approaches the origin, $Q$ approaches the point with coordinates $(0,1/(2a))$.
 \end{explanation}
 \end{exercise}
 
-The other surprising part about the above solution is that in moving along the normal line from a point on any parabola to the axis of symmetry, the $y$-coordinate changes by the \emph{constant}
+The surprising part about the above solution is that in moving along the normal line from a point on any parabola to the axis of symmetry, the $y$-coordinate changes by the \emph{constant}
 \[
    \Delta y = \frac{1}{2a} .
 \]
-This fact, what I'll call the \emph{constant subnormal property of parabolas} (see note below) is actually encoded in the quadratic formula. 
+This fact, what I'll call the \emph{constant subnormal property of parabolas} (see note below) is actually encoded twice in the quadratic formula. 
 
 Just the first part 
 \[
     x = -\frac{b}{2a}
 \]
-of the formula, an equation for the axis of symmetry, is enough to suggest this interpretation. The key is to realize that in moving from $Q(0,c)$ to the axis of symmetry along the normal line with slope $m_\perp = -1/b$ at $Q$, the $x$-coordinate changes by $\Delta x = -b/2a$ and the $y$-coordinate by
+of the formula, an equation for the axis of symmetry, proves this property. The key is to realize that in moving from $Q(0,c)$ to the axis of symmetry along the normal line with slope $m_\perp = -1/b$ at $Q$, the $x$-coordinate changes by $\Delta x = -b/2a$ and the $y$-coordinate by
 \begin{equation}
  \Delta y = m_\perp \Delta x = \left( -\frac{1}{b}\right) \left(- \frac{b}{2a}  \right)= \frac{1}{2a} .  \label{Eq:Subnormal}
 \end{equation}
 But because $\Delta y$ is independent of $b$, (\ref{Eq:Subnormal}) also records the change in the $y$-coordinate in moving from \emph{any} point $P$ of the parabola (\ref{Eq:Parabola}) to the axis of symmetry along the normal at $P$.
 
-We can prove this same property of parabolas more directly by considering just the parabola $y=ax^2$. The normal at the point $P(x_0, ax_0^2)$ has slope $m_\perp = -1/(2ax_0)$. So in moving from $P$ to the axis of symmetry along the normal, the $y$-coordinate changes by
-\[
-        \Delta y = m_\perp \Delta x = \left( -\frac{1}{2ax_0}\right) \left(-x_0\right)= \frac{1}{2a}   .
-\]
+%We can prove this same property of parabolas more directly by considering just the parabola $y=ax^2$. The normal at the point $P(x_0, ax_0^2)$ has slope $m_\perp = -1/(2ax_0)$. So in moving from $P$ to the axis of symmetry along the normal, the $y$-coordinate changes by
+%\[
+%        \Delta y = m_\perp \Delta x = \left( -\frac{1}{2ax_0}\right) \left(-x_0\right)= \frac{1}{2a}   .
+%\]
 
-This constant change (\ref{Eq:Subnormal}) in the $y$-coordinate is encoded again in the second term of the quadratic formula because the slopes of the tangents to the parabola at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. So the $x$-intercepts of the parabola (\ref{Eq:Parabola}) are the points where the non-vertical normal lines from the point $(-b/(2a), 1/(2a))$ intersect the parabola.
+For the same reason, the constant subnormal property is encoded again in the second term of the quadratic formula because the slopes of the tangents to the parabola at its $x$-intercepts are $\pm \sqrt{b^2-4ac}$. So the $x$-intercepts of the parabola (\ref{Eq:Parabola}), if distinct, are the points where the non-vertical normal lines from the point $(-b/(2a), 1/(2a))$ intersect the parabola.
 
+\emph{Note:} In Leibniz's terminology, the parabola $a^* x=y^2$ has a constant \emph{subnormal} $2a^*$. At a point $P$ on a given curve, the subnormal is the \emph{signed} distance $ON$ from $O$, the foot of the perpendicular from $P$ to the $x$-axis, to $x$-intercept of the normal at $P$. %the point $N$ where the normal at $P$ intersects the $x$-axis.
 
 \begin{exploration}\label{exp:cq1}
 Drag the slider $b$ to move the parabola $y=ax^2 +bx+c$ and check that the length of segment $AB$ remains unchanged. Also drag the sliders $a$ and $c$ and watch what changes and what remains the same.
