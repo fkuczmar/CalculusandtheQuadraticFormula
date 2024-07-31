@@ -48,21 +48,37 @@ This animation starts with a tube around the cylindrical helix and a net on this
 
 The key to computing a relatively parallel vector field along a curve is to destroy the rotation of the Frenet frame about its tangent vector $\overrightarrow{T}$ by replacing the principal normal with a normal vector relatively parallel to the curve. To do this we need to know the component of the Frenet frame's rotation about $\overrightarrow{T}$.
 
-These components (about the unit tangent $\overrightarrow{T}$, the principal normal $\overrightarrow{N}$, and the binormal $\overrightarrow{B}$) are governed by the Frenet equations. 
+Thes rotational components of the Frenet frame about the unit tangent $\overrightarrow{T}$, the principal normal $\overrightarrow{N}$, and the binormal $\overrightarrow{B}$ are governed by the Frenet equations. 
 
-By definition (using primes for differentiation with respect to arclength)
-\[
-       \overrightarrow{T}^\prime = \kappa \overrightarrow{N} ,
-\] 
-where $\kappa \geq 0$ is the curvature. From this it follows that $\overrightarrow{B}^\prime$ is also a multiple (not necessarily positive) of $\overrightarrow{B}$. 
+The first equation (using primes for differentiation with respect to arclength)
+\begin{equation}
+       \overrightarrow{T}^\prime = \kappa \overrightarrow{N} ,   \label{Eq:Curvature}
+\end{equation}
+is really just the definition of curvature $\kappa \geq 0$ and the principal normal. From this it follows that $\overrightarrow{B}^\prime$ is also a multiple (not necessarily positive) of $\overrightarrow{B}$. 
 
 \begin{exercise}  \label{E:Kldsfttdd}
 (a) Prove algebraically that
-\[
-   \overrightarrow{B}^\prime = - \tau \overrightarrow{N}
-\]
+\begin{equation}
+   \overrightarrow{B}^\prime = - \tau \overrightarrow{N}   \label{Eq:Torsion}
+\end{equation}
 for some scalar $\tau$. 
+
+\begin{hint}
+Differentiate both sides of the equation
+\[
+  \overrightarrow{B} \cdot \overrightarrow{T} = 0
+\]
+with respect to arclength.
+\end{hint}
+
+(b) Explain geometrically why $\overrightarrow{B}^\prime$ is a scalar multiple of $\overrightarrow{B}$. 
 \end{exercise}
 
+The scalar $\tau$ (a function of the arclength parameter) in equation (\ref{Eq:Torsion}) is the \emph{torsion} of our curve. It measures the rate at which the binormal (and hence the osculating plane) rotates with repsect to arclength. Unlike curvature, torsion may be negative. The negative sign in (\ref{Eq:Torsion}) is arbitrary. One reason for it might to make a right-handed helix 
+have postivie torsion.
+
+\begin{exercise} \label{E:dsft4etdg}
+Explain with a picture why a right-handed cylindrical helix has positive torsion.
+\end{exercise}
 
 \end{document}
