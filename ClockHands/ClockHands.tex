@@ -30,10 +30,14 @@ Experiment with the animation below, perhaps changing the lengths of the hands. 
 \section*{A Computational Solution}
 %It simplifies things if we ignore time and work in the reference frame of one of the hands
 
-We'll let $a$ and $b$ denote the respective lengths of the hour and minute hands, $\theta$ the angle (in radians) between the hands, and $c$ the distance between their tips. Then by the law of cosines,
+We'll let $a$ and $b$ denote the respective lengths of the hour and minute hands, $\theta$ the angle (in radians) between the hands, and $c$ the distance between their tips. Ignoring time for the moment, our first step is to maximize the derivative,
 \[
-        \frac{dc}{dt} = \frac{ab\cos \theta}{c} = \frac{ab cos\theta}{\sqrt{a^2+b^2-2ab\cos\theta}} ,
+        \frac{dc}{d\theta} = \frac{ab\sin \theta}{c} = \frac{ab \sin \theta}{\sqrt{a^2+b^2-2ab\cos\theta}}.
 \]
-where $t$ is the time, say measured in hours.
+So we differentiate again and do some algebra to get
+\[
+       \frac{d^2c}{d\theta^2} = \frac{ab}{c^3} \left( c^2\cos\theta + ab\sin^2\theta  \right).
+\]
+
 
 \end{document}
