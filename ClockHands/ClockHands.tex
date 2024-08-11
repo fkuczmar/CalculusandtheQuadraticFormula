@@ -16,7 +16,7 @@ A problem in Stewart asks to find the rate at which the distance between the tip
 \begin{exploration}
 (a) Experiment with the animation below, perhaps changing the lengths of the hands. Any conjectures?
 
-(b) The distance function looks sinusoidal. But open the folder in Line 26 to see the graph of the derivative 
+(b) The distance function looks sinusoidal, but opening the folder in Line 26 to see the graph of the derivative dispels that notion. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -52,5 +52,16 @@ or
 \[
               (a \cos \theta - b) (b \cos \theta - a) = 0 .
 \]
+Assuming the minute hand is longer than the hour hand ($b>a$) and $0\leq \theta \leq 2pi$, we conclude that the distance is increasing at the fastest rate when $\theta = \arccos(a/b)$ and decreasing at the fastest rate when $\theta  = 2\pi - \arccos(a/b)$.
 
+\section*{A More Geometrical Solution}
+We could have saved ourselves the trouble of taking the second derivative by interpreting the rate of change
+\[
+    \frac{dc}{d\theta} = \frac{ab\sin \theta}{c} 
+\]
+in the distance geometrically. To do this, note that since $ab\sin\theta = 2K$ is twice the area of $\Delta ABC$,
+\[
+      \frac{dc}{d\theta} = \frac{2K}{c}  = h,
+\]
+where $h$ is the distance from from $C$ to $\overrightarrow{AB}$.
 \end{document}
