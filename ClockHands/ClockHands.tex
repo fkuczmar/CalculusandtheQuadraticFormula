@@ -10,19 +10,21 @@ A twist on a familiar problem.
 \maketitle
 
 \section*{Introduction}
-We're all familiar with the problem about finding the rate at which the distance between the tips of the minute and hour hands of a clock is changing at a certain time. But a more interesting question, for both Math 151 and 163, is to ask when this distance is increasing at the fastest rate. 
+A problem in Stewart asks to find the rate at which the distance between the tips of the minute and hour hands of a clock is changing at a specific time. But a more interesting question is to ask when this distance is increasing at the fastest rate. 
 
 
 \begin{exploration}
-Experiment with the animation below, perhaps changing the lengths of the hands. Any conjectures?
+(a) Experiment with the animation below, perhaps changing the lengths of the hands. Any conjectures?
+
+(b) The distance function looks sinusoidal. But open the folder in Line 26 to see the graph of the derivative 
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{qvk0mzy26u}{450}{600} 
+\desmos{zz3qff7ocv}{450}{600}  %qvk0mzy26u
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/qvk0mzy26u}{151: Hands of a Clock}
+\href{https://www.desmos.com/calculator/zz3qff7ocv}{151: Hands of a Clock}
 
 
 \end{exploration}
@@ -36,8 +38,19 @@ We'll let $a$ and $b$ denote the respective lengths of the hour and minute hands
 \]
 So we differentiate again and do some algebra to get
 \[
-       \frac{d^2c}{d\theta^2} = \frac{ab}{c^3} \left( c^2\cos\theta + ab\sin^2\theta  \right).
+       \frac{d^2c}{d\theta^2} = \frac{ab}{c^3} \left( c^2\cos\theta - ab\sin^2\theta  \right).
 \]
-
+Then setting the second derivative equal to zero and substituting 
+\[
+      c^2 = a^2+b^2-2ab\cos\theta
+\]
+leads to the equation (symmetric in $a$ and $b$)
+\[
+     ab \cos^2\theta - (a^2 + b^2)\cos\theta + ab = 0
+\]
+or
+\[
+              (a \cos \theta - b) (b \cos \theta - a) = 0 .
+\]
 
 \end{document}
