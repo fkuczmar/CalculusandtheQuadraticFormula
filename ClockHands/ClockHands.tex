@@ -10,7 +10,7 @@ A twist on a familiar problem.
 \maketitle
 
 \section*{Introduction}
-A problem in Stewart asks to find the rate at which the distance between the tips of the minute and hour hands of a clock is changing at a specific time. But a more interesting question is to ask when this distance is increasing at the fastest rate. 
+A problem in Stewart asks to find the rate of change in the distance between the tips of the minute and hour hands of a clock. But a more interesting question is to ask when this distance is increasing at the fastest rate. 
 
 
 \begin{exploration}
@@ -20,11 +20,11 @@ A problem in Stewart asks to find the rate at which the distance between the tip
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{qr4d0ayurs}{450}{600}  %qvk0mzy26u
+\desmos{pnpf5uhbre}{450}{600}  %qvk0mzy26u
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/qr4d0ayurs}{151: Hands of a Clock}
+\href{https://www.desmos.com/calculator/pnpf5uhbre}{151: Hands of a Clock 2}
 
 
 \end{exploration}
@@ -36,7 +36,7 @@ We'll let $a$ and $b$ denote the respective lengths of the hour and minute hands
 \[
         \frac{dc}{d\theta} = \frac{ab\sin \theta}{c} = \frac{ab \sin \theta}{\sqrt{a^2+b^2-2ab\cos\theta}}.
 \]
-So we differentiate again and do some algebra to get
+After differentiating again and doing some algebra 
 \[
        \frac{d^2c}{d\theta^2} = \frac{ab}{c^3} \left( c^2\cos\theta - ab\sin^2\theta  \right).
 \]
@@ -52,18 +52,25 @@ or
 \[
               (a \cos \theta - b) (b \cos \theta - a) = 0 .
 \]
-Assuming the minute hand is longer than the hour hand ($b>a$) and $0\leq \theta \leq 2pi$, we conclude that the distance is increasing at the fastest rate when $\theta = \arccos(a/b)$ and decreasing at the fastest rate when $\theta  = 2\pi - \arccos(a/b)$.
+Assuming the minute hand is longer than the hour hand ($b>a$) and $0\leq \theta \leq 2\pi$, we conclude that the distance is increasing at the fastest rate when $\theta = \arccos(a/b)$ and decreasing at the fastest rate when $\theta  = 2\pi - \arccos(a/b)$.
 
 \section*{A More Geometrical Solution}
-We could have saved ourselves the trouble of taking the second derivative by interpreting the rate of change
+We could have saved ourselves the trouble of taking the second derivative by using the law of sines in $\Delta ABC$. Then %to write the rate of change $dc/d\theta$ as
 \[
-    \frac{dc}{d\theta} = \frac{ab\sin \theta}{c} 
+    \Big| \frac{dc}{d\theta}  \Big| =   \frac{ab\sin C}{c}  = \frac{ab \sin A}{a} = b\sin A .
 \]
-in the distance geometrically. To do this, note that since $ab\sin\theta = 2K$ is twice the area of $\Delta ABC$,
+To do this, note that when $0<\theta < \pi$, $ab\sin\theta = 2K$ is twice the area of $\Delta ABC$. So
 \[
-      \frac{dc}{d\theta} = \frac{2K}{c}  = h,
+     \Big| \frac{dc}{d\theta} \Big| = \frac{2K}{c}  = h,
 \]
-where $h$ is the altitude from from $C$ to $\overrightarrow{AB}$ in $\Delta ABC$ above. Since 
+where $h$ is the altitude from from $C$ to side $\overline{AB}$ in $\Delta ABC$ above. This distance is maximized when $\overline{CA}$ is perpendicular to $\overline{AB}$, giving the same result as before. 
 
+%Or we could use the law of sines in $\Delta ABC$ to get
+%\[
+%   \frac{dc}{d\theta} = \frac{ab\sin \theta}{c} = ab\frac{sin B}{b} = a\sin B .
+%\]
+%So the rate is maximized when angle $B$ is as close to $\pi/2$ as possible.
+
+\section*{A Solution with Vectors}
 
 \end{document}
