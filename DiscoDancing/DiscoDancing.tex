@@ -65,7 +65,7 @@ The chord below bisects the motion of a revolving pendulum. Draw other bisecting
 
 \section*{DiscoDancing}
 
-A spotlight in a circular dance hall rotates at a constant rate as the light sweeps around the wall. Where is the light when its speed is increasing at the fastest rate?
+A spotlight in a circular dance hall rotates at a constant rate as the light beam sweeps around the wall. Where is the light beam when its speed is increasing at the fastest rate?
 
 Let $R$ be the radius of the dance hall and $a$ the distance between the spotlight and the room's center. Let $\omega$ be the rotation rate (in rad/sec).
 
@@ -202,6 +202,50 @@ Taking $R=1$ gives a relation between $a$ and $r$. We can use desmos to graph th
 
 
 \section*{Revolving Pendulums}
+
+We know the speed
+\begin{align*}
+    v_P &= \sqrt{v_0^2-4Rg \sin^2 (\theta/2)}  \\
+           &=v_0 \sqrt{1-\frac{4Rg}{v_0^2} \sin^2 (\theta/2)} .
+\end{align*}
+
+Want to show that 
+\[
+    v_P = \frac{v_0}{R+a} \cdot \rho ,
+\]
+ie. that the speed is proportional to the distance $\rho = AP$ from $P$ to the focus. The constant of proportionality
+\[
+           \omega_0 = \frac{v_0}{R+a}
+\]
+is the rotation rate of chord $AP$ when it (the chord) is vertical.
+
+Write the above product as
+\begin{align*}
+   \frac{v_0}{R+a} \cdot AP  &= \frac{v_0}{R+a} \sqrt{R^2 + a^2 + 2aR cos\theta} \\
+                                         &= v_0 \sqrt{1 - \frac{4aR}{(R+a)^2} \sin^2 (\theta/2)} .
+\end{align*}
+
+This is all we need because remember that the focal distance $a$ was defined by the equality
+\[
+   \frac{4aR}{(R+a)^2} = \frac{4Rg}{v_0^2} .
+\]
+
+And since the speed of $P$ is also
+\[
+  v_P = \omega_P (\rho \sec\alpha)  = \omega_0 \rho , 
+\]
+where $\omega_P$ is the rotation rate of the chord and $\alpha$ is the angle between the radius $OP$ and segment $AP$, this tells us that
+\begin{align*}
+\omega_P &= \omega_0  \cos  \alpha  \\
+                &= \omega_0 (R\cos \alpha) / R \\
+                & = \left( \frac{\omega_0}{R} \right) \rho^\prime ,
+\end{align*}
+where $\rho^\prime$ is the length of chord $PP^\prime$. So the rotation rate of chord $PP^\prime$ is proportional to its length. The pendulum speed $v_P$ is proportional to $\rho = AP$.
+
+
+\section{Coaxal Families}
+One of my favorite precalculus problems is to find an equation of the line through the intersection points of two circles.
+
 
 
 \end{document}
