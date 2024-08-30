@@ -95,17 +95,30 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-It helps to relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, this would prove Poncelet's Porism. Every path, for example, would close after three segments for a motion that takes $1/3$ the period to travese each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
+We can better relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, this would prove Poncelet's Porism. Every path, for example, would close after three segments for a motion that takes $1/3$ the period to travese each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
 
-It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivially true (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses each arc in half the period. To find an expression for the speed of such a motion, consider more generally a general motion that rotates about $A$ with a rate $\omega = f(\theta)$ rad/sec that is a function of the position (central angle $\langle OEA$). Then the speed at a point $P$ of the path is  
+It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivially true (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses each arc in half the period. To find an expression for the speed of such a motion, consider more generally a motion traced by a point $P$ that rotates about $A$ with rate $\omega = f(\theta)$ rad/sec a function of position (central angle $\angle EOP$). Then as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
 \[
-      v_P = \omega \rho \csc \alpha,
+   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,
 \]
-where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ is the acute angle $\overline{AP}$ makes with the circle at $P$. This follows from the expression
+the second equality because $\alpha$ is then angle opposite the leg with length $\rho \, d\phi$ in the right triangle with other leg $d\rho$ and hypotenuse $ds$. Dividing both sides by the differential time $dt$ gives the speed of $P$,
 \[
-   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha
+     v_P  = \omega \rho \csc \alpha .
 \]
-for the differential arclength in polar coordinates. As $\overline{AP}$ turns through the differential angle $d\phi$, the product $rho , d\phi$ measures the component of $P$'s displacement perpendicular to the polar radius $\overline{AP}$ and $d\rho$ the component parallel to $\overline{AP}$. The angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $\rho \, d\phi$ and hypotenuse $ds$.
+
+
+
+
+
+%Then the speed at a point $P$ of the path is  
+%\[
+%      v_P = \omega \rho \csc \alpha,
+%\]
+%where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ is the acute angle $\overline{AP}$ makes with the circle at $P$. This follows from the expression
+%\[
+%   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha
+%\]
+%for the differential arclength in polar coordinates. As $\overline{AP}$ turns through the differential angle $d\phi$, the product $\rho \,d\phi$ measures the component of $P$'s displacement perpendicular to the polar radius $\overline{AP}$ and $d\rho$ the component parallel to $\overline{AP}$. The angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $s\rho$ and hypotenuse $ds$.
 
 
 
@@ -124,10 +137,10 @@ for the differential arclength in polar coordinates. As $\overline{AP}$ turns th
 %      v_P = \omega \rho \csc \alpha,
 %\]
 %where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ is the angle $\overline{AP}$ makes with the circle at $P$. This follows from the expression
-\[
-   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha
-\]
-for the differential arclength in polar coordinates. As $\overline{AP}$ turns through the differential angle $d\phi$, the product $rho , d\phi$ measures the component of $P$'s displacement perpendicular to the polar radius $\overline{AP}$ and $d\rho$ the component parallel to $\overline{AP}$. The angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $\rho \, d\phi$ and hypotenuse $ds$.
+%\[
+%   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha
+%\]
+%for the differential arclength in polar coordinates. As $\overline{AP}$ turns through the differential angle $d\phi$, the product $rho , d\phi$ measures the component of $P$'s displacement perpendicular to the polar radius $\overline{AP}$ and $d\rho$ the component parallel to $\overline{AP}$. The angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $\rho \, d\phi$ and hypotenuse $ds$.
 
 
 %traversed by $P$ as $\overline{AP}$ turns through the angle $d\phi$ (since the angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $\rho \, d\phi$ and hypotenuse $ds$).
