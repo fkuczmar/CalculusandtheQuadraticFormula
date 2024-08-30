@@ -95,20 +95,43 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-We can better relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. Imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, this would prove Poncelet's Porism. Every path, for example, would close after three segments for a motion that takes $1/3$ the period to travese each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
+We can better relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. Imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, this would prove Poncelet's Porism. Every path, for example, would close with three segments for a motion that takes $1/3$ the period to travese each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
 
 It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivially true (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses all the arcs subtended by the chords through $A$ in half the period. But there are many other equal-time motions when ${\cal C}_1$ is a point, some of which are easier to describe algebraically. 
 
-We have the freedom to arbitrarily define an equal-time motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. 
+Beacuse the equal-time condition relates only the times to traves arcs subtended by chords through $A$, we have the freedom to arbitrarily define half of an equal-time motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. 
 
-Suppose for example, we define a continous motion 
+Suppose for example, we choose a continous motion 
 \[
-   v_P = f(\phi) \, , 0\leq \phi \leq \pi
+   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
 \]
-along the semicircle to the right of the vertical diameter $ED$. Now imagine a point $P$ with this motion along with the point $P^\prime$
+along the semicircle to the right of the vertical diameter $ED$. Now let point $P$ move along this semicircle with this motion and let $\overline{PP^\prime}$ be the chord through $A$. Then the motion of $P^\prime$ gives the other half of the equal-time motion. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
-
-
+To complete the description of the equal-time motion, we need to relate the speeds of $P$ and $P^\prime$. Let $ds$ and $ds^\prime$ be the respective arc lengths traced by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the angle $d\phi$. Then 
+\[
+   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,
+\]
+where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ the acute angle $\overline{AP}$ makes with the circle at $P$ (see Figure ????). Similarly, because $\overline{AP^\prime}$ cuts ${\cal C}_1$ at the same angle $\alpha$,
+\[
+   ds =   (\rho^\prime \, d\phi) \csc \alpha ,
+\]
+where $\rho^\prime = AP^\prime$. And because $P$ and $P^\prime$ traverse these arclengths in equal times,
+\[
+   \frac{ds}{v_P} = \frac{ds^\prime}{v_{P^\prime}} .
+\] 
+So
+\[
+    \frac{\rho}{v_P} = \frac{\rho^\prime}{v_{P^\prime}}
+\]
+and the function
+\[
+   v_P =  
+\begin{cases}
+          f(\phi) \, , 0\leq \phi \leq \pi \\
+         \frac{\rho^\prime}{\rho} f(\phi-\pi) \, , \pi < \phi < 2\pi.
+\end{cases}
+\]
+has the equal-time property.
 
 
 To find an expression for the speed of such a motion, consider more generally a motion traced by a point $P$ that rotates about $A$ with rate $\omega = f(\theta)$ rad/sec a function of position (central angle $\angle EOP$). Then as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
