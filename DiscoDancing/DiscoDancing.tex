@@ -129,15 +129,35 @@ So if
 \[
   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
 \]
-is our choice of a continuous motion (ie. speed function) around one of the two arcs subtended by a chord through $A$, the function
+is our choice of a continuous motion (ie. speed function) around one of the two arcs subtended by a chord $\overline{CD}$ through $A$, the function
 \[
-   v_P =  
+   v_P = v(\phi)  = 
 \begin{cases}
           f(\phi) \, , 0\leq \phi \leq \pi \\
-         (\rho^\prime / \rho) f(\phi-\pi) \, , \pi < \phi < 2\pi
+         \frac{\rho (\phi + \pi)}{\rho (\phi)} f(\phi-\pi) \, , \pi < \phi < 2\pi ,
 \end{cases}
 \]
-has the equal-time property.
+has the equal-time property. Here $\phi = \angle ACP$.
+
+To make this motion continuous at $\phi=0, \pi$, we should arrange things to that 
+\[
+   f(\pi) = \left( \frac{\rho(\pi)}{\rho(0)} \right) f(0) .
+\]
+Need to say a bit more here.
+
+Another way to describe the continuous equal-time motions is as
+\[
+      v_P = v(\phi) = \omega_0 \rho (\phi) h(\phi) ,
+\]
+where $\omega_0$ is a constant with units rad/sec and $h$ is a function with period $\pi$ and dimensionless output. For example, 
+since $ds/d\phi = \rho \sec\alpha$, choosing $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at a constant rate of $\omega_0$ rad/sec.
+
+But a simpler choice would be to take $h(\phi)=1$ to get the constant-time motion
+\[
+   v_P =   v(\phi) = \omega_0 \rho(\phi) 
+\]
+with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is the rotation rate of chord $PP^\prime$ when $PP^\prime$ is the vertical diameter through $A$. 
+
 
 
 To find an expression for the speed of such a motion, consider more generally a motion traced by a point $P$ that rotates about $A$ with rate $\omega = f(\theta)$ rad/sec a function of position (central angle $\angle EOP$). Then as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
