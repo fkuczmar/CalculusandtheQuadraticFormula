@@ -99,36 +99,42 @@ We can better relate the proof of Poncelet's Porism to pendulums by replacing th
 
 It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivially true (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses all the arcs subtended by the chords through $A$ in half the period. But there are many other equal-time motions when ${\cal C}_1$ is a point, some of which are easier to describe algebraically. 
 
-Beacuse the equal-time condition relates only the times to travse arcs subtended by chords through $A$, we have the freedom to arbitrarily define half of an equal-time motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. This motion is traced by the other end $P^\prime$ of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc.
+Beacuse the equal-time condition relates only the times to travse arcs subtended by chords through $A$, we have the freedom to arbitrarily define half of an equal-time motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. This motion is traced by the other end $P^\prime$ of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
-Suppose for example, we choose a continous motion 
-\[
-   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
-\]
-along the semicircle to the right of the vertical diameter $ED$. To extend this to an equal-time motion around the circle, imagine $P$ moving along the semicircle with this motion and let $\overline{PP^\prime}$ be the chord through $A$. Then $P^\prime$ moves with the other half of the equal-time motion. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
+
+
+%Suppose for example, we choose a continous motion 
+%\[
+%   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
+%\]
+%along the semicircle to the right of the vertical diameter $ED$. To extend this to an equal-time motion around the circle, imagine $P$ moving along the semicircle with this motion and let $\overline{PP^\prime}$ be the chord through $A$. Then $P^\prime$ moves with the other half of the equal-time motion. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
 To complete the description of the equal-time motion, we need to relate the speeds of $P$ and $P^\prime$. Let $ds$ and $ds^\prime$ be the respective arc lengths traced by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the angle $d\phi$. Then 
 \[
    ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,
 \]
-where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ the acute angle $\overline{AP}$ makes with the circle at $P$ (see Figure ????). Similarly, because $\overline{AP^\prime}$ cuts ${\cal C}_1$ at the same angle $\alpha$,
+where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ the acute angle $\overline{AP}$ makes with the circle at $P$ . Similarly, because $\overline{AP^\prime}$ cuts ${\cal C}_1$ at the same angle $\alpha$,
 \[
    ds =   (\rho^\prime \, d\phi) \csc \alpha ,
 \]
 where $\rho^\prime = AP^\prime$. And because $P$ and $P^\prime$ traverse these arclengths in equal times,
 \[
-   \frac{ds}{v_P} = \frac{ds^\prime}{v_{P^\prime}} .
+   \frac{ds}{v_P} = \frac{ds^\prime}{v_{P^\prime}}
 \] 
-So
+and
 \[
-    \frac{\rho}{v_P} = \frac{\rho^\prime}{v_{P^\prime}}
+    \frac{\rho}{v_P} = \frac{\rho^\prime}{v_{P^\prime}} .
 \]
-and the function
+So if 
+\[
+  v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
+\]
+is our choice of a continuous motion (ie. speed function) around one of the two arcs subtended by a chord through $A$, the function
 \[
    v_P =  
 \begin{cases}
           f(\phi) \, , 0\leq \phi \leq \pi \\
-         \frac{\rho^\prime}{\rho} f(\phi-\pi) \, , \pi < \phi < 2\pi.
+         (\rho^\prime / \rho) f(\phi-\pi) \, , \pi < \phi < 2\pi
 \end{cases}
 \]
 has the equal-time property.
