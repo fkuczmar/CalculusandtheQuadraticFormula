@@ -9,7 +9,7 @@ We investigate the families of \emph{isochronous chords} of a pendulum motion. T
 \end{abstract}
 \maketitle
 
-Think of a simple pendulum, and you probably picture an oscillating mass at the end of a string. But this paper is mostly about revolving pendulums. Imagine instead a mass attached to a weightless rod or a small bead that slides without friction around a circluar wire. Imagine also, the mass (or bead) to be launched from its low point with sufficient speed to repeatedly revolve around its circular path. 
+Think of a simple pendulum, and you might picture a mass oscillating at the end of a string. But this paper is mostly about revolving pendulums. Imagine instead a mass attached to a weightless rod or a small bead that slides around a circluar wire, either launched with sufficient speed to repeatedly revolve around its circular path. 
 
 Now construct the chords of the circular path that bisect the period in the sense that the pendulum traverses the two arcs subtended by the chord in equal times. One such chord is the vertical diameter. Another is horizontal and lies somewhere above the center. But where? And what can we say about the other bisecting chords.
 
@@ -152,26 +152,31 @@ To make this motion continuous at $\phi=0$ and $\phi= \pi$, we should be sure th
 
 %Equivalently, any continuous equal-time motion is of the form
 
-We can also express any continuous equal-time motion in the form
+Equivalently, we can also express any continuous equal-time motion in the form
 \[
       v_P = v(\phi) = \omega_0 \rho (\phi) h(\phi) ,
 \]
-where $\omega_0$ is a constant with units rad/sec and $h$ is a function with period $\pi$ and dimensionless output. 
+for some continuous function $h$ with period $\pi$ and some constant $\omega$ with units rad/sec.  
+%where $\omega_0$ is a constant with units rad/sec and $h$ is a continuous function with period $\pi$ and dimensionless output. 
 
-For example, dividing both sides of ({\ref{Eq:Arclength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ gives 
+Dividing both sides of (\ref{Eq:Arclength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ tells us that 
 \[
-    v_P = \frac{ds}{dt} = (\rho \csc \alpha) \frac{d\phi}{dt}.
+    v_P = \frac{ds}{dt} = \omega \rho (\phi) \csc \alpha ,
 \]
-So taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
-
+where $\omega  = d\phi/dt$. Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
 
 A simpler choice would be to take $h(\phi)=1$ to get the constant-time motion
 \[
    v_P =   v(\phi) = \omega_0 \rho(\phi) 
 \]
-with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is the rotation rate of chord $PP^\prime$ when $PP^\prime$ is the vertical diameter through $A$. For this motion, the rotation rate $\omega = \omega(\phi)$ is
-
-
+with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is the rotation rate of chord $PP^\prime$ when $PP^\prime$ is the vertical diameter through $A$. This motion has a rotation rate %the rotation rate $\omega = \omega(\phi)$ is
+\begin{align*}
+     \omega &= \frac{v_P}{\rho (\phi) \csc \alpha} \\
+                 &= \omega_0 \sin\alpha  \\
+                  & = \omega_0 \frac{2R \sin\alpha}{2R}  \\
+                  &= \omega_0 \frac{PP^\prime}{2R} 
+\end{align*}
+proportional to the length of chord $\overline{PP^\prime}$.
 
 
 
