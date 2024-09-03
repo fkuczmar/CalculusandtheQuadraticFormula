@@ -9,11 +9,13 @@ We investigate the families of \emph{isochronous chords} of a pendulum motion. T
 \end{abstract}
 \maketitle
 
-Think of a simple pendulum, and you probably picture an oscillating mass at the end of a string. But this paper is mostly about revolving pendulums. Imagine instead a mass attached to a weightless rod or a small bead that slides without friction around a circluar wire. Imagine also, the mass (or bead) to be launched from its low point with sufficient speed to repeatedly revolve around its circular path. Now suppose we wanted to construct the chords of the circular path that bisect the period. One such chord is the vertical diameter. Another is horizontal and it lies somewhere above the center. But where? And what can we say about the other bisecting chords.
+Think of a simple pendulum, and you probably picture an oscillating mass at the end of a string. But this paper is mostly about revolving pendulums. Imagine instead a mass attached to a weightless rod or a small bead that slides without friction around a circluar wire. Imagine also, the mass (or bead) to be launched from its low point with sufficient speed to repeatedly revolve around its circular path. 
+
+Now construct the chords of the circular path that bisect the period in the sense that the pendulum traverses the two arcs subtended by the chord in equal times. One such chord is the vertical diameter. Another is horizontal and lies somewhere above the center. But where? And what can we say about the other bisecting chords.
 
 Or pick some fraction of the period of revolution. How can we draw a chord that subtends an arc traversed in this fraction of the period? What can we say about all such chords and the curve they envelope?
 
-These questions are closely related to Poncelet's Porism, or rather what appears to be the standard proof of the porism.
+These questions are closely related to classical theorem from projective geometry, or rather one of the proofs of that theorem.
 
 
 
@@ -99,11 +101,11 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-We can better relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. Imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, it would prove Poncelet's Porism. Every path, for example, would close with three segments for a motion that takes $1/3$ the period to travese each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
+We can better relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. Imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so it would prove Poncelet's Porism. Every path, for example, would close with three segments for a motion that takes $1/3$ the period to traverse each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
 
 It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivially true (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses all the arcs subtended by the chords through $A$ in half the period. But there are many other equal-time motions when ${\cal C}_1$ is a point, some of which are easier to describe algebraically. 
 
-Beacuse the equal-time condition relates only the times to travse arcs subtended by chords through $A$, we have the freedom to arbitrarily define half of an equal-time motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. This motion is traced by the other end $P^\prime$ of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
+Because the equal-time condition relates only the times to traverse arcs subtended by chords through $A$, we have the freedom to arbitrarily define half the motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. This motion is traced by the other end $P^\prime$ of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
 
 
@@ -114,9 +116,9 @@ Beacuse the equal-time condition relates only the times to travse arcs subtended
 %along the semicircle to the right of the vertical diameter $ED$. To extend this to an equal-time motion around the circle, imagine $P$ moving along the semicircle with this motion and let $\overline{PP^\prime}$ be the chord through $A$. Then $P^\prime$ moves with the other half of the equal-time motion. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
 To complete the description of the equal-time motion, we need to relate the speeds of $P$ and $P^\prime$. Let $ds$ and $ds^\prime$ be the respective arc lengths traced by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the angle $d\phi$. Then 
-\[
-   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,
-\]
+\begin{equation}
+   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,   \label{Eq:ArcLength}
+\end{equation}
 where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ the acute angle $\overline{AP}$ makes with the circle at $P$ . Similarly, because $\overline{AP^\prime}$ cuts ${\cal C}_1$ at the same angle $\alpha$,
 \[
    ds =   (\rho^\prime \, d\phi) \csc \alpha ,
@@ -133,7 +135,7 @@ So if
 \[
   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
 \]
-is our choice of a continuous motion (ie. speed function) around one of the two arcs subtended by a chord $\overline{CD}$ through $A$, the function
+is our choice of a continuous motion (ie. a speed function) around one of the two arcs subtended by a chord $\overline{CD}$ through $A$, the function
 \[
    v_P = v(\phi)  = 
 \begin{cases}
@@ -141,29 +143,29 @@ is our choice of a continuous motion (ie. speed function) around one of the two 
          \frac{\rho (\phi + \pi)}{\rho (\phi)} f(\phi-\pi) \, , \pi < \phi < 2\pi ,
 \end{cases}
 \]
-has the equal-time property. Here $\phi = \angle ACP$.
+has the equal-time property. Here $\phi = \angle CAP$.
 
-To make this motion continuous at $\phi=0, \pi$, we should arrange things to that 
+To make this motion continuous at $\phi=0$ and $\phi= \pi$, we should be sure that $A$ arrives at $D$ (when $\phi=pi$) and the same speed at which $P^\prime$ left $D$ (when $\phi = 0$). That is, we choose $f$ so that 
 \[
-   f(\pi) = \left( \frac{\rho(\pi)}{\rho(0)} \right) f(0) .
+   f(\pi) =  \frac{\rho(\pi)}{\rho(0)} f(0) .
 \]
-Need to say a bit more here.
 
-Another way to describe the continuous equal-time motions is as
+%Equivalently, any continuous equal-time motion is of the form
+
+We can also express any continuous equal-time motion in the form
 \[
       v_P = v(\phi) = \omega_0 \rho (\phi) h(\phi) ,
 \]
-where $\omega_0$ is a constant with units rad/sec and $h$ is a function with period $\pi$ and dimensionless output. For example, since
+where $\omega_0$ is a constant with units rad/sec and $h$ is a function with period $\pi$ and dimensionless output. 
+
+For example, dividing both sides of ({\ref{Eq:Arclength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ gives 
 \[
-   v_P = \frac{ds}{dt} =  ( \rho \csc \alpha ) \frac{d\phi}{dt}
+    v_P = \frac{ds}{dt} = (\rho \csc \alpha) \frac{d\phi}{dt}.
 \]
+So taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
 
 
-
-For example, 
-since $ds/d\phi = \rho \sec\alpha$, choosing $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at a constant rate of $\omega_0$ rad/sec.
-
-But a simpler choice would be to take $h(\phi)=1$ to get the constant-time motion
+A simpler choice would be to take $h(\phi)=1$ to get the constant-time motion
 \[
    v_P =   v(\phi) = \omega_0 \rho(\phi) 
 \]
