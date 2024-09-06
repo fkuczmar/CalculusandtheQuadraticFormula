@@ -184,9 +184,13 @@ In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,
 
 \pskip
 
-(a) as $\overline{PP^\prime}$ turns through the angle $d\phi$, the endpoints $P$ and $P^\prime$ of a chord tangent to ${\cal C}_2$ traverse the arclengths (\ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2}) (where $\rho^\prime =  BP^\prime$) and
+(a) as the chord $\overline{PP^\prime}$ tangent to ${\cal C}_1$ turns through the angle $d\phi$, its endpoints $P$ and $P^\prime$ of a chord tangent to ${\cal C}_2$ traverse the respective arclengths (\ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2})
+\[
+     ds = \rho \csc \alpha \, d\phi \,\,\,\,\, \text{ and } \,\,\,\, ds^\prime = \rho^\prime \csc \alpha \, d\phi,
+\]
+where $\rho^\prime =  BP^\prime$, and
 
-(b) a motion is equal-time if and only if $P^\prime$ traverse these arclengths in equal times. %a necessary and sufficient condition for a motion to be equal-time is that $P$ and $P^\prime$ traverse these arclengths in equal times.
+(b) a motion is equal-time if and only if $P$ and $P^\prime$ traverse these arclengths in equal times. %a necessary and sufficient condition for a motion to be equal-time is that $P$ and $P^\prime$ traverse these arclengths in equal times.
 
 \pskip
 
@@ -206,7 +210,7 @@ So
 \]
 The above resolves the component of $P$'s displacement into two components, the first parallel to $\overline{PP^\prime}$, the second normal to $\overline{PP^\prime}$. So, as $\overline{PP^\prime}$ turns through the angle $d\phi$, $P$ traverses the differential arclength
 \[
-   ds = |d\overrightarrow{p}| = \rho \csc \alpha \, d\phi
+   ds = |d\overrightarrow{p}| = |  \rho \langle \cos\phi, \sin\phi \rangle \, d\phi |    = \rho \csc \alpha \, d\phi
 \]
 along ${\cal C}_1$. 
 
@@ -218,10 +222,25 @@ Then
 \begin{align*}
   \frac{d}{d\theta} \int_\theta^{k(\theta)} \frac{R\, d\theta^*}{\omega_0 g(\theta^*)} &= \frac{R}{\omega_0}\left(   \frac{k^\prime(\theta)}{g(k(\theta))} - \frac{1}{g(\theta)}        \right) = 0
 \end{align*}
-since
+since by part (a) above
 \[
-   k^\prime(\theta) = \frac{d\theta^\prime}{d\theta} = \frac{g(k(\theta))}{g(\theta)}.
+   k^\prime(\theta) = \frac{d\theta^\prime}{d\theta} =   \frac{\rho^\prime}{\rho}   = \frac{g(k(\theta))}{g(\theta)}.
 \]
+
+\begin{exploration}
+\begin{onlineOnly}
+    \begin{center}
+\desmos{qco4rghhfi }{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/2ttekzgdfg}{Poncelets Porism vs Constant Rotation Rate}
+
+\end{exploration}
+
+
+
+
 
 
 
