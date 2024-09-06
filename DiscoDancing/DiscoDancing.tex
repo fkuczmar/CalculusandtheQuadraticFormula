@@ -11,7 +11,7 @@ We investigate the families of \emph{isochronous chords} of a pendulum motion. T
 
 Think of a simple pendulum, and you might picture a mass oscillating at the end of a string. But this paper is mostly about revolving pendulums. You can imagine instead a mass attached to a weightless rod or a small bead that slides around a circluar wire, either launched with sufficient speed to repeatedly revolve around its circular path. 
 
-Now construct chords of the circular path that bisect the period; the pendulum should traverse the two arcs subtended by each chord in equal times. One such chord is the vertical diameter. Another is horizontal. But where is it? And what can we say about the other bisecting chords.
+Now construct chords of the circular path that bisect the period so that the pendulum traverses the two arcs subtended by each chord in equal times. One such chord is the vertical diameter. Another chord is horizontal, but where? And what can we say about the other bisecting chords.
 
 Or how can we draw other families of \emph{isochronous} chords, where the chords subtend arcs traversed in equal times?  And what can we say about the curve these chords envelope?
 
@@ -180,17 +180,49 @@ with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is th
 \end{align*}
 proportional to the length of chord $\overline{PP^\prime}$.
 
-In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ (need to define the coordinate system), the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (ie. the length of segment $\overline{BP}$ tangent to ${\cal C}_2$ also has the constant-time property. This is because
+In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ (need to define the coordinate system), the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the constant-time property. This is because
 
 \pskip
 
-(a) as before, the endpoints $P$ and $P^\prime$ of a chord tangent to ${\cal C}_2$ traverse their respective arclengths (\ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2}), where $\rho^\prime =  BP^\prime$, and
+(a) the endpoints $P$ and $P^\prime$ of a chord tangent to ${\cal C}_2$ traverse the arclengths (\ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2}) (where $\rho^\prime =  BP^\prime$) as $\overline{PP^\prime}$ turns through the angle $d\phi$, and 
 
 (b) a necessary and sufficient condition for a motion to be equal-time is that $P$ and $P^\prime$ traverse these arclengths in equal times.
 
 \pskip
 
-To show why (a) holds, 
+To show why (a) holds, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
+\[
+      \overrightarrow{AB} = \langle r\cos \phi, r\sin\phi \rangle
+\]
+and
+\begin{align*}
+    \overrightarrow{p} &= \overrightarrow{AP}   \\
+                                &= \overrightarrow{AB}+\overrightarrow{BP} \\
+                                &= r\langle \cos \phi, \sin \phi \rangle + \rho \langle \sin\phi, -\cos\phi  \rangle . 
+\end{align*}
+So
+\[
+    d\overrightarrow{p} = (d\rho - r \, d\phi ) \langle \sin \phi, -\cos \phi \rangle+ \rho \langle \cos\phi, \sin\phi \rangle \, d\phi .
+\]
+The above resolves the component of $P$'s displacement into components, the first parallel to $\overline{PP^\prime}$, the second normal to $\overline{PP^\prime}$. So, as $\overline{PP^\prime}$ turns through the angle $d\phi$, $P$ traverses the differential arclength
+\[
+   ds = |d\overrightarrow{p}| = \rho \csc \alpha \, d\phi
+\]
+along ${\cal C}_1$. 
+
+As for part (b), by subtraction (ie. differentiation) for an equal-time motion $P$ and $P^\prime$ traverse their respective differential arclengths in equal times. And conversely, by addition (ie. integration) a motion is equal-time if $P$ and $P^\prime$ traverse their respective differential arclengths in equal times. For a formal proof, it helps to regard $\rho = BP$ as a function $\rho = g(\theta)$ of the central angle $\angle EOP$ (see Figure ?). Then $ds = R \, d\phi$ and with $\theta^\prime = k(\theta)$ the central angle $\angle EOP^\prime$, the time for the motion to traverse the arc subtended by $\overline{PP^\prime}$ is
+\[
+  T(\theta) =  \int_\theta^{k(\theta)} \frac{R\, d\theta}{\omega_0 g(\theta)}.
+\]
+Then
+\begin{align*}
+  \frac{d}{d\theta} \int_\theta^{k(\theta)} \frac{R\, d\theta}{\omega_0 g(\theta)} &= \frac{R}{\omega_0}\left(   \frac{k^\prime(\theta)}{g(k(\theta))} - \frac{1}{g(\theta)}        \right) = 0
+\end{align*}
+since
+\[
+   k^\prime(\theta) = \frac{d\theta^\prime}{d\theta} = \frac{g(k(\theta))}{g(\theta)}.
+\]
+
 
 
 To find an expression for the speed of such a motion, consider more generally a motion traced by a point $P$ that rotates about $A$ with rate $\omega = f(\theta)$ rad/sec a function of position (central angle $\angle EOP$). Then as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
