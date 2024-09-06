@@ -162,9 +162,9 @@ for some continuous function $h$ with period $\pi$ and some constant $\omega$ wi
 %where $\omega_0$ is a constant with units rad/sec and $h$ is a continuous function with period $\pi$ and dimensionless output. 
 
 Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ tells us that 
-\[
-    v_P = \frac{ds}{dt} = \omega \rho (\phi) \csc \alpha , 
-\]
+\begin{equation}
+    v_P = \frac{ds}{dt} = \omega \rho (\phi) \csc \alpha ,  \label{Eq:ConstantRate}
+\end{equation}
 where $\omega  = d\phi/dt$. Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
 
 A simpler choice would have been to take $h(\phi)=1$ to get the constant-time motion                  %what we'll call the \emph{pendulum} constant-time motion
@@ -179,6 +179,20 @@ with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is th
                   &=  \left( \frac{\omega_0}{2R}\right) PP^\prime 
 \end{align*}
 proportional to the length of chord $\overline{PP^\prime}$.
+
+
+\begin{exploration}
+The animation below shows two equal-time motions, one with speed proportional to $\rho$ and rotation rate proportional to $PP^\prime$ (\ref{Eq:PendulumMotion}), the other with a constant rotation rate (\ref{Eq:ConstantRate}). 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xifdeg3wsq}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/xifdeg3wsq}{Poncelets Porism vs Constant Rotation Rate}
+
+\end{exploration}
+
 
 In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ (need to define the coordinate system), the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the equal-time property. This is because
 
@@ -227,16 +241,6 @@ since by part (a) above
    k^\prime(\theta) = \frac{d\theta^\prime}{d\theta} =   \frac{\rho^\prime}{\rho}   = \frac{g(k(\theta))}{g(\theta)}.
 \]
 
-\begin{exploration}
-\begin{onlineOnly}
-    \begin{center}
-\desmos{icdpubi1db}{450}{600}  
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/icdpubi1db}{Poncelets Porism vs Constant Rotation Rate}
-
-\end{exploration}
 
 
 
