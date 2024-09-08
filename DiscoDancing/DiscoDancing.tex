@@ -207,17 +207,25 @@ The animation below shows two equal-time motions, one with speed proportional to
 \end{exploration}
 
 
-In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ as in the figure below, the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the equal-time property. This is because
+%In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ as in the figure below, the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the equal-time property. This is because
+
+%The general case when ${\cal C}_2$ is a circle of radius $r$ is similar. Here a motion is equal-time if and only if the endpoints of any chord $\overline{PP^\prime}$ tangent to ${\cal C}_2$ traverse their respective arclengths in equal-times. 
+
+
+%centered at $(0,a)$ as in the figure below, the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the equal-time property. This is because
+
+
+In the general case when ${\cal C}_2$ is a circle of radius $r$ the key points are the same:
 
 \pskip
 
-(a) as the chord $\overline{PP^\prime}$ tangent to ${\cal C}_1$ turns through the angle $d\phi$, its endpoints $P$ and $P^\prime$ of a chord tangent to ${\cal C}_2$ traverse the respective arclengths (\ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2})
+(a) As chord $\overline{PP^\prime}$ tangent to ${\cal C}_2$ at $B$ turns through the angle $d\phi$, its endpoints $P$ and $P^\prime$ of a chord tangent to ${\cal C}_2$ traverse the respective arclengths (\ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2})
 \[
      ds = \rho \csc \alpha \, d\phi \,\,\,\,\, \text{ and } \,\,\,\, ds^\prime = \rho^\prime \csc \alpha \, d\phi,
 \]
-where $\rho^\prime =  BP^\prime$, and
+where $\rho = BP$ amd $\rho^\prime =  BP^\prime$.
 
-(b) a motion is equal-time if and only if $P$ and $P^\prime$ traverse these arclengths in equal times. %a necessary and sufficient condition for a motion to be equal-time is that $P$ and $P^\prime$ traverse these arclengths in equal times.
+(b) A motion is equal-time if and only if $P$ and $P^\prime$ traverse these arclengths in equal times or equivalently that their speeds are proportional to the distances $BP$ and $BP^\prime$. %a necessary and sufficient condition for a motion to be equal-time is that $P$ and $P^\prime$ traverse these arclengths in equal times.
 
 \begin{onlineOnly}
     \begin{center}
@@ -225,8 +233,10 @@ where $\rho^\prime =  BP^\prime$, and
 \end{center}
 \end{onlineOnly}
 
-
 \pskip
+
+So if we knew \emph{apriori} that the circle configuration forced each path of tangent chords to close with three segments, we would have the freedom to arbitrarily define an equal-time motion along the outer arc subtended by an arbitrary tangent chord $CD$. 
+
 
 To show why (a) holds, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
 \[
@@ -261,13 +271,24 @@ since by part (a) above
    k^\prime(\theta) = \frac{d\theta^\prime}{d\theta} =   \frac{\rho^\prime}{\rho}   = \frac{g(k(\theta))}{g(\theta)}.
 \]
 
+So the existence of the equal-time function
+\[
+      v_P = \omega_0 \rho
+\]
+with speed proportional to the distance $\rho = BP$ proves Poncelet's porism. But our real aim is to relate this function to the motion of a revolving pendulum. For this we should express the speed as a function of central angle $\theta = \angle EOP$. Using the law of cosines in $\Delta AOP$ where $\angle AOP = \pi - \theta$ we have
+\[
+  AP^2  = R^2 + a^2 + 2aR \cos \theta .
+\]
+Then
+\begin{align*}
+   \rho  &=  \sqrt{AP^2 - r^2}         \\  \notag
+          & = \sqrt{R^2 + a^2 -r^2 + 2aR \cos \theta}  \\ \notag
+          &=   \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)} .\label{Eq:PropSpeed}
+\end{align*}
 
 
 
-
-
-
-
+\iffalse
 To find an expression for the speed of such a motion, consider more generally a motion traced by a point $P$ that rotates about $A$ with rate $\omega = f(\theta)$ rad/sec a function of position (central angle $\angle EOP$). Then as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
 \[
    ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,
@@ -276,9 +297,6 @@ the second equality because $\alpha$ is then angle opposite the leg with length 
 \[
      v_P  = \omega \rho \csc \alpha .
 \]
-
-
-
 
 
 %Then the speed at a point $P$ of the path is  
@@ -339,7 +357,7 @@ To express $\csc\alpha$ in terms of $\theta$, use the law of sines in $\Delta AO
     \frac{\sin\theta}{\rho} = \frac{\cos\alpha}{a}.
 \]
 
-
+\fi
 
 \section*{Poncelet's Porism}
 
