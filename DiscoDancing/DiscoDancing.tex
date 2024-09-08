@@ -223,10 +223,10 @@ In the general case when ${\cal C}_2$ is a circle the key points are the same. %
 
 \pskip
 
-(a) Let chord $\overline{PP^\prime}$ be tangent to ${\cal C}_2$ at $B$ and let $\rho$, $\rho^\prime$ be the respective distances $BP$ and $BP^\prime$. Then as $\overline{PP^\prime}$ turns through the angle $d\phi$, its endpoints $P$ and $P^\prime$ traverse their respective arclengths (see \ref{Eq:ArcLength}) and (\ref{Eq:ArcLength2})
-\[
-     ds = \rho \csc \alpha \, d\phi \,\,\,\,\, \text{ and } \,\,\,\, ds^\prime = \rho^\prime \csc \alpha \, d\phi
-\]  
+(a) Let chord $\overline{PP^\prime}$ be tangent to ${\cal C}_2$ at $B$ and let $\rho$, $\rho^\prime$ be the respective distances $BP$ and $BP^\prime$. Then as $\overline{PP^\prime}$ turns through the angle $d\phi$, its endpoints $P$ and $P^\prime$ traverse their respective arclengths (see (\ref{Eq:ArcLength})) and (\ref{Eq:ArcLength2})
+\begin{equation}
+     ds = \rho \csc \alpha \, d\phi \,\,\,\,\, \text{ and } \,\,\,\, ds^\prime = \rho^\prime \csc \alpha \, d\phi  \label{Eq:ArcLengths2}
+\end{equation}
 in equal times.
 
 (b) A motion around ${\cal C}_1$ is equal-time if and only if (see (\ref{Eq:SpeedCondition}))
@@ -252,10 +252,29 @@ for all chords $\overline{PP^\prime}$ tangent to ${\cal C}_1$.
 
 \pskip
 
-So if we knew \emph{apriori} that a particular configuration of ${\cal C}_1$, ${\cal C}_2$ forced each path of tangent chords to close, say with three segments, we could arbitrarily define an equal-time motion along the outer arc subtended by a chord $\overline{CD}$ of an arbitrary triangle $\Delta CDE$ circumscribed about ${\cal C}_2$. Then the motions around the outer arcs subtended by $\overline{DE}$ and $\overline{DE}$ would be determined by .................................
+So if we knew \emph{apriori} that a particular configuration of ${\cal C}_1$, ${\cal C}_2$ forced each path of tangent chords to close, say with three segments, we could arbitrarily define an equal-time motion along the outer arc subtended by a chord $\overline{CD}$ of an arbitrary triangle $\Delta CDE$ circumscribed about ${\cal C}_2$. Then the motions at points $P^\prime$ $P^{\prime\prime}$ of the outer arcs subtended respectively by $\overline{DE}$ and $\overline{DE}$ would be determined by the conditions that
+\[
+       \frac{\rho}{v_P} = \frac{\rho^\prime}{v_{P^\prime}} = \frac{\rho^{\prime\prime}}{v_{P^{\prime\prime}}},
+\]
+where $\Delta PP^\prime P^{\prime\prime}$ is circumscribed about ${\cal C}_1$ in the same sense of $\Delta CDE$ (see Figure ????).
 
+But if we knew nothing about the particular configuration of circles, the only possible choice for a constant time motion would be
+\[
+    v_P =  v_P(\phi) = \omega_0 \rho(\phi)
+\]
+with speed proportional to the distance $\rho(\phi) = PB$. The exploration below shows such a motion.
 
-To show why (a) holds, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
+\begin{exploration}
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ l7oadgwyva}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ l7oadgwyva}{Poncelt Metric with Jacobi Functions 3} %   q16ify3gtm
+\end{exploration}
+
+To prove that this motion is indeed constant-time, we first need to show (\ref{Eq:ArcLengths2}) in part (a) above holds. For this, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
 \[
       \overrightarrow{AB} = \langle r\cos \phi, r\sin\phi \rangle
 \]
@@ -292,7 +311,7 @@ So the existence of the equal-time function
 \[
       v_P = \omega_0 \rho
 \]
-with speed proportional to the distance $\rho = BP$ proves Poncelet's porism. But our real aim is to relate this function to the motion of a revolving pendulum. For this we should express the speed as a function of central angle $\theta = \angle EOP$. Using the law of cosines in $\Delta AOP$ where $\angle AOP = \pi - \theta$ we have
+with speed proportional to the distance $\rho = BP$ proves Poncelet's porism. But more importantly for us is that this function is related to the motion of a revolving pendulum. To understand how, we should first express the speed as a function of central angle $\theta = \angle EOP$. Using the law of cosines in $\Delta AOP$ where $\angle AOP = \pi - \theta$, we have
 \[
   AP^2  = R^2 + a^2 + 2aR \cos \theta .
 \]
@@ -300,8 +319,14 @@ Then
 \begin{align*}
    \rho  &=  \sqrt{AP^2 - r^2}         \\  \notag
           & = \sqrt{R^2 + a^2 -r^2 + 2aR \cos \theta}  \\ \notag
-          &=   \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)} .\label{Eq:PropSpeed}
+          &=   \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)} .
 \end{align*}
+and
+\begin{equation}
+      v_P = g(\theta) = \omega_0  \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)}.  \label{Eq:PropSpeed}
+\end{equation}
+
+Our next step is to compute the speed function for a simple pendulum.
 
 
 
@@ -406,14 +431,6 @@ To express $\csc\alpha$ in terms of $\theta$, use the law of sines in $\Delta AO
 \end{exploration}
 
 
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{q16ify3gtm}{450}{600}  
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/q16ify3gtm}{Poncelt Metric with Jacobi Functions}
 
 
 
