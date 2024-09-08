@@ -259,10 +259,10 @@ So if we knew \emph{apriori} that a particular configuration of ${\cal C}_1$, ${
 where $\Delta PP^\prime P^{\prime\prime}$ is circumscribed about ${\cal C}_1$ in the same sense of $\Delta CDE$ (see Figure ????).
 
 But if we knew nothing about the particular configuration of circles, the only possible choice for a constant time motion would be
-\[
-    v_P =  v_P(\phi) = \omega_0 \rho(\phi)
-\]
-with speed proportional to the distance $\rho(\phi) = PB$. The exploration below shows such a motion.
+\begin{equation}
+    v_P =  v_P(\phi) = \omega_0 \rho(\phi)   \label{Eq:EqualTime8}
+\end{equation}
+with speed proportional to the distance $\rho(\phi) = PB$. The explorations below shows two such motions.
 
 \begin{exploration}
 \begin{onlineOnly}
@@ -274,7 +274,18 @@ with speed proportional to the distance $\rho(\phi) = PB$. The exploration below
 \href{https://www.desmos.com/calculator/l7oadgwyva}{Poncelt Metric with Jacobi Functions 3} %   q16ify3gtm
 \end{exploration}
 
-To prove that this motion is indeed constant-time, we first need to show (\ref{Eq:ArcLengths2}) in part (a) above holds. For this, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
+
+\begin{exploration}
+\begin{onlineOnly}
+    \begin{center}
+\desmos{hm5zop04ob}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/hm5zop04ob}{Poncelt Metric with Jacobi Functions 2}
+\end{exploration}
+
+To prove that the motion (\ref{EqualTimeMotion8}) is indeed constant-time, we first need to show (\ref{Eq:ArcLengths2}) in part (a) above holds. For this, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
 \[
       \overrightarrow{AB} = \langle r\cos \phi, r\sin\phi \rangle
 \]
@@ -401,8 +412,7 @@ To express $\csc\alpha$ in terms of $\theta$, use the law of sines in $\Delta AO
 
 \fi
 
-\section*{Poncelet's Porism}
-
+Here are a few animiations of equal-time motions for your entertainment. The graphs show the reciprocal of the speed functions as function of the angle $\theta$. The shaded areas under each graph, proptional to the times to traverse the arclengths subtended by the sides of the polygon, are all equal.
 
 \begin{exploration}
 
@@ -431,19 +441,7 @@ To express $\csc\alpha$ in terms of $\theta$, use the law of sines in $\Delta AO
 \end{exploration}
 
 
-
-
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{hm5zop04ob}{450}{600}  
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/hm5zop04ob}{Poncelt Metric with Jacobi Functions 2}
-
-
-
+\begin{exploration}
 \begin{onlineOnly}
     \begin{center}
 \desmos{lwbypn9rje}{450}{600}  
@@ -452,7 +450,17 @@ To express $\csc\alpha$ in terms of $\theta$, use the law of sines in $\Delta AO
 
 \href{https://www.desmos.com/calculator/lwbypn9rje}{Poncelets Porism and Jacobi}
 
+\end{exploration}
 
+
+\section{Revolving Pendulums}
+
+
+
+
+
+
+\section*{Isochronous Families}
 
 \begin{exploration}
 
