@@ -9,7 +9,9 @@ We investigate the families of \emph{isochronous chords} of a pendulum motion. T
 \end{abstract}
 \maketitle
 
-Think of a simple pendulum, and you might picture a mass oscillating at the end of a string. But this paper is mostly about revolving pendulums. You can imagine instead a mass attached to a weightless rod or a small bead that slides around a circluar wire, either launched with sufficient speed to repeatedly revolve around its circular path. 
+%Think of a simple pendulum, and you might picture a mass oscillating at the end of a string. But this paper is mostly about revolving pendulums. You can imagine instead a mass attached to a weightless rod or a small bead that slides around a circluar wire, either launched with sufficient speed to repeatedly revolve around its circular path. 
+
+Think of a simple pendulum, and you might picture a mass oscillating at the end of a string. But there are also revolving pendulums. Imagine instead a mass attached to a weightless rod or a small bead that slides around a circluar wire, either launched with sufficient speed to repeatedly revolve around its circular path. 
 
 Now construct chords of the circular path that bisect the period so that the pendulum traverses the two arcs subtended by each chord in equal times. One such chord is the vertical diameter. Another chord is horizontal, but where? And what can we say about the other bisecting chords.
 
@@ -103,7 +105,7 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-We can better relate the proof of Poncelet's Porism to pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. Imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so it would prove Poncelet's Porism. Every path, for example, would close with three segments for a motion that takes $1/3$ the period to traverse each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
+We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. Imagine a motion around ${\cal C}_1$ that traverses the shorter arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so it would prove Poncelet's Porism. Every path, for example, would close with three segments for a motion that takes $1/3$ the period to traverse each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
 
 It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivially true (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses all the arcs subtended by the chords through $A$ in half the period. But there are many other equal-time motions when ${\cal C}_1$ is a point, some of which are easier to describe algebraically. 
 
@@ -117,7 +119,7 @@ Because the equal-time condition relates only the times to traverse arcs subtend
 %\]
 %along the semicircle to the right of the vertical diameter $ED$. To extend this to an equal-time motion around the circle, imagine $P$ moving along the semicircle with this motion and let $\overline{PP^\prime}$ be the chord through $A$. Then $P^\prime$ moves with the other half of the equal-time motion. This is simply because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
-To complete the description of the equal-time motion, we need to relate the speeds of $P$ and $P^\prime$. Let $ds$ and $ds^\prime$ be the respective arc lengths traced by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the angle $d\phi$. Then 
+To complete the description of the equal-time motion, we need to relate the speeds of $P$ and $P^\prime$ by relating the differential arclengths $ds$ and $ds^\prime$ traced respectively by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the angle $d\phi$. From the expression for arclength in polar coordinates,  
 \begin{equation}
    ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,   \label{Eq:ArcLength}
 \end{equation}
@@ -125,7 +127,7 @@ where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ the acute angle $
 \begin{equation}
    ds^\prime =   (\rho^\prime \, d\phi) \csc \alpha ,  \label{Eq:ArcLength2}
 \end{equation}
-where $\rho^\prime = AP^\prime$. And because $P$ and $P^\prime$ traverse these arclengths in equal times,
+where $\rho^\prime = AP^\prime$. And because $P$ and $P^\prime$ traverse these arclengths in equal times, say with speeds $v_P$ and $v_{P^\prime}$, 
 \[
    \frac{ds}{v_P} = \frac{ds^\prime}{v_{P^\prime}}
 \] 
@@ -137,7 +139,7 @@ So if
 \[
   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
 \]
-is our choice of a continuous motion (ie. speed function) around one of the two arcs subtended by a chord $\overline{CD}$ through $A$, the function
+is our choice of a continuous motion (ie. speed function) around one of the two arcs subtended by a chord $\overline{CD}$ through $A$ and $\phi = \angle CAP$, the function
 \[
    v_P = v(\phi)  = 
 \begin{cases}
@@ -145,9 +147,9 @@ is our choice of a continuous motion (ie. speed function) around one of the two 
          \frac{\rho (\phi + \pi)}{\rho (\phi)} f(\phi-\pi) \, , \pi < \phi < 2\pi ,
 \end{cases}
 \]
-has the equal-time property. Here $\phi = \angle CAP$.
+has the equal-time property. %Here $\phi = \angle CAP$.
 
-To make this motion continuous at $\phi=0$ and $\phi= \pi$, we should be sure that $A$ arrives at $D$ (when $\phi=\pi$) at the same speed at which $P^\prime$ leaves $D$ (when $\phi = 0$). That is, we choose $f$ so that 
+To make this motion continuous at $\phi=0$ and $\phi= \pi$, we should be sure that $A$ arrives at $D$ (when $\phi=\pi$) at the same speed at which $P^\prime$ leaves $D$ (when $\phi = 0$). That is, we should choose $f$ so that 
 \[
    f(\pi) =  \frac{\rho(\pi)}{\rho(0)} f(0) .
 \]
@@ -158,7 +160,7 @@ Equivalently, we can also express any continuous equal-time motion in the form
 \[
       v_P = v(\phi) = \omega_0 \rho (\phi) h(\phi) ,
 \]
-for some continuous function $h$ with period $\pi$ and some constant $\omega$ with units rad/sec.  
+for some some constant $\omega_0$ with units rad/sec and some continuous function $h$ with period $\pi$ and dimensionless output.
 %where $\omega_0$ is a constant with units rad/sec and $h$ is a continuous function with period $\pi$ and dimensionless output. 
 
 Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ tells us that 
@@ -180,6 +182,17 @@ with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is th
 \end{align*}
 proportional to the length of chord $\overline{PP^\prime}$.
 
+\begin{exploration}
+The animation below shows an equal-time motion (\ref{Eq:PendulumMotion}) with speed proportional to $\rho$.
+\begin{onlineOnly}
+    \begin{center}
+\desmos{g2o1szpkh5}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/g2o1szpkh5}{Poncelelts Porism Disco Dancing}
+\end{exploration}
+
 
 \begin{exploration}
 The animation below shows two equal-time motions, one with speed proportional to $\rho$ and rotation rate proportional to $PP^\prime$ (\ref{Eq:PendulumMotion}), the other with a constant rotation rate (\ref{Eq:ConstantRate}). 
@@ -194,7 +207,7 @@ The animation below shows two equal-time motions, one with speed proportional to
 \end{exploration}
 
 
-In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ (need to define the coordinate system), the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the equal-time property. This is because
+In the general case when ${\cal C}_2$ is a circle of radius $r$ centered at $(0,a)$ as in the figure below, the motion (\ref{Eq:PendulumMotion}) with speed proportional to the distance $\rho = BP$ from $P$ to ${\cal C}_1$ (the length of segment $\overline{BP}$ tangent to ${\cal C}_2)$ also has the equal-time property. This is because
 
 \pskip
 
@@ -282,13 +295,7 @@ the second equality because $\alpha$ is then angle opposite the leg with length 
 
 %To describe an equal-time motion when ${\cal C}_1$ is a point $A_0$ (and Poncelet's porism is trivially true) is easy. Just let the motion rotate about $A_0$ at a constant rate.
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{owbuu0q8lz }{450}{600}  
-\end{center}
-\end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/owbuu0q8lz}{Poncelelts Porism Disco Dancing}
 
 %To find an expression for the speed of a general motion, let $\omega$ (in rad/sec) be the rate of rotation (not necessarily contant. The the speed at a point $P$ of the path is
 %\[
