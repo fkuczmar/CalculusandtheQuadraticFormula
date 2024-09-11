@@ -138,4 +138,101 @@ Keep in mind the condition for $\overrightarrow{M}$ to be relatively parallel.
 Parameterize the relatively parallel vector fields along a counterclockwise cyllindrical helix of radius $a$ that makes the angle $\pi/2 - \phi$ with the cylinder's axis of symmetry.
 \end{exercise}
 
+
+\section*{Rotational Motion of Frenet and Bishop Frames}
+For the Frenet frame, since
+\[
+      {\bf B}^\prime = -\tau {\bf N} ,
+\]
+\[
+   {\bf T}^\prime = \kappa {\bf N},
+\]
+and
+\[
+   {\bf N}^\prime = \tau {\bf B} -\kappa {\bf T}  ,
+\]
+its angular velocity vector is 
+\[
+  \boldsymbol{\Omega}_f =   \kappa {\bf B} + \tau {\bf T}  .
+\]
+As a check, 
+\[
+    {\bf T}^\prime =    \boldsymbol{\Omega}_f \times {\bf T} = \kappa {\bf B} \times {\bf T} = \kappa {\bf N} 
+\]
+and 
+\[
+    {\bf B}^\prime =    \boldsymbol{\Omega}_f \times {\bf B} = \tau {\bf T} \times {\bf B} = - \tau {\bf N} 
+\]
+and
+\[
+    {\bf N}^\prime =    \boldsymbol{\Omega}_f \times {\bf N} =  (\tau {\bf T} + \kappa {\bf B})\times {\bf N} = \tau {\bf B}-\kappa{\bf T} .
+\]
+
+What about the angular velocity of a Bishop frame $({\bf T}, {\bf M}_1, {\bf M}_2)$? Following Bishop's notation, since by definition
+\[
+     {\bf M}_1^\prime = -k_1 {\bf T} , 
+\]
+and
+\[
+   {\bf M}_2^\prime = -k_2 {\bf T} , 
+\]
+it follows that
+\[
+   {\bf T}^\prime  = k_1 {\bf M}_1 + k_2 {\bf M}_2 = \kappa {\bf N} .
+\]
+So the angular velocity of the frame is
+\[
+  \boldsymbol{\Omega}_b = -k_2 {\bf M}_1 + k_1{\bf M}_2 .
+\]
+To check,
+\[
+    {\bf M}_1^\prime = \boldsymbol{\Omega}_b \times {\bf M}_1 = k_1 {\bf M}_2 \times {\bf M}_1 = - k_2 {\bf T} ,
+\]
+\[
+    {\bf M}_2^\prime = \boldsymbol{\Omega}_b \times {\bf M}_2 = -k_2 {\bf M}_1 \times {\bf M}_2 = - k_2 {\bf T}.
+\]
+
+What should also be true is that
+\[
+        \Omega_b = \kappa {\bf B} = \sqrt{k_1^2 + k_2^2} \, {\bf B} .
+\]
+How can we show this? Well since
+\[
+   \kappa {\bf N} =  k_1 {\bf M}_1 + k_2 {\bf M}_2 = \kappa \cos \theta {\bf M}_1 + \kappa \sin\theta {\bf M_2} ,
+\]
+where $\theta$ is the counterclockwise angle from ${\bf M_1}$ to ${\bf N}$ ,
+\begin{align*}
+     {\bf T}\times \kappa {\bf N} &= {\bf T} \times  (  \kappa \cos \theta {\bf M}_1 + \kappa \sin\theta {\bf M_2}   ) \\
+                                   &= k_1 {\bf M}_2 - k_2 {\bf M}_1 \\
+                                   &= \boldsymbol{\Omega}_b.
+\end{align*}
+
+To see this without a computation, note that since the two frames share the vector ${\bf T}$, the motion of the Bishop Frame relative to the Frenet Frame is a rotation about ${\bf T}$ with angular velocity
+\[
+      \boldsymbol{\Omega}_{b/f} = -\tau {\bf T}.
+\]
+So
+\begin{align*}
+        \boldsymbol{\Omega}_{b} &= \boldsymbol{\Omega}_{b/f}  + \boldsymbol{\Omega}_f   \\
+                                                &=     -\tau {\bf T} + (\tau {\bf T} + \kappa {\bf B})  \\
+                                                &= \kappa {\bf B} .        
+\end{align*}
+
+
+\begin{exploration}
+\begin{onlineOnly}
+    \begin{center}
+\desmosThreeD{4cjlddpmwd}{800}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/3d/4cjlddpmwd}{163: Rotational Motion of Frenet and Bishop Frames}
+\end{exploration}
+
+
+
+
+
+
+
 \end{document}
