@@ -230,7 +230,83 @@ So
 \end{exploration}
 
 
+\section*{Roller Coaster Tracks}
+Pick a space curve for one track of a roller coaster. How would we design the other track?
 
+The tracks should have the following properties:
+
+a) Let the normal plane to Track A at a point $P$ intersect Track B in point $Q$. Then $\overline{AB}$ should be perpendicular to Track B at $Q$.
+
+(b) The tracks should be parallel at $P$ and $Q$.
+
+\pskip
+
+So from (a), if ${\bf r}(s)_A$ is an arclength paramerization of Track A, then Track B has parameterization
+\[
+      {\bf r}_B = {\bf r}_A + L ( {\bf N} \cos\theta  + {\bf B} \sin\theta ) .
+\]
+Our goal is to parameterize Track B in terms of $s$, the arclength parameter along Track A. 
+Differentiate with repsect to the arclength parameter along Track A to get
+\begin{align*}
+      {\bf r}_B^\prime = {\bf T} -L\theta^\prime \sin\theta {\bf N} + L\cos\theta (-\kappa {\bf T} + \tau {\bf B}) + L\theta^\prime\cos\theta {\bf B} + L\tau \sin\theta {\bf N}
+\end{align*}
+
+
+Trevor: The torsion is the rotation rate of ${\bf B}$ around ${\bf T}$.
+
+Michael: Do the two tracks have the same normal and binormals?
+
+Distinction between differentiating with respect to time and with respect to the arclength parameters along each track.
+
+Serge Lang Basic Mathematics
+
+\section*{Spherical Helix}
+On a cylinder of radius $a$ with pitch angle $\phi$, and with 
+\[
+    \alpha = \frac{\cos\phi}{a},
+\]
+we have
+%\[
+%   {\bf r}(s) =  (x,y,z) = \left( a \cos \left( \frac{s\cos\phi}{a} \right) , a \sin \left( \frac{s\cos\phi}{a} \right), s \sin \phi  \right) .
+%\]
+\[
+   {\bf r}(s) =  (x,y,z) = \left( a \cos \left( \alpha s \right) , a \sin \left( \alpha s \right), s \sin \phi  \right) .
+\]
+So
+%\[
+%     {\bf T}(s) = \left( - \cos\phi \sin \left( \frac{s\cos\phi}{a} \right)  ,\cos\phi   \cos \left( \frac{s\cos\phi}{a} \right)  , \sin \phi         \right) ,
+%\]
+\[
+     {\bf T}(s) = \left( - \cos\phi \sin \left( \alpha s \right)  ,\cos\phi   \cos \left( \alpha s \right)  , \sin \phi         \right) ,
+\]
+%\[
+ %        {\bf N}(s) = \left(  - \cos \left( \frac{s\cos\phi}{a} \right)  ,   -\sin \left( \frac{s\cos\phi}{a} \right) , 0    \right) ,
+%\]
+\[
+         {\bf N}(s) = \left(  - \cos \left( \alpha s \right)  ,   -\sin \left( \alpha s \right) , 0    \right) ,
+\]
+and
+\[
+     {\bf B}(s) = \left(   \sin\phi  \sin \left( \alpha s \right) ,   -\sin\phi    \cos \left(\alpha s\right) , \cos\phi \right) .
+\]
+With $\theta = s\cos\phi/a$, the helix has curvature
+\[
+    \kappa = \frac{d\beta}{ds} = \frac{a\cos\phi \, d\theta}{a\sec\phi \, d\theta} = \frac{\cos^2\phi}{a}
+\]
+and torsion
+\[
+     \tau = \frac{d\beta^*}{ds} = \frac{a\sin\phi \, d\theta}{a\sec\phi \, d\theta} = \frac{\sin\phi\cos\phi}{a}.
+\]
+
+For the Bishop frame,
+\begin{align*}
+{\bf M}_1 &= \cos(-\tau s) {\bf N} + \sin(-\tau s) {\bf B}     \\
+               &= \cos(\tau s) {\bf N} - \sin(\tau s) {\bf B} \\
+\end{align*}
+with components
+\begin{align*}
+     ( {\bf M}_1)_x &= - \cos(\tau s)\cos \left( \alpha s \right) - \sin(\tau s)   \sin\phi  \sin \left( \alpha s \right) \\
+\end{align*}
 
 
 
