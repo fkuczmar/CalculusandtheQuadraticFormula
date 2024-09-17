@@ -9,7 +9,43 @@ We use calculus to prove the law of cosines and show how this is related to revo
 \end{abstract}
 \maketitle
 
+There is a close relationship between the law of cosines and the motion of a simple pendulum that revolves about its center.
 
+We'll start by using calculus to prove the law of cosines. First some preliminaries.
+
+The differential arclength along the curve $y=f(x)$ is
+\begin{align*}
+   ds   &= \sqrt{dx^2 + dy^2} \\
+         & = \sqrt{1+\left( dy/dx  \right)^2} \, dx \\
+         &= \sec\alpha^* \, dx \\
+         &= \csc \alpha \, dx
+\end{align*}
+where $\phi$, $-\pi/2 < \alpha^* <\pi/2$ is the angle of incination (ie. the acute angle the curve makes with the horizontal) and $\alpha = \pi/2 - \alpha^*$ is the angle the curve makes with the vertical.
+
+The differential arclength along the polar curve $\rho = f(\phi)$ is almost identical. Here
+\begin{align*}
+   |ds|   &= \sqrt{(\rho \, d\phi)^2 + d\rho^2} \\
+         & = \sqrt{1 + \left( \frac{\rho\, d\phi}{d\rho}\right)^2} \, d\rho \\
+         %&= \sec\alpha^* \, dx \\
+         &= \csc \alpha \, d\rho ,
+\end{align*}
+where $\alpha$, $0<\alpha \leq \pi/2$ is the angle the curve makes with the polar radius.
+
+For the law of cosines in $\Delta AOP$, we'll let $\phi$ be the measure of the \emph{exterior} angle at $O$, $a=OA$, $R = OP$, $\rho = AP$, and $\alpha = \angle OAP$. Then we wish to show
+\[
+        \rho^2 = a^2 + R^2 + 2aR\cos\phi .
+\]
+We'll do this by holding $R$ and $a$ constant and showing
+\[
+   \frac{d}{d\phi} \left(   \rho^2 - 2aR\cos\phi  \right) = 0 .
+\]
+
+Computing the derivative,
+\begin{align*}
+  \frac{d}{d\phi} \left(   \rho^2 - 2aR\cos\phi  \right)  &= 2\rho \frac{d\rho}{d\phi}+ 2aR\sin\phi  \\
+                              &=2a \left(  \frac{\rho}{a} \cdot \frac{d\rho}{d\phi}   + R\sin\phi  \right) \\
+                              &= 2a \left(  \frac{\sin\phi}{\sin\alpha} \cdot \frac{d\rho}{d\phi}  + R\sin\phi   \right)\\
+\end{align*}
 
 
 
