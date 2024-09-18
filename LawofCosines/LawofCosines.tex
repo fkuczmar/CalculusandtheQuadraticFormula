@@ -37,14 +37,16 @@ For the law of cosines in $\Delta AOP$, we'll let $\phi$ be the measure of the \
 \]
 We'll do this by holding $R$ and $a$ constant and showing
 \[
-   \frac{d}{d\phi} \left(   \rho^2 - 2aR\cos\phi  \right) = 0 .
+  d \left(   \rho^2 - 2aR\cos\phi  \right) = 0 .
 \]
 
-Computing the derivative,
+We'll assume $0<\phi <\pi$ so that $d\rho/ds = -\sin\alpha$. Then %computing the differential,
 \begin{align*}
-  \frac{d}{d\phi} \left(   \rho^2 - 2aR\cos\phi  \right)  &= 2\rho \frac{d\rho}{d\phi}+ 2aR\sin\phi  \\
-                              &=2a \left(  \frac{\rho}{a} \cdot \frac{d\rho}{d\phi}   + R\sin\phi  \right) \\
-                              &= 2a \left(  \frac{\sin\phi}{\sin\alpha} \cdot \frac{d\rho}{d\phi}  + R\sin\phi   \right)\\
+  d \left(   \rho^2 - 2aR\cos\phi  \right)  &= 2\rho \, d\rho+ 2aR\sin\phi \, d\phi \\
+                              &=2a \left(  \frac{\rho}{a} \, d\rho   + R\sin\phi \, d\phi \right) \\
+                              &= 2a \left(  \frac{\sin\phi}{\sin\alpha}\,  d\rho  + \sin\phi (R\, d\phi)  \right)\\
+                              &= 2a \left(  -\sin\phi \,  ds  +  \sin\phi \, ds   \right)\\
+                              &= 0 .
 \end{align*}
 
 
