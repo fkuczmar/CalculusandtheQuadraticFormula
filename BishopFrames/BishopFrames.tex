@@ -152,6 +152,70 @@ Parameterize the relatively parallel vector fields along a counterclockwise cyll
 \end{exercise}
 
 
+
+
+\section*{Roller Coaster Tracks}
+Pick a space curve for one track of a roller coaster. How would we design the other track?
+
+The tracks should have the following properties:
+
+a) Let the normal plane to Track A at a point $P$ intersect Track B in point $Q$. Then $\overline{AB}$ should be perpendicular to Track B at $Q$.
+
+(b) The tracks should be parallel at $P$ and $Q$.
+
+\pskip
+
+So from (a), if ${\bf r}(s)_A$ is an arclength paramerization of Track A, then Track B has parameterization
+\[
+      {\bf r}_B = {\bf r}_A + L ( {\bf N} \cos\theta  + {\bf B} \sin\theta ) ,
+\]
+where $\theta = f(s)$ is a function (to be determined) of the the arclength parameter along Track A. To parameterize Track B in terms of $s$, we need to find an expression for $f(s)$.
+ 
+Differentiating with repsect to $s$ gives
+\begin{align*}
+      {\bf r}_B^\prime &= {\bf T} -L\theta^\prime \sin\theta {\bf N} + L\cos\theta (-\kappa {\bf T} + \tau {\bf B}) + L\theta^\prime\cos\theta {\bf B} -L\tau \sin\theta {\bf N}   \\
+                                 &= (1-\kappa L){\bf T} - L\sin\theta(\tau +\theta^\prime){\bf N} + L \cos\theta (\theta^\prime + \tau){\bf B}
+\end{align*}
+The requirement that ${\bf r}_B^\prime$ be parallel to ${\bf T}$ (ie. that the tracks be parallel at each pair of corresponding points $P$ and $Q$) is satisfied if and only if
+\[
+  \theta^\prime = \frac{d\theta}{ds} = -\tau(s)
+\]
+Taking $\theta = 0$ when $s=0$ (ie. supposing the Bishop frame coincides with the Frenet frame at $s=0$), we get
+\[
+        \theta = - \int_0^s \tau(s^*) ds^* . 
+\]
+This makes inutuitive sense. As Trevor pointed out, torsion is the rotation rate of ${\bf B}$ around ${\bf T}$ and the Bishop frame backs out (kills) the torsion in the sense that the frame does not rotate about ${\bf T}$.
+
+\pskip
+
+\begin{exploration}
+This animation starts with a cyclindrical helix (purple) for Track A and constructs a partner Track B.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmosThreeD{rxaisxokzj}{800}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/3d/rxaisxokzj}{163: Roller Coaster Tracks}
+\end{exploration}
+
+
+
+Trevor: The torsion is the rotation rate of ${\bf B}$ around ${\bf T}$.
+
+Michael: Do the two tracks have the same normal and binormals?
+
+Distinction between differentiating with respect to time and with respect to the arclength parameters along each track.
+
+Serge Lang Basic Mathematics
+
+\pskip
+
+
+
+
+
 \section*{Rotational Motion of Frenet and Bishop Frames}
 For the Frenet frame, since
 \[
@@ -241,51 +305,6 @@ So
 
 \href{https://www.desmos.com/3d/4cjlddpmwd}{163: Rotational Motion of Frenet and Bishop Frames}
 \end{exploration}
-
-
-\section*{Roller Coaster Tracks}
-Pick a space curve for one track of a roller coaster. How would we design the other track?
-
-The tracks should have the following properties:
-
-a) Let the normal plane to Track A at a point $P$ intersect Track B in point $Q$. Then $\overline{AB}$ should be perpendicular to Track B at $Q$.
-
-(b) The tracks should be parallel at $P$ and $Q$.
-
-\pskip
-
-So from (a), if ${\bf r}(s)_A$ is an arclength paramerization of Track A, then Track B has parameterization
-\[
-      {\bf r}_B = {\bf r}_A + L ( {\bf N} \cos\theta  + {\bf B} \sin\theta ) ,
-\]
-where $\theta = f(s)$ is a function (to be determined) of the the arclength parameter along Track A. To parameterize Track B in terms of $s$, we need to find an expression for $f(s)$.
- 
-Differentiating with repsect to $s$ gives
-\begin{align*}
-      {\bf r}_B^\prime &= {\bf T} -L\theta^\prime \sin\theta {\bf N} + L\cos\theta (-\kappa {\bf T} + \tau {\bf B}) + L\theta^\prime\cos\theta {\bf B} -L\tau \sin\theta {\bf N}   \\
-                                 &= (1-\kappa L){\bf T} - L\sin\theta(\tau +\theta^\prime){\bf N} + L \cos\theta (\theta^\prime + \tau){\bf B}
-\end{align*}
-The requirement that ${\bf r}_B^\prime$ be parallel to ${\bf T}$ (ie. that the tracks be parallel at each pair of corresponding points $P$ and $Q$) is satisfied if and only if
-\[
-  \theta^\prime = \frac{d\theta}{ds} = -\tau(s)
-\]
-Taking $\theta = 0$ when $s=0$ (ie. supposing the Bishop frame coincides with the Frenet frame at $s=0$), we get
-\[
-        \theta = - \int_0^s \tau(s^*) ds^* . 
-\]
-This makes inutuitive sense. As Trevor pointed out, torsion is the rotation rate of ${\bf B}$ around ${\bf T}$ and the Bishop frame backs out (kills) the torsion in the sense that the frame does not rotate about ${\bf T}$.
-
-\pskip
-
-Trevor: The torsion is the rotation rate of ${\bf B}$ around ${\bf T}$.
-
-Michael: Do the two tracks have the same normal and binormals?
-
-Distinction between differentiating with respect to time and with respect to the arclength parameters along each track.
-
-Serge Lang Basic Mathematics
-
-\pskip
 
 
 
