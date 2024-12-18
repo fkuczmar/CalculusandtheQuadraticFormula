@@ -75,7 +75,7 @@ Draw a circle (${\cal C}_2$) inside a larger one (${\cal C}_1$). Then pick a poi
 
 %This fact is the circular version of Poncelet's Porism (a similar statement holds for two nested ellipses). The only proof I've seen relies on defining a new metric around ${\cal C}_1$, one with the property that all chords tangent to ${\cal C}_2$ subtend equal arclengths of ${\cal C}_1$. 
 
-One way to prove the circular version of Poncelet's porism is to define a metric around ${\cal C}_1$, one with the property that all chords tangent to ${\cal C}_2$ subtend equal arclengths of ${\cal C}_1$. Defining this metric is like wrapping a number line around ${\cal C}_1$ as illustrated in the figure below. There the tick marks are spaced at equal intervals, say one unit apart, and each chord subtends a shorter arc of $8$ units. Since ${\cal C}_1$ has circumference $24$ units, every path (not just the one shown) closes with three chords and forms a triangle circumscribed about ${\cal C}_2$.  
+One way to prove the circular version of Poncelet's porism is to define a metric around ${\cal C}_1$ with the property that all chords tangent to ${\cal C}_2$ subtend equal arclengths of ${\cal C}_1$. Defining this metric is like wrapping a number line around ${\cal C}_1$ as illustrated in the figure below. There the tick marks are spaced at equal intervals, say one unit apart, and each chord subtends a shorter arc of $8$ units. Since ${\cal C}_1$ has circumference $24$ units, every path (not just the one shown) closes with three chords and forms a triangle circumscribed about ${\cal C}_2$.  
 
 \begin{exploration}
 Move the slider $\theta_1$ to change the path and slider $a$ to change the distance between the centers of ${\cal C}_1$ and ${\cal C}_2$.
@@ -103,13 +103,13 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine instead a motion around ${\cal C}_1$ that traverses the quicker arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, we would have a proof of Poncelet's Porism. Supposing a period of one second, every path would form a $\{p/q \}$ star polygon for a motion that takes $\lambda = p/q$ seconds to traverse each shorter (or longer) arc. And the paths with irrational $\lambda$ would never close. 
+We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine instead a motion around ${\cal C}_1$ that traverses the quicker arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, we would have a proof of Poncelet's Porism. Supposing a period of one second, every path would form a $\{p/q \}$ star polygon for a motion that takes $\lambda = p/q$ seconds to traverse each shorter (or longer) arc. And paths with irrational $\lambda$ would never close. 
 
  %Then every path, for example, would close with three segments for a motion that takes $1/3$ the period to traverse each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
 
 It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivial (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses the arcs subtended by the chords through $A$ in half the period. But there are other equal-time motions when ${\cal C}_1$ is a point, one of which is easier to describe algebraically than all the others. 
 
-Because the equal-time condition relates only the times to traverse arcs subtended by chords through $A$, we have the freedom to arbitrarily define the motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. The motion there is traced by the other end ($P^\prime$) of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. The reason is because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
+Because the equal-time condition relates only the times to traverse arcs subtended by chords through $A$, we have the freedom to arbitrarily define the motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. The motion there is traced by the other end of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
 
 
@@ -140,7 +140,7 @@ So if
 \[
   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
 \]
-an arbitrary but continuous speed function around the right arc of the vertical diameter $\overline{CD}$  through $A$ and $\phi = \angle CAP$, the function
+is an arbitrary but continuous speed function around the right arc of the vertical diameter $\overline{CD}$  through $A$ and $\phi = \angle CAP$, the function
 \[
    v_P = v(\phi)  = 
 \begin{cases}
@@ -168,7 +168,7 @@ Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds
 \begin{equation}
     v_P = \frac{ds}{dt} = \omega \rho (\phi) \csc \alpha ,  \label{Eq:ConstantRate}
 \end{equation}
-where $\omega  = d\phi/dt$. Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
+where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\overline{PP^\prime}$. Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
 
 A simpler choice would have been to take $h(\phi)=1$ to get the constant-time motion                  %what we'll call the \emph{pendulum} constant-time motion
 \begin{equation}
