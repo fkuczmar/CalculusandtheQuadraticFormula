@@ -71,7 +71,7 @@ It turns out that these questions are closely related to a proof of Poncelet's p
 
 %Draw a smaller circle (${\cal C}_2$) inside a larger one (${\cal C}_1$). Then pick a point $P_0$ on ${\cal C}_1$ and construct a polygonal path $P_0 P_1 P_2 \ldots$ of chords $\overline{P_0P_1}$, $\overline{P_0P_1}, \ldots$ tangent to ${\cal C}_2$ running counterclockwise around ${\cal C}_1$. Most likely the path never closes.  But if by chance it does, then it was not because you made a fortunate choice of $P_0$ but because you were lucky in choosing the initial confuguation of circles. The  path then would close for any starting point and do so in the same way. The figure below shows a configuration of ${\cal C}_1$ and ${\cal C}_2$ for which the path closes with five segments and forms a pentagram circumscribed about ${\cal C}_2$.
 
-Draw a circle (${\cal C}_2$) inside a larger one (${\cal C}_1$). Then pick a point $P_0$ on ${\cal C}_1$ and construct a polygonal path $P_0 P_1 P_2 \ldots$ of chords $\overline{P_0P_1}$, $\overline{P_0P_1}, \ldots$ tangent to ${\cal C}_2$ running counterclockwise around ${\cal C}_1$. Most likely the path never closes.  But if so, it was not because you chose a good starting point but because you were lucky in choosing the initial confuguation of circles. Poncelet's porism says the path would then close for any starting point (a similar statement holds for two nested ellipses). The figure below shows a configuration of ${\cal C}_1$ and ${\cal C}_2$ for which any path closes with five segments and forms a pentagram circumscribed about ${\cal C}_2$.
+Draw a circle (${\cal C}_2$) inside a larger one (${\cal C}_1$). Then pick a point $P_0$ on ${\cal C}_1$ and construct a polygonal path $P_0 P_1 P_2 \ldots$ of chords $\overline{P_0P_1}$, $\overline{P_0P_1}, \ldots$ tangent to ${\cal C}_2$ running counterclockwise around ${\cal C}_1$. Most likely the path never closes.  But if so, it was not because you chose a fortuitous starting point but because you were lucky in choosing the initial confuguation of circles. Poncelet's porism says the path would then close for any starting point (a similar statement holds for two nested ellipses). The figure below shows a configuration of ${\cal C}_1$ and ${\cal C}_2$ for which any path closes with five segments and forms a pentagram circumscribed about ${\cal C}_2$.
 
 %This fact is the circular version of Poncelet's Porism (a similar statement holds for two nested ellipses). The only proof I've seen relies on defining a new metric around ${\cal C}_1$, one with the property that all chords tangent to ${\cal C}_2$ subtend equal arclengths of ${\cal C}_1$. 
 
@@ -103,11 +103,17 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine instead a motion around ${\cal C}_1$ that traverses the quicker arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, we would have a proof of Poncelet's Porism. Supposing a period of one second, every path would form a $\{p/q \}$ star polygon for a motion that takes $\lambda = p/q$ seconds to traverse each shorter (or longer) arc. And paths with irrational $\lambda$ would never close. 
+We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine instead a motion around ${\cal C}_1$ that traverses the quicker arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, it would give a proof of Poncelet's Porism. Supposing a period of one second, every path would form a $\{p/q \}$ star polygon for a motion that takes $\lambda = p/q$ seconds to traverse each shorter (or longer) arc. And paths with irrational $\lambda$ would never close. 
 
  %Then every path, for example, would close with three segments for a motion that takes $1/3$ the period to traverse each arc. %If for example, the motion takes $1/3$ the period to tranverse each arc, then each path would close with three segments.
 
-It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivial (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses the arcs subtended by the chords through $A$ in half the period. But there are other equal-time motions when ${\cal C}_1$ is a point, one of which is easier to describe algebraically than all the others. 
+%It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivial (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses the arcs subtended by the chords through $A$ in half the period. But there are other equal-time motions when ${\cal C}_1$ is a point, one of which is easier to describe algebraically than all the others. 
+
+%It's easy to describe such a motion when ${\cal C}_1$ is a point $A$. Then Poncelet's Porism is trivial (each path closes with two segments) and a motion that rotates about $A$ at a constant rate traverses the arcs subtended by the chords through $A$ in half the period. 
+
+To describe equal-time motions, consider first the special case when ${\cal C}_1$ is a point $A$ and Poncelet's Porism is trivial (each path closes with two segments). One choice for an equal-time motion is the motion that rotates about $A$ at a constant rate. But there are many others. %Indeed we have almost have almost complete freedom in defining an equal-time motion by choosing a function $\omega = f(\phi)$, $0\leq \phi \leq \pi$
+
+
 
 Because the equal-time condition relates only the times to traverse arcs subtended by chords through $A$, we have the freedom to arbitrarily define the motion on either of the two arcs subtended by a particular chord through $A$. This choice, assumed to be continuous, then determines the motion along the other arc. The motion there is traced by the other end of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
@@ -157,24 +163,17 @@ To make this motion continuous at $\phi=0$ and $\phi= \pi$, we should be sure th
 
 %Equivalently, any continuous equal-time motion is of the form
 
-It might be better to express an equal-time motion in the form
+We can also express an equal-time motion in the form
 \[
       v_P = v(\phi) = \omega_0 \rho (\phi) h(\phi) ,
 \]
-for some some constant $\omega_0$ with units rad/sec and some continuous function $h$ with period $\pi$ and dimensionless output.
-%where $\omega_0$ is a constant with units rad/sec and $h$ is a continuous function with period $\pi$ and dimensionless output. 
+for some some constant $\omega_0$ with units rad/sec and some contiuous scaling function $h$ with period $\pi$. Requiring $h(0)=1$, we can interpret $\omega_0$ as the rotation rate of chord $\overline{PP^\prime}$ when it is the vertical diameter throuhg $A$.
 
-Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ tells us that 
-\begin{equation}
-    v_P = \frac{ds}{dt} = \omega \rho (\phi) \csc \alpha ,  \label{Eq:ConstantRate}
-\end{equation}
-where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\overline{PP^\prime}$. Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec.
-
-A simpler choice would have been to take $h(\phi)=1$ to get the constant-time motion                  %what we'll call the \emph{pendulum} constant-time motion
+Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec. But a simpler choice would have been to take $h(\phi)=1$ to get the equal-time motion                  %what we'll call the \emph{pendulum} constant-time motion
 \begin{equation}
    v_P =   v(\phi) = \omega_0 \rho(\phi) \label{Eq:PendulumMotion} 
 \end{equation}
-with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is the rotation rate of chord $\overline{PP^\prime}$ when it is the vertical diameter through $A$. This motion has a rotation rate %the rotation rate $\omega = \omega(\phi)$ is
+with speed proportional to the distance $\rho(\phi) = AP$. This motion has a rotation rate %the rotation rate $\omega = \omega(\phi)$ is
 \begin{align*}
      \omega &= \frac{v_P}{\rho (\phi) \csc \alpha} \\
                  &= \omega_0 \sin\alpha  \\
@@ -182,6 +181,12 @@ with speed proportional to the distance $\rho(\phi) = AP$. Here $\omega_0$ is th
                   &=  \left( \frac{\omega_0}{2R}\right) PP^\prime 
 \end{align*}
 proportional to the length of chord $\overline{PP^\prime}$.
+
+Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds) it takes $\overline{PP^\prime}$ to turn through the angle $d\phi$ tells us that 
+\begin{equation}
+    v_P = \frac{ds}{dt} = \omega \rho (\phi) \csc \alpha ,  \label{Eq:ConstantRate}
+\end{equation}
+where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\overline{PP^\prime}$.
 
 \begin{exploration}
 The animation below shows an equal-time motion (\ref{Eq:PendulumMotion}) with speed proportional to $\rho$.
