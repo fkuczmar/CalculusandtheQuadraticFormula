@@ -102,7 +102,7 @@ We can better relate the proof of Poncelet's Porism to revolving pendulums by re
 
 %Figure ?? below is the key to describing the equal-time motions. Imagine a tangent chord $\overline{PP^\prime}$ rotating through the differential angle $d\phi$ as $P$ and $P^\prime$ traverse the respective arclengths $ds$, $ds^\prime$. These are the ones that traverse the differ
 
-To describe equal-time motions, consider first the degenerate case when ${\cal C}_1$ is a point $A$ and Poncelet's Porism is trivial (each path closes with two segments). One choice for an equal-time motion is a motion that rotates about $A$ at a constant rate.  But there are many more. %others, and one of these has a speed function that is simpler than all the others. %But there are many others. %Indeed we have almost have almost complete freedom in defining an equal-time motion by choosing a function $\omega = f(\phi)$, $0\leq \phi \leq \pi$
+To describe the equal-time motions, consider first the degenerate case when ${\cal C}_1$ is a point $A$ and Poncelet's Porism is trivial (each path closes with two segments). One choice for an equal-time motion is a motion that rotates about $A$ at a constant rate.  But there are many more. %others, and one of these has a speed function that is simpler than all the others. %But there are many others. %Indeed we have almost have almost complete freedom in defining an equal-time motion by choosing a function $\omega = f(\phi)$, $0\leq \phi \leq \pi$
 
 
 Because the equal-time condition relates only the times to traverse arcs subtended by chords through $A$, we have the freedom to arbitrarily define the speed of the motion on either of the two arcs subtended by a particular such chord. This choice, assumed to be continuous, determines the speed along the other arc. The motion there is traced by the other end of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
@@ -126,7 +126,7 @@ Dividing both sides by the differential time (in seconds) it takes $\overline{PP
 \end{equation}
 where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\overline{PP^\prime}$.
 
-Similarly, because $\overline{AP^\prime}$ cuts ${\cal C}_1$ at the same angle $\alpha$, $P^\prime$ has speed
+Similarly, because $\overline{AP^\prime}$ cuts ${\cal C}_1$ at the same angle $\alpha$ and \emph{takes the same time to traverse the arclength $ds^\prime$ as $P$ takes to traverse the arclength $ds$}, $P^\prime$ has speed
 \begin{equation}
    v_{P^\prime} =   \omega \rho^\prime  \csc \alpha ,  \label{Eq:ArcLength2}
 \end{equation}
@@ -138,7 +138,7 @@ So
     \frac{v_P}{\rho} = \frac{v_{P^\prime}}{\rho^\prime} .  \label{Eq:SpeedCondition}
 \end{equation}
 
-So if 
+Thus, if 
 \[
   v_P = f(\phi) \, , 0\leq \phi \leq \pi , 
 \]
@@ -157,7 +157,33 @@ To make this motion continuous at $\phi=0$ and $\phi= \pi$, we should make sure 
    f(\pi) =  \frac{\rho(\pi)}{\rho(0)} f(0) .
 \]
 
-%Equivalently, any continuous equal-time motion is of the form
+Put another way, when ${\cal C}_1$ is a point, an arbitrary choice of a positive, continous function
+\[
+     \omega = g(\phi), 0 \leq \phi \leq 2\phi ,
+\]
+with period $\pi$, determines the speed function
+\[
+    v_P = \omega \rho \csc\alpha
+\]
+for an equal-time motion.
+
+An obvious choice is to make the rotation rate constant, but choosing $\omega = \omega_0 \sin\alpha$ for some constant $\omega_0$ (with units rad/sec), gives a simpler speed function. If we suppose ${\cal C}_1$ has radius $R$, $A$ has coordinates $(0,a)$, and $\theta = \angle DOP$ in the animation below, then 
+\begin{align*}
+   v_P &= \omega_0 \rho \\
+          &= \omega_0  \sqrt{R^2 + a^2 + 2aR\cos\theta} .
+\end{align*}
+
+\begin{exploration}
+The animation below shows an equal-time motion (\ref{Eq:PendulumMotion}) with speed proportional to $\rho$.
+\begin{onlineOnly}
+    \begin{center}
+\desmos{g2o1szpkh5}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/g2o1szpkh5}{Poncelelts Porism Disco Dancing}
+\end{exploration}
+
 
 \iffalse
 **********************************************************************
@@ -188,16 +214,6 @@ Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds
 \end{equation}
 where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\overline{PP^\prime}$.
 
-\begin{exploration}
-The animation below shows an equal-time motion (\ref{Eq:PendulumMotion}) with speed proportional to $\rho$.
-\begin{onlineOnly}
-    \begin{center}
-\desmos{g2o1szpkh5}{450}{600}  
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/g2o1szpkh5}{Poncelelts Porism Disco Dancing}
-\end{exploration}
 
 
 
