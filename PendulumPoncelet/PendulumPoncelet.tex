@@ -163,22 +163,28 @@ Equivalently, when ${\cal C}_1$ is a point we could choose an arbitrary positive
 \]
 with period $\pi$ for the rotation rate of $PP^\prime$. Then the speed function
 \[
-    v_P = \omega \rho \csc\alpha
+    v_P = \omega \rho \csc\alpha % = \omega \rho \left( \frac{PP^\prime}{2R} \right)
 \]
 describes an equal-time motion.
 
-Letting $\omega_0$ be the rotation rate when $\overline{PP^\prime}$ is vertical and defining $\omega = \omega_0 \sin\alpha$ gives a simpler speed function than a constant rotation rate. If ${\cal C}_1$ has radius $R$, $A$ has coordinates $(0,a)$, and $\theta = \angle EOP$ in the figure below, then $P$ has speed
+Letting $\omega_0$ be the rotation rate when $\overline{PP^\prime}$ is vertical and defining $\omega = \omega_0 \sin\alpha$ % = \left( \frac{\omega_0}{2R} \right) PP^\prime ,
+gives a simpler speed function than does a constant rotation rate. If ${\cal C}_1$ has radius $R$, $A$ has coordinates $(0,a)$, and $\theta = \angle EOP$ in the figure below, then $P$ has speed
 \begin{align*}
    v_P &= \omega_0 \rho \\
-          &= \omega_0  \sqrt{R^2 + a^2 + 2aR\cos\theta} .
+          &= \omega_0  \sqrt{R^2 + a^2 + 2aR\cos\theta} 
 \end{align*}
-
+and $\overline{PP^\prime}$ rotation rate
+\[
+   \omega = \omega_0 \sin\alpha = \left( \frac{\omega_0}{2R} \right) PP^\prime
+\]
+proportional to $PP^\prime$.
 
 \begin{onlineOnly}
     \begin{center}
 \geogebra{wenuyqer}{450}{600}  
 \end{center}
 \end{onlineOnly}
+
 
 
 \begin{exploration}
@@ -201,7 +207,6 @@ We can also express an equal-time motion in the form
 \]
 for some some constant $\omega_0$ with units rad/sec and some contiuous scaling function $h$ with period $\pi$. Requiring $h(0)=1$, we can interpret $\omega_0$ as the rotation rate of chord $\overline{PP^\prime}$ when it is the vertical diameter through $A$.
 
-\fi
 
 Taking $h(\phi) = \csc \alpha$ gives the motion that rotates about $A$ at the constant rate of $\omega_0$ rad/sec. But a simpler choice would have been to take $h(\phi)=1$ to get the equal-time motion                  %what we'll call the \emph{pendulum} constant-time motion
 \begin{equation}
@@ -222,8 +227,8 @@ Dividing both sides of (\ref{Eq:ArcLength}) by the differential time (in seconds
 \end{equation}
 where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\overline{PP^\prime}$.
 
-
-
+**************************************************************************************************
+\fi
 
 
 
