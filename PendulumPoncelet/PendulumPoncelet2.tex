@@ -132,9 +132,9 @@ This tells us two things. First, that $P$ has speed
    v_P = \frac{ds}{dt} = \omega \rho \csc\alpha ,
 \]
 where $\omega = d\phi/dt$ is the rotation rate of $\overline{PP^\prime}$. And second, that the equal-time condition (\ref{Eq:EqualTime5}) may be expressed as
-\[
-    \frac{v_P}{\rho} = \frac{v_{P^\prime}}{\rho^\prime} .
-\]
+\begin{equation}
+    \frac{v_P}{\rho} = \frac{v_{P^\prime}}{\rho^\prime} .   \label{Eq:EqualTime23}
+\end{equation}
 
 For example, in the degenerate case when ${\cal C}_1$ is a point $A$, we have the freedom to arbitrarily define the speed on either of the two arcs subtended by a chord through $A$. This choice, assumed to be continuous, determines the speed along the other arc. Or we could arbitrarily choose a positive, continuous function $\omega  = g(\theta)$, $0\leq \theta \leq \pi$, with $g(\pi) = g(0)$, for the rotation rate of $\overline{PP^\prime}$.
 
@@ -383,7 +383,9 @@ where $\Delta PP^\prime P^{\prime\prime}$ is circumscribed about ${\cal C}_1$ in
 In the general case when ${\cal C}_2$ is a circle of radius $r$, if we knew \emph{apriori} that one path of tangent chords closed, we would be free to choose a (continuous) speed function along the shorter arc between two adjacent vertices of the polygonal path. But allowing for the possibility that a path never closes (and the points $P_0, P_1, \ldots$ form a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
 \begin{align}
     v_P  &= \omega_0 \rho   \notag  \\ 
-          &= \omega_0 \sqrt{R^2 + a^2 + 2aR \cos\theta - r^2} \label{Eq:EqualTime8}
+          &= \omega_0 \sqrt{AP^2 - r^2}  \notag \\
+          &= \omega_0 \sqrt{R^2 + a^2 - r^2 + 2aR \cos\theta} \notag \\
+          &= \omega_0  \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)}, \label{Eq:EqualTime8}
 \end{align}
 with speed proportional to the distance $\rho(\phi) = PB$ and rotation rate (\ref{Eq:PendulumMotion}) proportional to $PP^\prime$.
 
@@ -418,148 +420,44 @@ The explorations below shows two such motions.
 \href{https://www.desmos.com/calculator/hm5zop04ob}{Poncelt Metric with Jacobi Functions 2}
 \end{exploration}
 
+\pskip
 
-
-
-To prove that the motion (\ref{Eq:EqualTime8}) is indeed equal-time, we first need to show (\ref{Eq:ArcLengths2}) in part (a) above holds. For this, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
+{\bf Remarks:}
+\begin{enumerate}
+\item To show $dq = \rho \, d\phi$ in Figure ???, let ${\bf r} = {\bf r}(s)$ be an arclength parameterization of ${\cal C}_2$ and ${\bf p} = \overrightarrow{OP}$. Then 
 \[
-      \overrightarrow{AB} = \langle r\cos \phi, r\sin\phi \rangle
+  {\bf p} = {\bf r} + \rho {\bf T} ,
 \]
-and
-\begin{align*}
-    \overrightarrow{p} &= \overrightarrow{AP}   \\
-                                &= \overrightarrow{AB}+\overrightarrow{BP} \\
-                                &= r\langle \cos \phi, \sin \phi \rangle + \rho \langle \sin\phi, -\cos\phi  \rangle . 
-\end{align*}
+where ${\bf T} = d{\bf r}/ds$ is the unit tangent in the direction of $\overrightarrow{PB}$. And so
+\[
+  d  {\bf p} = (ds + d\rho){\bf T} + (\rho \, d\phi) {\bf N} , 
+\]
+where ${\bf N} = d{\bf T}/ds$ is the principal normal to ${\cal C}_1$ at $B$.
+
+\item To show (\ref{Eq:EqualTime23}) is a necessary and sufficient condition for an equal-time motion, let $h(theta)$ be the angle $EOP^\prime$ in Figure ???? above. Then the time for the motion to traverse the arc subtended by $\overline{PP^\prime}$ is
+\[
+   T(\theta) =  \int_\theta^{h(\theta)} \frac{R\, d\theta^*}{\omega_0 g(\theta^*)}.
+\]
 So
 \[
-    d\overrightarrow{p} = (d\rho - r \, d\phi ) \langle \sin \phi, -\cos \phi \rangle+ \rho \langle \cos\phi, \sin\phi \rangle \, d\phi .
+     T^\prime(\theta) =\frac{R}{\omega_0}\left(   \frac{h^\prime(\theta)}{g(h(\theta))} - \frac{1}{g(\theta)}        \right) = 0
 \]
-The above resolves the component of $P$'s displacement into two components, the first parallel to $\overline{PP^\prime}$, the second normal to $\overline{PP^\prime}$. So, as $\overline{PP^\prime}$ turns through the angle $d\phi$, $P$ traverses the differential arclength
+if and only if
 \[
-   ds = |d\overrightarrow{p}| = |  \rho \langle \cos\phi, \sin\phi \rangle \, d\phi |    = \rho \csc \alpha \, d\phi
+    h^\prime(\theta) = \frac{g(h(\theta))}{g(\theta)} = \frac{v_{P^\prime}}{v_P}.
 \]
-along ${\cal C}_1$. 
-
-As for part (b), by subtraction (ie. differentiation)  $P$ and $P^\prime$ traverse their respective differential arclengths for an equal-time motion in equal times. And the converse holds by addition (ie. integration). For a formal proof, it helps to regard $\rho = BP$ as a function $\rho = g(\theta)$ of the central angle $\angle EOP$ (see Figure ?). Then $ds = R \, d\phi$ and with $\theta^\prime = k(\theta)$ the central angle $\angle EOP^\prime$, the time for the motion to traverse the arc subtended by $\overline{PP^\prime}$ is
+But since 
 \[
-  T(\theta) =  \int_\theta^{k(\theta)} \frac{R\, d\theta^*}{\omega_0 g(\theta^*)}.
+    h^\prime(\theta) =  \frac{R\,  d(h(\theta))}{R\, d\theta} =  \frac{ds^\prime}{ds} =  \frac{\rho^\prime}{\rho} , % \frac{R\,  d(h(\theta))}{R\, d\theta} = h^\prime(\theta) ,
 \]
-Then
-\begin{align*}
-  \frac{d}{d\theta} \int_\theta^{k(\theta)} \frac{R\, d\theta^*}{\omega_0 g(\theta^*)} &= \frac{R}{\omega_0}\left(   \frac{k^\prime(\theta)}{g(k(\theta))} - \frac{1}{g(\theta)}        \right) = 0
-\end{align*}
-if and only if 
-\[
-    k^\prime(\theta) = \frac{g(k(\theta))}{g(\theta)} = \frac{v_{P^\prime}}{v_P}.
-\]
-But by part (a) above
-\[
-   k^\prime(\theta) = \frac{v_{P^\prime}}{v_P}   =  \frac{d\theta^\prime}{d\theta} =   \frac{\rho^\prime}{\rho}.
-\]
-and the motion (\ref{Eq:equalTime8}) is an equal-time motion.
-
-
-So the existence of the equal-time function
-\[
-      v_P = \omega_0 \rho
-\]
-with speed proportional to the distance $\rho = BP$ proves Poncelet's porism. But more importantly for us is that this function is related to the motion of a revolving pendulum. To understand how, we should first express the speed as a function of central angle $\theta = \angle EOP$. Using the law of cosines in $\Delta AOP$ where $\angle AOP = \pi - \theta$, we have
-\[
-  AP^2  = R^2 + a^2 + 2aR \cos \theta .
-\]
-Then
-\begin{align*}
-   \rho  &=  \sqrt{AP^2 - r^2}         \\  \notag
-          & = \sqrt{R^2 + a^2 -r^2 + 2aR \cos \theta}  \\ \notag
-          &=   \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)} .
-\end{align*}
-and
-\begin{equation}
-      v_P = g(\theta) = \omega_0  \sqrt{(R+a)^2 - r^2 - 4aR\sin^2 (\theta/2)}.  \label{Eq:PropSpeed}
-\end{equation}
-
-Our next step is to compute the speed function for a simple pendulum.
+$T^\prime(\theta)=0$ if and only if (\ref{Eq:EqualTime23}) holds.
+\end{enumerate} 
 
 
 
 
 
-
-
-
-\iffalse
-To find an expression for the speed of such a motion, consider more generally a motion traced by a point $P$ that rotates about $A$ with rate $\omega = f(\theta)$ rad/sec a function of position (central angle $\angle EOP$). Then as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
-\[
-   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha ,
-\]
-the second equality because $\alpha$ is then angle opposite the leg with length $\rho \, d\phi$ in the right triangle with other leg $d\rho$ and hypotenuse $ds$. Dividing both sides by the differential time $dt$ gives the speed of $P$,
-\[
-     v_P  = \omega \rho \csc \alpha .
-\]
-
-
-%Then the speed at a point $P$ of the path is  
-%\[
-%      v_P = \omega \rho \csc \alpha,
-%\]
-%where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ is the acute angle $\overline{AP}$ makes with the circle at $P$. This follows from the expression
-%\[
-%   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha
-%\]
-%for the differential arclength in polar coordinates. As $\overline{AP}$ turns through the differential angle $d\phi$, the product $\rho \,d\phi$ measures the component of $P$'s displacement perpendicular to the polar radius $\overline{AP}$ and $d\rho$ the component parallel to $\overline{AP}$. The angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $s\rho$ and hypotenuse $ds$.
-
-
-
-%To describe an equal-time motion when ${\cal C}_1$ is a point $A_0$ (and Poncelet's porism is trivially true) is easy. Just let the motion rotate about $A_0$ at a constant rate.
-
-
-
-%To find an expression for the speed of a general motion, let $\omega$ (in rad/sec) be the rate of rotation (not necessarily contant. The the speed at a point $P$ of the path is
-%\[
-%      v_P = \omega \rho \csc \alpha,
-%\]
-%where $\rho = AP$ is the distance from $A$ to $P$ and $\alpha$ is the angle $\overline{AP}$ makes with the circle at $P$. This follows from the expression
-%\[
-%   ds =  \sqrt{(\rho \, d\phi)^2 + d\rho^2}   =   (\rho \, d\phi) \csc \alpha
-%\]
-%for the differential arclength in polar coordinates. As $\overline{AP}$ turns through the differential angle $d\phi$, the product $rho , d\phi$ measures the component of $P$'s displacement perpendicular to the polar radius $\overline{AP}$ and $d\rho$ the component parallel to $\overline{AP}$. The angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $\rho \, d\phi$ and hypotenuse $ds$.
-
-
-%traversed by $P$ as $\overline{AP}$ turns through the angle $d\phi$ (since the angle $\alpha$ is opposite the leg with $\rho \, d\phi$ in the right triangle with other leg $\rho \, d\phi$ and hypotenuse $ds$).
-
-
-%To see why, note that as $\overline{AP}$ turns through the differential angle $d\phi$, $P$ traverses the differential arclength
-%\[ 
-%      ds = (\rho \, d\phi) \csc \alpha .
-%\]
-%This is because $\rho , d\phi$ measures the component of $P$'s displacement perpendicular to $\overline{AP}$ and in the differential right triangle with legs $d\rho$, $\rho \, d\phi$, and hypotenuse $ds$, the angle $\alpha$ is opposite the leg with length $\rho \, d\phi$.
-
-
-
-
-%To express the speed $v$ of the motion in terms of the counterclockwise angle $\phi = \angle EOP$ from the vertical to segment $OP$ below
-
-
-%Instead of defining a new metric around ${\cal C}_1$, imagine instead a point moving around ${\cal C}_1$ in such a way that it traverses the shorter arcs subtended by the tangent chords in equal times. 
-
-With $\theta$ the measure of the central angle $\angle EOP$ that $\overline{OP}$ makes with the downward vertical, we have
-\[
-  \rho = \sqrt{R^2 + a^2 + 2ar \cos \theta}
-\]
-and 
-\[
-    v_P = \omega \sqrt{R^2 + a^2 + 2ar \cos \theta} \csc \alpha .
-\]
-
-To express $\csc\alpha$ in terms of $\theta$, use the law of sines in $\Delta AOP$ where $\angle APO = \pi/2 - alpha$. This gives
-\[
-    \frac{\sin\theta}{\rho} = \frac{\cos\alpha}{a}.
-\]
-
-\fi
-
-Here are a few animiations of equal-time motions. The graphs show the reciprocal of the speed functions as function of the angle $\theta$. The shaded areas under each graph, proptional to the times to traverse the arclengths subtended by the sides of the polygon, are all equal.
+Here are a few animations of equal-time motions. The graphs show the reciprocal of the speed functions as function of the angle $\theta$. The shaded areas under each graph, proptional to the times to traverse the arclengths subtended by the sides of the polygon, are all equal.
 
 \begin{exploration}
 
