@@ -143,7 +143,7 @@ One choice would be that $\overline{PP^\prime}$ rotates about $A$ at a constant 
    v_P &= \omega_0 \rho \\
           &= \omega_0  \sqrt{R^2 + a^2 + 2aR\cos\theta} 
 \end{align*}
-and $\overline{PP^\prime}$ rotation rate
+and rotation rate
 \begin{equation}
    \omega = \omega_0 \sin\alpha = \left( \frac{\omega_0}{2R} \right) PP^\prime  \label{Eq:PendulumMotion}
 \end{equation}
@@ -380,11 +380,22 @@ where $\Delta PP^\prime P^{\prime\prime}$ is circumscribed about ${\cal C}_1$ in
 *************************************************************************************************
 \fi
 
-In the general case, if we knew \emph{apriori} that one path of tangent chords closed, we would be free to choose a (contiuous) speed function along the shorter arc between two adjacent vertices of the polygonal path. But allowing for the possibilty that one path never closes (and the points $P_0, P_1, \ldots$ forming a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
-\begin{equation}
-    v_P =  v_P(\phi) = \omega_0 \rho(\phi)   \label{Eq:EqualTime8}
-\end{equation}
-with speed proportional to the distance $\rho(\phi) = PB$. The explorations below shows two such motions.
+In the general case when ${\cal C}_2$ is a circle of radius $r$, if we knew \emph{apriori} that one path of tangent chords closed, we would be free to choose a (continuous) speed function along the shorter arc between two adjacent vertices of the polygonal path. But allowing for the possibility that a path never closes (and the points $P_0, P_1, \ldots$ form a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
+\begin{align}
+    v_P  &= \omega_0 \rho   \notag  \\ 
+          &= \omega_0 \sqrt{R^2 + a^2 + 2aR \cos\theta - r^2} \label{Eq:EqualTime8}
+\end{align}
+with speed proportional to the distance $\rho(\phi) = PB$ and rotation rate (\ref{Eq:PendulumMotion}) proportional to $PP^\prime$.
+
+\begin{onlineOnly}
+    \begin{center}
+\geogebra{fzhspjxz}{600}{450}  
+\end{center}
+\end{onlineOnly}
+
+
+
+The explorations below shows two such motions.
 
 \begin{exploration}
 \begin{onlineOnly}
@@ -406,6 +417,9 @@ with speed proportional to the distance $\rho(\phi) = PB$. The explorations belo
 
 \href{https://www.desmos.com/calculator/hm5zop04ob}{Poncelt Metric with Jacobi Functions 2}
 \end{exploration}
+
+
+
 
 To prove that the motion (\ref{Eq:EqualTime8}) is indeed equal-time, we first need to show (\ref{Eq:ArcLengths2}) in part (a) above holds. For this, let $\phi$ be the angle radius $\overline{AB}$ makes with the horizontal and $\alpha$ the acute angle $\overline{PP^\prime}$ makes with ${\cal C}_1$. Then 
 \[
