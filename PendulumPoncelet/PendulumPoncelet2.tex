@@ -110,12 +110,12 @@ To describe an equal-time motion, we'll find a function $v_P = f(\theta)$ that e
 \end{center}
 \end{onlineOnly}
 
-The key observation is that the speed of an equal-time motion at a point $P$ determines the speeds of the motion at the endpoints of the two tangent chords through $P$. By subtraction, the motion sweeps out the differential arclengths $ds$, $ds^\prime$ traversed by the endpoints $P$ and $P^\prime$ of the (counterclockwise) tangent chord $\overline{PP^\prime}$ as it turns through the differential angle $d\phi$ in equal times.   So the condition that %a necessary condition for an equal-time motion is that
+The speed of an equal-time motion at a point $P$ determines the speeds of the motion at the endpoints of the two tangent chords through $P$. By subtraction, the motion sweeps out the differential arclengths $ds$, $ds^\prime$ traversed by the endpoints $P$ and $P^\prime$ of the (counterclockwise) tangent chord $\overline{PP^\prime}$ as it turns through the differential angle $d\phi$ in equal times.   So the condition that %a necessary condition for an equal-time motion is that
 %Now imagine tangent chord $\overline{PP^\prime}$ rolling counter-clockwise around ${\cal C}_2$ as $P$, $P^\prime$ follow an equal-time motion. Let $ds$, $ds^\prime$ be the respective arclengths traversed by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the differential angle $d\phi$. Then since $P$ and $P^\prime$ traverse these arclengths in equal times,
 \begin{equation}
   \frac{ds}{v_P} = \frac{ds^\prime}{v_{P^\prime}}.   \label{Eq:EqualTime5}
 \end{equation}
-is necessary for an equal-time motion. But by addition (ie. integration) this condition is sufficient (see Remarks below).
+is necessary for an equal-time motion. But by addition (ie. integration) this condition is also sufficient (see Remarks below).
 
 The figure above suggests a way to put this condition into a more useful form. There $\rho = BP$ and $\rho = BP^\prime$ are the lengths of the tangent segments from $P$ and $P^\prime$ to ${\cal C}_2$. And the component of the differential displacement $\overrightarrow{PQ}$ has component $\overrightarrow{PF}$ normal to $\overrightarrow{PQ}$ with magnitude
 \[
@@ -131,14 +131,14 @@ This tells us two things. First, that $P$ has speed
 \[
    v_P = \frac{ds}{dt} = \omega \rho \csc\alpha ,
 \]
-where $\omega = d\phi/dt$ is the rotation rate of $\overline{PP^\prime}$. And second, it lets us rewrite the equal-time condition (\ref{Eq:EqualTime5}) as
+where $\omega = d\phi/dt$ is the rotation rate of $\overline{PP^\prime}$. And second, that the equal-time condition (\ref{Eq:EqualTime5}) may be expressed as
 \[
     \frac{v_P}{\rho} = \frac{v_{P^\prime}}{\rho^\prime} .
 \]
 
-For example, in the degenerate case when ${\cal C}_1$ is a point $A$, we have the freedom to arbitrarily define the speed on either of the two arcs subtended by a chord through $A$. This choice, assumed to be continuous, determines the speed along the other arc. Or we could arbitrarily choose a positive, continuous function $\omega  = g(\theta)$, $0\leq \theta \leq \pi$ with $g(\pi) = g(0)$, for the rotation rate of $\overline{PP^\prime}$.
+For example, in the degenerate case when ${\cal C}_1$ is a point $A$, we have the freedom to arbitrarily define the speed on either of the two arcs subtended by a chord through $A$. This choice, assumed to be continuous, determines the speed along the other arc. Or we could arbitrarily choose a positive, continuous function $\omega  = g(\theta)$, $0\leq \theta \leq \pi$, with $g(\pi) = g(0)$, for the rotation rate of $\overline{PP^\prime}$.
 
-One choice would be to assume $\overline{PP^\prime}$ rotates about $A$ at a constant rate. But choosing $\omega = \omega_0 \sin \alpha$ (where $\omega_0$ is the rotation rate when $\overline{PP^\prime}$ is the diameter through $A$) gives a simpler speed function. With $R$ the radius of ${\cal C}_1$ and $(0,a)$ the coordinates of $A$, $P$ has speed
+One choice would be that $\overline{PP^\prime}$ rotates about $A$ at a constant rate. But choosing $\omega = \omega_0 \sin \alpha$ (where $\omega_0$ is the rotation rate when $\overline{PP^\prime}$ is the diameter through $A$) gives a simpler speed function. With $R$ the radius of ${\cal C}_1$ and $(0,a)$ the coordinates of $A$, $P$ has speed
 \begin{align*}
    v_P &= \omega_0 \rho \\
           &= \omega_0  \sqrt{R^2 + a^2 + 2aR\cos\theta} 
@@ -168,8 +168,24 @@ The animation below shows an equal-time motion (\ref{Eq:PendulumMotion}) with sp
 \href{https://www.desmos.com/calculator/g2o1szpkh5}{Poncelelts Porism Disco Dancing}
 \end{exploration}
 
+\begin{exploration}
+The animation below shows two equal-time motions, one with speed proportional to $\rho$ (and rotation rate proportional to $PP^\prime$ (\ref{Eq:PendulumMotion})), the other with a constant rotation rate (\ref{Eq:ConstantRate}). 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xifdeg3wsq}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/xifdeg3wsq}{Poncelets Porism vs Constant Rotation Rate}
+
+\end{exploration}
+
 %To describe the equal-time motions, consider first the degenerate case when ${\cal C}_1$ is a point $A$ and Poncelet's Porism is trivial. One choice for an equal-time motion is a motion that rotates about $A$ at a constant rate.  But there are many others. %others, and one of these has a speed function that is simpler than all the others. %But there are many others. %Indeed we have almost have almost complete freedom in defining an equal-time motion by choosing a function $\omega = f(\phi)$, $0\leq \phi \leq \pi$
 
+
+\iffalse
+****************************************************************************************
+***************************************************************************************
 
 Because the equal-time condition relates only the times to traverse arcs subtended by chords through $A$, we have the freedom to arbitrarily define the speed of the motion on either of the two arcs subtended by one such chord. This choice, assumed to be continuous, determines the speed along the other arc. The motion there is traced by the other end of the chord $\overline{PP^\prime}$ through $A$ as $P$ follows its arbitrarily defined motion along the chosen arc. This is because from any initial position of the chord, the points $P$ and $P^\prime$ arrive simultaneously at the other's starting point.
 
@@ -297,8 +313,6 @@ where $\omega  = d\phi/dt$ is the rotation rate (not necessarily constant) of $\
 \fi
 
 
-
-
 \begin{exploration}
 The animation below shows two equal-time motions, one with speed proportional to $\rho$ (and rotation rate proportional to $PP^\prime$ (\ref{Eq:PendulumMotion})), the other with a constant rotation rate (\ref{Eq:ConstantRate}). 
 \begin{onlineOnly}
@@ -353,13 +367,20 @@ for all chords $\overline{PP^\prime}$ tangent to ${\cal C}_1$.
 
 \pskip
 
+
+
+
 So if we knew \emph{apriori} that a particular configuration of ${\cal C}_1$, ${\cal C}_2$ forced each path of tangent chords to close, say with three segments, we could arbitrarily define an equal-time motion along the outer arc subtended by a chord $\overline{CD}$ of an arbitrary triangle $\Delta CDE$ circumscribed about ${\cal C}_2$. Then the motions at points $P^\prime$ $P^{\prime\prime}$ of the outer arcs subtended respectively by $\overline{DE}$ and $\overline{DE}$ would be determined by the conditions that
 \[
        \frac{\rho}{v_P} = \frac{\rho^\prime}{v_{P^\prime}} = \frac{\rho^{\prime\prime}}{v_{P^{\prime\prime}}},
 \]
 where $\Delta PP^\prime P^{\prime\prime}$ is circumscribed about ${\cal C}_1$ in the same sense as $\Delta CDE$ (see Figure ????).
 
-But if we knew nothing about the particular configuration of circles, the only possible choice for an equal-time motion would be
+*************************************************************************************************
+*************************************************************************************************
+\fi
+
+In the general case when ${\cal C}_1$ is non-degenerate and without knowing whether a particular path $P_0 P_1 \ldots$ closes or not, the only possible choice for a continuous equal-time motion would be
 \begin{equation}
     v_P =  v_P(\phi) = \omega_0 \rho(\phi)   \label{Eq:EqualTime8}
 \end{equation}
