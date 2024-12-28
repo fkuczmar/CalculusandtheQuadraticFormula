@@ -31,9 +31,7 @@ The horizontal chord below bisects the period of a revolving pendulum. How can w
 \end{exploration}
 
 
-More generally, how can we draw other families of \emph{isochronous chords}, where the pendulum swings through the quicker arc subtended by the chords in some fixed fraction of the period?  And what can we say about the curve these chords might envelope?
-
-The exploration below shows an example. Given the horizontal chord (through $F$) that bisects the period and a horizontal chord $\overline{XY}$, how can we construct other chords in the same isochronous family as $\overline{XY}$. And what can we say about the envelope of all such chords?
+More generally, how can we draw other families of \emph{isochronous chords}, where the pendulum swings through the quicker arc subtended by the chords in some fixed fraction of the period?  The exploration below shows an example where we are given the horizontal chord (through $F$) that bisects the period and a horizontal chord $\overline{XY}$. How can we construct other chords in the same isochronous family as $\overline{XY}$ and what can we say about their envelope? % envelope of all such chords?
 
 %Or pick some fraction of the period of revolution. How can we draw a chord that subtends an arc traversed in this fraction of the period? What can we say about all such chords and the curve they envelope?
 
@@ -98,17 +96,19 @@ In the example below, each chord subtends $2/5$ of the circumference in the new 
 
 \end{exploration}
 
-We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine instead a motion around ${\cal C}_1$ that traverses the quicker arcs subtended by the tangent chords in equal times. A priori, it's not clear such an \emph{equal-time} motion exits, but if so, we would have a proof of Poncelet's Porism. Supposing a period of one second, every path would form a $\{p/q \}$ star polygon for a motion that takes $\lambda = p/q$ seconds to traverse each quicker (or slower) arc. And paths with irrational $\lambda$ would never close. 
+We can better relate the proof of Poncelet's Porism to revolving pendulums by replacing the distance metric around ${\cal C}_1$ with a time metric. So imagine instead a motion around ${\cal C}_1$ that traverses the quicker arcs subtended by the tangent chords in equal times. A priori, it's not clear there is such an \emph{equal-time} motion exits, but one would be enough to prove Poncelet's Porism. Supposing a period of one second, every path would form a $\{p/q \}$ star polygon for a motion that takes $\lambda = p/q$ seconds to traverse each quicker (or slower) arc. And paths with irrational $\lambda$ would never close. 
 
 %Figure ?? below is the key to describing the equal-time motions. Imagine a tangent chord $\overline{PP^\prime}$ rotating through the differential angle $d\phi$ as $P$ and $P^\prime$ traverse the respective arclengths $ds$, $ds^\prime$. These are the ones that traverse the differ
 
 To describe an equal-time motion, we'll find a function $v_P = f(\theta)$ that expresses the speed of the motion at the point $P$ of ${\cal C}_1$ in terms of the central angle $\theta = \angle EOP$ (measured from the vertical) as illustrated in the figure below.
 
+\begin{exploration}  \label{Exp:4534888989}
 \begin{onlineOnly}
     \begin{center}
 \geogebra{tq8p8jk5}{600}{450}  
 \end{center}
 \end{onlineOnly}
+\end{exploration}
 
 The speed of an equal-time motion at a point $P$ determines the speeds of the motion at the endpoints of the two tangent chords through $P$. By subtraction, the motion sweeps out the differential arclengths $ds$, $ds^\prime$ traversed by the endpoints $P$ and $P^\prime$ of the (counterclockwise) tangent chord $\overline{PP^\prime}$ as it turns through the differential angle $d\phi$ in equal times.   So the condition that %a necessary condition for an equal-time motion is that
 %Now imagine tangent chord $\overline{PP^\prime}$ rolling counter-clockwise around ${\cal C}_2$ as $P$, $P^\prime$ follow an equal-time motion. Let $ds$, $ds^\prime$ be the respective arclengths traversed by $P$ and $P^\prime$ as $\overline{PP^\prime}$ turns through the differential angle $d\phi$. Then since $P$ and $P^\prime$ traverse these arclengths in equal times,
@@ -380,7 +380,7 @@ where $\Delta PP^\prime P^{\prime\prime}$ is circumscribed about ${\cal C}_1$ in
 *************************************************************************************************
 \fi
 
-In the general case when ${\cal C}_2$ is a circle of radius $r$, if we knew \emph{apriori} that one path of tangent chords closed, we would be free to choose a (continuous) speed function along the shorter arc between two adjacent vertices of the polygonal path. But allowing for the possibility that a path never closes (and the points $P_0, P_1, \ldots$ form a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
+In the general case when ${\cal C}_2$ is a circle of radius $r$, a closed path of tangent chords we allow the freedom to choose a (continuous) speed function along the shorter arc between two adjacent vertices of the path. But allowing for the possibility that a path never closes (and the points $P_0, P_1, \ldots$ form a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
 \begin{align}
     v_P  &= \omega_0 \rho   \notag  \\ 
           &= \omega_0 \sqrt{AP^2 - r^2}  \notag \\
@@ -424,7 +424,7 @@ The explorations below shows two such motions.
 
 {\bf Remarks:}
 \begin{enumerate}
-\item To show $dq = \rho \, d\phi$ in Figure ???, let ${\bf r} = {\bf r}(s)$ be an arclength parameterization of ${\cal C}_2$ and ${\bf p} = \overrightarrow{OP}$. Then 
+\item To show $dq = \rho \, d\phi$ in Exploration \ref{Exp:4534888989}, let ${\bf r} = {\bf r}(s)$ be an arclength parameterization of ${\cal C}_2$ and ${\bf p} = \overrightarrow{OP}$. Then 
 \[
   {\bf p} = {\bf r} + \rho {\bf T} ,
 \]
