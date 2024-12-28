@@ -499,26 +499,27 @@ Here are a few animations of equal-time motions. The graphs show the reciprocal 
 
 
 \section*{Revolving Pendulums}
-The motion of a pendulum is governed by the conservation of mechanical energy. Here's a proof that works for a small bead sliding without friction along a smooth track in a uniform gravitational field.
+The motion of a pendulum is governed by the conservation of mechanical energy. How should we proceed from here? Perhaps the best course is to work from basic prinicples, using some calculus and a bit of physics.
 
-Let $\overrightarrow{j}$ be the unit vector pointing in the direction opposite the gravitational field. Let $\overrightarrow{v}$ be the velocity of the sliding mass and $O$ a random point in the plane of motion. We measure the graviational potential energy relative to the horizontal line through $O$. Let $\overrightarrow{r} = \overrightarrow{OP}$ be the position of the mass relative to $O$.
+For the calculus, the key idea is that for any twice-differentiable motion, the rate of change of speed with respect to time is the scalar component of the acceleration in the direction of motion........
 
-Then the mechanical energy of the system at any instant is
+So for a simple pendulum at angular displacement $\theta$,
 \[
-        E = \frac{1}{2}m \overrightarrow{v} \cdot \overrightarrow{v} + mg \overrightarrow{r}\cdot \overrightarrow{j} .
-\] 
-Differentiating with respect to time,
-\[
-     \frac{dE}{dt} = m\overrightarrow{v} \cdot \overrightarrow{a}  + m g \overrightarrow{v} \cdot \overrightarrow{j} .
+   \frac{dv}{dt} = -g\sin\theta .
 \]
-Now there are two forces acting on the mass, the force of gravity $-mg\overrightarrow{j}$  and the force of the track $m \overrightarrow{a_n}$. Hence, 
+Now remember the equal-time motion when ${\cal C}_1$ is a point $A$, with speed %$v = \omega_0 \rho$ proportional to the distance  
 \[
-   m\overrightarrow{a} = m \left(    -g\overrightarrow{j} + \overrightarrow{a_n}   \right) . 
+       v = \omega_0 \rho = \omega_0 \sqrt{a^2 + R^2 + 2aR\cos\theta} 
 \]
-And since $\overrightarrow{v}\cdot \overrightarrow{a_n}=0$,
-\[
-    \frac{dE}{dt} = -mg \overrightarrow{v}\cdot \overrightarrow{j} + mg \overrightarrow{v} \cdot \overrightarrow{j} = 0.
-\]
+proportional to $\rho = AP$. Differentating with respect to time gives
+\begin{align*}
+   \frac{dv}{dt} &= - \left( \frac{\omega_0 a}{\rho} \right)\left( R\frac{d\theta}{dt} \right)\sin\theta \\
+                       &=  - \left( \frac{\omega_0 a}{\rho} \right) \omega_0 \rho \sin\theta \\
+                       &= -\omega_0^2 a \sin\theta .
+\end{align*}
+
+
+%Here's a proof that works for a small bead sliding without friction along a smooth track in a uniform gravitational field.
 
 
 Now moving on to the main point, let $R$ be the pendulum's radius, $v_0$ be the speed of the pendulum at its low point, and $v_P$ its speed at angular displacement $\theta$. Then
