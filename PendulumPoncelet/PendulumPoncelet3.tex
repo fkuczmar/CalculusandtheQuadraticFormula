@@ -9,7 +9,7 @@ We investigate the families of \emph{isochronous chords} of a pendulum motion, w
 \end{abstract}
 \maketitle
 
-Think of a simple pendulum and you probably picture a mass oscillating at the end of a string. But imagine instead a mass attached to a weightless rod launched from its low point with sufficient speed to repeatedly revolve around its circular path. Now construct chords around the path of this revolving pendulum that bisect the period - the pendulum should traverse the arcs subtended by each chord in half the period. One such chord is the vertical diameter. Another is horizontal. But what can we say about the other bisecting chords?
+Think of a simple pendulum and you probably picture a mass oscillating at the end of a string. But imagine instead a small mass sliding along a frictionless track launched from its low point with sufficient speed to repeatedly revolve around its circular path. Now construct chords around the path of this revolving pendulum that bisect the period - the pendulum should traverse the arcs subtended by each chord in half the period. One such chord is the vertical diameter. Another is horizontal. But what can we say about the other bisecting chords?
 
 Suppose, as in the exploration below, we are given the horizontal chord that bisects the period. How can we draw other bisecting chords?
 
@@ -288,15 +288,22 @@ Of all the possible equal-time motions when ${\cal C}_1$ is a point $A$, the sim
 \[
        v_P = \omega_0 \rho = \omega_0 \sqrt{a^2 + R^2 + 2aR\cos\theta} 
 \]
-proportional to $\rho = AP$ describe the revolving pendulums.
+proportional to the distance $\rho = AP$ describe the revolving pendulums.
 
 Perhaps the most insightful way to see this is to differentating with respect to time, giving
 \begin{align*}
-   \frac{dv}{dt} &= - \left( \frac{\omega_0 a}{\rho} \right)\left( R\frac{d\theta}{dt} \right)\sin\theta \\
+   \frac{dv_P}{dt} &= - \left( \frac{\omega_0 a}{\rho} \right)\left( R\frac{d\theta}{dt} \right)\sin\theta \\
                        &=  - \left( \frac{\omega_0 a}{\rho} \right) \omega_0 \rho \sin\theta \\
                        &= -\omega_0^2 a \sin\theta .
 \end{align*}
 
+To relate this derivative to the motion of a simple pendulum, we need two ideas:
+
+\begin{enumerate}
+\item For any twice-differentiable motion, the rate of change of speed with respect to time is the scalar component of the acceleration in the direction of motion.
+
+\item Newton's second law and that because our mass slides without friction, the 
+\end{enumerate}
 
 The motion of a pendulum is governed by the conservation of mechanical energy. How should we proceed from here? Perhaps the best course is to work from basic prinicples, using some calculus and a bit of physics.
 
@@ -538,10 +545,41 @@ We start by interpreting the expression
 \]
 
 
-It is still true, as for revolving pendulums, that
+Let's start again, this time with our earlier expressions
 \[
-  \rho = 
+       v_P^2 = \omega_0^2 \left(   (R+a)^2 - r^2 - 4Ra\sin^2 \left( \frac{\theta_0}{2}  \right)      \right)
 \]
+and
+\[
+    v^2 = v_0^2 - 4Rg\sin^2 \left( \frac{\theta_0}{2} \right) 
+\]
+for the respective speeds of an equal-time and pendulum motion.
+
+The motions are identical if and only if
+\begin{equation}
+       v_0^2 = \omega_0^2 ((R+a)^2 - r^2)  \label{Eq:EqualSpeeds}
+\end{equation}
+and
+\begin{equation}
+    g = a\omega_0^2.  \label{Eq:g}
+\end{equation}
+
+Now suppose the pendulum oscillates with a maximum angular displacement of $\theta_0$ radians. Then
+\[
+    v_0^2 = 4Rg \sin^2 \left( \frac{\theta_0}{2} \right) 
+\]
+and assuming (\ref{Eq:g})
+\[
+    v^2 = 4Ra\omega_0^2 \left( \sin^2 \left( \frac{\theta_0}{2} \right) -  \sin^2 \left( \frac{\theta}{2}\right)  \right) .
+\]
+
+Substituting into (\ref{Eq:EqualSpeeds}) and some algebra shows that the equal-time and pendulum motions are identical if and only if
+\[
+     (R+a)^2 - 4Ra \sin^2 \left(  \frac{\theta_0}{2}    \right) = r^2 .
+\]
+But this is exactly the condition that the point $P_0(R \sin\theta_0 ,  -R\cos\theta_0)$ lies on the circle ${\cal C}_2$ centered at $(0,a)$ with radius $r$.
+
+
 
 
 \section*{Colliding Pendulums}
