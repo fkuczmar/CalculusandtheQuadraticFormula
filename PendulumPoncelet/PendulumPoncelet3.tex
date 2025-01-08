@@ -94,7 +94,7 @@ To describe an equal-time motion, we'll find a function $v_P = f(\theta)$ that e
 \end{onlineOnly}
 \end{exploration}
 
-The speed of an equal-time motion at a point $P$ determines the speeds of the motion at the endpoints of the two tangent chords through $P$. By subtraction, the motion sweeps out the differential arclengths $ds$, $ds^\prime$ traversed by the endpoints $P$ and $P^\prime$ of the (counterclockwise) tangent chord $\overline{PP^\prime}$ as it turns through the differential angle $d\phi$ in equal times.   So the condition that 
+The key point is that the speed of an equal-time motion at a point $P$ determines the speeds of the motion at the endpoints of the two tangent chords through $P$. This is because by subtraction, the motion sweeps out the differential arclengths $ds$, $ds^\prime$ traversed by the endpoints $P$ and $P^\prime$ of the (counterclockwise) tangent chord $\overline{PP^\prime}$ as it turns through the differential angle $d\phi$ in equal times.   So the condition that 
 \begin{equation}
   \frac{ds}{v_P} = \frac{ds^\prime}{v_{P^\prime}}.   \label{Eq:EqualTime5}
 \end{equation}
@@ -165,7 +165,7 @@ The animation below shows two equal-time motions, one with speed proportional to
 
 
 
-In the general case when ${\cal C}_2$ is a circle of radius $r$, a closed path of tangent chords we allow the freedom to choose a (continuous) speed function along the shorter arc between two adjacent vertices of the path. But allowing for the possibility that a path never closes (and the points $P_0, P_1, \ldots$ form a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
+In the general case when ${\cal C}_2$ is a circle of radius $r$, a closed path of tangent chords we have the freedom to choose a (continuous) speed function along the shorter arc between two adjacent vertices of the path. But allowing for the possibility that a path never closes (and the points $P_0, P_1, \ldots$ form a dense subset of ${\cal C}_1$), the only possible choice for a continuous equal-time motion would be
 \begin{align}
     v_P  &= \omega_0 \rho   \notag  \\ 
           &= \omega_0 \sqrt{AP^2 - r^2}  \notag \\
@@ -284,13 +284,13 @@ Here are a few animations of equal-time motions. The graphs show the reciprocal 
 
 
 \section*{Revolving Pendulums}
-Of all the possible equal-time motions when ${\cal C}_1$ is a point $A$, the simplest ones, with speeds
-\[
-       v_P = \omega_0 \rho = \omega_0 \sqrt{a^2 + R^2 + 2aR\cos\theta} 
-\]
+Of all the possible equal-time motions when ${\cal C}_1$ is a point $A$, the simplest ones, those with speeds
+\begin{equation}
+       v_P = \omega_0 \rho = \omega_0 \sqrt{a^2 + R^2 + 2aR\cos\theta}  \label{Eq:SpeedProp5}
+\end{equation}
 proportional to the distance $\rho = AP$ describe the revolving pendulums.
 
-Perhaps the most insightful way to see this is to differentating with respect to time, giving
+Perhaps the most insightful way to see this is to differentiate both sides of (Eq:SpeedProp5) with respect to time, giving
 \begin{align*}
    \frac{dv_P}{dt} &= - \left( \frac{\omega_0 a}{\rho} \right)\left( R\frac{d\theta}{dt} \right)\sin\theta \\
                        &=  - \left( \frac{\omega_0 a}{\rho} \right) \omega_0 \rho \sin\theta \\
