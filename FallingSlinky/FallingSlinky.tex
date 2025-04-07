@@ -24,6 +24,8 @@ Or scroll down a bit and watch the video here.
 
 \href{dsffdhttps://vanderbei.princeton.edu/WebGL/Slinky.html}{Vanderbei}
 
+\section{The Hanging Slinky}
+
 Setting aside trying to explain why the lower compressed part of the slinky remains suspended for a while, we can nevertheless determine the suspension time. We need only Newton's second law and Hooke's law for an ideal spring.
 
 A slinky is not an ideal spring. In its relaxed state the coils are touching and it cannot be compressed. More importantly, the slinky is \emph{pretensioned}. So it takes some minimum force to strech the slinky and separate the coils. But we can ignore this complication by recognizing that the weight of the compressed coils at the bottom of a suspended slinky is exactly that minimum force. So it does no harm to ignore this part of the slinky and consider only the part above. This part acts like an ideal spring (albeit one that cannot be compressed in its relaxed state) and obeys Hooke's law.
@@ -48,11 +50,11 @@ For this the key is to use Hooke's on the portion of the relaxed spring between 
 \[
         k_\Delta  =  \left( \frac{L_0}{\Delta L} \right) k,   
 \]
-where $k$ (in Newtons/meter) is the spring constant for the entire slinky of length $L_0$ meters. Letting $g$ (in $m/\text{sec}^2$) be the uniform gravitational acceleration, and $\rho$ (in kg/meter) the linear density of the spring, this segment of the spring gets stretched by the weight $W =g \rho L$ (in Newtons) of the spring below it. So by Hooke's law, the little stretch is
+where $k$ (in Newtons/meter) is the spring constant for the entire slinky of length $L_0$ meters. Letting $g$ (in $m/\text{sec}^2$) be the uniform gravitational acceleration and $\rho$ (in kg/meter) the linear density of the spring, this segment of the spring gets stretched by the weight $W =g \rho L$ (in Newtons) of the spring below it. So by Hooke's law, the little stretch is
 \[
      \Delta H - \Delta L =  \frac{W}{k_\Delta} = \left( \frac{g\rho L}{k L_0} \right) \Delta L .
 \]
-Summing these small changes gives the height function
+Summing these little streches gives the height function
 \begin{align*}
     H &= f(L)   \\
         &= L +  \frac{g\rho}{k L_0} \int_0^L L^* \, dL^* \\
@@ -65,6 +67,8 @@ Note the entire length of the stretched slinky is
           &= L_0 + \frac{g\rho L_0}{2k} \\
           &= L_0 +  \frac{W_0}{2k}  .
 \end{align*}
+A slinky stretched by its own weight $W_0$ is stretched by the same distance as does an ideal massless spring (with the same spring constant) stretched by a weight $W_0$ attached to its end.
+
 
 
 Drag the slider $g$ in Line 5 of the worksheet below from $g=0$ to $g=g_0 = 0.5 \text{m/sec}^2$ to turn on the gravitational field and stretch the slinky. 
@@ -77,39 +81,26 @@ Drag the slider $g$ in Line 5 of the worksheet below from $g=0$ to $g=g_0 = 0.5 
 
 \href{https://www.desmos.com/calculator/vjjibjkdrz}{151: Slinky 3}
 
+Here's a crude attempt to model a slinky stretched under its own weight.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{zqjjgael5j}{450}{600}  %qvk0mzy26u
+\desmos{o1ny9elbie}{450}{600}  %qvk0mzy26u
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/zqjjgael5j}{151: Slinky Photo}
+\href{https://www.desmos.com/calculator/o1ny9elbie}{151: Slinky 4}
 
-We can model the stretching of an ideal spring stretched under its own weight with the function
-\[
- H = f(L) = L + \frac{g\rho}{2kL_0}L^2 \, , \, 0\leq L \leq L_0 ,
-\]
-where
-\begin{itemize}
-\item $L_0$ is the length (in meters) of the relaxed (unstretched) spring, 
 
-\item $g$ is the magnitude of the gravitational acceleration (measured in meters/sec/sec),
+\section{The Falling Slinky}
 
-\item $\rho$ is the linear density (in kg/meter) of the spring,
+\begin{onlineOnly}
+    \begin{center}
+\desmos{sc4bnssznd}{450}{600}  %qvk0mzy26u
+\end{center}
+\end{onlineOnly}
 
-\item $k$ (measured in Netwons/meter) is the spring constant,
-
-\item $L$ is the distance of a point on the relaxed spring from the spring's bottom end, and
-
-\item $H=f(L)$ is the distance from the corresponding point on the stretched spring to the spring's bottom end.
-
-\end{itemize}
-
-\begin{freeResponse}
-Use the above information to check that the above expression for $H=f(L)$ has the correct units. You will need to know that Newtons (a measure of force) have units $\text{kg}\cdot \text{m/sec}^2$. 
-\end{freeResponse}
-
+\href{https://www.desmos.com/calculator/o1ny9elbie}{151: Slinky 4}
 
 
 
