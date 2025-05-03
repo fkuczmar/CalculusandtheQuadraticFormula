@@ -1,5 +1,5 @@
 \documentclass{ximera}
-\title{The Falling Slinky}
+\title{The Suspended Slinky}
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
@@ -102,6 +102,53 @@ Here's a crude attempt to model a slinky stretched under its own weight.
 
 \href{https://www.desmos.com/calculator/o1ny9elbie}{151: Slinky 4}
 
+
+\section{Approximations with Discrete Masses}
+
+With three equal masses $m$ kg each, spring constants all $k$ (SI units), negative direction pointing downward,
+\begin{align*}
+ \begin{bmatrix}
+y_0\\
+y_1 \\
+y_2
+\end{bmatrix} 
+&=
+-\frac{1}{2}gt^2 
+ \begin{bmatrix}
+1\\
+1 \\
+1
+\end{bmatrix} 
++
+\frac{3mg}{2k} \cos\left( \sqrt{\frac{k}{m}} t  \right)
+ \begin{bmatrix}
+1\\
+0 \\
+-1
+\end{bmatrix}   \\ \\
+& +  
+\frac{mg}{6k} \cos\left( \sqrt{\frac{3k}{m}} t  \right)
+ \begin{bmatrix}
+1\\
+-2 \\
+1
+\end{bmatrix}
+-  
+\frac{5mg}{3k}
+ \begin{bmatrix}
+1\\
+1 \\
+1
+\end{bmatrix}.
+\end{align*}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{tnhnhzfnbu}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/tnhnhzfnbu}{142: Falling Springs43}
 
 
 
