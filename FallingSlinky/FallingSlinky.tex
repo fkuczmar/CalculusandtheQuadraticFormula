@@ -44,7 +44,7 @@ Our first step is to describe the slinky hanging under its own weight. This amou
 \[
    H = f(L) \, , \, 0\leq L \leq L_0 
 \]
-for a slinky with relaxed length $L_0$ meters. The function takes as an input the distance (say in meters) of a point on the relaxed suspended slinky from the bottom end (in the absense of a gravitational field) and returns as an output the distance (in meters) from the corresponding point on the stretched slinky (suspended in a uniform gravitational field) to the (stretched) slinky's bottom end. 
+for a slinky with relaxed length $L_0$ meters. The function takes as an input the distance (say in meters) of a point on the relaxed slinky from the bottom end in the absense of a gravitational field and returns as an output the distance (in meters) from the corresponding point on the stretched slinky (suspended in a uniform gravitational field) to the (stretched) slinky's bottom end. 
 
 For this the key is to use Hooke's on the portion of the relaxed spring between heights $L$ and $L+\Delta L$. This segment acts like an idea spring with spring constant
 \[
@@ -55,23 +55,48 @@ where $k$ (in Newtons/meter) is the spring constant for the entire slinky of len
      \Delta H - \Delta L =  \frac{W}{k_\Delta} = \left( \frac{g\rho L}{k L_0} \right) \Delta L .
 \]
 Summing these little streches gives the height function
-\begin{align*}
-    H &= f(L)   \\
-        &= L +  \frac{g\rho}{k L_0} \int_0^L L^* \, dL^* \\
-         & = L + \frac{g\rho}{2kL_0}L^2 \, , \, 0\leq L \leq L_0 .
-\end{align*}
+\begin{align}
+    H &= f(L)   \notag  \\
+        &= L +  \frac{g\rho}{k L_0} \int_0^L L^* \, dL^*  \notag \\
+         & = L + \frac{g\rho}{2kL_0}L^2 \, , \, 0\leq L \leq L_0 .  \label{Eq:Stretch}
+\end{align}
 
-Note the entire length of the stretched slinky is
+Note the full length of the stretched slinky is
 \begin{align*}
    H_0 &= f(L_0)  \\
           &= L_0 + \frac{g\rho L_0}{2k} \\
           &= L_0 +  \frac{W_0}{2k}  .
 \end{align*}
-A slinky stretched by its own weight $W_0$ is stretched by the same distance as does an ideal massless spring (with the same spring constant) stretched by a weight $W_0$ attached to its end.
+So a slinky stretched by its own weight $W_0$ is stretched by the same distance as a massless spring (with the same spring constant) stretched by a weight $W_0/2$ attached to its end.
 
+More generally, we can interpret Equation (\ref{Eq:Stretch}) in a similar way. Let
+\[
+    \lambda = L/L_0
+\]
+be the dimensionless parameter that measuring the fractional height of a point on the relaxed slinky. Then 
+\begin{align*}
+       H  & = L + \frac{g\rho}{2kL_0}L^2 \\
+           & =  L +   \left(\frac{g\rho L}{2k} \right) \left(\frac{L}{L_0}\right) \\
+           & =  L + \lambda  \left(  \frac{W}{2k} \right) ,
+\end{align*} 
+where $W=g\rho L$ is the weight of the lower part of the relaxed spring of length $L$ meters.  
 
+I'm confused here. Do I want to write this as
+\[
+           H = L +\frac{W}{2k/\lambda} 
+\]
+to point out that the lower $L$ meters of the stretched spring acts exactly as we would expect from (\ref{Eq:Stretch}), like a spring with spring constant $k_L = k/\lambda$?
 
-Drag the slider $g$ in Line 5 of the worksheet below from $g=0$ to $g=g_0 = 0.5 \text{m/sec}^2$ to turn on the gravitational field and stretch the slinky. 
+Or should we also write this as
+\begin{align*}
+        H  & = L + \frac{g\rho}{2kL_0}L^2 \\
+            & =  L + \left( \frac{g\rho L_0}{2k} \right) \left( \frac{L^2}{L_0^2} \right) \\
+            & = L + \left( \frac{W_0}{2k} \right) \lambda^2 .
+\end{align*}
+
+i think both.
+
+In any event, drag the slider $g$ in Line 5 of the worksheet below from $g=0$ to $g=g_0 = 0.5 \text{m/sec}^2$ to turn on the gravitational field and stretch the slinky. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -92,7 +117,10 @@ Here's a crude attempt to model a slinky stretched under its own weight.
 \href{https://www.desmos.com/calculator/o1ny9elbie}{151: Slinky 4}
 
 
-\section{The Falling Slinky}
+\section{The Falling Slinky, Instantaneous Collapse Model}
+
+
+
 
 \begin{onlineOnly}
     \begin{center}
