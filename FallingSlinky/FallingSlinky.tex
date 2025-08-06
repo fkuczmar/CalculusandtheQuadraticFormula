@@ -24,6 +24,47 @@ Or scroll down a bit and watch the video here.
 
 \href{dsffdhttps://vanderbei.princeton.edu/WebGL/Slinky.html}{Vanderbei}
 
+
+\section{Summary of Main Ideas so Far}
+
+\begin{enumerate}
+\item Imagine an elastic band, like on you would use at the gym. Attach on end to a wall, and use your right hand to hold the band horizontally stretched from its relaxed length, say by $\Delta L$ meters. Your right hand exerts some force ${\bf F}$ on the band, a force equal to the tension in the band. Now imagine grasping the midpoint of the band with your left hand. Release your right hand from the band and make sure your left hand stays put. Now your left hand exerts the same force ${\bf F}$ on the left half of the band. And this force ${\bf F}$ stretches the left half by only $\Delta L/2$ meters. So if we assume our bands to obey Hooke's law, this tells us that cutting a band in half doubles the spring constant. Similarly, $k_\lambda = k / \lambda$ for $0< \lambda \leq 1$.
+
+\item A band of uniform density hanging in a uniform gravtiational field stretches under its own weight, say again by $\Delta L$ meters. The top half (of the unstretched band) gets stretched by its own weight and also by the lower half of the band, while the bottom half stretches only under its own weight. How do these stretches compare?
+
+Since the bottom half of the spring has twice the spring constant as the whole spring and just half the mass, we should expect the bottom half to stretch 
+\[
+    \Delta L_2 =  \left(  \frac{1}{2}\right)^2 \Delta L = \Delta L/4 \text{ meters}. 
+\]
+That leaves a stretch of 
+\[
+ \Delta L_1 = 3\Delta L / 4 \text{ meters}
+\]
+in the top half of the unstretched spring. Of this stretch, the same $\Delta L/4$ meters is due to its own weight. And the remaining $\Delta L/2$ meters of the stretch is due to the weight of the bottom half pulling down on the top half.
+
+Now let $k$ be the spring constant of the full band (measured in Newtons/m), $W$ its weight (in kg). Then since the top half of the bank has spring constant $2k$ and weight $W/2$, we know
+\[
+  \frac{\Delta L}{2} = \frac{W/2}{2k}
+\] 
+and
+\[
+   \Delta L =  \frac{W/2}{k} .
+\]
+
+In other words, the stretch in an ideal spring with the same spring constant with half the mass of our spring suspended from its end gives the same stretch as the real spring hanging under its own weight.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{7kykohyoic}{450}{600}  
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/7kykohyoic}{Hanging Spring 24}
+
+
+\end{enumerate}
+
 \section{The Hanging Slinky}
 
 Setting aside trying to explain why the lower compressed part of the slinky remains suspended for a while, we can nevertheless determine the suspension time. We need only Newton's second law and Hooke's law for an ideal spring.
