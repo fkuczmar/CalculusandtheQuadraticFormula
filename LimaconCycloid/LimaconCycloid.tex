@@ -3,11 +3,40 @@
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
+\newtheorem*{theorem9}{Theorem}
+
 \begin{document}
 \begin{abstract}
 Relationship between their arclengths.
 \end{abstract}
 \maketitle
+ 
+
+In a recent article, ?? made the surprising observation that the length of the trochoid
+\[
+    (x,y) = (a\theta + b\sin\theta , a + b\cos\theta) \, , \, 0\leq \theta \leq 2\pi ,
+\]
+above the $x$-axis exceeds the length below by an amount equal to the length $8a$ of the cycloid
+\[
+    (x,y) = ( a\theta + a\sin\theta , a + a\cos\theta ) \, , \, 0\leq \theta \leq 2\pi .
+\]
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{6de49gy5g8}{900}{600}
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/6de49gy5g8}{163: Limacon Cylcoid Arclength 1}
+
+%The surprise is that that difference is independent of the size of the loop.
+
+The purpose of this note is to give a geometric proof of this fact.
+
+A first step in this direction was to look for a more general equality of arclengths by associating each point of the limacon above the $x$-axis with a point below. One possibility is to pair points with same inclination angle (the angle the tangent to the limacon makes with the horizontal). Much to my delight, this appeared to work. That is, the arcle
+
+
+
 
 
 \begin{onlineOnly}
@@ -18,16 +47,19 @@ Relationship between their arclengths.
 
 \href{https://www.desmos.com/calculator/bpvuhnhi35}{163: Limacon Cylcoid Arclength 2}
 
-As a circle ${\cal C}$ of radius $a$ rolls on the $x$-axis, a fixed point in the reference frame of ${\cal C}$ and $b>a$ units from its center sweeps out the limacon of Figure 1.
+As a circle ${\cal C}$ of radius $a$ rolls along the $x$-axis, a fixed point in the reference frame of ${\cal C}$ that is $b>a$ units from ${\cal C}$'s center sweeps out the limacon of Figure 1.
  
-A fixed point on the same circle ${\cal C}$ traces the cycloid in Figure 1.
+A fixed point \emph{on} the same circle of radius $a$ traces the cycloid in Figure 1.
 
-Let $s_1$ be the arclength of the portion of the limacon above the $x$-axis between inclination angles $0$ and $\phi$. Let $s_2$ be the arclength of the portion of the limacon below the axis between the same inclination angles. And let $s_3$ be the arclength of the cycoid between these inclination angles.
+Let $s_1$ be the arclength $A_1P_1$ of the limacon above the $x$-axis between inclination angles $0$ and $\phi$. Let $s_2$ be the arclength $A_2P_2$ of the limacon below the axis between the same inclination angles. And let $s_3$ be the arclength $A_3P_3$ of the cycoid between these inclination angles.
 
+\begin{theorem9}
+With the above notation, $s_1 - s_2 = s_3$.
+\end{theorem9}
 
-Theorem: $s_1 - s_2 = s_3$.
+\begin{proof}
 
-Our proof of the theorem is geometric.
+Imagine three copies of ${\cal C}$ rolling along the $x$-axis as illustrated below.
 
 \begin{onlineOnly}
     \begin{center}
@@ -37,6 +69,6 @@ Our proof of the theorem is geometric.
 
 \href{https://www.desmos.com/calculator/hckgktfx4p}{163: Limacon Cylcoid Arclength 3}
 
-
+\end{proof}
 
 \end{document}
