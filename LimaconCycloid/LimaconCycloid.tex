@@ -13,13 +13,13 @@ Relationship between their arclengths.
  
 
 In a recent article, ?? made the surprising observation that the length of the trochoid
-\[
-    (x,y) = (a\theta + b\sin\theta , a + b\cos\theta) \, , \, 0\leq \theta \leq 2\pi ,
-\]
-above the $x$-axis exceeds the length below by an amount equal to the length $8a$ of the cycloid
-\[
-    (x,y) = ( a\theta + a\sin\theta , a + a\cos\theta ) \, , \, 0\leq \theta \leq 2\pi .
-\]
+\begin{equation} 
+    (x,y) = (a\theta + b\sin\theta , a + b\cos\theta) \, , \, 0\leq \theta \leq 2\pi , \label{Eq:Limacon}
+\end{equation}
+above the $x$-axis exceeds its length below by an amount equal to the length $8a$ of the cycloid
+\begin{equation}
+    (x,y) = ( a\theta + a\sin\theta , a + a\cos\theta ) \, , \, 0\leq \theta \leq 2\pi . \label{Eq:Cycloid}
+\end{equation}
 
 \begin{onlineOnly}
     \begin{center}
@@ -33,11 +33,9 @@ above the $x$-axis exceeds the length below by an amount equal to the length $8a
 
 The purpose of this note is to give a geometric proof of this fact.
 
-A first step in this direction was to look for a more general equality of arclengths by associating each point of the limacon above the $x$-axis with a point below. One possibility is to pair points with same inclination angle (the angle the tangent to the limacon makes with the horizontal). Much to my delight, this appeared to work. That is, the arcle
+A first step in this direction was to look for a more general equality of arclengths by associating each point of the limacon above the $x$-axis with a point below. One choice consistent with ??'s result was to pair points with same inclination angle. And experiments with desmos suggested that the same equality of arclengths holds between any two inclination angles.
 
-
-
-
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the limacon between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the cycloid between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -47,17 +45,26 @@ A first step in this direction was to look for a more general equality of arclen
 
 \href{https://www.desmos.com/calculator/bpvuhnhi35}{163: Limacon Cylcoid Arclength 2}
 
+Trying to prove this more general result worked to our advantage as its shifted a global focus (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). %This worked to our advantage.
+
+\begin{theorem9}
+With $s_1$, $s_2$ the respective arclengths of the limacon (\ref{Eq:Limacon}) above and below the $x$-axis between inclination angles $0$, and $\phi$ and $s_3$ the arclength of the cycloid (\ref{Eq:Cycloid}) between these same angles,
+\[
+s_1 - s_2 = s_3.
+\]
+\end{theorem9}
+
+
+\begin{proof}
+Figure 3 shows three copies of a circle ${\cal C}$ of radius $a$ rolling along the $x$-axis. 
+
 As a circle ${\cal C}$ of radius $a$ rolls along the $x$-axis, a fixed point in the reference frame of ${\cal C}$ that is $b>a$ units from ${\cal C}$'s center sweeps out the limacon of Figure 1.
  
 A fixed point \emph{on} the same circle of radius $a$ traces the cycloid in Figure 1.
 
 Let $s_1$ be the arclength $A_1P_1$ of the limacon above the $x$-axis between inclination angles $0$ and $\phi$. Let $s_2$ be the arclength $A_2P_2$ of the limacon below the axis between the same inclination angles. And let $s_3$ be the arclength $A_3P_3$ of the cycoid between these inclination angles.
 
-\begin{theorem9}
-With the above notation, $s_1 - s_2 = s_3$.
-\end{theorem9}
 
-\begin{proof}
 
 Imagine three copies of ${\cal C}$ rolling along the $x$-axis as illustrated below.
 
