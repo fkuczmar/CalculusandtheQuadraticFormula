@@ -3,7 +3,7 @@
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
-\newtheorem{theorem9}{Theorem}
+\newtheorem*{theorem9}{Theorem}
 
 \begin{document}
 \begin{abstract}
@@ -33,7 +33,7 @@ above the $x$-axis exceeds its length below by an amount equal to the length $8a
 
 The purpose of this note is to give a geometric proof of this fact.
 
-A first step in this direction was to look for a more general equality of arclengths by associating each point of the limacon above the $x$-axis with a point below. One choice was to pair points with same inclination angle. And experiments with desmos suggested that the same equality of arclengths holds between any two inclination angles.
+A first step in this direction was to look for a more general equality of arclengths by associating each point of the limacon above the $x$-axis with a point below. One choice was to pair points with same inclination angle and experiments with desmos suggested that the same equality of arclengths holds between any two inclination angles.
 
 In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the limacon between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the cycloid between these same angles. 
 
@@ -56,7 +56,13 @@ s_1 - s_2 = s_3.
 
 
 \begin{proof}
-Figure 3 shows three copies of a circle ${\cal C}$ of radius $a$ rolling along the $x$-axis. 
+Figure 3 shows three copies of a circle ${\cal C}$ of radius $a$ rolling along the $x$-axis. The top two show the upper and lower arcs of the limacon traced by the respective points $P_1$ and $P_2$ (each attahed to a circle of radius $b$ rolling with ${\cal C}$) as ${\cal C}$ turns through the respective angles $\theta_1$ (measured from the upward pointing vertical) and $\theta_2$ (measured from the downward-pointing vertical). The lower shows the corresponding arc of the cycloid traced by $P_3$ as ${\cal C}$ turns though the angle $\theta_3$.
+
+We regard the corresponding arclengths $s_1$, $s_2$, $s_3$ and rotation angles $\theta_i$ as functions of the common inclination angle $\phi$ of the curves at $P_1$, $P_2$, and $P_3$. Our aim is to relate the differential arclengths $ds_i$ and the differential angles of rotation $\theta_i$ to the differential change $d\phi$ in the inclination angle.
+ 
+Then it suffices to show that as the inclination angle  the circles 
+
+point is that the differential motion 
 
 As a circle ${\cal C}$ of radius $a$ rolls along the $x$-axis, a fixed point in the reference frame of ${\cal C}$ that is $b>a$ units from ${\cal C}$'s center sweeps out the limacon of Figure 1.
  
