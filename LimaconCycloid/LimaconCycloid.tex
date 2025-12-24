@@ -64,12 +64,13 @@ Our proof of this theorem relies partly on the instantaneous center of rotation.
 \section{A Proof of the Theorem}
 
 \begin{proof}
+In proving Theorem 1, it helps to imagine three circles rolling along the $x$-axis as the points $P_i$, $i=1,2,3$ at rest in the reference frames of these circles sweep out the upper limacon, lower limacon, and cycloid. The circles start with the points $P_i$ at the same inclination angle $\phi=0$ and the segments $Q_iP_i$ vertical. And as illustrated in Figure 3, the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points remain parallel.
 
-It suffices to show
-\[
+Our goal is to show
+\begin{equation} \label{Eq:DiffArcs}
       ds_1 - ds_2 = ds_3 ,
-\]
-where  $ds_i$ are the differential arclengths along the curves (respectively the upper limacon, the lower limacon, and the cycloid) between inclination angles $\phi$ and $\phi + d\phi$. 
+\end{equation}
+where  $ds_i$ are the differential arclengths along the curves between inclination angles $\phi$ and $\phi + d\phi$. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -79,7 +80,7 @@ where  $ds_i$ are the differential arclengths along the curves (respectively the
 
 \href{https://www.desmos.com/calculator/snq3rgm0a4}{Limacon Cylcoid Arclength 3B}
 
-These arclengths in Figure 3 are at distances 
+These arclengths are at distances 
 \[
    \rho_1 = Q_1 P_1 ,
 \]
@@ -90,21 +91,25 @@ and
 \[
    \rho_3 = Q_3P_3
 \]
-from the respective centers of rotation $Q_1$, $Q_2$, $Q_3$.
+from the respective centers of rotation $Q_1$, $Q_2$, $Q_3$ of the circles.
 
-It would be a mistake (one that I made) to think the equality of distances
+The equality of distances
 \[
    \rho_1 - \rho_2 = \rho_3 ,
 \]
-implied the equality of differential arclengths above. But since the circles in Figure 3 turn through different differential angles in sweeping out the differential arclengths because in sweeping out the full curves (upper, lower limacon, and cycloid) the circles turn through the unequal angles 
+does \emph{not} implie the equality of differential arclengths (\ref{Eq:DiffArcs}) because the circles turn through unequal differential angles $d\theta_i$ in sweeping out the arcs. %We can see this globally since in sweeping out the full curves (upper limacon, lower limacon, and cycloid) the circles turn through the unequal angles
+%\[
+ %     (\Delta \theta_1 = 2\pi) > (\Delta \theta_1 = 2\arccos(-a/b)) > (\Delta \theta_3 = 2\pi - 2\arccos(-a/b) ) . 
+%\]
+%But since the circles in Figure 3 turn through unequal differential angles in sweeping out the differential arclengths because in sweeping out the full curves (upper, lower limacon, and cycloid) the circles turn through the unequal angles 
+%\[
+ %     (\Delta \theta_1 = 2\pi) > (\Delta \theta_1 = 2\arccos(-a/b)) > (\Delta \theta_3 = 2\pi - 2\arccos(-a/b) ) . 
+%\]
+So we need to find some relationship among these differential arclengths to show the equality (\ref{Eq:DiffArc}), which we write now in the form
 \[
-      (\Delta \theta_1 = 2\pi) > (\Delta \theta_1 = 2\arccos(-a/b)) > (\Delta \theta_3 = 2\pi - 2\arccos(-a/b) ) . 
+       \rho_1 \, d\theta_1 - \rho_2 \, d\theta_2 = \rho_3 \, d\theta_3 .
 \]
-So the correpsonding differential angles $d\theta_i$ are generally not equal and we need to find some relationships among them to show the equality
-\[
-       \rho_1 \, d\theta_1 - \rho_2 \, d\theta_2 = \rho_3 \, d\theta_3
-\]
-of differential arclengths.
+
 
 
 %Figure 3 shows three copies of a circle ${\cal C}$ of radius $a$ rolling along the $x$-axis. The top two show points $P_1$ and $P_2$ (each attached to a circle of radius $b$ rolling with ${\cal C}$) sweeping out the upper and lower arcs of the limacon as the circles turn through the respective angles $\theta_1$ (measured from the upward-pointing vertical) and $\theta_2$ (measured from the downward vertical). The lower shows the corresponding arc of the cycloid traced by $P_3$ as ${\cal C}$ turns though the angle $\theta_3$.
@@ -120,7 +125,7 @@ It turns out that we just need  two facts:
 \begin{enumerate}
 % \item $ds_i = \rho_i \, d\theta_i$ ,
 
-\item $\theta_1 + \theta_2 = \theta_3$, and
+\item $\theta_1 + \theta_2 = \theta_3$ (where the rotation angles are measured from the , and
 
 \item $\frac{d\theta_1}{d\theta_2} = \frac{\rho_1}{\rho_2}$.
 \end{enumerate}
@@ -134,6 +139,11 @@ These are enough to prove Theorem 1. For then
                        &= ds_3 .
 \end{align*}
 
+The proof of (a) follows from the composite figure below (note $\theta_2$ is measured from the downward vertical). The key point is that since $S_1P_1 = Q_1R_1 = \rho_2$, $\Delta C_1S_1P_1\cong \Delta C_1Q_1R_1$. Therefore, the marked angle $\angle P_1C_1S_1$ has measure $\theta_2$ and 
+\[
+ \theta_3 = \angle B_1C_1P_1 = \theta_1 + \theta_2.
+\]
+
 
 \begin{onlineOnly}
     \begin{center}
@@ -143,7 +153,16 @@ These are enough to prove Theorem 1. For then
 
 \href{https://www.desmos.com/calculator/txbihum5r3}{Cylcoids Proof of Theorem 1}
 
+To prove (b), we could use the law of sines ...
 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xvwr9mhuvw}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/xvwr9mhuvw}{Cylcoids Proof of Theorem 1B}
 
 
  
