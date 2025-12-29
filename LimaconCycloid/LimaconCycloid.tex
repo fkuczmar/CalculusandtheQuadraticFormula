@@ -11,14 +11,21 @@ Relationship between their arclengths.
 \end{abstract}
 \maketitle
  
-Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference along a line and a point $P_1$ fixed in the reference frame of ${\cal C}_1$ and $b$ units from its center sweeps out a \emph{curtate cycloid} (or just \emph{cycloid} for short). In a recent article, D. Robinson made the intriguing observation that the length of this cycloid 
+
+Fix a point $P_1$ in the reference frame of a circle ${\cal C}_1$ of radius $a$. Now roll the circle once through its circumferene on a line ${\cal L}$ and let $P_1$ sweep out a curve. When $P_1$ is a distance $b>a$ from the circle's center the roulette crosses ${\cal L}$ and  is called a \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend). In a recent article,  D. Robinson made the intriguing observation that the length of the portion of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the length on the opposite side by an amount equal to the length of the classic cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same rolling circle (see Figure 1). 
+
+
+% When $P_1$ is a distance $b>a$ from the circle's center the roulette  is called a \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend), a curve that crosses ${\cal L}$. In a recent article,  D. Robinson made the intriguing observation that the length of the portion of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the length on the opposite side by an amount equal to the length of the \emph{classic} cycloid, traced by a point $P_2$ fixed on the circumference of the same rolling circle (see Figure 1). 
+
+
+%Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference along a line and a point $P_1$ fixed in the reference frame of ${\cal C}_1$ and $b$ units from its center sweeps out a \emph{curtate cycloid} (or just \emph{cycloid} for short). In a recent article, D. Robinson made the intriguing observation that the length of this cycloid 
 \begin{equation} 
-    (x,y) = (a\theta + b\sin\theta , a + b\cos\theta) \, , \, -\pi\leq \theta \leq \pi , \label{Eq:Limacon}
+%    (x,y) = (a\theta + b\sin\theta , a + b\cos\theta) \, , \, -\pi\leq \theta \leq \pi , \label{Eq:Limacon}
 \end{equation}
-above the $x$-axis exceeds its length below by an amount equal to the length $8a$ of the \emph{classic} cycloid
-\begin{equation}
-    (x,y) = ( a\theta + a\sin\theta , a + a\cos\theta ) \, , \, -\pi\leq \theta \leq \pi . \label{Eq:Cycloid}
-\end{equation}
+%above the $x$-axis exceeds its length below by an amount equal to the length $8a$ of the \emph{classic} cycloid
+%\begin{equation}
+%    (x,y) = ( a\theta + a\sin\theta , a + a\cos\theta ) \, , \, -\pi\leq \theta \leq \pi . \label{Eq:Cycloid}
+%\end{equation}
 
 
 \begin{onlineOnly}
@@ -283,19 +290,30 @@ among the radii of curvature at the same inclination angle.
 
 
 \section{A Generalization}
-A classic problem asks how many rotations one quarter makes as it rolls once around the outside of another. 
+A classic problem asks how many rotations one quarter makes as it rolls once around another. 
 
-Compared with rolling along a line, the rolling quarter picks up an extra rotation and makes two rotations as it rolls once through its circumference.
+As the quarter rolls through its circumference below, it makes one clockwise rotation in the reference frame of the tangent line rolling with the quarter. But since this tangent makes on clockwise rotation in the reference frame of the fixed quarter, the rolling quarter makes two rotations as it rolls once around the other. 
+
+%Compared with rolling along a line, the rolling quarter picks up an extra rotation and makes two rotations as it rolls once through its circumference.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{hp5fdl6k6d}{900}{600}
+\desmos{0dlaaalmjl}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/hp5fdl6k6d}{Rolling Quarter 2}
+\href{https://www.desmos.com/calculator/0dlaaalmjl}{Rolling Quarter 2}
 
-The same is true locally. As the quarter turns the differential angle $d\theta$ about the center of the other, it rotates through the differential angle $d\theta^* = 2\, d\theta$ in the reference frame of the other. 
+The same is true locally. As the rolling quarter turns the differential angle $d\theta$ about the center of the other, it rotates through the differential angle $d\theta^* = 2\, d\theta$ in the reference frame of the other. Consequently, the arclength of a cardioid is twice that of its related cycloid, both globally and locally. These curves are traced by points attached to a circle as it rolls once through its circumference; on a line for the cycloid and on a circle of the same radius for the cardioid.  
+
+To see this, we need only attach tracing points $P$ (for the cycloid) and $P^*$ (for the cardioid) to the rolling quarters of Figure ??, taking care that in their initial positions they have the same positions relative to the respective points of tangency as in Figure ??.  Then as the circles roll through the arclength $d\sigma$ of their circumferences, these circles turn through the respective angles $d\theta = d\sigma/a$ and $P^*$ and $d\theta^* = 2\, d\theta$. Since the distances $\rho = QP$ and $\rho^* = Q^*P^*$ from the centers of rotation to the tracing points are equal, the point $P^*$ sweeps out an arclength
+\[
+      ds^* = QP\, d\theta^* = 2\,ds
+\]
+equal to twice that traversed by $P$.
+
+
+
 
 More generally, as a circle ${\cal C}$ of radius $a$ rolls through the differential arclength $d\sigma$ of its circumference around the outside of a fixed circle ${\cal C}_r$ with radius $r$, it turns through the angle $d\theta = d\sigma/a$ relative to the tangent line rolling with it. At the same time, the tangent turns with the same sense through the angle $d\sigma/r$ about the center of ${\cal C}_r$. So ${\cal C}$ turns through the angle
 \begin{align*}
