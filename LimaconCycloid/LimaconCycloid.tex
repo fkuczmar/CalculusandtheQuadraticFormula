@@ -11,15 +11,15 @@ Relationship between their arclengths.
 \end{abstract}
 \maketitle
  
-
-In a recent article, D. Robinson made the intriguing observation that the length of the trochoid
+Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference along a line and a point $P_1$ fixed in the reference frame of ${\cal C}_1$ and $b$ units from its center sweeps out a \emph{curtate cycloid} (or just \emph{cycloid} for short). In a recent article, D. Robinson made the intriguing observation that the length of this cycloid 
 \begin{equation} 
     (x,y) = (a\theta + b\sin\theta , a + b\cos\theta) \, , \, -\pi\leq \theta \leq \pi , \label{Eq:Limacon}
 \end{equation}
-above the $x$-axis exceeds its length below by an amount equal to the length $8a$ of the cycloid
+above the $x$-axis exceeds its length below by an amount equal to the length $8a$ of the \emph{classic} cycloid
 \begin{equation}
     (x,y) = ( a\theta + a\sin\theta , a + a\cos\theta ) \, , \, -\pi\leq \theta \leq \pi . \label{Eq:Cycloid}
 \end{equation}
+
 
 \begin{onlineOnly}
     \begin{center}
@@ -33,9 +33,9 @@ above the $x$-axis exceeds its length below by an amount equal to the length $8a
 
 The purpose of this note is to give a geometric proof of this fact and view some of Robinson's other observations in a broader context.
 
-Our first step in this direction is to look for a more general equality of arclengths by associating each point of the limacon above the $x$-axis with a point below. It seems like the only choice was to pair points with same inclination angle (the angle a curve makes with the horizontal) and experiments with desmos suggest that the same equality of arclengths holds between any two inclination angles.
+Our first step in this direction is to look for a more general equality of arclengths by associating each point of the cycloid above the $x$-axis with a point below. It seems like the only choice was to pair points with same inclination angle (the angle a curve makes with the horizontal) and experiments with desmos suggest that the same equality of arclengths holds between any two inclination angles.
 
-In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the limacon between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the cycloid between these same angles. 
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the cycloid between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the classic cycloid between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -59,7 +59,7 @@ The figure below makes the equality of arclengths plausible if you focus on the 
 Trying to prove this more general result works to our advantage as its shifts our focus from a global one (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). %This worked to our advantage.
 
 \begin{theorem9}
-With $s_1$, $s_2$ the respective arclengths of the limacon (\ref{Eq:Limacon}) above and below the $x$-axis between inclination angles $0$, and $\phi$ and $s_3$ the arclength of the cycloid (\ref{Eq:Cycloid}) between these same angles,
+With $s_1$, $s_2$ the respective arclengths of the cycloid (\ref{Eq:Limacon}) above and below the $x$-axis between inclination angles $0$, and $\phi$ and $s_3$ the arclength of the classic cycloid (\ref{Eq:Cycloid}) between these same angles,
 \[
 s_1 - s_2 = s_3.
 \]
@@ -68,6 +68,26 @@ s_1 - s_2 = s_3.
 Our proof of this theorem relies partly on the instantaneous center of rotation. Readers familiar with this idea should feel free to skip the next section and move directly to the proof.
 
 \section{Preliminaries}
+From the \emph{CarTalk} puzzer, May 15, 2006:
+
+{\bf RAY:} A car is traveling at 60 mph. You're standing by the side of the road, or lying on the road as the case may be. Can you name a part, or parts, of the car, that are not moving in relation to the road?
+
+If needed, x-ray vision is permitted.
+
+That's Part A.
+
+Part 2-- and this is a hint-- what part of the car is traveling at 120 mph?
+
+{\bf Answer:}
+
+%The bottom of every tire is moving at zero miles an hour with respect to the road. If that weren't the case, then the car would be in a skid.
+
+%Imagine an ideal tire where one point is touching the road. That very point of the tire that's touching the road must not be moving in relation to the road. In fact, it is moving at zero miles an hour. And when you point it 180 degrees away, it has to be moving at twice that speed, or 120 miles an hour.
+
+\href{https://www.cartalk.com/radio/puzzler/special-non-moving-car-part}{The Special, Non-Moving Car Part}
+
+
+
 It might seem counterintuitive that at any moment a rolling wheel is rotating \emph{not} about its center but rather about its point of contact with the ground. This statement has two implications for a point $P$ at rest in the reference frame of a rolling wheel, like a pebble stuck in a tire.
 
 \begin{enumerate}
@@ -78,7 +98,7 @@ It might seem counterintuitive that at any moment a rolling wheel is rotating \e
 
 %The photograph of a rolling wheel below gives some sense of (a); points on the spokes farther from the point of contact are moving faster and the spokes blur....
 
-The figure below shows a cycloid, the curve traced by a point $P$ fixed on the circumference of a rolling wheel. The marked angle $\theta$ is the wheel's angle of rotation measured from an arbitrary starting point, in this case when $\overline{QP}$ is vertical and $P$ coincides with $A$. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical).
+The figure below shows the classic cycloid, the curve traced by a point $P$ fixed on the circumference of a rolling wheel. The marked angle $\theta$ is the wheel's angle of rotation measured from an arbitrary starting point, in this case when $\overline{QP}$ is vertical and $P$ coincides with $A$. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical).
 
 The points on the cycloid are spaced at equal intervals of rotation and suggest that the speed $v= \rho (d\theta/dt)$ of the tracing point is proportional to its distance from the center of rotation.  
 
@@ -275,18 +295,28 @@ Compared with rolling along a line, the rolling quarter picks up an extra rotati
 
 \href{https://www.desmos.com/calculator/hp5fdl6k6d}{Rolling Quarter 2}
 
-The same is true locally. As the quarter turns the differential angle $d\theta$ about the center of the other, it rotates through the differential angle $d\theta^* = 2\, d\theta$. 
+The same is true locally. As the quarter turns the differential angle $d\theta$ about the center of the other, it rotates through the differential angle $d\theta^* = 2\, d\theta$ in the reference frame of the other. 
 
-More generally, as a circle ${\cal C}$ of radius $a$ rolls through the differential arclength $d\sigma$ of its circumference around the outside of a fixed circle ${\cal C}_r$ with radius $r$, it turns through the angle $d\theta = d\sigma/a$ relative to the common tangent line rolling with it. At the same time, the tangent turns with the same sense through the angle $d\theta^\prime = d\sigma/r$ about the center of the fixed circle. So ${\cal C}$ turns through the angle
+More generally, as a circle ${\cal C}$ of radius $a$ rolls through the differential arclength $d\sigma$ of its circumference around the outside of a fixed circle ${\cal C}_r$ with radius $r$, it turns through the angle $d\theta = d\sigma/a$ relative to the tangent line rolling with it. At the same time, the tangent turns with the same sense through the angle $d\sigma/r$ about the center of ${\cal C}_r$. So ${\cal C}$ turns through the angle
 \begin{align*}
      d\theta^* &= \left(\frac{1}{a} + \frac{1}{r} \right) \, d\sigma \\
                     &= \left( 1 + \frac{a}{r}  \right) \, d\theta . 
 \end{align*}
-relative to ${\cal C}_r$.
+in the reference frame of ${\cal C}_r$.
 
-These relationships imply the arclength of a cardioid is twice that of the corresponding cycloid. The cardioid is traced by a point attached to a circle as it rolls around another circle of the same radius, the cycloid by a point on a circle of the same radius roling on a line.
+This equation also holds if ${\cal C}$ rolls on the inside of ${\cal C}_r$ if we suppose $r$ to be negative in this case.
 
-For imagine tracing points $P$ and $P^*$ attached to these circles of radius $a$, the first rolling along a line, the second around a fixed circle (Figure ?? below). Imagine also the circles starting with their tracing points diameterically opposite the points of tangency. Now let the circles roll through the arclength $d\sigma$ of their circumferences. Then the first turns through the angle $d\theta = d\sigma/a$ and the second through the angle $d\theta^* = 2\, d\theta$. Since the distances $\rho = QP$ and $\rho^* = Q^*P^*$ from the centers of rotation to the tracing points are equal, the point $P^*$ sweeps out an arclength
+This equation implies a similar relationship 
+\[
+  ds^*  =  \left( 1 + \frac{a}{r}  \right)  ds
+\]
+between a differential arclengths $ds$ of the curtate cycloid (\ref{Eq:Limacon})  and $ds^*$ of the corresponding epicyloid (or hypocycloid). The latter is traced by a fixed point $b$ units from the center of a circle with radius $a$ rolling around the outside (or inside) of a circle of radius $r$.
+
+Take for example, the classic cycloid and the cardiod each traced by a point attached to a circle as it rolls once through its circumference; on a line for the cycloid and on a circle of the same radius for the cardioid. The arclength of the cardioid is twice that of the cycloid, both locally and globally.
+
+%These relationships imply the arclength of a cardioid is twice that of the corresponding cycloid. The cardioid is traced by a point attached to a circle as it rolls around another circle of the same radius, the cycloid by a point on a circle of the same radius roling on a line.
+
+To see why, imagine tracing points $P$ and $P^*$ attached to these circles of radius $a$, the first rolling along a line, the second around a circle of the same radius (Figure ?? below). Imagine also the circles starting with their tracing points diameterically opposite the points of tangency. Now let the circles roll through the arclength $d\sigma$ of their circumferences. Then the first turns through the angle $d\theta = d\sigma/a$ and the second through the angle $d\theta^* = 2\, d\theta$. Since the distances $\rho = QP$ and $\rho^* = Q^*P^*$ from the centers of rotation to the tracing points are equal, the point $P^*$ sweeps out an arclength
 \[
       ds^* = QP\, d\theta^* = 2\,ds
 \]
