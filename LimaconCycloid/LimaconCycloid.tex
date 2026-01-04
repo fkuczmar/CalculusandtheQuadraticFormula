@@ -43,7 +43,7 @@ The purpose of this note is to give a geometric proof of a generalization of thi
 
 Our first step in this direction is to look for a more general equality of arclengths by associating each point of the cycloid above the $x$-axis with a point below. It seems like the simplest choice is to pair points with same inclination angle (the angle the curve makes with the horizontal) and experiments with desmos suggest the same equality of arclengths holds between any two inclination angles.
 
-In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the cycloid between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the classic cycloid between these same angles. 
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the cycloid between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the ordinary cycloid between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -67,7 +67,7 @@ The figure below makes the equality of arclengths plausible if you focus on the 
 Trying to prove this more general result works to our advantage as its shifts our focus from a global one (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). %This worked to our advantage.
 
 \begin{theorem9}
-As in Figure 1 with $s_1 = s_1(\phi)$ and $s_2=s_2(\phi)$ the respective arclengths of a prolate cycloid above and below the $x$-axis between inclination angles $0$ and $\phi$, and $s_3=s_3(\phi)$ the arclength of the ordinary cycloid between these same angles,
+As in Figure 2 with $s_1 = s_1(\phi)$ and $s_2=s_2(\phi)$ the respective arclengths of a prolate cycloid on the same and opposite sides of its rolling circle between inclination angles $0$ and $\phi$, and $s_3=s_3(\phi)$ the arclength of the ordinary cycloid between these same angles,
 \[
 s_1 - s_2 = s_3.
 \]
@@ -106,7 +106,7 @@ It might seem counterintuitive that at any moment a rolling wheel is rotating \e
 
 %The photograph of a rolling wheel below gives some sense of (a); points on the spokes farther from the point of contact are moving faster and the spokes blur....
 
-The figure below shows the classic cycloid, the curve traced by a point $P$ fixed on the circumference of a rolling wheel. The marked angle $\theta$ is the wheel's angle of rotation measured from an arbitrary starting point, in this case when $\overline{QP}$ is vertical and $P$ coincides with $A$. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical).
+The figure below shows the ordinary cycloid, the curve traced by a point $P$ fixed on the circumference of a rolling wheel. The marked angle $\theta$ is the wheel's angle of rotation measured from an arbitrary starting point, in this case when $\overline{QP}$ is vertical and $P$ coincides with $A$. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical).
 
 The points on the cycloid are spaced at equal intervals of rotation and suggest that the speed $v= \rho (d\theta/dt)$ of the tracing point is proportional to its distance from the center of rotation.  
 
@@ -307,14 +307,14 @@ As the quarter rolls through its circumference below, it makes one clockwise rot
 
 The same is true locally. As the rolling quarter turns the differential angle $d\theta$ in the reference frame of the rolling tangent line, it rotates through the differential angle $d\theta^* = 2\, d\theta$ in the reference frame of the fixed quarter. A consequence is that the arclength of a cardioid is twice that of its sister cycloid, both globally and locally. These curves are traced by points attached to a circle as it rolls once through its circumference; along a line for the cycloid and around a circle of the same radius for the cardioid.  
 
-To see this, we need only attach a tracing point $P^*$ to the top rolling quarter of Figure 3 (see Figure 4). This point sweeps out a cardiod in the reference frame of the fixed quarter and a classic cycloid in the reference frame of the rolling tangent. Now as the quarter rolls through the differential arclength $d\sigma$ of its circumference it turns through the angles $d\theta = d\sigma/a$ in the reference frame of the tangent and $d\theta^* = 2\, d\theta$ in reference frame of the fixed quarter. Hence, as the quarter rolls through the differential arclength $d\sigma$, $P^*$ sweeps out a differential arclength
+To see this, we need only attach a tracing point $P^*$ to the top rolling quarter of Figure 3 (see Figure 4). This point sweeps out a cardioid in the reference frame of the fixed quarter and an ordinary cycloid in the reference frame of the rolling tangent. Now as the quarter rolls through the differential arclength $d\sigma$ of its circumference it turns through the angles $d\theta = d\sigma/a$ in the reference frame of the rolling tangent and $d\theta^* = 2\, d\theta$ in reference frame of the fixed quarter. Hence, as the quarter rolls through the differential arclength $d\sigma$, $P^*$ sweeps out a differential arclength
 %\[
  %  ds = Q^*P^* \, d\theta
 %\]
 \[
-  ds^* = Q^*P^*\, d\theta^* =  QP (2\, d\theta) = 2 \,ds
+  ds^* = Q^*P^*\, d\theta^* =  2Q^*P^* \, d\theta
 \]
-along the cardioid equal to twice the differential arclength $ds$ along the cycloid. And if, as illustrated in Figure 4, we measure the incination angle $\phi$ of the cardioid \emph{relative to the rolling tangent line}, then $ds^* = 2\, ds$ between inclination angles $\phi$ and $\phi + d\phi$ of the two curves.
+along the cardioid equal to twice the differential arclength $ds = QP\, d\theta$ along the cycloid. And if, as illustrated in Figure 4, we measure the incination angle $\phi = m\angle P^*Q^*C^*$ of the cardioid \emph{relative to the rolling tangent line}, then $ds^* = 2\, ds$ between inclination angles $\phi$ and $\phi + d\phi$ of the two curves.
 
 %To see this, we need only attach tracing points $P$ (for the cycloid) and $P^*$ (for the cardioid) to the rolling quarters, taking care they have the same initial positions relative to the respective points of tangency as in Figure ??.  Then as the circles roll through the arclength $d\sigma$ of their circumferences,they turn through the respective angles $d\theta = d\sigma/a$ and $d\theta^* = 2\, d\theta$. Since the distances $\rho = QP$ and $\rho^* = Q^*P^*$ from the centers of rotation to the tracing points are equal, the point $P^*$ sweeps out an arclength
 %\[
@@ -345,7 +345,7 @@ In either case, the equation implies a similar relationship
 \[
   ds^*  =  \left( 1 + \frac{a}{r}  \right)  ds
 \]
-between the differential arclengths $ds$ a prolate cycloid and $ds^*$ of its sister epicyloid (or hypocycloid if $r<0$) between inclination angles $\phi$ and $\phi + d\phi$. The sister epicycloid is traced by a fixed point $b$ units from the center of a circle with radius $a$ rolling around the outside (or inside) of a circle of radius $r$. Here we suppose as for the cardioid, that we measure the inclination angle of the epicycloid relative to the rolling tangent.
+between the differential arclengths $ds$ of a prolate cycloid and $ds^*$ of its sister epicycloid (or hypocycloid if $r<0$) between inclination angles $\phi$ and $\phi + d\phi$. The sister epicycloid is traced by a fixed point $b$ units from the center of a circle with radius $a$ rolling around the outside (or inside) of a circle of radius $r$. Here we suppose as for the cardioid, that we measure the inclination angle of the epicycloid relative to the rolling tangent.
 
 %Take for example, the classic cycloid and the cardiod each traced by a point attached to a circle as it rolls once through its circumference; on a line for the cycloid and on a circle of the same radius for the cardioid. The arclength of the cardioid is twice that of the cycloid, both locally and globally.
 
@@ -361,20 +361,46 @@ between the differential arclengths $ds$ a prolate cycloid and $ds^*$ of its sis
 
 %The figure below compares the arclengths of a cyloid and cardioid, each generated by circles of the same radius. The two tracing points $P_1$ and $P_2$ start in the same position
 
+An immediate consequence is an arclength theorem for epicycloids.
 
+\begin{theorem10}
+Let $s_1^*=s_1^*(\phi)$ and $s_2* = s_2^*(\phi)$ be the arclengths of an $(a,b,r)$ prolate epicycloid (or hypocycloid) between inclination angles $\phi$ and $\phi + d\phi$, the former on the same side of the tangent line as the rolling circle, the latter on the opposite side. 
 
+Let $s_3 = s_3(\phi)$ be the arclength of the sister $(a,r)$ epicylcoid (or hypocycloid) between the same inclination angles. % traced by a point attached to the circumference of a same rolling circle in the reference frame of the rolling tangent.
+
+Then 
+\[
+       s_1^* - s_2^* = s_3^* .
+\]
+\end{theorem10}
+
+\begin{proof}
+By the arclength theorem for cycloids,
+\[
+    ds_1 - ds_2 = ds_3
+\]
+for the respective arclengths of the $(a,b)$ prolate cycloid (above and below) and its sister cylcoid between inclination angles $\phi$ and $\phi + d\phi$. Multiplying both sides of the above equation by the factor $a/r + 1$ shows
+\[
+    ds_1^* - ds_2^* = ds_3^*
+\]
+and proves the theorem.
+\end{proof}
+
+Fgure 5 shows an example for the $(a,b,r)=(2,6,5)$ prolate epicyloid. Its red arclength exceeds the blue by the length of its sister $(a,r) = (2,6)$ epicycloid (dashed). The figure shows the rolling circle when the tracing point $P^*$ crosses the rolling tangent and the arclength of the prolate epicycloid changes sign.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{nfg2ofyt1t}{900}{600}
+\desmos{l4qoims9af}{900}{600}  %nfg2ofyt1t
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/nfg2ofyt1t}{Wrapping cycloids around circles General 2}
+\href{https://www.desmos.com/calculator/l4qoims9af}{Wrapping cycloids around circles Clover}  
 
+Three other examples:
 
+\begin{enumerate}
 
-\section{Limacons}
+\item \emph{Cardioids and Limacons:} When a circle rolls once around a fixed circle with the same radius (Figure 6), the $(a,b,a)$ prolate epicycloid is a limacon with polar equation $r=2a+2b\cos\theta$. Its arclength counts negatively around the loop of the limacon and the outer arclength exceeds the loop's length by the length $16a$ of the limacon's sister cardioid, twice that of the ordinary $a$-cycloid. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -384,7 +410,9 @@ between the differential arclengths $ds$ a prolate cycloid and $ds^*$ of its sis
 
 \href{https://www.desmos.com/calculator/kuhagddz3r}{Wrapping Cycloids around Circles Limacon}
 
+\item \emph{Neprhroids and ??}
 
+\end{enumerate}
 
 
 
