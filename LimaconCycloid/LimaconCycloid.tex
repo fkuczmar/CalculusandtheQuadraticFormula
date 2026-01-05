@@ -39,7 +39,7 @@ Fix a point $P_1$ in the reference frame of a circle ${\cal C}_1$ of radius $a$ 
 
 %The surprise is that that difference is independent of the size of the loop.
 
-The purpose of this note is to give a geometric proof of a generalization of this result.  %this fact and view some of Robinson's other results in a broader context.
+The purpose of this note is to give a geometric proof of this result and some of Robinson's other discoveries.  %this fact and view some of Robinson's other results in a broader context.
 
 Our first step in this direction is to look for a more general equality of arclengths by associating each point of the cycloid above the $x$-axis with a point below. It seems like the simplest choice is to pair points with same inclination angle (the angle the curve makes with the horizontal) and experiments with desmos suggest the same equality of arclengths holds between any two inclination angles.
 
@@ -76,7 +76,7 @@ s_1 - s_2 = s_3.
 Our proof of this theorem relies on the instantaneous center of rotation. Readers familiar with this idea might skip the next section and move directly to the proof.
 
 \section{Preliminaries}
-From the \emph{CarTalk} puzzer, May 15, 2006:
+From the \emph{CarTalk} puzzler archives, May 15, 2006:
 
 {\bf RAY:} A car is traveling at 60 mph. You're standing by the side of the road, or lying on the road as the case may be. Can you name a part, or parts, of the car, that are not moving in relation to the road?
 
@@ -127,7 +127,9 @@ For the cycloid above, for example, traced by a point attached to a circle of ra
               &= 2a \cos(\theta/2)\, d\theta .  
 \end{align*}
 
-{\bf Remark:} Integrating these differential arclengths shows the length of the cycloid from $A$ to $P$ is
+{\bf Remarks:} 
+\begin{enumerate}
+\item Integrating these differential arclengths shows the length of the cycloid from $A$ to $P$ is
 \[
        s = 4a\sin(\theta/2) = 4a \sin\phi %2 \text BP .
 \]
@@ -138,8 +140,9 @@ But my favorite way to prove this equality is to compare the differential arclen
     dc = (a\, d\theta) \cos \phi = ds/2.
 \]
 
+\item A pebble stuck in the wheel of a tire moves twice as fast as the wheel's axle at the top of its motion. For a dramatic demonstration, roll a book along two cylinders (oatmeal containers work well) and you can see the book advance twice as far the cyclinders.
 
-
+\end{enumerate}
 
 
 \section{A Proof}
@@ -396,7 +399,7 @@ Fgure 5 shows an example for the $(a,b,r)=(2,6,5)$ prolate epicyloid. Its red ar
 
 \href{https://www.desmos.com/calculator/l4qoims9af}{Wrapping cycloids around circles Clover}  
 
-Three other examples:
+Three more examples:
 
 \begin{enumerate}
 
@@ -410,7 +413,7 @@ Three other examples:
 
 \href{https://www.desmos.com/calculator/kuhagddz3r}{Wrapping Cycloids around Circles Limacon}
 
-\item \emph{Neprhroids and ??:}
+\item \emph{Neprhroids:} Roll a circle twice through its circumference around the outside of a circle with twice the radius and a point attached to the rolling circle sweeps out a nephroid. Figure ?? illustrates the arclength theorem in this case. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -421,7 +424,17 @@ Three other examples:
 \href{https://www.desmos.com/calculator/czhdwjarf3}{Wrapping Cycloids around Circles Nephroid}
 
 
-\item {Segments and Ellipses:}
+\item {Ellipses:} Roll a circle ${\cal C}$ twice through its circumference around the \emph{inside} of a circle with twice the radius and a point $P^*$ at rest in the reference frame of ${\cal C}$ to the rolling circle sweeps out an ellipse. When $P^*$ is on ${\cal C}$ it traces the diameter of the fixed circle twice.
+
+Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a)$ prolate hypocyloid (an ellipse), with major and minor semi-axes $b+a$ and $b-a$.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{yillqxp8mg}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/yillqxp8mg}{Wrapping Cycloids Around Circles Ellipse 2B}
 
 \end{enumerate}
 
@@ -430,7 +443,6 @@ Three other examples:
 
 
 
-\section{Nephroid}
 
 
 %\begin{onlineOnly}
@@ -472,7 +484,7 @@ Three other examples:
 
 \href{https://www.desmos.com/calculator/yzuot0hbvv}{Epicycloids 3 Ellipse}
 
-yzuot0hbvv
+
 
 
 \begin{onlineOnly}
@@ -483,7 +495,7 @@ yzuot0hbvv
 
 \href{https://www.desmos.com/calculator/yillqxp8mg}{Wrapping Cycloids Around Circles Ellipse 2B}
 
-yillqxp8mg
+
 
 
 \end{document}
