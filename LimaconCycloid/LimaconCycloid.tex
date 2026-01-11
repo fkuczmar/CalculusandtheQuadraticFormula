@@ -3,8 +3,8 @@
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
-\newtheorem{theorem9}{Arclength Theorem for Cycloids}
-\newtheorem{theorem10}{Arclength Theorem for Epicycloids and Hypocycloids}
+\newtheorem{theorem9}{Robinson's Arclength Theorem for Cycloids}
+\newtheorem{theorem10}{An Arclength Theorem for Epi and Hypocycloids}
 
 \begin{document}
 \begin{abstract}
@@ -13,7 +13,9 @@ Relationship between their arclengths.
 \maketitle
  
 
-Fix a point $P_1$ in the reference frame of a circle ${\cal C}_1$ of radius $a$ and roll the circle once through its circumferene on a line ${\cal L}$. When $P_1$ is a distance $b>a$ from the circle's center, it sweeps out a curve called a \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) that crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds its length on the opposite side by the length of the \emph{ordinary} cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same circle (see Figure 1). 
+Roll a circle ${\cal C}_1$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out a \emph{general} cycloid (from the Greek \emph{kyklos}) . When $P_1$ is a distance $b>a$ from the circle's center, the \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend) crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds its length on the opposite side by the length of the \emph{ordinary} cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same circle (see Figure 1, where ${\cal L}$ is the $x$-axis). 
+
+%Fix a point $P_1$ in the reference frame of a circle ${\cal C}_1$ of radius $a$ and roll the circle once through its circumference on a line ${\cal L}$. When $P_1$ is a distance $b>a$ from the circle's center, it sweeps out a curve called a \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) that crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds its length on the opposite side by the length of the \emph{ordinary} cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same circle (see Figure 1). 
 
 
 % When $P_1$ is a distance $b>a$ from the circle's center the roulette  is called a \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend), a curve that crosses ${\cal L}$. In a recent article,  D. Robinson made the intriguing observation that the length of the portion of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the length on the opposite side by an amount equal to the length of the \emph{classic} cycloid, traced by a point $P_2$ fixed on the circumference of the same rolling circle (see Figure 1). 
@@ -41,9 +43,9 @@ Fix a point $P_1$ in the reference frame of a circle ${\cal C}_1$ of radius $a$ 
 
 The purpose of this note is to give a geometric proof of this result and some of Robinson's other discoveries.  %this fact and view some of Robinson's other results in a broader context.
 
-Our first step in this direction is to look for a more general equality of arclengths by associating each point of the cycloid above the $x$-axis with a point below. It seems like the simplest choice is to pair points with same inclination angle (the angle the curve makes with the horizontal) and experiments with desmos suggest the same equality of arclengths holds between any two inclination angles.
+Our first step in this direction is to look for a more general equality of arclengths by associating each point of a prolate cycloid above the $x$-axis with a point below. It seems like the simplest choice is to pair points with same inclination angle (the angle the curve makes with the horizontal) and experiments with desmos suggest the same equality of arclengths holds between any two inclination angles.
 
-In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ in the cycloid between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the ordinary cycloid between these same angles. 
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ of the prolate cycloid between indclination angles $0$ and $\phi$ equals the arclength $s_3$ of the ordinary cycloid between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -53,16 +55,17 @@ In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $
 
 \href{https://www.desmos.com/calculator/0vodc6gvp5}{Limacon Cylcoid Arclength 2B}
 
+You can almost see the equality of arclengths in the figure below by looking at short arcs of the same color between the same inclination angles.
 
-The figure below makes the equality of arclengths plausible if you focus on the short arcs of the same color between the same inclination angles.
+%The figure below makes the equality of arclengths plausible if you focus on the short arcs of the same color between the same inclination angles.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{4xn0xtuszi}{900}{600}   
+\desmos{yqw8ektvps}{900}{600}     %4xn0xtuszi
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/4xn0xtuszi}{Cylcoid Trochoid Color}
+\href{https://www.desmos.com/calculator/yqw8ektvps}{Cylcoid Trochoid Color 2}
 
 Trying to prove this more general result works to our advantage as its shifts our focus from a global one (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). %This worked to our advantage.
 
@@ -387,15 +390,26 @@ for the differential arclengths of the $(a,b)$ prolate cycloid (above and below)
 and proves the theorem.
 \end{proof}
 
-Fgure 5 shows an example for the $(a,b,r)=(2,5,6)$ prolate epicyloid. Its upper (red) arclength exceeds its lower (blue) by the length of the sister $(a,r) = (2,6)$ epicycloid (dashed). The figure shows the rolling circle at a transition point between upper and lower arclengths as $P^*$ crosses the rolling tangent. %and the arclength of the prolate epicycloid changes sign.
+
+%Figure 5 shows an example for the $(a,b,r)=(2,5,6)$ prolate epicyloid. Its upper (red) arclength exceeds its lower (blue) by the length of the sister $(a,r) = (2,6)$ epicycloid (dashed). The figure shows the rolling circle at a transition point between upper and lower arclengths as $P^*$ crosses the rolling tangent. %and the arclength of the prolate epicycloid changes sign.
+
+Figure 5 shows an example. The sister $(a,r) = (2,4)$ epicycloid is a nephroid, traced by a point on a circle rolling around the outside of a circle with twice the radius. The upper (red) arclength of the prolate epicycloid exceeds its lower (blue) length by the length of the nephroid. The figure shows the rolling circle at a transition point between the upper and lower arclengths when $P^*$ crosses the rolling tangent.
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{l4qoims9af}{900}{600}  %nfg2ofyt1t
+\desmos{czhdwjarf3}{900}{600}
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/l4qoims9af}{Wrapping cycloids around circles Clover}  
+\href{https://www.desmos.com/calculator/czhdwjarf3}{Wrapping Cycloids around Circles Nephroid}
+
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmos{l4qoims9af}{900}{600}  %nfg2ofyt1t
+%\end{center}
+%\end{onlineOnly}
+
+%\href{https://www.desmos.com/calculator/l4qoims9af}{Wrapping cycloids around circles Clover}  
 
 Three more examples:
 
@@ -413,13 +427,13 @@ Three more examples:
 
 \item \emph{Neprhroids:} Roll a circle twice through its circumference around the outside of a circle with twice the radius and a point attached to the rolling circle sweeps out a nephroid. Figure ?? illustrates the arclength theorem in this case. 
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{czhdwjarf3}{900}{600}
-\end{center}
-\end{onlineOnly}
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmos{czhdwjarf3}{900}{600}
+%\end{center}
+%\end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/czhdwjarf3}{Wrapping Cycloids around Circles Nephroid}
+%\href{https://www.desmos.com/calculator/czhdwjarf3}{Wrapping Cycloids around Circles Nephroid}
 
 
 \item {Ellipses:} Roll a circle ${\cal C}$ twice through its circumference around the \emph{inside} of a circle with twice the radius and a point $P^*$ at rest in the reference frame of ${\cal C}$ to the rolling circle sweeps out an ellipse. When $P^*$ is on ${\cal C}$ it traces the diameter of the fixed circle twice.
