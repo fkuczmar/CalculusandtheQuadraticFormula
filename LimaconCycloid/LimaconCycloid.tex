@@ -531,4 +531,117 @@ Double Generation:
 \href{https://www.desmos.com/calculator/fidce8bipo}{Ellipse as Glissette}
 
 
+\section{Transition Points}
+
+Four related problems:
+
+\begin{enumerate}
+\item At the moment shown, when the ends of a ladder are sliding along the wall and floor, what point of the ladder is moving in the direction of the ladder?  % and tmakes the angle $\phi$ with the floor and its ends are slidingWhat point on the ladder
+
+
+
+\item What is the length of the longest one-dimensional ladder you can carry horizontally around the corner below?
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{zokkgpj8wo}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/zokkgpj8wo}{Shortest Ladder 4}
+
+
+
+\item What is the length of the shortest tangent segment to the ellipse
+\[
+     \frac{x^2}{p^2} + \frac{y^2}{q^2} = 1
+\]
+cut out by the coordinate axes?
+
+%\item What is the length of the shortest ladder that reaches from the ground to a tall building and passes over the top of a wall $A$ feet from the building and $B$ feet high?
+
+\item Is there a point that represents the same location in the two maps of Washington State shown below?
+\end{enumerate}
+
+Solutions:
+
+\begin{enumerate}
+\item Let $P$ be a fixed point of the ladder $p$ feet from the top and $q$ feet from the bottom. Then in the coordinate system above, $P$ has position 
+\[
+   {\bf r} = (p\cos\phi, q\sin \phi)
+\]
+relative to the origin. As the ladder turns through the differential angle $d\phi$, the displacement of $P$ is  
+\[
+     d {\bf r} = (-p \sin\phi , q\cos \phi) \, d\phi.
+\]
+So $P$ is moving parallel to the ladder if and only if
+\[
+     \frac{q\cos\phi}{p\sin\phi} = \tan\phi ,
+\]
+or equivalently when
+\[
+    \tan^2\phi = \frac{q}{p} .
+\]
+
+So if 
+\[
+      L = p + q = p (1+\tan^2 \phi)
+\]
+is the length of the ladder, then the point $P$ moving parallel to the ladder is
+\[
+    p = L\cos^2\phi
+\]
+feet from the top and 
+\[
+   q = L\sin^2\phi .
+\]
+feet from the bottom.
+
+Note that $P$ has coordinates
+\[
+     (x,y) = (p\cos \phi , q\sin\phi) = (L\cos^3\phi, L\sin^3\phi).
+\]
+
+\item When I ask students to sketch the path of a point on the sliding ladder of the first problem (before we parameterize the curve and discover that it is an ellipse), the almost universal response is to draw a curve like the one in Figure ?. It is just not intuitive that the path is concave down. 
+
+
+
+But the students' response has a profound element of truth. The \emph{envelope} of the sliding ladder (ie. the curve tangent to the family of segments of length $L$ running between the coordinate axes) is concave up. In fact it is the curve %In fact it is the arc
+\[
+ (x,y) = (L\cos^3\phi, L\sin^3\phi) \, , \, 0\leq \phi \leq \pi/2.
+\]
+formed by the points $P$ of the sliding ladder in part (a) and is part of of the astroid 
+\[
+     x^{2/3} + y^{2/3} = L^{2/3}.
+\]
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{c1rsk201zu}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/c1rsk201zu}{Longest Ladder 5}
+
+
+
+
+The reason is that the point of tangency of the envelope with the sliding segment is necessarily the point of the segment moving parallel to the segment in the direction of the envelope.
+
+This observation and the answer to our first question answers the second. The length of the longest ladder is
+
+
+shortest tangent segment to the ellipse
+\[
+       \frac{x^2}{p^2} + \frac{y^2}{q^2} = 1
+\]
+ is $L=p+q$. The upper part of the tangent segment $PA$, from the point of tangency to the $y$-axis has length $p$, the lower part $PB$ length $q$ (Figure 7).  
+
+To see why
+
+
+When I ask students to first sketch the path of a point on the sliding ladder, the almost universal response is to 
+\end{enumerate}
+
+
 \end{document}
