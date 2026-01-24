@@ -441,7 +441,7 @@ Figure 5 shows an example for the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its 
 
 %\href{https://www.desmos.com/calculator/l4qoims9af}{Wrapping cycloids around circles Clover}  
 
-Two more examples:
+Two more examples, both from Robinson's paper:
 
 \begin{enumerate}
 
@@ -466,9 +466,11 @@ Two more examples:
 %\href{https://www.desmos.com/calculator/czhdwjarf3}{Wrapping Cycloids around Circles Nephroid}
 
 
-\item {Ellipses:} Roll a circle ${\cal C}$ twice through its circumference around the \emph{inside} of a circle with twice the radius and a point $P^*$ at rest in the reference frame of ${\cal C}$ to the rolling circle sweeps out an ellipse. When $P^*$ is on ${\cal C}$ it traces the diameter of the fixed circle twice.
+\item {Ellipses:} Roll a circle ${\cal C}$ twice through its circumference around the \emph{inside} of a circle with twice the radius and a point $P^*$ at rest in the reference frame of ${\cal C}$ to the rolling circle sweeps out an ellipse. When $P^*$ is on ${\cal C}$ the roulette is a diameter of the fixed circle, traced twiced. % it traces the diameter of the fixed circle twice.
 
-Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a)$ prolate hypocyloid (an ellipse), with major and minor semi-axes $b+a$ and $b-a$. Here the same-side arclength of the ellipse exceeds its opposite-side length by $4a$, twice the diameter of the fixed circle.
+%It helps me to see the transition from a prolate cycloid to an ellipse. 
+
+Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a) = (2, 3.6, -4)$ prolate hypocyloid, an ellipse with major and minor semi-axes $b+a$ and $b-a$. Here the same-side arclength of the ellipse exceeds its opposite-side length by $4a$, twice the diameter of the fixed circle.
 
 \begin{onlineOnly}
     \begin{center}
@@ -478,17 +480,27 @@ Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a)$ pr
 
 \href{https://www.desmos.com/calculator/yillqxp8mg}{Wrapping Cycloids Around Circles Ellipse 2B}
 
-As Robinson points out, this gives a way to express the same-side and opposite-side lengths, respectively $\lambda$ and $\mu$, in terms of the ellipses's circumference $C$. For since
-\[
-      \lambda + \mu = C
-\] 
-and
-\[
-    \lambda - \mu = 4a ,
-\]
-\[
-     \lambda = \frac{1}{2}C + 2a \,\,  \text{ and } \,\, \mu =  \frac{1}{2}C - 2a .
-\]
+Robinson identifies the transition points between the upper and lower arcs of the ellipse. At these points the tangent segments to the ellipse bounded by the major and minor axes have length $2b$. Furthermore the point of tangency divides the ellipse into  segments with lengths $P^*B = b+a$ and $P^*A = b-a$ equal to the semi-major and minor axes (see Figure ?).
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{2afbtinzyu}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/2afbtinzyu}{Wrapping Cycloids Around Circles Ellipse 2BB}
+
+%As Robinson points out, this gives a way to express the same-side and opposite-side lengths, respectively $\lambda$ and $\mu$, in terms of the ellipses's circumference $C$. For since
+%\[
+%      \lambda + \mu = C
+%\] 
+%and
+%\[
+ %   \lambda - \mu = 4a ,
+%\]
+%\[
+ %    \lambda = \frac{1}{2}C + 2a \,\,  \text{ and } \,\, \mu =  \frac{1}{2}C - 2a .
+%\]
 
 \end{enumerate}
 
