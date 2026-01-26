@@ -13,7 +13,7 @@ Relationship between their arclengths.
 \maketitle
  
 
-Roll a circle ${\cal C}_1$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out a \emph{general cylcoid}. When $P_1$ is a distance $b>a$ from the circle's center, the \emph{prolate cylcoid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds its length on the opposite side by the length of its \emph{sister} cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same circle (see Figure 1, where ${\cal L}$ is the $x$-axis). 
+Roll a circle ${\cal C}_1$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out a \emph{general cylcoid}. When $P_1$ is a distance $b>a$ from the circle's center, the \emph{prolate cylcoid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds its length on the opposite side by the length of its \emph{sister} cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same circle of radius $a$ (see Figure 1, where ${\cal L}$ is the $x$-axis). The surprise here is that the difference of arclengths is \emph{independent} of $b$.
 
 %Fix a point $P_1$ in the reference frame of a circle ${\cal C}_1$ of radius $a$ and roll the circle once through its circumference on a line ${\cal L}$. When $P_1$ is a distance $b>a$ from the circle's center, it sweeps out a curve called a \emph{prolate} cylcoid (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) that crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds its length on the opposite side by the length of the \emph{ordinary} cycloid, the curve traced by a point $P_2$ fixed on the circumference of the same circle (see Figure 1). 
 
@@ -423,7 +423,7 @@ and proves the theorem.
 
 %Figure 5 shows an example for the $(a,b,r)=(2,5,6)$ prolate epicyloid. Its upper (red) arclength exceeds its lower (blue) by the length of the sister $(a,r) = (2,6)$ epicycloid (dashed). The figure shows the rolling circle at a transition point between upper and lower arclengths as $P^*$ crosses the rolling tangent. %and the arclength of the prolate epicycloid changes sign.
 
-Figure 5 shows an example for the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its sister $(a,a,r) = (2,2,4)$ epicycloid is a nephroid, traced by a point on a circle rolling around the outside of a circle with twice the radius. The same-side (red) arclength of the prolate epicycloid exceeds its opposite-side (blue) length by the length of the nephroid (dashed). The figure shows the rolling circle at a transition point between the same and opposite side arcs when $P^*$ crosses the rolling tangent.
+Figure 5 shows an example for the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its sister $(2,2,4)$ epicycloid is a nephroid, traced by a point on a circle rolling around the outside of a circle with twice the radius. The same-side (red) arclength of the prolate epicycloid exceeds its opposite-side (blue) length by the length of the nephroid (dashed). The figure shows the rolling circle at a transition point between the same and opposite side arcs when $P^*$ crosses the rolling tangent.
 
 \begin{onlineOnly}
     \begin{center}
@@ -441,12 +441,15 @@ Figure 5 shows an example for the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its 
 
 %\href{https://www.desmos.com/calculator/l4qoims9af}{Wrapping cycloids around circles Clover}  
 
-Two more examples, both from Robinson's paper:
+%Two more examples, both from Robinson's paper:
 
-\begin{enumerate}
+%\begin{enumerate}
 
-\item \emph{Cardioids and Limacons:} When a circle rolls once around a fixed circle with the same radius (Figure 6), the $(a,b,a)$ prolate epicycloid is a limacon with polar equation $r=2a+2b\cos\theta$. Its loop is the lower arc and so the limacon's outer arclength exceeds the loop's by the length $2(8a) = 16a$ of the limacon's sister cardioid equal to twice that of the ordinary $a$-cycloid). 
+%\item \emph{Cardioids and Limacons:} When a circle rolls once around a fixed circle with the same radius (Figure 6), the $(a,b,a)$ prolate epicycloid is a limacon with polar equation $r=2a+2b\cos\theta$. Its loop is the lower arc and so the limacon's outer arclength exceeds the loop's by the length $2(8a) = 16a$ of the limacon's sister cardioid equal to twice that of the ordinary $a$-cycloid). 
 
+Figure ?? shows an example with a single transition, where we roll one circle around another of the same radius. The $(a,a,a)$ epicycloid is a cardioid and the $(a,b,a)$ prolate epicycloid a limacon with polar equation $r=2a+2b\cos\theta$ (the the pole is at the node and the polar axis points upward in the figure). The transition point is the node. So the limacon's outer arclength exceeds the length of its loop by the length $2(8a) = 16a$ of the sister cardioid equal to twice that of the ordinary $a$-cycloid).
+
+% The lower arc is the loop of the limacon. So the epicyloid theorem says is the lower arc and so the limacon's outer arclength exceeds the loop's by the length $2(8a) = 16a$ of the limacon's sister cardioid equal to twice that of the ordinary $a$-cycloid). 
 \begin{onlineOnly}
     \begin{center}
 \desmos{kuhagddz3r}{900}{600}
@@ -466,11 +469,14 @@ Two more examples, both from Robinson's paper:
 %\href{https://www.desmos.com/calculator/czhdwjarf3}{Wrapping Cycloids around Circles Nephroid}
 
 
-\item {Ellipses:} Roll a circle ${\cal C}$ twice through its circumference around the \emph{inside} of a circle with twice the radius and a point $P^*$ at rest in the reference frame of ${\cal C}$ to the rolling circle sweeps out an ellipse. When $P^*$ is on ${\cal C}$ the roulette is a diameter of the fixed circle, traced twiced. % it traces the diameter of the fixed circle twice.
+%\item {Ellipses:} Roll a circle ${\cal C}$ twice through its circumference around the \emph{inside} of a circle with twice the radius and a point $P^*$ at rest in the reference frame of ${\cal C}$ to the rolling circle sweeps out an ellipse. When $P^*$ is on ${\cal C}$ the roulette is a diameter of the fixed circle, traced twiced. % it traces the diameter of the fixed circle twice.
 
 %It helps me to see the transition from a prolate cycloid to an ellipse. 
 
-Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a) = (2, 3.6, -4)$ prolate hypocyloid, an ellipse with major and minor semi-axes $b+a$ and $b-a$. Here the same-side arclength of the ellipse exceeds its opposite-side length by $4a$, twice the diameter of the fixed circle.
+
+Figure ?? shows another example, closely related to the first. Here we roll a circle around the inside of a circle with twice the radius. Now the $(a,b,-2a)$ prolate hypocycloid is an ellipse with major and minor semi-axes $b+a$ and $b-a$. And its sister $(a,a,2a)$ hypocycloid is a twiced-traced diameter of the larger circle. So the same-side arclength of the ellipse exceeds its opposite-side length by $4a$, twice the diameter of the fixed circle. 
+
+%%%%Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a) = (2, 3.6, -4)$ prolate hypocyloid, an ellipse with major and minor semi-axes $b+a$ and $b-a$. Here the same-side arclength of the ellipse exceeds its opposite-side length by $4a$, twice the diameter of the fixed circle.
 
 \begin{onlineOnly}
     \begin{center}
@@ -480,7 +486,10 @@ Figure ?? illustrates the arclength theorem in this case for an $(a, b, -2a) = (
 
 \href{https://www.desmos.com/calculator/yillqxp8mg}{Wrapping Cycloids Around Circles Ellipse 2B}
 
-Robinson identifies the transition points between what we call the same and opposite-side arcs of the ellipse. At these points the tangent segments to the ellipse bounded by the major and minor axes have length $2b$. Furthermore the point of tangency divides each segment into segments with lengths $P^*B = b+a$ and $P^*A = b-a$ equal to the semi-major and minor axes (see Figure ?).
+The trick is to identify the transition points. Robinson showed the tangent segments at these points with their endpoints on the axes of the ellipse have length $2b$. Furthermore the points of tangency divide each segment into two segments with lengths $P^*B = b+a$ and $P^*A = b-a$ equal to the semi-major and semi-minor axes (see Figure ?). 
+
+
+%these points the four tangent segments to the ellipse bounded by the major and minor axes have length $2b$. Furthermore the point of tangency divides each segment into segments with lengths $P^*B = b+a$ and $P^*A = b-a$ equal to the semi-major and semi-minor axes (see Figure ?).
 
 \begin{onlineOnly}
     \begin{center}
@@ -489,6 +498,8 @@ Robinson identifies the transition points between what we call the same and oppo
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/2afbtinzyu}{Wrapping Cycloids Around Circles Ellipse 2BB}
+
+But why? It turns out that these particular tangent segments to the ellipse
 
 %As Robinson points out, this gives a way to express the same-side and opposite-side lengths, respectively $\lambda$ and $\mu$, in terms of the ellipses's circumference $C$. For since
 %\[
@@ -502,7 +513,7 @@ Robinson identifies the transition points between what we call the same and oppo
  %    \lambda = \frac{1}{2}C + 2a \,\,  \text{ and } \,\, \mu =  \frac{1}{2}C - 2a .
 %\]
 
-\end{enumerate}
+%\end{enumerate}
 
 
 
@@ -693,6 +704,43 @@ To see why
 
 When I ask students to first sketch the path of a point on the sliding ladder, the almost universal response is to 
 \end{enumerate}
+
+\section{Conclusion}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{j1fxecamkh}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/j1fxecamkh}{Ellipse and Nephroid}
+
+
+\section{Curtate Cycloids}
+
+There appears to be an arclength theorem for curtate cycloids that might follow from the double generation theorem.
+
+Global Statement: When $b<a$ the curtate $(a,b)$-cycloid has inflection points. Then the upper arclength (above the inflection point) exceeds the lower arclength by $8b$, the length of the ordinary $(b,b)$-cycloid. Note this difference is independent of $a$. Compare with Robinson's theorem on prolate cycloids. 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{7qhymuu03y}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/7qhymuu03y}{Curtate Cycloid Arclength 2}
+
+Locally, it looks like the difference
+\[
+    s_1(\phi) - s_2(\phi)
+\]
+in the upper and lower arclengths between inclination angles $0$ and $\phi$ is equal to what? It cannot equal the arclength of the ordinary $b$-cycloid between these same inclination angles, because the inclination angle of the curtate cycloid lies between $0$ and something, something is less than $\pi/2$.
+
+It looks like the difference is equal to the arclength of the ordinary $b$-cycloid between inclination anlges $0$ and 
+\[
+    \phi^* = \arcsin\left( \frac{a}{b}\sin\phi \right) .
+\]
+
 
 
 \end{document}
