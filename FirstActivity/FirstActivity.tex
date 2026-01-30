@@ -214,11 +214,30 @@ are
 
 \item What are the units of $-b/2a$? 
 
-\item The key now is to interpret the meaning of this first term geometrically. Here's a little hint. Write this term as
+\item The key now is to interpret the meaning of this first term geometrically. Here's a little hint. Think of this term as a change
 \[
   \Delta x = - \frac{b}{2a}
 \]
-and recall a math department meeting a few years ago when Trevor talked about two normal lines to a parabola and the limit of their intersection point as one line approached the other.
+in an $x$-coordinate. Then recall a math department meeting a few years ago when Trevor talked about two normal lines to a parabola.
+
+In case you forgot, here's the problem.
+
+\begin{exercise}
+Let $P$ be a point on the parabola $y=ax^2$ different from the origin $O$. Let $Q$ be the point where the normal lines to the parabola at $P$ and $O$ intersect. Find the limiting position of $Q$ as $P\to O$.
+
+\begin{exploration}
+First guess what happens to $Q$ as $P$ approaches $O$. Then drag the slider $x_0$ in Line 2 to zero to see if you were correct.
+\begin{onlineOnly}
+    \begin{center}
+\desmos{wuazgkeukm}{450}{600} 
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/wuazgkeukm}{151: Normals to Parabola 2}
+\end{exploration}
+
+\end{exercise}
+
 
 \begin{expandable}
 The normal line to the parabola at $(0,b)$ has slope $m_\perp = -1/b$. 
@@ -228,23 +247,6 @@ The first term records the change
         \Delta x =  \left( \frac{1}{m_\perp} \right) \Delta y = -b \left( \frac{1}{2a} \right)%\left( -\frac{1}{1/b} \right)
 \]
 in the $x$-coordindate moving along the normal line from the $y$-intercept to the axis of symmetry. 
-\end{expandable}
-
-\item To start on the second, we should first think about its numerator,
-\[
-  \sqrt{b^2 - 4ac}.
-\]
-What are its units? And can you think of a geometric interpretation relevant to a 151 class?
-
-\item Now what about the units of 
-\[
-     \frac{\sqrt{b^2-4ac}}{2a}?
-\]
-And what about its meaning?
-\end{enumerate}
-
-
-\end{enumerate}
 
 \begin{exploration}\label{exp:cq1}
 Drag the slider $b$ to move the parabola $y=ax^2 +bx+c$ and check that the length of segment $AB$ remains unchanged. Also drag the sliders $a$ and $c$ and watch what changes and what remains the same.
@@ -264,6 +266,27 @@ Access Desmos interactives through the online version of this text at
 
 
 \href{https://www.desmos.com/calculator/1kxcom3p2t}{Calculus and the Quadratic Formula 22}
+
+
+
+\end{expandable}
+
+\item To start on the second term, we should first think about its numerator,
+\[
+  \sqrt{b^2 - 4ac}.
+\]
+What the units here? And can you think of a geometric interpretation relevant to a 151 class?
+
+\item Now what about the units of 
+\[
+     \frac{\sqrt{b^2-4ac}}{2a}?
+\]
+And what about its meaning?
+\end{enumerate}
+
+
+\end{enumerate}
+
 
 
 
