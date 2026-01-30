@@ -171,28 +171,54 @@ c. Move along the axis of symmetry to the point with $y$-coordinate $y=1/(2a)$.
 d. Move to the $x$-axis, along the lines with slopes $\pm \sqrt{b^2-4ac}$, thereby landing at the intercepts.
 
 
+
+
+
 \section{Math Department}
 
-Is the quadratic formula dimensionally correct?
+It's been more than a quarter-century now, but the conversation I had with Stephanie opening-week of our first year at Shoreline still resonates in my mind.
 
+Stephanie made the point that when you solve a problem with numbers, there are only two questions left. Is your answer reasonable? And what is the next question?
 
-For example, suppose the coordinates $x$, $y$ are measured in meters for the parabola 
+But when you solve a problem in general, you can ask first if the answer has the correct units (or if it is dimensionallly correct). And then you can ask more sophisticated questions about what happens when you vary one or more of the parameters.
+
+While the latter question hints at partial derivatives, it still seems like it might be used effectively earlier in our courses. But even at the calculus level, partial derivatives could be introduced earlier. In fact, MaCalester College starts their calculus sequence with multivariable calculus and claims to have had much success in doing so.
+
+I have found it worthwhile to focus on the first question. At first, students don't understand what it means to check units, but they quickly catch on. And it seems like a good idea to start students working in general early on.
+
+The ideas in this note started with a question about units that asks to check the quadratic formula is dimensionally correct.
+
+I suppose the answer to this question depends on the application, but we'll start with the most basic scenario where the parabola
 \[
-     y  = ax^2 + bx + c \, , \, c\neq 0.
+  y  = ax^2 + bx + c \, , \, a\neq 0 ,
+\]
+is just a curve in the plane and the coordinates are measured in meters.
+
+Now we can interpret the quadratic formula as giving directions to locate the parabola's $x$-intercepts. How we might interpret these directions depends on our perspective. We'll start with Math 151..
+
+\begin{enumerate}
+\item The first step is to think about the coefficients $c$, $b$, $a$. What are their units?
+
+\item The next step is to interpret the coefficients geometrically.  %Give geometric interpretations of $c$, $b$, $a$.
+
+\item Now let's split the quadratic formula into two terms and say the solutions to the equation 
+\[
+     0 = ax^2 + bx + c \, , \, a\neq 0
+\]
+are
+\[
+      x = -\frac{b}{2a} \pm \frac{\sqrt{b^2-4ac}}{2a}.
 \]
 
 \begin{enumerate}
-\item What are the units of $c$, $b$, $a$?
-
-\item Give geometric interpretations of $c$, $b$, $a$.
 
 \item What are the units of $-b/2a$? 
 
-\item Interpret the meaning of the first term
+\item The key now is to interpret the meaning of this first term geometrically. Here's a little hint. Write this term as
 \[
   \Delta x = - \frac{b}{2a}
 \]
-of the quadratic formula.
+and recall a math department meeting a few years ago when Trevor talked about two normal lines to a parabola and the limit of their intersection point as one line approached the other.
 
 \begin{expandable}
 The normal line to the parabola at $(0,b)$ has slope $m_\perp = -1/b$. 
@@ -204,11 +230,19 @@ The first term records the change
 in the $x$-coordindate moving along the normal line from the $y$-intercept to the axis of symmetry. 
 \end{expandable}
 
-\item What are the units of 
+\item To start on the second, we should first think about its numerator,
+\[
+  \sqrt{b^2 - 4ac}.
+\]
+What are its units? And can you think of a geometric interpretation relevant to a 151 class?
+
+\item Now what about the units of 
 \[
      \frac{\sqrt{b^2-4ac}}{2a}?
 \]
-Interpet its meaning.
+And what about its meaning?
+\end{enumerate}
+
 
 \end{enumerate}
 
