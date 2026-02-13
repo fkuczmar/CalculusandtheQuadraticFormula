@@ -24,23 +24,23 @@ Roll a circle ${\cal C}_1$ of raduis $a$ once through its circumference on a lin
 
 \href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid Arclength 1B}
 
-Robinson proves two other similarly surprising results. One is about the limacon with polar equation $r=A + B\cos\theta$, $\theta\in [0,2pi)$. When $B>A$ the limacon intersects itself and Robinson shows the length of its outer loop exceeds the length of the inner loop by $8A$. And taking $B=A$ implies the excess equals the length of the cardioid $r=A + A\cos\theta$.
+Robinson proves two other similarly surprising results. One is about the limacon with polar equation $r=A + B\cos\theta$, $\theta\in [0,2\pi)$. When $B>A$ the limacon intersects itself and Robinson shows the length of its outer loop exceeds the length of the inner loop by $8A$. And taking $B=A$ shows the excess equals the length of the cardioid $r=A + A\cos\theta$.
 
 The other is about ellipses. It says when $B\geq A$ and 
 \[
       \alpha = \frac{1}{2} \cos^{-1} \left( \frac{A-B}{A+B}  \right)  =  \sin^{-1}\left( \frac{B}{A+B}  \right) ,
 \]
-the arclength of the ellipse
+the arclength of the quater-ellipse
 \[
-   (x,y) = (A \cos\theta , B\sin\theta) \, , \, 0\leq \theta <2\pi ,
+   (x,y) = (A \cos\theta , B\sin\theta) \, , \, 0\leq \theta \leq \pi/2 ,
 \]
-over the interval $\theta \in [0,\alpha]$ exceeds its arclength over the interval $\theta\in [\alpha, \pi/2]$ by $B-A$.
+over the interval $\theta \in [0,\alpha]$ exceeds the arclength over the interval $\theta\in [\alpha, \pi/2]$ by $B-A$.
 
-Robinson's proofs exploit the commonality these three curves (prolate cycloids, limacons, and ellipses) have in their arclength functions; they are elliptic integrals. But the curves have another, more geometric, commonality. They are all \emph{roulettes} (from the Latin \emph{rota} for wheel) traced by a point fixed in the reference frame of a rolling circle.
+Robinson's proofs exploit the commonality these three curves (prolate cycloids, limacons, and ellipses) have in their arclength functions being elliptic integrals. But the curves have another, more geometric, commonality. They are all \emph{roulettes} (from the Latin \emph{rota} for wheel) traced by a point fixed in the reference frame of a rolling circle.
 
 %A point $b$ units from the center of a circle with radius $a$ sweeps out the limacon $r=2a + 2b\cos\theta$ as it rolls once around a circle with the same radius. 
 
-The limacon $r=2a + 2b \cos\theta$ is traced by a point $b$ units from the center of a circle with radius $a$ as it rolls around a circle with the same radius. And (surprisingly, at least for me) a point $b>a$ units from a circle with radius $a$ rolling around the \emph{inside} of a circle with radius $2a$ sweeps out an ellipse with semi-major and minor axes $b+a$ and $b-a$.
+The limacon $r=2a + 2b \cos\theta$ is traced by a point $b$ units from the center of a circle with radius $a$ as it rolls around the outside of a circle with the same radius. And (surprisingly, at least for me) a point $b>a$ units from a circle with radius $a$ rolling around the \emph{inside} of a circle with radius $2a$ sweeps out an ellipse with semi-major and minor axes $b+a$ and $b-a$.
 
 These observations suggest these three arclength equalities are special cases of a more general theorem about arclengths of epicycloids and hypocycloids (curves traced by a point fixed in the reference frame of one circle as it rolls around the outside or inside of another). We explore this in Section ??.
 
@@ -49,20 +49,22 @@ is twice the length of the cycloid trace by a point attached to the same circle 
 
 And for the semi-ellipse 
 \[
-    (x,y) = (A\cos\theta, B\sin\theta) =  ((b-a)\cos\theta , (b+a)\cos\theta) \, , \, 0\leq \theta \leq \pi, 
+    (x,y) = (A\cos\theta, B\sin\theta) =  ((b-a)\cos\theta , (b+a)\sin\theta) \, , \, 0\leq \theta \leq \pi, 
 \]
-swept by a point on the circle of radius $a$ as it rolls \emph{once} through its circumference is
-the full excess around the semi-ellipse is
+swept by a point $b$ units from the center of a circle with radius $a$ as it rolls \emph{once} through its circumference around the inside of a circle of radius $2$, the exess is
 \[
      2(B-A) = 4a . 
 \]
-When $b=a$ (ie. when $A=0$), the tracing point (now on the rolling circle with radius $a$) traces a diameter (another surprise) of the fixed circle with radius $2a$. It is also not a coincidence that the length of this roulette is half the length of the $a$-cycloid. Replacing the fixed line with a fixed circle of radius $2a$ halves arclengths when the circle rolls around the inside of the larger circle.
+When $b=a$ (ie. when $A=0$), the tracing point (now on the rolling circle with radius $a$) traces a diameter (another surprise for me) of the fixed circle with radius $2a$. It is also not a coincidence that the length of this roulette is half the length of the $a$-cycloid. Replacing the line with a circle of radius $2a$ halves arclengths when the circle rolls around the inside of the larger circle instead.
 
-These observations suggest an arclength theorem about epicycloids and hypocycloids is really a corollary to Robinson's arclength theorem about prolate cycloids. And this is in fact the case (Section ??). 
+These observations suggest an arclength theorem for epicycloids and hypocycloids is really a corollary to Robinson's arclength theorem about prolate cycloids. And this is in fact the case (Section ??). 
 
-But what about \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloids, curves traced by points inside the rolling circle. It seems like there should be an arclength theorem for these, and in fact there is (Section??) 
+But what about \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloids, curves traced by points inside the rolling circle? It seems like there should be an arclength theorem for these, and in fact there is (Section??) 
 
-Near the end of his paper Robinson asks for a heuristic explanation of his arclength theorem and the genesis of this article was to find such a proof. While we fell short of the mark, a kind of proof-without-words in a single picture, we do take a more geometric approach to prove a more general theorem about arclengths of prolate cycloids (Sections ??-??), one that avoids elliptic integrals  and keeps the computations to a miniumum. We hope it offers some insight into why these theorems are true.
+Near the end of his paper Robinson asks for a heuristic explanation of his arclength theorem. While this paper falls short of this mark, a kind proof-without-words in a single picture, we do hope it offers some geometric insight into why these arclength theorems are true. By taking a more geometric approach (Sections ????) and working locally, we keep computations to a minumum and avoid relying both on integration and parametric descriptions of the curves.
+
+
+% and the genesis of this article was to find such a proof. While we fell short of the mark, a kind of proof-without-words in a single picture, we do take a more geometric approach to prove a more general theorem about arclengths of prolate cycloids (Sections ??-??), a proof that avoids elliptic integrals  and keeps the computations to a miniumum. We hope it offers some insight into why these theorems are true.
 
 
 
@@ -104,7 +106,7 @@ s_1 - s_2 = s_3.
 \]
 \end{theorem19}
 
-Our proof of this theorem relies heavily on the instantaneous center of rotation. We introduce this idea next. %Readers familiar with this idea might skip the next section and move directly to the proof.
+To avoid computing arclengths, our proof of this theorem relies on the instantaneous center of rotation. We introduce this idea next section. Readers familiar with this idea might skip this and move directly to the proof.
 
 \section{The Instantaneous Center of Rotation}
 From the \emph{CarTalk} puzzler archives, May 15, 2006:
@@ -129,7 +131,7 @@ Part 2-- and this is a hint-- what part of the car is traveling at 120 mph?}
 
 It might seem counterintuitive that at any moment a rolling wheel is rotating \emph{not} about its center but about its point of contact with the ground. This point, the wheel's \emph{instantaneous center of rotation}, is the point in the reference frame of the rolling wheel momentarily at rest. The cusp of the ordinary cycloid in Figure 1 explains why. When the tracing point bounces off the $x$-axis it reverses direction and must therefore come to a stop.
 
-At any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation. We can therefore describe the velocity of such a point: 
+At any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation.  This has two implications. %We can therefore describe the velocity of such a point: 
 %This statement has two implications for a point $P$ at rest in the reference frame of a rolling wheel, like a pebble stuck in a tire.
 
 \begin{enumerate}
@@ -140,7 +142,9 @@ At any moment, each point $P$ at rest in the reference frame of the rolling whee
 
 %The photograph of a rolling wheel below gives some sense of (a); points on the spokes farther from the point of contact are moving faster and the spokes blur....
 
-The figure below shows the ordinary cycloid traced by a point $P$ stuck on the circumference of a rolling wheel. The marked angle $\theta$ is the wheel's rotation angle measured from an arbitrary direction, in this case from the upward-vertical when $P$ coincides with the top point $A$ of the cycloid. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical). The points on the cycloid are spaced at equal intervals of rotation and suggest the speed $v= \rho (d\theta/dt)$ of the tracing point is proportional to the rotation arm $PQ$. %its distance from the center of rotation.  
+The figure below suggests the motion of a point $P$ attaced to the circumference of a wheel rolling along a straight road at a consant spped. The marked angle $\theta$ is the wheel's rotation angle measured from an arbitrary direction, in this case from the upward-vertical when $P$ coincides with the top point $A$ of the cycloid. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical). The points on the cycloid are spaced at equal intervals of rotation and suggest the speed $v= \rho (d\theta/dt)$ of the tracing point is proportional to the rotation arm $PQ$. 
+
+ %shows the ordinary cycloid traced by a point $P$ stuck on the circumference of a rolling wheel. The marked angle $\theta$ is the wheel's rotation angle measured from an arbitrary direction, in this case from the upward-vertical when $P$ coincides with the top point $A$ of the cycloid. Because of (b) above, the incination of the cycloid at $P$ (ie. the angle between the tangent and the horizontal) is equal to the measure of $\angle BQP$ (ie. the angle between the normal $\overline{PQ}$ and the vertical). The points on the cycloid are spaced at equal intervals of rotation and suggest the speed $v= \rho (d\theta/dt)$ of the tracing point is proportional to the rotation arm $PQ$. %its distance from the center of rotation.  
 
 \begin{onlineOnly}
     \begin{center}
@@ -152,7 +156,7 @@ The figure below shows the ordinary cycloid traced by a point $P$ stuck on the c
 
 %To prove the arclength theorem, it helps to think differentially. Then (a) is equivalent to saying
 
-The local version of (a) says as the wheel turns through the differential angle $d\theta>0$, the tracing point traverses the differential distance $ds = \rho \, d\theta$. 
+Locally (a) says that as the wheel turns through the differential angle $d\theta>0$, the tracing point traverses the differential distance $ds = \rho \, d\theta$. 
 
 For the cycloid above, for example, traced by a point attached to a circle of radius $a$,
 \begin{align*}
@@ -165,9 +169,9 @@ For the cycloid above, for example, traced by a point attached to a circle of ra
 \begin{enumerate}
 \item Adding these differential arclengths shows the length of the cycloid from $A$ to $P$ is
 \[
-      s =\int_0^\phi 4a\cos\phi \, d\phi = 4a\sin\phi .                    % s = \int_0^\theta (2 4a\sin(\theta/2) = 4a \sin\phi %2 \text BP .
+      s =\int_0^\phi 4a\cos\phi \, d\phi = 4a\sin\phi                   % s = \int_0^\theta (2 4a\sin(\theta/2) = 4a \sin\phi %2 \text BP .
 \]
-and equal to twice the length of chord $\overline{BP}$.
+is twice the length of chord $\overline{BP}$.
 
 My favorite way to prove this equality is to compare the differential arclength $ds = 2a\cos\phi\, d\theta$ with the differential change $dc$ in the distance $c = BP$. In the reference frame of the rolling circle where $P$ is at rest, $B$ traverses the differential arclength $a\, d\theta$ as the circle turns through the angle $d\theta$. But since $B$ moves in a direction inclined at the angle $\phi$ to $\overrightarrow{PB}$ %(and not directly away from $P$), 
 \[
@@ -180,9 +184,9 @@ My favorite way to prove this equality is to compare the differential arclength 
 
 Imagine an ideal tire where one point is touching the road. That very point of the tire that's touching the road must not be moving in relation to the road. In fact, it is moving at zero miles an hour. And when you point it 180 degrees away, it has to be moving at twice that speed, or 120 miles an hour.}
 
-The conclusion seems suspect, but follows from the observation that the arithmetic mean (or more generally, the weighted average) of the velocities of two points at rest in the reference frame of the rolling wheel is equal to the velocity of the mean (or the same weighted average) of these points.
+The last remark suspect, but it follows from the observation that the arithmetic mean (or more generally, the weighted average) of the velocities of two points at rest in the reference frame of the rolling wheel is equal to the velocity of the mean (or the same weighted average) of these points.
 
-Rolling a book along the tops of two cyinders (oatmeal containers work well) is a convincing way to see that a pebble stuck in a tire moves twice as fast as the axle when it reaches the top of its path (and is twice as far from the center of rotation as the axle). As illustrated in Figure ?, you can see the book advance twice as far as the cylinders.
+Rolling a book along the tops of two cyinders (oatmeal containers work well) is a convincing way to demonstrate that a pebble stuck in a tire is moving twice as fast as the axle when it reaches the top of its path (and is twice as far from the center of rotation as the axle). As illustrated in Figure ?, you can see the book advance twice as far as the cylinders.
 
 %Roll a book on the tops of two cyinders (oatmeal containers work well) and you can see the book advance twice as far as the cylinders, a convincing way to demonstrate a pebble stuck in a tire moves twice as fast as the axle when it reaches the top of the wheel (and therefore twice as far from the center of rotation as the axle). %that at the top of its motion a pebble stuck in a tire moves twice as fast as the axle. 
 
@@ -236,7 +240,7 @@ This equality has three consequences:
 \item $\frac{d\theta_1}{d\theta_2} = \frac{\rho_1}{\rho_2}$.
 \end{enumerate}
 
-The first (a) is immediate, but it alone does not imply the equality of differential arclengths (\ref{Eq:DiffArcs}) because the circles turn through different differential angles $d\theta_i$ in sweeping out these arclengths. We need also (b) and (c) to prove (\ref{Eq:DiffArcs}), which we now write in the form %we need to know something about the relationships among the rotation angles and their differential changes.  % $ds_i$, this equality does \emph{not} directly imply the equality of differential arclengths (\ref{Eq:DiffArcs}). We need to know more to show (\ref{Eq:DiffArc}), which we write now in the form
+The first (a) is immediate, but it alone (as I first thought) does not imply the equality of differential arclengths (\ref{Eq:DiffArcs}) because the circles turn through different differential angles $d\theta_i$ in sweeping out these arclengths. We need also (b) and (c) to prove (\ref{Eq:DiffArcs}), which we now write in the form %we need to know something about the relationships among the rotation angles and their differential changes.  % $ds_i$, this equality does \emph{not} directly imply the equality of differential arclengths (\ref{Eq:DiffArcs}). We need to know more to show (\ref{Eq:DiffArc}), which we write now in the form
 
 
 %it would be a misktake (one that I made) to think this equality of rotation arms immdieately  implies the equality of differential arclengths (\ref{Eq:DiffArcs}). The reason is that the circles turn through different differential angles $d\theta_i$ in sweeping out these arclengths. We need also (b) and (c) to prove (\ref{Eq:DiffArcs}), which we now write in the form %we need to know something about the relationships among the rotation angles and their differential changes.  % $ds_i$, this equality does \emph{not} directly imply the equality of differential arclengths (\ref{Eq:DiffArcs}). We need to know more to show (\ref{Eq:DiffArc}), which we write now in the form

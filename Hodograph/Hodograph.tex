@@ -9,6 +9,56 @@ Rotating gears.
 \end{abstract}
 \maketitle
 
+Most calculus students learn to sketch a graph of a function's derivative from the graph of the function. Later on, they might sketch graphs of anti-derivatives thinking about signed area instead of slopes. But few, if any, ever sketch the derivative of a motion from a sketch of the motion itself.
+
+It's easy enough to draw the path of a motion and to suggest movement along the path by plotting points or position vectors at equally-spaced time intervals. And students often use this information to sketch velocity vectors along the path, drawing them with their tails attached to the tips of the position vectors.
+
+But the velocity vectors are themselves the position vectors of another curve. This curve is called the \emph{hodograph}, but it's just a way to suggest the derivative of the motion. Like all position vectors, we draw these velocity vectors with their tails pinned at a common origin $O$, and their tips sweep out the hodograph. Drawing pinned velocity vectors at equal time intervals gives some sense of the derivative of the motion along the hodograph, ie. of the acceleration.
+
+For uniform circular motion, for example, the hodograph is a circle centered at the common origin with radius equal to the motion's speed. Since the velocity vector turns at a constant rate, we see at once that its acceleration has constant magntitude. And the hodograph makes it clear at a glance (see Figure ?) that the acceleration vector points directly opposite the position vector.
+
+Many other motions have circular hodographs. A motion traced by a point $P$ on the circumference of a circle rolling along a line at a constant speed traces a cycloid. But the point $P^*$ at the tip of the pinned velocity vector sweeps out a circle. Now the origin lies \emph{on} the hodograph, not at its center.
+
+The hodograph of any constant-speed curve lies on a circle centered at the origin with a radius equal to the speed. This image makes it clear that the derivative of the motion along the hodograph, ie. the acceleration, is perpendicular to the velocity vector. But apart from uniform circular motion, the acceleration vector does not have constant magnitude. It is longer where the motion's path changes direction faster and it's the magnitude of this acceleration vector that gives the curvature of the motion's path.
+
+William R. Hamilton is credited with introducing the hodograph in a 1837???? paper, where he uses it to prove \emph{geometrically} that planetary orbits are conic sections.
+
+The proof starts in the standard way. Hamilton claims without proof that the position vector of a motion driven by a central force (ie. one with acceleration vectors all pointing directly toward a common origin) sweeps out area at a constant rate. Newton gave a geometric proof of this in his \emph{Principia}, but the modern proof is quick work with vectors. The key is to recognize that for any motion, the magnitude $|{\bf r}\times {\bf v}|$ of the vector product of the position and velocity vectors (with SI units $\text{m}^2/text{sec}$) measures twice the rate at which the position vector sweeps out area (see Figure ??). Differentiating the vector product
+\[
+        {\bf L} = {\bf r} \times {\bf v}
+\]
+with respect to time shows that
+\[
+  \frac{d{\bf L}}{dt} = {\bf r}\times {\bf a}
+\]
+and proves the claim about the area swept by a central force. It's also quick work from here to show the trajectory of a central-force motion lies in a plane.
+
+Ignoring this omission then, Hamilton starts his proof by showing planetary motions all have circular hodographs. Or more precisely that the hodograph of a planetary motion lies on a circle. He does this by proving the hodograph has constant curvature.
+
+For this part of the proof, it might help to think about the curvature of a plane curve dynamically, as if you were driving a car along a winding road. At some instant, for example, your speed might be $v = 20$ meters/sec while you car is turning at the rate of $\omega = 0.25$ rad/sec. Then at this particular spot the road has curvature 
+\[
+    \kappa = \frac{\omega}{v} = \frac{0.25\text{ rad./sec}}{20 \text{ meters/sec}} = 0.0125 \text{ rad/meter}
+\]
+and radius of curvature $1/\kappa = 80$ meters. Note that curvature is a property of the road itself and does not depend upon how one drives along it. It measures the rate at which the road changes direction with respect to distance (as measured along the road and as recorded by a car's odometer).
+
+NOTE: I need to measure the curvature of our street.
+
+Now for a planetary motion with central force
+\[
+   {\bf F} = \frac{k {\bf r}}{r^3},
+\] 
+inversely proportional ($k$ a constant with SI units $\text{Newtons} \text{ m}^2$) to the square of the distance from the center of force, the point $P^*$ (at the tip of the velocicty vector) tracing the hodograph has speed (akin to the speed of our car)
+\[
+ | {\bf a} | = k/r^2 . 
+\]
+And because the force is central, the tangent vector to the hodograph (ie. the acceleration vectors of the motion) turns at the same rate $\omega = d\theta/dt$ as the position vectors of the motion, where $\theta$ is the angle meausured from some fixed direction to the position vector. So the hodograph has radius of curvature
+\[
+     \frac{1}{\kappa} =  \frac{|{\bf a}|}{\omega} = \frac{k}{r^2 \omega} = \frac{k}{2K},
+\]
+where $K = r^2\omega/2$ is the constant at which the position vector of the planetary motion sweeps out area.%But because the position vector sweeps out area at a constant rate of say $K\text{ m^2}/\text{s}$rate 
+
+
+
 
 Just write something.
 
