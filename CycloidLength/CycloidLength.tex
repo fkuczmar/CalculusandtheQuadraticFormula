@@ -467,7 +467,13 @@ Robinson identifies the transition points. The tangent segments at these points 
 The transition points have an equivalent description. They are the points of the ellipse that minimize the length of its tangent segments running between the coordinate axes. To understand why, we start with a more problem from differential calculus.
 
 
-\section{Ladders, Astroids, and Ellipses}
+\section{The Trammel of Archimedes}
+
+\begin{center}  
+\youtube{watch?v=SZ6_jjfqNBo}  
+\end{center}
+
+\href{https://www.youtube.com/watch?v=SZ6_jjfqNBo}{Tom Silva drawing an ellipse}
 
 A problem in Stewart asks for the length of the longest one-dimensional ladder you can carry horizontally around the corner below.
 
@@ -494,7 +500,49 @@ A problem in Stewart asks for the length of the longest one-dimensional ladder y
 %\]
 %cut out by the coordinate axes?
 
-Kalman's idea is to reverse the question. He fixes the ladder's length $L$ and asks instead for the widths of all pairs of hallways that allow the passage of a ladder of maximum length $L$. This amounts to 
+Kalman's idea is to reverse the question. He fixes the ladder's length $L$ and asks instead for the widths of all pairs of hallways that allow the passage of a ladder of maximum length $L$. This amounts to describing the curve whose points are the inner corners of all such hallways.
+
+To visualize this curve imagine a ladder with length $L$ sliding around the corner as its ends remain in contact with the outer walls. The \emph{envelope} of the sliding ladder (ie. the curve tangent to the family of segments of length $L$ running between the coordinate axes) is the quarter-astroid 
+\[
+     x^{2/3} + y^{2/3} = L^{2/3}.
+\]
+shown in Figure ??.  
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{c1rsk201zu}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/c1rsk201zu}{Longest Ladder 5}
+
+It is this equation that solves the ladder problem. For as Kalman points out, the ladder will turn the corner as long as the inner corner $(p,q)$ of the hallway is not inside the region swept by the sliding ladder.  So for the longest ladder the point $(p,q)$ lies on the astroid and the longest ladder has length
+\[
+      (p^{2/3} + q^{2/3})^{3/2}.
+\] 
+
+The solution to the ladder problem now rests on finding an equation of the envelope. Kalman uses a standard method, but here we take a more geometric approach. The key idea is this: At any instant, the point of the sliding ladder tangent to the envelope is the point moving parallel to the ladder.
+
+Now this is a problem calculus students can solve. A solution starts by parameterizing the curve traced by a point $a$ units from the ladder's left end and $b = L-a$ units from the right end. With the parameter as the angle $\phi$ the ladder makes with the horizontal hallway in Figure ??, the parameterization is 
+\[
+  (x,y) = (a \cos\phi, b\sin\phi) \, , \, 0\leq \phi \leq \pi/2.
+\]
+The curve is a quarter-ellipse, a surprise to most students ...
+
+\[
+ (x,y) = (L\cos^3\phi, L\sin^3\phi) \, , \, 0\leq \phi \leq \pi/2.
+\]
+
+
+
+
+The reason is that the point of tangency of the envelope with the sliding segment is necessarily the point of the segment moving parallel to the segment in the direction of the envelope.
+
+This observation and the answer to our first question answers the second. The length of the longest ladder is
+
+
+
+
 
 Is there a point that represents the same location in the two maps of Washington State shown below?
 
