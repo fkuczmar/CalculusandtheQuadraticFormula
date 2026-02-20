@@ -3,7 +3,7 @@
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
-\newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids}
+\newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids, Generalized}
 \newtheorem{theorem20}{An Arclength Theorem for Prolate Epi and Hypocycloids}
 
 \begin{document}
@@ -26,7 +26,9 @@ Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference on a lin
 
 \href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid Arclength 1B}
 
-It turns out there is a corresponding result for \emph{curtate}  (from the Latin \emph{curtus}, cut short) cycloids, curves traced by points inside a circle rolling on a line. 
+What if $b<a$? Then the tracing point lies inside the rolling circle and the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this, let alone to stumble upon the latter. So we save this discussion for the end (Section ??).
+
+%It turns out there is a corresponding result for \emph{curtate}  (from the Latin \emph{curtus}, cut short) cycloids, curves traced by points inside a circle rolling on a line. When $b<a$, the curtate cycloid has inflection points, and the concave down arclength of one arch exceeds the concave up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this, so we save this result until the end (Section ??).
 
 \begin{onlineOnly}
     \begin{center}
@@ -36,9 +38,8 @@ It turns out there is a corresponding result for \emph{curtate}  (from the Latin
 
 \href{https://www.desmos.com/calculator/0eosvsfm9r}{Curtate Cycloid 33}
 
-
  
-Robinson proves two other similarly surprising results. One is about the limacon with polar equation $r=A + B\cos\theta$, $\theta\in [0,2\pi)$. When $B>A$ the limacon intersects itself and Robinson shows the length of its outer loop exceeds the length of the inner loop by $8A$. And taking $B=A$ shows the excess equals the length of the cardioid $r=A + A\cos\theta$.
+Robinson proves two other similarly surprising facts. One is about the limacon with polar equation $r=A + B\cos\theta$, $\theta\in [0,2\pi)$. When $B>A$ the limacon intersects itself and Robinson shows the length of its outer loop exceeds the length of the inner loop by $8A$. Taking $B=A$ shows the excess equals the length of the cardioid $r=A + A\cos\theta$.
 
 The other is about ellipses. It says when $B\geq A$ and 
 \[
@@ -56,10 +57,8 @@ Robinson's proofs exploit the commonality these three types of curves have in th
 
 The limacon $r=A+B\cos\theta = 2a + 2b \cos\theta$ is traced by a point $b$ units from the center of a circle with radius $a$ as it rolls around the outside of a circle with the same radius. And (surprisingly, at least for me) a point $b>a$ units from a circle with radius $a$ rolling around the \emph{inside} of a circle with radius $2a$ sweeps out an ellipse with semi-major and minor axes $b+a$ and $b-a$.
 
-These observations suggest these arclength equalities are special cases of a more general theorem about arclengths of epicycloids and hypocycloids (curves traced by a point fixed in the reference frame of one circle as it rolls around the outside or inside of another). We explore this in Section ??.
-
-For the limacon $r= 2a+2b$, the excess arclength $8(2a) = 16a$ is the length of the cardioid traced by a point attached to a circle with radius $a$ as it rolls once around a congruent circle. It is not a coincidence that the length of the cardioid
-is twice the length of the cycloid trace by a point attached to the same circle as it rolls on a line. Replacing the line with a circle of radius $a$ \emph{doubles} corresponding arclengths of the roulette.
+These observations suggest these arclength equalities are special cases of a more general theorem about arclengths of epicycloids and hypocycloids (curves traced by a point fixed in the reference frame of one circle as it rolls around the outside or inside of another). For the limacon $r= 2a+2b$, the excess arclength $8(2a) = 16a$ is the length of the cardioid traced by a point attached to a circle with radius $a$ as it rolls once around a congruent circle. It is not a coincidence that the length of the cardioid
+is twice the length of the cycloid traced by a point attached to the same circle as it rolls on a line. Replacing the line with a circle of radius $a$ \emph{doubles} corresponding arclengths of the roulette.
 
 And for the semi-ellipse 
 \[
@@ -69,13 +68,14 @@ traced by a point $b$ units from the center of a circle with radius $a$ as it ro
 \[
      2(B-A) = 4a . 
 \]
-When $b=a$ (ie. when $A=0$), the tracing point (now on the rolling circle with radius $a$) traces a diameter of the fixed circle with radius $2a$. It is also not a coincidence that the length of this roulette is half the length of the cycloid. Replacing the line with a circle of radius $2a$ halves arclengths when the circle rolls around the inside of a circle with twice the radius.
+When $b=a$ (ie. when $A=0$), the tracing point (now on the rolling circle with radius $a$) traces a diameter of the fixed circle with radius $2a$. It is also not a coincidence that the length of this roulette is half the length of the cycloid. Replacing the line with a circle of radius $2a$ halves arclengths when the smaller circle rolls around the inside of the larger. We explore these ideas in Section ??. 
 
-These observations suggest an arclength theorem for epicycloids and hypocycloids as a corollary to Robinson's arclength theorem about prolate cycloids. We explore this idea in Section ??. 
+%And what about \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloids, curves traced by points inside a rolling circle? It seems like there should be an arclength theorem for these, and in fact there is (Section??) 
 
-And what about \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloids, curves traced by points inside a rolling circle? It seems like there should be an arclength theorem for these, and in fact there is (Section??) 
+Near the end of his paper Robinson asks for a heuristic explanation of his arclength theorem and the genesis of this article was to find such a proof. While we fall short of this mark, a kind proof-without-words in a single picture, we do offer an animated proof with minimal computation. 
 
-Near the end of his paper Robinson asks for a heuristic explanation of his arclength theorem and the genesis of this article was to find such a proof. While we fall short of this mark, a kind proof-without-words in a single picture, we do hope it offers some geometric insight into why these arclength theorems are true. %By taking a geometric approach (Sections ????) and working locally, we keep computations to a minimum. %  by avoiding integrals and parameteric descricptions of curves  %, keep computations to a minumum and avoid relying both on integration and parametric descriptions of the curves.
+
+%offers some geometric insight into why these arclength theorems are true. %By taking a geometric approach (Sections ????) and working locally, we keep computations to a minimum. %  by avoiding integrals and parameteric descricptions of curves  %, keep computations to a minumum and avoid relying both on integration and parametric descriptions of the curves.
 
 
 % and the genesis of this article was to find such a proof. While we fell short of the mark, a kind of proof-without-words in a single picture, we do take a more geometric approach to prove a more general theorem about arclengths of prolate cycloids (Sections ??-??), a proof that avoids elliptic integrals  and keeps the computations to a miniumum. We hope it offers some insight into why these theorems are true.
@@ -110,7 +110,7 @@ You can almost see the equality $s_1 - s_2 = s_3$ of arclengths in the figure be
 
 \href{https://www.desmos.com/calculator/yqw8ektvps}{Cylcoid Trochoid Color 2}
 
-Trying to prove this more general result works to our advantage as its shifts our focus from a global one (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). %This worked to our advantage.
+Trying to prove this more general result worked to our advantage as its shifted our focus from a global one (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). %This worked to our advantage.
 
 \begin{theorem19}
 %As in Figure 2 with $s_1 = s_1(\phi)$ and $s_2=s_2(\phi)$ the respective arclengths of a prolate cycloid on the same and opposite sides of its rolling circle between inclination angles $0$ and $\phi$, and $s_3=s_3(\phi)$ the arclength of its sister cycloid between these same angles,
