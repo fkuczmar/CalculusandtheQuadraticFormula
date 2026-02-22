@@ -3,7 +3,7 @@
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
-\newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids, Generalized}
+\newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids, Local Version}
 \newtheorem{theorem20}{An Arclength Theorem for Prolate Epi and Hypocycloids}
 
 \begin{document}
@@ -227,7 +227,7 @@ To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, r
 
 %We suppose the circles start with the points $P_i$ at the same inclination angle $\phi=0$ and the segments $Q_iP_i$ vertical. And we also assume as illustrated in Figure 3, the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points remain parallel at all times.
 
-Our goal is to show
+Now our goal is to work locally and show
 \begin{equation} \label{Eq:DiffArcs}
       ds_1 - ds_2 = ds_3 ,
 \end{equation}
@@ -274,9 +274,11 @@ Assuming (a)-(c),
 
 We are left with proving (b) and (c).     %It remains to prove (b) and (c).
 
-The proof of (b) follows from the figure below showing the three rotation angles $\theta_i$ and the inclination angle $\phi$ in one circle. Since $\overline{S_1P_1}\cong \overline{Q_1R_1}$, we know $\Delta C_1S_1P_1\cong \Delta C_1Q_1R_1$. Therefore, $m\angle P_1C_1S_1 = \theta_2$ and 
+The proof of (b) follows from the figure below showing the three rotation angles $\theta_i$ and the inclination angle $\phi$ in one static (non-rolling) circle. As the circles in Figure ?? (the previous figure) roll in tandem, segment $\overline{P_1P_2}$ through the three tracing points below turns at a constant rate.
+
+Now since $\overline{P_3P_1}\cong \overline{Q_1P_2}$, we know $\Delta C_1P_3P_1\cong \Delta C_1Q_1P_2$. Therefore, $m\angle P_1C_1P_3 = \theta_2$ and 
 \[
- \theta_3 = m \angle B_1C_1S_1 = \theta_1 + \theta_2.
+ \theta_3 = m \angle B_1C_1P_3 = \theta_1 + \theta_2.
 \]
 
 
@@ -288,7 +290,7 @@ The proof of (b) follows from the figure below showing the three rotation angles
 
 \href{https://www.desmos.com/calculator/txbihum5r3}{Cylcoids Proof of Theorem 1}
 
-To prove (c), we borrow an idea from Tabachnikov's \emph{Geometry and Billiards} and consider the differential changes $b\, d\theta_i$, $i = 1,2$  in the respective arclengths $b\theta_i$ as chord $\overline{P_1R_1}$ turns through the differential angle $d\phi$.  
+To prove (c), we borrow an idea from Tabachnikov's \emph{Geometry and Billiards} and consider the differential changes $b\, d\theta_i = P_iP_i^\prime$, $i = 1,2$  in the respective arclengths $b\theta_i$ as chord $\overline{P_1P_2}$ turns through the differential angle $d\phi$.  
 
 \begin{onlineOnly}
     \begin{center}
@@ -300,18 +302,18 @@ To prove (c), we borrow an idea from Tabachnikov's \emph{Geometry and Billiards}
 
 %i2050p22ud
 
-In Figure ?? above, the differential arcs $ZP_1^\prime$ and $WR_1^\prime$ (circular arcs centered at $Q_1$) have lengths
+In Figure ?? above, the differential arcs $ZP_1^\prime$ and $WP_2^\prime$ (circular arcs centered at $Q_1$) have lengths
 \[
     ZP_1^\prime = \rho_1 \, d\phi
 \]
 and
 \[
-  WR_1^\prime =  \rho_2 \, d\phi.
+  WP_2^\prime =  \rho_2 \, d\phi.
 \]
 
-But since a chord makes congruent angles with a circle at its endpoints, the differential right triangles $\Delta P_1ZP_1^\prime$ and $\Delta R_1 W R_1^\prime$ are similar. Hence,
+But since a chord makes congruent angles with a circle at its endpoints, the differential right triangles $\Delta P_1ZP_1^\prime$ and $\Delta P_2 W P_2^\prime$ are similar. Hence,
 \[
-      \frac{P_1P_1^\prime}{R_1 R_1^\prime}  =  \frac{ZP_1^\prime}{WR_1^\prime} 
+      \frac{P_1P_1^\prime}{P_2 P_2^\prime}  =  \frac{ZP_1^\prime}{WP_2^\prime} 
 \]
 and
 \[
@@ -457,7 +459,7 @@ Figure ?? shows an example with a single transition point, crossed twice.  Here 
 
 
 
-Figure ?? shows an example closely related to the one in Figure ???. Here a circle ${\cal C}_1$ with radius $a$ rolls around the \emph{inside} of a circle ${\cal C}_2$ with radius $2a$. The point $P^*$, $b$ units from the center of the rolling circle, traces an ellipse with major and minor semi-axes $b+a$ and $b-a$. The point $P$ attaced to the rolling circle traces the diameter of the larger circle twice as ${\cal C}_1$ rolls once around ${\cal C}_2$. Our theorem for prolate hypocycloids then implies the same-side arclength (red) of the ellipse exceeds its opposite-side length (blue) by $4a$, twice the diameter of ${\cal C}_2$.
+Figure ?? shows an example closely related to the one in Figure ???. Here a circle ${\cal C}_1$ with radius $a$ rolls around the \emph{inside} of a circle ${\cal C}_2$ with radius $2a$. The point $P^*$, $b$ units from the center of the rolling circle, traces an ellipse with major and minor semi-axes $b+a$ and $b-a$. The point $P$ attached to the rolling circle traces the diameter of the larger circle twice as ${\cal C}_1$ rolls once around ${\cal C}_2$. Our theorem for prolate hypocycloids then implies the same-side arclength (red) of the ellipse exceeds its opposite-side length (blue) by $4a$, twice the diameter of ${\cal C}_2$.
 
 % Now the $(a,b,-2a)$ prolate hypocycloid is an ellipse with major and minor semi-axes $b+a$ and $b-a$. And its sister $(a,a,2a)$ hypocycloid is a twiced-traced diameter of the larger circle. So the same-side arclength of the ellipse exceeds its opposite-side length by $4a$, twice the diameter of the fixed circle. 
 
@@ -496,8 +498,7 @@ the transition points divide the segments tangent to the ellipse (with their end
 
 
 \section{The Trammel of Archimedes}
-Carpenters on occasion
- use the trammel of Archimedes to draw an ellipse.
+
 \begin{center}  
 \youtube{watch?v=SZ6_jjfqNBo}  
 \end{center}
@@ -506,13 +507,16 @@ Carpenters on occasion
 
 %In an episode of \emph{This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. Trammel comes from \emph{trēmaculum}, a concatenation of the Latin \emph{trēs} (``three") and \emph{macula} (``mesh"). In middle English it referred to a three-layered fishing net and it has evolved to mean any restraint or hindrance (CITE A SOURCE HERE). And restraining two points $P$ and $Q$ on a thin rod to slide along two (usually perpendicular) is exactly what we need to force any third point $P^*$ on that rod (or more generally any point fixed in the reference frame of the rod) to trace an ellipse. %that we can draw an ellipse by tracing a third point $P^*$ on the rod. %(more generally, as the endpoints of a segment slide along two perpendicular lines, a point fixed in the reference frame of the segment sweeps out an ellipse). 
 
- Trammel comes from \emph{trēmaculum}, a concatenation of the Latin \emph{trēs} (``three") and \emph{macula} (``mesh"). In middle English it referred to a three-layered fishing net and it has evolved to mean any restraint or hindrance (CITE A SOURCE HERE). And restraining two points on a thin rod to slide along two (usually perpendicular) lines is exactly what we need to force any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse. %that we can draw an ellipse by tracing a third point $P^*$ on the rod. %(more generally, as the endpoints of a segment slide along two perpendicular lines, a point fixed in the reference frame of the segment sweeps out an ellipse). 
+In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A trammel is a restraint or hindrance, and restraining two points on a thin rod to slide along two (usually perpendicular) lines is exactly what we need to force any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse.
 
-The trammel of Archimedes hides in Figure ??, repeated here below. As ${\cal C}_1$ rolls around ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along perpendicular lines. This is exactly what we need to understand the transition points.
 
-Well not quite. When the tracing point lies on the extension of $\overline{PR}$ as it does here, $\overline{PR}$ is \emph{never} tangent to the ellipse. It is only when $P^*$ lies on $\overline{PR}$ that $\overline{PR}$ is ever tangent to the ellipse. 
+%Trammel comes from \emph{trēmaculum}, a concatenation of the Latin \emph{trēs} (``three") and \emph{macula} (``mesh"). In middle English it referred to a three-layered fishing net and it has evolved to mean any restraint or hindrance (CITE A SOURCE HERE). And restraining two points on a thin rod to slide along two (usually perpendicular) lines is exactly what we need to force any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse. %that we can draw an ellipse by tracing a third point $P^*$ on the rod. %(more generally, as the endpoints of a segment slide along two perpendicular lines, a point fixed in the reference frame of the segment sweeps out an ellipse). 
 
-To see this
+The trammel of Archimedes hides in Figure ??, repeated here below. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This is exactly what we need to understand Robinson's description of the transition points.
+
+Well not quite. When the tracing point lies on the extension of $\overline{PR}$ as it does here, $\overline{PR}$ is \emph{never} tangent to the ellipse. But when $P^*$ lies between $P$ and $R$, segment $\overline{PR}$ is tangent to the ellipse only at the four transition points.
+
+Figure ?? helps explain why.
 
  
 
@@ -528,6 +532,17 @@ To see this
 
 \href{https://www.desmos.com/calculator/nhapbvzxnu}{Wrapping Cycloids Around Circles Ellipse 2BBB}
 
+
+
+DOUBLE GENERATION
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{nfmfnkp9nb}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/nfmfnkp9nb}{Double Generation Ellipse}
 
 
 Figure ?? (in the previous section) suggests how to generate an ellipse as a \emph{glissette} (from the French, \emph{glisser}, to slide). It is the curve traced by a point on a segment with a fixed length $L$ as its endpoints slide along two perpendicular lines. In Figure ?? the tracing point lies beyond the endpoints of segment $\overline{AB}$, but still on the line $AB$. Having the tracing point is outside the segment like this makes it possible to build an ellisograph (the trammel of Archimedes), as Tom Silva does in the episode of \emph{This Old House}.
