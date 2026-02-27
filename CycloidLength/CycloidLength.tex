@@ -39,7 +39,7 @@ What if $b<a$? Then the tracing point lies inside the rolling circle and the \em
 \href{https://www.desmos.com/calculator/0eosvsfm9r}{Curtate Cycloid 33}
 
  
-Robinson proves two other similarly surprising facts. One is about the limacon with polar equation $r=A + B\cos\theta$, $\theta\in [0,2\pi)$. When $B>A$ the limacon intersects itself and Robinson shows the length of its outer loop exceeds the length of the inner loop by $8A$. Taking $B=A$ shows the excess equals the length of the cardioid $r=A + A\cos\theta$.
+Robinson proves two other similarly surprising facts. One is about the limacon with polar equation $r=A + B\cos\theta$, $\theta\in [0,2\pi)$. When $B>A$ the limacon intersects itself and the length of its outer loop exceeds the length of the inner loop by $8A$. Taking $B=A$ shows the excess equals the length of the cardioid $r=A + A\cos\theta$.
 
 The other is about ellipses. It says when $B\geq A$ and 
 \[
@@ -51,13 +51,13 @@ the arclength of the quater-ellipse
 \]
 over the interval $\theta \in [0,\alpha]$ exceeds the arclength over the interval $\theta\in [\alpha, \pi/2]$ by $B-A$.
 
-Robinson's proofs exploit the commonality these three types of curves have in their arclength functions being elliptic integrals. But the curves have another, more geometric, commonality. They are all \emph{roulettes} (from the Latin \emph{rota} for wheel) traced by a point fixed in the reference frame of a rolling circle.
+Robinson's proofs exploit the commonality these three types of curves have in their arclength functions being elliptic integrals. But the curves have another commonality. They are all \emph{roulettes} (from the Latin \emph{rota} for wheel) traced by a point fixed in the reference frame of a rolling circle.
 
 %A point $b$ units from the center of a circle with radius $a$ sweeps out the limacon $r=2a + 2b\cos\theta$ as it rolls once around a circle with the same radius. 
 
 The limacon $r=A+B\cos\theta = 2a + 2b \cos\theta$ is traced by a point $b$ units from the center of a circle with radius $a$ as it rolls around the outside of a circle with the same radius. And (surprisingly, at least for me) a point $b>a$ units from a circle with radius $a$ rolling around the \emph{inside} of a circle with radius $2a$ sweeps out an ellipse with semi-major and minor axes $b+a$ and $b-a$.
 
-These observations suggest these arclength equalities are special cases of a more general theorem about arclengths of epicycloids and hypocycloids (curves traced by a point fixed in the reference frame of one circle as it rolls around the outside or inside of another). For the limacon $r= 2a+2b$, the excess arclength $8(2a) = 16a$ is the length of the cardioid traced by a point attached to a circle with radius $a$ as it rolls once around a congruent circle. It is not a coincidence that the length of the cardioid
+These observations suggest Robinson's arclength equalities are special cases of a more general theorem about epicycloids and hypocycloids (curves traced by a point fixed in the reference frame of one circle as it rolls around the outside or inside of another). For the limacon $r= 2a+2b$, the excess arclength $8(2a) = 16a$ is the length of the cardioid traced by a point attached to a circle with radius $a$ as it rolls once around a congruent circle. It is not a coincidence that the length of the cardioid
 is twice the length of the cycloid traced by a point attached to the same circle as it rolls on a line. Replacing the line with a circle of radius $a$ \emph{doubles} corresponding arclengths of the roulette.
 
 And for the semi-ellipse 
@@ -114,7 +114,7 @@ You can almost see the equality $s_1 - s_2 = s_3$ of arclengths in the figure be
 
 \begin{theorem19}
 
-As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between the same inclination angles. Then
+As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between inclination angles $0$ and $\phi$. Then
 \[
 s_1 - s_2 = s_3.
 \]
@@ -144,7 +144,7 @@ Part 2-- and this is a hint-- what part of the car is traveling at 120 mph?}
 
 
 
-It might seem counterintuitive that at any moment a rolling wheel is rotating \emph{not} about its center but about its point of contact with the ground. This point, the wheel's \emph{instantaneous center of rotation}, is the point in the reference frame of the rolling wheel momentarily at rest (the cusps of the ordinary cycloid in Figure 1 reveal why, for as the tracing point bounces off the $x$-axis it reverses direction and necessarily comes to a stop.).  And at any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation. This has two implications.         %The cusps of the ordinary cycloid in Figure 1 reveal why, because as the tracing point bounces off the $x$-axis it reverses direction and comes to a stop.
+It might seem counterintuitive that at any moment a rolling wheel is rotating \emph{not} about its center but about its point of contact with the ground. This point, the wheel's \emph{instantaneous center of rotation}, is the point in the reference frame of the rolling wheel momentarily at rest (In Figure 1 the point $P_3$ is the wheel's center of rotation at the cusps, when it bounces off the $x$-axis and comes to a stop and reverses direction.) And at any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation. This has two implications.         %The cusps of the ordinary cycloid in Figure 1 reveal why, because as the tracing point bounces off the $x$-axis it reverses direction and comes to a stop.
 
 %At any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation.  This has two implications. 
 
@@ -181,7 +181,7 @@ For the cycloid above, for example, traced by a point attached to a circle of ra
 
 {\bf Remarks:} 
 \begin{enumerate}
-\item Adding these differential arclengths shows the length of the cycloid from $A$ to $P$ is
+\item Adding these differential arclengths shows the length of the cycloid from $A$ to $P$ 
 \[
       s =\int_0^\phi 4a\cos\phi \, d\phi = 4a\sin\phi                   % s = \int_0^\theta (2 4a\sin(\theta/2) = 4a \sin\phi %2 \text BP .
 \]
@@ -221,12 +221,12 @@ Rolling a book along the top of a cylinder is a convincing way to demonstrate th
 \section{A Proof of Robinson's Theorem}
 
 \begin{proof}
-To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, rolling along the $x$-axis as the points $P_i$ (at rest in the reference frames of these circles) respectively sweep out the upper and lower parts of the prolate cycloid and its sister cycloid.  Imagine also the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points make the same angle $\phi$ with the vertical at all times as in Figure 3. In the animated version of this figure, the circle for the ordinary cycloid (centered at $C_3$) rotates at a constant rate, but the others do not. The key to our proof, and to creating the animation, is to relate the rotation rates of the three circles.
+To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, rolling along the $x$-axis as the points $P_i$ (at rest in the reference frames of these circles) respectively sweep out the upper and lower parts of the prolate cycloid and its sister cycloid.  Imagine also the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points make the same angle $\phi$ with the vertical at all times as in Figure 3. In the animated version of this figure, the circle for the ordinary cycloid (centered at $C_3$) rotates at a constant rate, but the others do not. The key to our proof, and to creating the animation, is to relate the rotation rates of the three circles. 
 
 
 %We suppose the circles start with the points $P_i$ at the same inclination angle $\phi=0$ and the segments $Q_iP_i$ vertical. And we also assume as illustrated in Figure 3, the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points remain parallel at all times.
 
-Now our goal is to work locally and show
+To prove the theorem, it suffices to show
 \begin{equation} \label{Eq:DiffArcs}
       ds_1 - ds_2 = ds_3 ,
 \end{equation}
@@ -505,7 +505,7 @@ In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archime
 
 %Trammel comes from \emph{trēmaculum}, a concatenation of the Latin \emph{trēs} (``three") and \emph{macula} (``mesh"). In middle English it referred to a three-layered fishing net and it has evolved to mean any restraint or hindrance (CITE A SOURCE HERE). And restraining two points on a thin rod to slide along two (usually perpendicular) lines is exactly what we need to force any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse. %that we can draw an ellipse by tracing a third point $P^*$ on the rod. %(more generally, as the endpoints of a segment slide along two perpendicular lines, a point fixed in the reference frame of the segment sweeps out an ellipse). 
 
-The trammel of Archimedes hides in Figure ??, repeated here below. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This is almost what we need to understand Robinson's description of the transition points.
+The trammel of Archimedes hides in Figure ??, repeated here below. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This is half of what we need to understand Robinson's description of the transition points.
 
 \begin{onlineOnly}
     \begin{center}
@@ -514,6 +514,24 @@ The trammel of Archimedes hides in Figure ??, repeated here below. As the smalle
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/nhapbvzxnu}{Wrapping Cycloids Around Circles Ellipse 2BBB}
+
+The other half is a second trammel (Figure ??). It has the same axes as the the one in Figure ?? and it traces the same ellipse. But its tracing point lies between the pins instead of outside. And unlike the first trammel whose sliding arm is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the transition points separating the same and opposite-side arclengths.
+
+To see why, let's focus our attention on this second trammel. With the coordinate system of Figure ?? and $\phi$ the marked angle the arm makes with the $x$-axis, the tracing point has coordinates 
+\[
+     (x,y) = ((b+a)\cos\phi, (b-a)\sin\phi) , 0\leq \phi <2\pi. 
+\]
+This shows $P^*$ sweeps out an ellipse. To find the arm's position when it is tangent to the ellipse, imagine the arm in motion. Then the arm is tangent to the ellipse exactly when $P^*$ moves parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows
+\[
+   (x,y) = (2b\cos^3 \phi, 2b\sin\phi).
+\]
+
+But we can avoid these computations by appealing once again to the center of curvature. Imagine the 
+
+is one I like to give my calculus students. It's really just a version of the question that relates the speeds of the top and bottom ends of a sliding ladder. The key to its solution is 
+
+
+
 
 We say almost because when the tracing point lies on the extension of $\overline{PR}$ as it does here, $\overline{PR}$ is \emph{never} tangent to the ellipse. But when $P^*$ lies between $P$ and $R$, segment $\overline{PR}$ is tangent to the ellipse only at the four transition points.
 
