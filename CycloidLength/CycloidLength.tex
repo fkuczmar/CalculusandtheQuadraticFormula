@@ -500,12 +500,12 @@ the transition points divide the segments tangent to the ellipse, those with the
 \href{https://www.youtube.com/watch?v=SZ6_jjfqNBo}{Tom Silva drawing an ellipse}
 
 
-In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A trammel is a restraint or hindrance, and restraining two points on a thin rod to slide along two (usually perpendicular) lines forces any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse.
+In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A trammel is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse.
 
 
 %Trammel comes from \emph{trēmaculum}, a concatenation of the Latin \emph{trēs} (``three") and \emph{macula} (``mesh"). In middle English it referred to a three-layered fishing net and it has evolved to mean any restraint or hindrance (CITE A SOURCE HERE). And restraining two points on a thin rod to slide along two (usually perpendicular) lines is exactly what we need to force any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse. %that we can draw an ellipse by tracing a third point $P^*$ on the rod. %(more generally, as the endpoints of a segment slide along two perpendicular lines, a point fixed in the reference frame of the segment sweeps out an ellipse). 
 
-The trammel of Archimedes hides in Figure ??, repeated here below. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This is half of what we need to understand Robinson's description of the transition points.
+The trammel of Archimedes hides in Figure ??, repeated here below. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This trammel, with arm $\overline{PR}$, is half of what we need to understand Robinson's description of the transition points.
 
 \begin{onlineOnly}
     \begin{center}
@@ -517,11 +517,29 @@ The trammel of Archimedes hides in Figure ??, repeated here below. As the smalle
 
 The other half is a second trammel (Figure ??). It has the same axes as the the one in Figure ?? and it traces the same ellipse. But its tracing point lies between the pins instead of outside. And unlike the first trammel whose sliding arm is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the transition points separating the same and opposite-side arclengths.
 
-To see why, let's focus our attention on this second trammel. With the coordinate system of Figure ?? and $\phi$ the marked angle the arm makes with the $x$-axis, the tracing point has coordinates 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{rheveebavy}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/rheveebavy}{Double Generation Ellipse 4}
+
+To see why, let's focus our attention on this second trammel. With the coordinate system of Figure ?? and $\phi$ the marked angle between the arm and the $x$-axis, $P^*$ has coordinates 
 \[
      (x,y) = ((b+a)\cos\phi, (b-a)\sin\phi) , 0\leq \phi <2\pi. 
 \]
-This shows $P^*$ sweeps out an ellipse. To find the arm's position when it is tangent to the ellipse, imagine the arm in motion. Then the arm is tangent to the ellipse exactly when $P^*$ moves parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{6cjnmo1typ}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel}
+
+
+This shows $P^*$ sweeps out an ellipse. To find the arm's position when it is tangent to the ellipse, imagine the arm in motion. The arm is then tangent to the ellipse exactly when $P^*$ is moving parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows
 \[
    (x,y) = (2b\cos^3 \phi, 2b\sin\phi).
 \]
@@ -535,13 +553,6 @@ is one I like to give my calculus students. It's really just a version of the qu
 
 We say almost because when the tracing point lies on the extension of $\overline{PR}$ as it does here, $\overline{PR}$ is \emph{never} tangent to the ellipse. But when $P^*$ lies between $P$ and $R$, segment $\overline{PR}$ is tangent to the ellipse only at the four transition points.
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{yjbbemqlsk}{900}{600}   %yfoczp8y2g
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/yjbbemqlsk}{Double Generation Ellipse 3}
 
 
 
