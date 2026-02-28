@@ -55,7 +55,7 @@ Robinson's proofs exploit the commonality these three types of curves have in th
 
 %A point $b$ units from the center of a circle with radius $a$ sweeps out the limacon $r=2a + 2b\cos\theta$ as it rolls once around a circle with the same radius. 
 
-The limacon $r=A+B\cos\theta = 2a + 2b \cos\theta$ is traced by a point $b$ units from the center of a circle with radius $a$ as it rolls around the outside of a circle with the same radius. And (surprisingly, at least for me) a point $b>a$ units from a circle with radius $a$ rolling around the \emph{inside} of a circle with radius $2a$ sweeps out an ellipse with semi-major and minor axes $b+a$ and $b-a$.
+The limacon $r=A+B\cos\theta = 2a + 2b \cos\theta$ is traced by a point $b$ units from the center of a circle with radius $a$ rolling around the outside of a circle with the same radius. And (surprisingly, at least for me) a point $b>a$ units from a circle with radius $a$ rolling around the \emph{inside} of a circle with radius $2a$ sweeps out an ellipse with semi-major and minor axes $b+a$ and $b-a$.
 
 These observations suggest Robinson's arclength equalities are special cases of a more general theorem about epicycloids and hypocycloids (curves traced by a point fixed in the reference frame of one circle as it rolls around the outside or inside of another). For the limacon $r= 2a+2b$, the excess arclength $8(2a) = 16a$ is the length of the cardioid traced by a point attached to a circle with radius $a$ as it rolls once around a congruent circle. It is not a coincidence that the length of the cardioid
 is twice the length of the cycloid traced by a point attached to the same circle as it rolls on a line. Replacing the line with a circle of radius $a$ \emph{doubles} corresponding arclengths of the roulette.
@@ -467,14 +467,8 @@ Figure ?? shows an example closely related to the one in Figure ???. Here a circ
 \href{https://www.desmos.com/calculator/yillqxp8mg}{Wrapping Cycloids Around Circles Ellipse 2B}
 
 To better understand this result geometrically, we need to identify the transition points and Robinson does just that. He shows 
-the transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major and semi-minor axes (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse.
+the transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse.
 
-
-
-%The tangent segments at these points with their endpoints on the axes of the ellipse have length $2b$. Furthermore the points of tangency divide each segment into two segments with lengths $P^*B = b+a$ and $P^*A = b-a$, respectively equal to the semi-major and semi-minor axes (see Figure ? below).
-
-
-%Robinson identifies the transition points. The tangent segments at these points with their endpoints on the axes of the ellipse have length $2b$. Furthermore the points of tangency divide each segment into two segments with lengths $P^*B = b+a$ and $P^*A = b-a$ equal to the semi-major and semi-minor axes (see Figure ?). 
 
 \begin{onlineOnly}
     \begin{center}
@@ -483,12 +477,6 @@ the transition points divide the segments tangent to the ellipse, those with the
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/2afbtinzyu}{Wrapping Cycloids Around Circles Ellipse 2BB}
-
-
-%To better understand why and to give an equivalent description of the transition points (as the points on the ellipse that minimize the length of its tangent segments running between the coordinate axes), we turn to a more practical way to draw an ellipse. %the trammel of Archimedes.
-
-
-%The transition points have an equivalent description. They are the points of the ellipse that minimize the length of its tangent segments running between the coordinate axes. We turn to this next. %To understand why is the topic of the next section.
 
 
 \section{The Trammel of Archimedes}
@@ -500,22 +488,22 @@ the transition points divide the segments tangent to the ellipse, those with the
 \href{https://www.youtube.com/watch?v=SZ6_jjfqNBo}{Tom Silva drawing an ellipse}
 
 
-In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A trammel is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse.
+In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A trammel is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse. A trammel of Archimedes hides in Figure ??. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{P_1R_1}$ through the tracing point slide along the axes of the ellipse. This trammel, with arm $\overline{P_2R_2}$, is half of what we need to understand Robinson's description of the transition points.
 
 
 %Trammel comes from \emph{trēmaculum}, a concatenation of the Latin \emph{trēs} (``three") and \emph{macula} (``mesh"). In middle English it referred to a three-layered fishing net and it has evolved to mean any restraint or hindrance (CITE A SOURCE HERE). And restraining two points on a thin rod to slide along two (usually perpendicular) lines is exactly what we need to force any third point on that rod (or any point fixed in the reference frame of the rod) to trace an ellipse. %that we can draw an ellipse by tracing a third point $P^*$ on the rod. %(more generally, as the endpoints of a segment slide along two perpendicular lines, a point fixed in the reference frame of the segment sweeps out an ellipse). 
 
-The trammel of Archimedes hides in Figure ??, repeated here below. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This trammel, with arm $\overline{PR}$, is half of what we need to understand Robinson's description of the transition points.
+%A trammel of Archimedes hides in Figure ??. As the smaller circle ${\cal C}_1$ rolls around the inside of ${\cal C}_2$, the endpoints of the diameter $\overline{PR}$ through the tracing point slide along the axes of the ellipse. This trammel, with arm $\overline{PR}$, is half of what we need to understand Robinson's description of the transition points.
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{nhapbvzxnu}{900}{600}   %yfoczp8y2g
-\end{center}
-\end{onlineOnly}
+%\begin{onlineOnly}
+ %   \begin{center}
+%\desmos{nhapbvzxnu}{900}{600}   %yfoczp8y2g
+%\end{center}
+%\end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/nhapbvzxnu}{Wrapping Cycloids Around Circles Ellipse 2BBB}
+%\href{https://www.desmos.com/calculator/nhapbvzxnu}{Wrapping Cycloids Around Circles Ellipse 2BBB}
 
-The other half is a second trammel (Figure ??). It has the same axes as the the one in Figure ?? and it traces the same ellipse. But its tracing point lies between the pins instead of outside. And unlike the first trammel whose sliding arm is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the transition points separating the same and opposite-side arclengths.
+The other half is a second trammel (Figure ??). It has the same axes as the the one in Figure ?? and it traces the same ellipse. But its tracing point $P^*$ liesnot outside, but between the pins $P_2$ and $R_2$ at distances $P^*R_2 = b+a$ and $P^*P_2$. And unlike the first trammel whose sliding arm is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the transition points separating the same and opposite-side arclengths of the ellipse.
 
 \begin{onlineOnly}
     \begin{center}
@@ -539,15 +527,41 @@ To see why, let's focus our attention on this second trammel. With the coordinat
 \href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel}
 
 
-This shows $P^*$ sweeps out an ellipse. To find the arm's position when it is tangent to the ellipse, imagine the arm in motion. The arm is then tangent to the ellipse exactly when $P^*$ is moving parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows
+This shows $P^*$ sweeps out an ellipse with semi-major/minor . To find the arm's position when it is tangent to the ellipse in the first quadrant, imagine the arm in motion. The arm is then tangent to the ellipse exactly when $P^*$ is moving parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows the arm is tangent to the ellipse exactly once, when $P^*$ has coordinates
 \[
-   (x,y) = (2b\cos^3 \phi, 2b\sin\phi).
+   (x,y) = (2b\cos^3 \phi, 2b\sin^3\phi).
 \]
 
-But we can avoid these computations by appealing once again to the center of curvature. Imagine the 
+We can avoid these computations by appealing to the center of curvature. Imagine the 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{hi6ug11jbn}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/hi6ug11jbn}{Center of Rotation 3}
+
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{6cjnmo1typ}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel}
+
 
 is one I like to give my calculus students. It's really just a version of the question that relates the speeds of the top and bottom ends of a sliding ladder. The key to its solution is 
 
+\begin{onlineOnly}
+    \begin{center}
+\desmos{q6fiohnpmo}{900}{600}   %yfoczp8y2g
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/q6fiohnpmo}{Double Generatation Ellipse 5}
 
 
 
