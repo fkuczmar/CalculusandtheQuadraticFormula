@@ -5,6 +5,7 @@
 
 \newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids, Local Version}
 \newtheorem{theorem20}{An Arclength Theorem for Prolate Epi and Hypocycloids}
+\newtheorem{theorem21}{Robinson's Lemma}
 
 \begin{document}
 \begin{abstract}
@@ -224,11 +225,6 @@ To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, r
 
 %We suppose the circles start with the points $P_i$ at the same inclination angle $\phi=0$ and the segments $Q_iP_i$ vertical. And we also assume as illustrated in Figure 3, the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points remain parallel at all times.
 
-To prove the theorem, it suffices to show
-\begin{equation} \label{Eq:DiffArcs}
-      ds_1 - ds_2 = ds_3 ,
-\end{equation}
-where  $ds_i$ are the differential arclengths along the respective curves between inclination angles $\phi$ and $\phi + d\phi$. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -238,7 +234,11 @@ where  $ds_i$ are the differential arclengths along the respective curves betwee
 
 \href{https://www.desmos.com/calculator/qtse3eivit}{Limacon Cylcoid Arclength 3C}
 
-
+To prove the theorem, it suffices to show
+\begin{equation} \label{Eq:DiffArcs}
+      ds_1 - ds_2 = ds_3 ,
+\end{equation}
+where  $ds_i$ are the differential arclengths along the respective curves between inclination angles $\phi$ and $\phi + d\phi$. 
 Let these differential arclengths have rotation arms $\rho_i = Q_iP_i$. A key point in what follows (see Figure ?? above) is that %by the symmetry of the first (red) circle about the diameter perpendicular to $\overline{P_1R_1}$,
 \[
    \rho_2 = Q_2P_2 = Q_1R_1 = S_1P_1 ,
@@ -385,10 +385,10 @@ along the cardioid equal to twice the differential arclength $ds = QP\, d\theta$
 %There is nothing special about the points $P$, $P^*$ being on the circles. 
 
 A similar relationship holds more generally. As a circle ${\cal C}$ of radius $a$ rolls through the differential arclength $d\sigma$ of its circumference around the outside of a fixed circle ${\cal C}_r$ with radius $r$, it turns through the angle $d\theta = d\sigma/a$ relative to the rolling tangent line. At the same time, the tangent turns with the same sense through the angle $d\sigma/r$ about the center of ${\cal C}_r$. So ${\cal C}$ turns through the angle
-\begin{align*}
-     d\theta^* &= \left(\frac{1}{a} + \frac{1}{r} \right) \, d\sigma \\
-                    &= \left( 1 + \frac{a}{r}  \right) \, d\theta . 
-\end{align*}
+\begin{align}
+     d\theta^* &= \left(\frac{1}{a} + \frac{1}{r} \right) \, d\sigma  \notag \\
+                    &= \left( 1 + \frac{a}{r}  \right) \, d\theta .  \label{Eq:RollAngle}
+\end{align}
 in the reference frame of ${\cal C}_r$. The same equation also holds if we take $r$ to be negative when ${\cal C}$ rolls on the inside of ${\cal C}_r$.
 
 In either case, the equation implies a similar relationship 
@@ -475,9 +475,7 @@ Figure ?? shows an example with a single transition point, crossed twice.  Here 
 
 \section{Ellipses and the Trammel of Archimedes}
 
-Robinson's third arclength theorem is about ellipses. Roll a circle ${\cal C}_1$ with radius $a$ around the \emph{inside} of a circle ${\cal C}_1^\prime$ with radius $2a$. Then the tracingn point $P^*$, still $b$ units from the center of ${\cal C}_1$, traces an ellipse with major and minor semi-axes $b+a$ and $b-a$ (Figure ??). And as ${\cal C}_1$ rolls once round ${\cal C}_1^\prime$, the point $P_1$ (on ${\cal C}_1$) doubly-traces the horizontal diameter of ${\cal C}_1^\prime$. So our theorem for prolate hypocycloids implies the same-side arclength (red) of the ellipse exceeds its opposite-side length (blue) by $4a$, twice the diameter of ${\cal C}_1^\prime$. Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. 
-
-Robinson gives a more insightful description of the transition points. He shows they divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse.
+Robinson's third arclength theorem is about ellipses. Roll a circle ${\cal C}_1$ with radius $a$ around the \emph{inside} of a circle ${\cal C}_1^\prime$ with radius $2a$. Then the tracing point $P^*$, still $b$ units from the center of ${\cal C}_1$, traces an ellipse with major and minor semi-axes $b+a$ and $b-a$ (Figure ??). And as ${\cal C}_1$ rolls once round ${\cal C}_1^\prime$, the point $P_1$ (on ${\cal C}_1$) doubly-traces the horizontal diameter of ${\cal C}_1^\prime$. So our theorem for prolate hypocycloids implies the same-side arclength (red) of the ellipse exceeds its opposite-side length (blue) by $4a$, twice the diameter of ${\cal C}_1^\prime$. %Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. 
 
 %\begin{center}  
 %\youtube{watch?v=SZ6_jjfqNBo}  
@@ -493,8 +491,15 @@ Robinson gives a more insightful description of the transition points. He shows 
 
 \href{https://www.desmos.com/calculator/yillqxp8mg}{Wrapping Cycloids Around Circles Ellipse 2B}
 
-%To better understand this result geometrically, we need to describe the transition points in another way and Robinson does just that. He shows these points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse.
 
+
+%Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. But Robinson gives a more insightful description. He shows the transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse, one discovered some two millenia ago but still in use today.
+
+Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. But Robinson gives a more insightful description.
+
+\begin{theorem21}
+The transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???).
+\end{theorem21}
 
 \begin{onlineOnly}
     \begin{center}
@@ -504,7 +509,7 @@ Robinson gives a more insightful description of the transition points. He shows 
 
 \href{https://www.desmos.com/calculator/2afbtinzyu}{Wrapping Cycloids Around Circles Ellipse 2BB}
 
-
+To understand why, we turn to a more practical way of drawing an ellipse, one discovered some two millenia ago but still in use today.
 
 In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A \emph{trammel} is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse. A trammel of Archimedes hides in Figure ??. As ${\cal C}_1$ rolls around the inside of ${\cal C}_1^\prime$, the endpoints of the diameter $\overline{P_1R_1}$ through the tracing point slide along the axes of the ellipse. This trammel, with arm $\overline{P_1R_1}$, is half of what we need to understand Robinson's description of the transition points.
 
@@ -521,7 +526,7 @@ In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archime
 
 %\href{https://www.desmos.com/calculator/nhapbvzxnu}{Wrapping Cycloids Around Circles Ellipse 2BBB}
 
-The other half is a second trammel (Figure ??). It slides along the same axes as the the one in Figure ?? and traces the same ellipse. It also has the same tracing point. But now $P^*$ lies \emph{between} the pins, at distances $P^* R_2 = P^* R_1 = b+a$ and $P^* P_2 = P^* P_1 = b-a$ from them. So the two arms cut the axes at the same angle (ie. $\angle R_1 \cong\angle R_2$ and $\angle P_1\cong \angle P_2$) and the arms rotate at the same rate in opposite senses as $P^*$ traces the ellipse. But while the arm of the first trammel is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the CROSSING points separating the same and opposite-side arclengths of the ellipse.
+The other half is a second trammel (Figure ??). It slides along the same axes as the the one in Figure ?? and traces the same ellipse. It also has the same tracing point. But now $P^*$ lies \emph{between} the pins, at distances $P^* R_2 = P^* R_1 = b+a$ and $P^* P_2 = P^* P_1 = b-a$ from them. So the two arms cut the axes at the same angle ($\angle R_1 \cong\angle R_2$ and $\angle P_1\cong \angle P_2$) and the arms rotate at the same rate as $P^*$ traces the ellipse. But while the arm of the first trammel is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the transistion points separating the same and opposite-side arclengths of the ellipse.
 
 
 
@@ -535,12 +540,21 @@ The other half is a second trammel (Figure ??). It slides along the same axes as
 
 \href{https://www.desmos.com/calculator/rheveebavy}{Double Generation Ellipse 4}
 
-Figure ?? helps explain why with two new circles. The first, ${\cal C}_2$, lies on diameter $\overline{P_2R_2}$ and has radius $b$. The second, ${\cal C}_2^\prime$, is centered at $O$ and has radius $2b$. Set the figure in motion and you'll see ${\cal C}_2$ rolling around the inside of ${\cal C}_2^\prime$ as ${\cal C}_1$ rolls around ${\cal C}_1^\prime$. The point $P^*$, at rest in the reference frames of both rolling circles, traces the ellipse in two way; attached $b$ units from the center of the circle ${\cal C}_1$ with radius $a$ and $a$ units from the center of ${\cal C}_2$ (with radius $b$).
+Figure ?? helps explain why with two new circles. The first, ${\cal C}_2$, lies on diameter $\overline{P_2R_2}$ and has radius $b$. The second, ${\cal C}_2^\prime$, is centered at $O$ and has radius $2b$. Set the figure in motion and you'll see ${\cal C}_2$ rolling around the inside of ${\cal C}_2^\prime$ at the same rate as ${\cal C}_1$ rolls around ${\cal C}_1^\prime$. The point $P^*$, at rest in the reference frames of both rolling circles, traces the ellipse as a roulette in two ways; as a point attached $b=C_1P^*$ units from the center of the circle ${\cal C}_1$ having radius $a=C_1Q_1$ and as a point $a=C_2P^*$ units from the center of ${\cal C}_2$ with radius $b=C_2Q_2$.
+
+Now because the radius of each rolling circle is half the radius of its partner, (\ref{Eq:RollAngle}) implies the vertical lines through their centers (not shown) bisect the angles $\angle Q_1C_1P^*$ and $\angle Q_2C_2P^*$. It follows that $\overline{C_1P^*}\parallel \overline{C_2Q_2}$ and $\overline{C_1Q_1}\parallel \overline{C_2P^*}$. So $\angle P^*C_1Q_1\cong \angle Q_2C_2P^*$ and $\Delta P^* C_1Q_1 \cong \Delta Q_2C_2P^*$ (SAS).
 
 %Because the trammel arms $\overline{P_1R_1}$ and ${\cal P_2R_2}$ make the same angles with the axes, ${\cal C}_1$ and ${\cal C}_2$ turn at the same rate in the opposite sense. This
 
 
-You might also notice $P^*$ and the instantaneous centers of rotation $Q_1$ and $Q_2$ of the rolling circles are always colinear. This is because the trammel arms $\overline{P_1R_1}$ and ${\cal P_2R_2}$ make the same angles with the axes and so ${\cal C}_1$ and ${\cal C}_2$ turn at the same rate.
+You might also notice $P^*$ and the instantaneous centers of rotation $Q_1$ and $Q_2$ of the rolling circles are always colinear. 
+Accepting this for the moment is almost enough to verify Robinson's description of the transition points. The missing fact is that  trammel $\overline{P_2Q_2}$ is tangent to the ellipse exactly when the rotation arm $\overline{Q_2P^*}$ is perpendicular to the trammel. These two facts imply Robinsson's description since $P^*$ crosses the rolling tangent
+
+
+Look back at Figure ?? and 
+
+
+%This is because the trammel arms $\overline{P_1R_1}$ and ${\cal P_2R_2}$ make the same angles with the axes and so ${\cal C}_1$ and ${\cal C}_2$ turn at the same rate.
 
 
 %, you'll see ${\cal C}_2$ rolling around the inside of ${\cal C}_2^\prime$ at the same rate with the opposite sense. So the point $P^*$, at rest in the reference frames of both rolling circles, traces the ellipse in two way; attached $b$ units from the center of ${\cal C}_1$ (radius $a$), and $a$ units from then center of ${\cal C}_2$ (with radius $b$). This double-generation of the ellipse, ...
