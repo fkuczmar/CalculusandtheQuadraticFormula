@@ -540,7 +540,7 @@ The other half is another trammel (Figure ??). It slides along the same axes as 
 
 \href{https://www.desmos.com/calculator/rheveebavy}{Double Generation Ellipse 4}
 
-Figure ?? helps explain why with two new circles. The first, ${\cal C}_2$, lies on diameter $\overline{P_2R_2}$ and has radius $b$. The second, ${\cal C}_2^\prime$, is centered at $O$ and has radius $2b$. Set the figure in motion and you'll see ${\cal C}_2$ rolling around the inside of ${\cal C}_2^\prime$ as ${\cal C}_1$ rolls around ${\cal C}_1^\prime$, the two circles rotating at the same rate. The point $P^*$, at rest in the reference frames of both rolling circles, traces the ellipse as a roulette in two ways; as a point attached $b=C_1P^*$ units from the center of ${\cal C}_1$ (with radius $a=C_1Q_1$) and as a point $a=C_2P^*$ units from the center of ${\cal C}_2$ (with radius $b=C_2Q_2$).
+Figure ?? helps explain why with two new circles. The first, ${\cal C}_2$, lies on diameter $\overline{P_2R_2}$ and has radius $b$. The second, ${\cal C}_2^\prime$, is centered at $O$ and has radius $2b$. Set the figure in motion and you'll see ${\cal C}_2$ rolling around the inside of ${\cal C}_2^\prime$ as ${\cal C}_1$ rolls around ${\cal C}_1^\prime$. The point $P^*$, at rest in the reference frames of both rolling circles, traces the ellipse as a roulette in two ways; as a point attached $b=C_1P^*$ units from the center of ${\cal C}_1$ (with radius $a=C_1Q_1$) and as a point $a=C_2P^*$ units from the center of ${\cal C}_2$ (with radius $b=C_2Q_2$).
 
 \begin{onlineOnly}
     \begin{center}
@@ -560,9 +560,9 @@ We have some details to fill in, but Robinson's Lemma follows from three observa
 \item Trammel arm $\overline{P_2R_2}$  is tangent to the ellipse exactly when $\overline{Q_2P^*}$ is perpendicular to $\overline{P_2R_2}$.
 \end{enumerate}
 
-So at the transition points, when $\overline{Q_1P^*}$ is perpendicular to $\overline{C_1Q_1}$, (a) and (b) imply $\overline{Q_2P^*}$ is perpendicular to $\overline{P_2R_2}$ and hence (from (c)) $\overline{P_2R_2}$ is tangent to the ellipse. 
+So at the transition points, when $\overline{Q_1P^*}$ is perpendicular to $\overline{C_1Q_1}$, (a) and (b) imply $\overline{Q_2P^*}$ is perpendicular to $\overline{P_2R_2}$ and then from (c implies) $\overline{P_2R_2}$ is tangent to the ellipse. 
 
-The proof of (a) and (b) rests on the fact that the radius of each rolling circle is half the radius of its partner. For then  
+Our proof of (a) and (b) rests on the fact that the radius of each rolling circle is half the radius of its partner. For then  
  (\ref{Eq:RollAngle}) implies the vertical lines (not shown) through centers $C_1$ and $C_2$ bisect the congruent angles $\angle Q_1C_1R_1$ and $\angle Q_2C_2R_2$. It follows that $\overline{C_1Q_1}\parallel \overline{C_2P^*}$ (proving (a)) and $\overline{C_1P^*}\parallel \overline{C_2Q_2}$. So $\angle P^*C_1Q_1\cong \angle Q_2C_2P^*$ and $\Delta P^* C_1Q_1 \cong \Delta Q_2C_2P^*$ (SAS). Thus $\angle C_1P^*Q_1 \cong \angle C_2Q_2P^*$ and $\overline{Q_2P^*}\parallel \overline{P^*Q_1}$ (proving (b)).
 
 
@@ -584,14 +584,14 @@ To prove (c), we focus our attention on the second trammel. With the coordinate 
 
 \href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel}
 
-This shows $P^*$ traces an ellipse with semi-major/minor axes $P^*R_2=b+a$ and $P^*P_2 = b-a$. From here we can take either an algebraic or a geometric approach. In either case, the key observation is the same - the sliding arm is tangent to the ellipse exactly when $P^*$ moves parallel to the arm. I like the algebraic approach for a calculus class (where this problem is a variation of the one about relating the speeds of the ends of a sliding ladder), but here we'll take a geometric approach.% by appealing to the instantaneous center of rotation.
+This shows $P^*$ traces an ellipse with semi-major/minor axes $P^*R_2=b+a$ and $P^*P_2 = b-a$. From here we can take either an algebraic or a geometric approach. In either case, the key observation is the same - the sliding arm is tangent to the ellipse exactly when $P^*$ moves parallel to the arm. I like the algebraic approach for a calculus class (where this problem is a variation of the one that relates the speeds of the ends of a sliding ladder), but here we'll take a geometric approach.% by appealing to the instantaneous center of rotation.
 
 %To find the arm's position when it is tangent to the ellipse in the first quadrant, imagine the arm in motion. The arm is then tangent to the ellipse exactly when $P^*$ is moving parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows the arm is tangent to the ellipse exactly once, when $P^*$ has coordinates
 %\[
 %   (x,y) = (2b\cos^3 \phi, 2b\sin^3\phi).
 %\]
 
-The key idea is to find the instantaneous center of rotation of the sliding arm. This is the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ??. To find this center of rotation physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (segment $\overline{P_2R_2}$ is the trammel's arm, the adjacent edges the trammel's axes.) Now rotate the paper a bit about a random point $W$ and points $P_2$ and $R_2$ most likely head off the table. But choose the correct point (the arm's instantaneneous center of rotation) and the trammel's endpoints head along circular paths along (ie. tangent) to the adjacent edges. 
+The key idea is to find the instantaneous center of rotation of the sliding arm, the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ??. To find this center physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (segment $\overline{P_2R_2}$ is the trammel's arm, the table's edges the trammel's axes). Now rotate the paper a bit about a random point $W$ and points $P_2$ and $R_2$ most likely move off the table. But choose the correct point (the arm's instantaneneous center of rotation, $Q_2$) and the trammel's endpoints head along circular paths along (ie. tangent) to the edges. The center is the intersection point of the lines through $P_2$ and $R_2$ normal to the edges (ie. normal to the velocities of $P_2$ and $Q_2$).
 
 \begin{onlineOnly}
     \begin{center}
@@ -601,6 +601,7 @@ The key idea is to find the instantaneous center of rotation of the sliding arm.
 
 \href{https://www.desmos.com/calculator/hi6ug11jbn}{Center of Rotation 3}
 
+Figure ?? shows the velocities of several points on the sliding trammel as it rotates counterclockwise. Because these velocities are perpendicular to the rotation arms $\overline{Q_2P_i}$, at any moment there is only one point on the trammel moving parallel to the trammel. This is the foot of the perpendicular from the center of rotation $Q_2$ to $\overline{P_2R_2}$. Because $P^*$ lies between $P_2$ and $Q_2$, this proves (c) and completes our proof of Robinson's lemma.
 
 
 \begin{onlineOnly}
@@ -612,7 +613,42 @@ The key idea is to find the instantaneous center of rotation of the sliding arm.
 \href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel}
 
 
-is one I like to give my calculus students. It's really just a version of the question that relates the speeds of the top and bottom ends of a sliding ladder. The key to its solution is 
+{\bf Remarks:}
+
+\begin{enumerate}
+\item Plotting the centers of rotation in the reference frames of the trammel and the $xy$-coordinate systems gives to curves, respectively called the \emph{moving} and \emph{fixed centrodes}. And the rolling motion of the former on the latter describes a general motion (see Hilbert). In this case, both centrodes are circles. Because $OQ_2 = P_2R_2 = 2b$, the fixed centrode is a circle of radius $2b$ centered at $O$. And because $m\angle R_2Q_2P_2  =\pi/2$, the rolling centrode is a circle on diameter $\overline{P_2R_2}$. 
+
+\item One of my favorite problems is the discrete version of constructing the instantaneous center of rotation. In Figure ??, this amounts to constructing the one point that represents the same location in the maps below. See Hilbert again, or \emph{Excursions in Geometry??}.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{cthwmjxkp2}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/cthwmjxkp2}{Washington Maps}
+
+
+
+\item Robinson's lemma also desribes the transition points for the epicycloid generated by a circle of radius $a$ rolling around the \emph{outside} of a circle of radius $2a$.  
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{j1fxecamkh}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/j1fxecamkh}{Ellipse and Nephroid}
+
+
+\item There is another way to describe the transition points for the ellipse and the roulette in Figure above. They are the points where the tangent segments running between the coordinate axes are the shortest.
+
+\item Find the instantanteous center of rotation of the sliding trammel solves other problems as well.
+ 
+\end{enumerate}
+
+
+
 
 \begin{onlineOnly}
     \begin{center}
