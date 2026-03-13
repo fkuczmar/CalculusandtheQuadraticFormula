@@ -475,7 +475,7 @@ Figure ?? shows an example with a single transition point, crossed twice.  Here 
 
 \section{Ellipses and the Trammel of Archimedes}
 
-Robinson's third arclength theorem is about ellipses. Roll a circle ${\cal C}_1$ with radius $a$ around the \emph{inside} of a circle ${\cal C}_1^\prime$ with radius $2a$. Then the tracing point $P^*$, still $b$ units from the center of ${\cal C}_1$, traces an ellipse with major and minor semi-axes $b+a$ and $b-a$ (Figure ??). And as ${\cal C}_1$ rolls once round ${\cal C}_1^\prime$, the point $P_1$ (on ${\cal C}_1$) doubly-traces the horizontal diameter of ${\cal C}_1^\prime$. So our theorem for prolate hypocycloids implies the same-side arclength (red) of the ellipse exceeds its opposite-side length (blue) by $4a$, twice the diameter of ${\cal C}_1^\prime$. %Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. 
+Roll a circle ${\cal C}_1$ with radius $a$ around the \emph{inside} of a circle ${\cal C}_1^\prime$ with radius $2a$. Then the tracing point $P^*$, still $b$ units from the center of ${\cal C}_1$, traces an ellipse with major and minor semi-axes $b+a$ and $b-a$ (Figure ??). And as ${\cal C}_1$ rolls once round ${\cal C}_1^\prime$, the point $P_1$ (on ${\cal C}_1$) makes one round trip along the horizontal diameter of ${\cal C}_1^\prime$. So our theorem for prolate hypocycloids implies the same-side arclength (red) of the ellipse exceeds its opposite-side length (blue) by $4a$, twice the diameter of ${\cal C}_1^\prime$. %Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. 
 
 %\begin{center}  
 %\youtube{watch?v=SZ6_jjfqNBo}  
@@ -495,7 +495,7 @@ Robinson's third arclength theorem is about ellipses. Roll a circle ${\cal C}_1$
 
 %Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. But Robinson gives a more insightful description. He shows the transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse, one discovered some two millenia ago but still in use today.
 
-Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent and the rotation arm $\overline{Q_1P^*}$ is perpendicular to the radius $\overline{C_1Q_1}$. But Robinson gives a more insightful description of these points.
+Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent and the rotation arm $\overline{Q_1P^*}$ is perpendicular to the radius $\overline{C_1Q_1}$. Robinson gives a more insightful description of these points.
 
 \begin{theorem21}
 The transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the ellipse's semi-major $OX$ and semi-minor axes $OY$ (see Figure ???).
@@ -560,9 +560,9 @@ We have some details to fill in, but Robinson's Lemma follows from three observa
 \item Trammel arm $\overline{P_2R_2}$  is tangent to the ellipse exactly when $\overline{Q_2P^*}$ is perpendicular to $\overline{P_2R_2}$.
 \end{enumerate}
 
-So at the transition points, when $\overline{Q_1P^*}$ is perpendicular to $\overline{C_1Q_1}$, (a) and (b) imply $\overline{Q_2P^*}$ is perpendicular to $\overline{P_2R_2}$ and then from (c implies) $\overline{P_2R_2}$ is tangent to the ellipse. 
+So at the transition points, when $\overline{Q_1P^*}$ is perpendicular to $\overline{C_1Q_1}$, (a) and (b) imply $\overline{Q_2P^*}$ is perpendicular to $\overline{P_2R_2}$. Then (c) implies $\overline{P_2R_2}$ is tangent to the ellipse. 
 
-Our proof of (a) and (b) rests on the fact that the radius of each rolling circle is half the radius of its partner. For then  
+Our proof of (a) and (b) rests on the fact that the radius of each rolling circle is half the radius of its partner. For then Equation
  (\ref{Eq:RollAngle}) implies the vertical lines (not shown) through centers $C_1$ and $C_2$ bisect the congruent angles $\angle Q_1C_1R_1$ and $\angle Q_2C_2R_2$. It follows that $\overline{C_1Q_1}\parallel \overline{C_2P^*}$ (proving (a)) and $\overline{C_1P^*}\parallel \overline{C_2Q_2}$. So $\angle P^*C_1Q_1\cong \angle Q_2C_2P^*$ and $\Delta P^* C_1Q_1 \cong \Delta Q_2C_2P^*$ (SAS). Thus $\angle C_1P^*Q_1 \cong \angle C_2Q_2P^*$ and $\overline{Q_2P^*}\parallel \overline{P^*Q_1}$ (proving (b)).
 
 
@@ -591,7 +591,7 @@ This shows $P^*$ traces an ellipse with semi-major/minor axes $P^*R_2=b+a$ and $
 %   (x,y) = (2b\cos^3 \phi, 2b\sin^3\phi).
 %\]
 
-The key idea is to find the instantaneous center of rotation of the sliding arm, the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ??. To find this center physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (segment $\overline{P_2R_2}$ is the trammel's arm, the table's edges the trammel's axes). Now rotate the paper a bit about a random point $W$ and points $P_2$ and $R_2$ most likely move off the table. But choose the correct point (the arm's instantaneneous center of rotation, $Q_2$) and the trammel's endpoints head along circular paths along (ie. tangent) to the edges. The center is the intersection point of the lines through $P_2$ and $R_2$ normal to the edges (ie. normal to the velocities of $P_2$ and $Q_2$).
+The key idea is to find the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ?? (ie. the instantaneous center of rotation). To find this center physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (segment $\overline{P_2R_2}$ is the trammel's arm, the table's edges the trammel's axes). Now rotate the paper a bit about a random point $W$ and points $P_2$ and $R_2$ most likely move off the table. But choose the correct point $Q_2$ (the arm's instantaneneous center of rotation) and the trammel's endpoints move along circular paths tangent to the table's edges. The center is the intersection point of the lines through $P_2$ and $R_2$ normal to the edges (ie. normal to the velocities of $P_2$ and $Q_2$).
 
 \begin{onlineOnly}
     \begin{center}
@@ -606,11 +606,11 @@ Figure ?? shows the velocities of several points on the sliding trammel as it ro
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{6cjnmo1typ}{900}{600}   %yfoczp8y2g
+\desmos{nnmsmjmmnu}{900}{600}   %yfoczp8y2g
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel}
+\href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel 3}
 
 
 {\bf Remarks:}
