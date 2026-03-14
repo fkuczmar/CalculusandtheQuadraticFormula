@@ -345,9 +345,10 @@ in the radii of curvature of the upper and lower prolate cycloid, all at the sam
 \section{Prolate Epicycloids}
 A classic problem asks how many rotations one quarter makes as it rolls once around another. 
 
-As the quarter rolls through its circumference, it makes one clockwise rotation in the reference frame of the rolling tangent line (Figure ??). But since this tangent makes one clockwise rotation around the fixed quarter, the quarter makes not one but two rotations as it rolls once around the other. 
+The rolling quarter picks up an extra rotation and makes two rotations as it rolls once around the other. For as the quarter rolls through its circumference it makes one clockwise rotation in the reference frame of the rolling tangent line as this tangent makes one clockwise rotation around the fixed quarter.
 
-%Compared with rolling along a line, the rolling quarter picks up an extra rotation and makes two rotations as it rolls once through its circumference.
+%As the quarter rolls through its circumference, it makes one clockwise rotation in the reference frame of the rolling tangent line (Figure ??). But since this tangent makes one clockwise rotation around the fixed quarter, the quarter makes not one but two rotations as it rolls once around the other. 
+
 
 \begin{onlineOnly}
     \begin{center}
@@ -356,6 +357,9 @@ As the quarter rolls through its circumference, it makes one clockwise rotation 
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/0dlaaalmjl}{Rolling Quarter 2}
+
+The rolling quarter picks up an extra rotation and makes two rotations as it rolls once around the other. This is because as the quarter rolls through its circumference it makes one clockwise rotation in the reference frame of the rolling tangent line
+
 
 The same is true locally. As the rolling quarter turns through the differential angle $d\theta$ in the reference frame of the rolling tangent, it rotates through the differential angle $d\theta^* = 2\, d\theta$ in the reference frame of the fixed quarter. A consequence is that the arclength of a cardioid is twice that of its sister cycloid, both globally and locally. These curves are traced by points attached to a circle as it rolls once through its circumference; along a line for the cycloid and around a circle of the same radius for the cardioid.  
 
@@ -368,11 +372,6 @@ To see why, we need only attach a tracing point $P^*$ to the top rolling quarter
 \]
 along the cardioid equal to twice the differential arclength $ds = QP\, d\theta$ along the cycloid. And if, as illustrated in Figure 4, we measure the inclination angle $\phi = m\angle P^*Q^*C^*$ of the cardioid \emph{relative to the rolling tangent line}, then $ds^* = 2\, ds$ between the common inclination angles $\phi$ and $\phi + d\phi$ of the two curves.
 
-%To see this, we need only attach tracing points $P$ (for the cycloid) and $P^*$ (for the cardioid) to the rolling quarters, taking care they have the same initial positions relative to the respective points of tangency as in Figure ??.  Then as the circles roll through the arclength $d\sigma$ of their circumferences,they turn through the respective angles $d\theta = d\sigma/a$ and $d\theta^* = 2\, d\theta$. Since the distances $\rho = QP$ and $\rho^* = Q^*P^*$ from the centers of rotation to the tracing points are equal, the point $P^*$ sweeps out an arclength
-%\[
-%      ds^* = Q^*P^*, d\theta^* =  QP (2\, d\theta) = 2 \,ds
-%\]
-%equal to twice that traversed by $P$.
 
 \begin{onlineOnly}
     \begin{center}
@@ -382,7 +381,6 @@ along the cardioid equal to twice the differential arclength $ds = QP\, d\theta$
 
 \href{https://www.desmos.com/calculator/grcnlkuqan}{Rolling Quarter and Cardioid 2}
 
-%There is nothing special about the points $P$, $P^*$ being on the circles. 
 
 A similar relationship holds more generally. As a circle ${\cal C}$ of radius $a$ rolls through the differential arclength $d\sigma$ of its circumference around the outside of a fixed circle ${\cal C}_r$ with radius $r$, it turns through the angle $d\theta = d\sigma/a$ relative to the rolling tangent line. At the same time, the tangent turns with the same sense through the angle $d\sigma/r$ about the center of ${\cal C}_r$. So ${\cal C}$ turns through the angle
 \begin{align}
@@ -424,7 +422,6 @@ and proves the theorem.
 \end{proof}
 
 
-%Figure 5 shows an example for the $(a,b,r)=(2,5,6)$ prolate epicyloid. Its upper (red) arclength exceeds its lower (blue) by the length of the sister $(a,r) = (2,6)$ epicycloid (dashed). The figure shows the rolling circle at a transition point between upper and lower arclengths as $P^*$ crosses the rolling tangent. %and the arclength of the prolate epicycloid changes sign.
 
 Figure 5 shows an example for the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its sister $(2,2,4)$ epicycloid is a nephroid, traced by a point on a circle rolling around the outside of a circle with twice the radius. The same-side (red) arclength of the prolate epicycloid exceeds its opposite-side (blue) length by the length of the nephroid (dashed). The figure shows the rolling circle at a transition point between the same and opposite-side arcs when $P^*$ crosses the rolling tangent.
 
@@ -511,7 +508,7 @@ The transition points divide the segments tangent to the ellipse, those with the
 
 To understand why, we turn to a more practical way of drawing an ellipse, one discovered some two millenia ago but still in use today.
 
-In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A \emph{trammel} is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse. A trammel of Archimedes hides in Figure ??. As ${\cal C}_1$ rolls around the inside of ${\cal C}_1^\prime$, the endpoints of the diameter $\overline{P_1R_1}$ through the tracing point slide along the axes of the ellipse (see Figure ?? for an explanation). This trammel, with arm $\overline{P_1R_1}$, is half of what we need to understand Robinson's description of the transition points.
+In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A \emph{trammel} is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse. A trammel of Archimedes hides in Figure ??. As ${\cal C}_1$ rolls around the inside of ${\cal C}_1^\prime$, the endpoints of the diameter $\overline{P_1R_1}$ through the tracing point slide along the axes of the ellipse (see Figure ?? for an explanation. CAPTION: Because an angle inscribed in a semi-circle a right angle, the normals to the moment arms $\overline{QP_i}$ pass through $O$ So points on the rolling circle always move directly toward or away from $O$. Each therefore moves along a diameter.) This trammel, with arm $\overline{P_1R_1}$, is half of what we need to understand Robinson's description of the transition points.
 
 \begin{onlineOnly}
     \begin{center}
@@ -538,7 +535,6 @@ The other half is another trammel (Figure ??). It slides along the same axes as 
 
 
 
-%The other half is a second trammel (Figure ??). It has the same axes as the the one in Figure ?? and it traces the same ellipse. But its tracing point $P^*$ lies not outside, but between the pins $P_2$ and $R_2$ at distances $P^*R_2 = b+a$ and $P^*P_2$. And unlike the first trammel whose sliding arm is never tangent to the ellipse, the arm of the second is tangent to the ellipse exactly four times. And these four points of tangency are the transition points separating the same and opposite-side arclengths of the ellipse.
 
 \begin{onlineOnly}
     \begin{center}
@@ -575,9 +571,6 @@ Our proof of (a) and (b) rests on the fact that the radius of each rolling circl
 
 
 
-%This is because the trammel arms $\overline{P_1R_1}$ and ${\cal P_2R_2}$ make the same angles with the axes and so ${\cal C}_1$ and ${\cal C}_2$ turn at the same rate.
-
-%We've added two circles (green) to Figure ??; ${\cal C}_2$ on diameter $\overline{P_2R_2}$ with radius $b$ and ${\cal C}_2^\prime$ centered at $O$ with radius $2b$. Set the figure in motion and as ${\cal C}_1$ rolls around ${\cal C}_1^\prime$, you'll see ${\cal C}_2$ rolling around the inside of ${\cal C}_2^\prime$ at the same rate with the opposite sense.
 
 To prove (c), we focus our attention on the second trammel. With the coordinate system of Figure ?? and $\phi$ the marked angle between the arm and the $x$-axis, $P^*$ has coordinates 
 \[
@@ -594,10 +587,6 @@ To prove (c), we focus our attention on the second trammel. With the coordinate 
 
 This shows $P^*$ traces an ellipse with semi-major/minor axes $P^*R_2=b+a$ and $P^*P_2 = b-a$. From here we can take either an algebraic or a geometric approach. In either case, the key observation is the same - the sliding arm is tangent to the ellipse exactly when $P^*$ moves parallel to the arm. I like the algebraic approach for a calculus class (where this problem is a variation of the one that relates the speeds of the ends of a sliding ladder), but here we'll take a geometric approach.% by appealing to the instantaneous center of rotation.
 
-%To find the arm's position when it is tangent to the ellipse in the first quadrant, imagine the arm in motion. The arm is then tangent to the ellipse exactly when $P^*$ is moving parallel to the arm, or when $dy/dx = -\tan\phi$. Some calculus and algebra then shows the arm is tangent to the ellipse exactly once, when $P^*$ has coordinates
-%\[
-%   (x,y) = (2b\cos^3 \phi, 2b\sin^3\phi).
-%\]
 
 The key idea is to find the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ?? (ie. the instantaneous center of rotation). To find this center physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (segment $\overline{P_2R_2}$ is the trammel's arm, the table's edges the trammel's axes). Now rotate the paper a bit about a random point $W$ and points $P_2$ and $R_2$ most likely move off the table. But choose the correct point $Q_2$ (the arm's instantaneneous center of rotation) and the trammel's endpoints move along circular paths tangent to the table's edges. The center is the intersection point of the lines through $P_2$ and $R_2$ normal to the edges (ie. normal to the velocities of $P_2$ and $Q_2$).
 
@@ -609,9 +598,8 @@ The key idea is to find the point in the reference frame of the sliding arm mome
 
 \href{https://www.desmos.com/calculator/hi6ug11jbn}{Center of Rotation 3}
 
-Figure ?? shows the velocities of several points on the sliding trammel as it rotates counterclockwise. Because these velocities are perpendicular to the rotation arms from $Q_2$, the foot $P^*$ of the perpendicular from the center of rotation $Q_2$ to $\overline{P_2R_2}$ is the only point moving parallel to the trammel. Because $P^*$ lies between $P_2$ and $Q_2$, this proves (c) and completes our proof of Robinson's lemma.
+Figure ?? shows the velocities of several points on the sliding trammel as it rotates counterclockwise. Because these velocities are perpendicular to the rotation arms from $Q_2$, the foot of the perpendicular from the center of rotation $Q_2$ to $\overline{P_2R_2}$ is the only point moving parallel to the trammel. And because the tracing point $P^*$ lies between $P_2$ and $Q_2$, this proves (c) and completes our proof of Robinson's lemma.
 
-%at any moment there is only one point on the trammel moving parallel to the trammel. This is the foot $P^*$ of the perpendicular from the center of rotation $Q_2$ to $\overline{P_2R_2}$. Because $P^*$ lies between $P_2$ and $Q_2$, this proves (c) and completes our proof of Robinson's lemma.
 
 
 \begin{onlineOnly}
@@ -620,13 +608,13 @@ Figure ?? shows the velocities of several points on the sliding trammel as it ro
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/6cjnmo1typ}{Double Trammel 3}
+\href{https://www.desmos.com/calculator/nnmsmjmmnu}{Double Trammel 3}
 
 
 {\bf Remarks:}
 
 \begin{enumerate}
-\item Plotting the centers of rotation in the reference frames of the trammel and the $xy$-coordinate systems gives to curves, respectively called the \emph{moving} and \emph{fixed centrodes}. And the rolling motion of the former on the latter describes a general motion (see Hilbert). For the sliding trammel, both centrodes are circles. Because $OQ_2 = P_2R_2 = 2b$, the fixed centrode is a circle of radius $2b$ centered at $O$. And because $m\angle R_2Q_2P_2  =\pi/2$, the rolling centrode is a circle on diameter $\overline{P_2R_2}$. 
+\item Plotting the centers of rotation in the reference frames of the trammel and the $xy$-coordinate systems gives two curves, respectively called the \emph{moving} and \emph{fixed centrodes}. For the sliding trammel, both centrodes are circles. Because $OQ_2 = P_2R_2 = 2b$, the fixed centrode is a circle of radius $2b$ centered at $O$. And because $m\angle R_2Q_2P_2  =\pi/2$, the rolling centrode is a circle on diameter $\overline{P_2R_2}$. A general theorem says that for any smooth motion of a planar body (like our sliding trammel), the rolling centrode rolls without slippoing on the fixed centrode as it carries the planar body along with it (see Hilbert). 
 
 \item One of my favorite problems is the discrete version of constructing the instantaneous center of rotation. In Figure ??, this amounts to finding the one point that represents the same location in the maps below. See Hilbert again, or \emph{Excursions in Geometry??}.
 
@@ -639,22 +627,21 @@ Figure ?? shows the velocities of several points on the sliding trammel as it ro
 \href{https://www.desmos.com/calculator/cthwmjxkp2}{Washington Maps}
 
 
+\item The transition points of the ellipse have an equivalent description. They are the points where the tangent segments to the ellipse are the shortest.
 
-\item Robinson's description of the the transition points also applies to the epicycloid of Figure ??., generated by a circle of radius $a$ rolling around the \emph{outside} of a circle of radius $2a$.  
-
+\item Robinson's description of the the transition points also applies to the epicycloid of Figure ??., generated by a circle of radius $a$ rolling around the \emph{outside} of a circle of radius $2a$.  EXPLAIN WHY.
+ 
 \begin{onlineOnly}
     \begin{center}
-\desmos{j1fxecamkh}{900}{600}   
+\desmos{ire5efu5ig}{900}{600}   
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/j1fxecamkh}{Ellipse and Nephroid}
+\href{https://www.desmos.com/calculator/ire5efu5ig}{Ellipse and Nephroid 2}
 
 
 \item There is another way to describe the transition points for the ellipse and the roulette in Figure above. They are the points where the tangent segments running between the coordinate axes are the shortest.
 
-\item Find the instantanteous center of rotation of the sliding trammel solves other problems as well.
- 
 \end{enumerate}
 
 
@@ -668,16 +655,6 @@ Figure ?? shows the velocities of several points on the sliding trammel as it ro
 
 \href{https://www.desmos.com/calculator/q6fiohnpmo}{Double Generatation Ellipse 5}
 
-
-
-We say almost because when the tracing point lies on the extension of $\overline{PR}$ as it does here, $\overline{PR}$ is \emph{never} tangent to the ellipse. But when $P^*$ lies between $P$ and $R$, segment $\overline{PR}$ is tangent to the ellipse only at the four transition points.
-
-
-
-
-Figure ?? helps explain why.
-
- 
 
 
  %(The Wilderness Act of 1964 defined wilderness as ``an area where the earth and its community of life are untrammeled by man, where man himself is a visitor who does not remain")
@@ -697,197 +674,9 @@ DOUBLE GENERATION
 
 Figure ?? (in the previous section) suggests how to generate an ellipse as a \emph{glissette} (from the French, \emph{glisser}, to slide). It is the curve traced by a point on a segment with a fixed length $L$ as its endpoints slide along two perpendicular lines. In Figure ?? the tracing point lies beyond the endpoints of segment $\overline{AB}$, but still on the line $AB$. Having the tracing point is outside the segment like this makes it possible to build an ellisograph (the trammel of Archimedes), as Tom Silva does in the episode of \emph{This Old House}.
 
-But to find the shortest tangent segment to an ellipse, it's better for the tracing point to lie on the sliding segment. 
 
 
- 
 
-When I ask students to sketch the curve traced by the point $P$ on the ladder in Figure ?? as its ends slide along a vertical wall and horizontal floor, the almost universal response is to draw some kind of concave up curve. But the path is actually concave down. 
-
-To parameterize the cuve, let $p$ and $q$ be the respective distances from $P$ to the top and bottom ends of the ladder. Then when the ladder makes the angle $\phi$ with the floor, point $P$ has coordinates
-\[
-    (x,y) = (a\cos\phi, b \sin \phi) \, , \, 0\leq \phi \leq \pi/2
-\]
-in the coordinate system in Figure ??. So $P$ sweeps out a quarter-ellipse centered at the origin.
-
-This method of tracing an ellipse
-
-Tom Silva 
-
-
-We can turn this into a calculus problem by asking if the sliding ladder is ever tangent to the quarter-ellipse. Or, we can turn this question around and ask to find the tracing point if the ladder below, making an angle $\phi$ with the floor, is tangent to the quarter-ellipse.
-
-This problem
-
-
-%consider the family of ellipses traced by $P$ as the distances $p$, $q$ vary. Which of these ellipses, if any, has this ladder as a tangent? when the ladder makes the angle $\phi$ with the ground
-
-
-
-
-A problem in Stewart asks for the length of the longest one-dimensional ladder you can carry horizontally around the corner below.
-
-%\begin{enumerate}
-%\item At the moment shown, when the ends of a ladder are sliding along a vertical wall and a horizontal floor, what point of the ladder is moving parallel to the ladder?  % and tmakes the angle $\phi$ with the floor and its ends are slidingWhat point on the ladder
-
-
-
-%\item What is the length of the longest one-dimensional ladder you can carry horizontally around the corner below?
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{zokkgpj8wo}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/zokkgpj8wo}{Shortest Ladder 4}
-
-
-
-%\item What is the length of the shortest tangent segment to the ellipse
-%\[
-%     \frac{x^2}{p^2} + \frac{y^2}{q^2} = 1
-%\]
-%cut out by the coordinate axes?
-
-Kalman's idea is to reverse the question. He fixes the ladder's length $L$ and asks instead for the widths of all pairs of hallways that allow the passage of a ladder of maximum length $L$. This amounts to describing the curve whose points are the inner corners of all such hallways.
-
-To visualize this curve imagine a ladder with length $L$ sliding around the corner as its ends remain in contact with the outer walls. The \emph{envelope} of the sliding ladder (ie. the curve tangent to the family of segments of length $L$ running between the coordinate axes) is the quarter-astroid 
-\[
-     x^{2/3} + y^{2/3} = L^{2/3}.
-\]
-shown in Figure ??.  
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{c1rsk201zu}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/c1rsk201zu}{Longest Ladder 5}
-
-It is this equation that solves the ladder problem. For as Kalman points out, the ladder will turn the corner as long as the inner corner $(p,q)$ of the hallway is not inside the region swept by the sliding ladder.  So for the longest ladder the point $(p,q)$ lies on the astroid and the longest ladder has length
-\[
-      (p^{2/3} + q^{2/3})^{3/2}.
-\] 
-
-The solution to the ladder problem now rests on finding an equation of the envelope. Kalman uses a standard method, but here we take a more geometric approach. The key idea is this: At any instant, the point of the sliding ladder tangent to the envelope is the point moving parallel to the ladder.
-
-Now this is a problem calculus students can solve. A solution starts by parameterizing the curve traced by a point $a$ units from the ladder's left end and $b = L-a$ units from the right end. With the parameter as the angle $\phi$ the ladder makes with the horizontal hallway in Figure ??, the parameterization is 
-\[
-  (x,y) = (a \cos\phi, b\sin\phi) \, , \, 0\leq \phi \leq \pi/2.
-\]
-The curve is a quarter-ellipse, a surprise to most students ...
-
-\[
- (x,y) = (L\cos^3\phi, L\sin^3\phi) \, , \, 0\leq \phi \leq \pi/2.
-\]
-
-
-
-
-The reason is that the point of tangency of the envelope with the sliding segment is necessarily the point of the segment moving parallel to the segment in the direction of the envelope.
-
-This observation and the answer to our first question answers the second. The length of the longest ladder is
-
-
-
-
-
-Is there a point that represents the same location in the two maps of Washington State shown below?
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{cthwmjxkp2}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/cthwmjxkp2}{Washington Maps}
-
-%\end{enumerate}
-
-
-
-
-Solutions:
-
-\begin{enumerate}
-\item Let $P$ be a fixed point of the ladder $p$ feet from the top and $q$ feet from the bottom. Then in the coordinate system above, $P$ has position 
-\[
-   {\bf r} = (p\cos\phi, q\sin \phi)
-\]
-relative to the origin. As the ladder turns through the differential angle $d\phi$, the displacement of $P$ is  
-\[
-     d {\bf r} = (-p \sin\phi , q\cos \phi) \, d\phi.
-\]
-So $P$ is moving parallel to the ladder if and only if
-\[
-     \frac{q\cos\phi}{p\sin\phi} = \tan\phi ,
-\]
-or equivalently when
-\[
-    \tan^2\phi = \frac{q}{p} .
-\]
-
-So if 
-\[
-      L = p + q = p (1+\tan^2 \phi)
-\]
-is the length of the ladder, then the point $P$ moving parallel to the ladder is
-\[
-    p = L\cos^2\phi
-\]
-feet from the top and 
-\[
-   q = L\sin^2\phi .
-\]
-feet from the bottom.
-
-Note that $P$ has coordinates
-\[
-     (x,y) = (p\cos \phi , q\sin\phi) = (L\cos^3\phi, L\sin^3\phi).
-\]
-
-\item When I ask students to sketch the path of a point on the sliding ladder of the first problem (before we parameterize the curve and discover that it is an ellipse), the almost universal response is to draw a curve like the one in Figure ?. It is just not intuitive that the path is concave down. 
-
-
-
-But the students' response has a profound element of truth. The \emph{envelope} of the sliding ladder (ie. the curve tangent to the family of segments of length $L$ running between the coordinate axes) is concave up. In fact it is the curve %In fact it is the arc
-\[
- (x,y) = (L\cos^3\phi, L\sin^3\phi) \, , \, 0\leq \phi \leq \pi/2.
-\]
-formed by the points $P$ of the sliding ladder in part (a) and is part of of the astroid 
-\[
-     x^{2/3} + y^{2/3} = L^{2/3}.
-\]
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{c1rsk201zu}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/c1rsk201zu}{Longest Ladder 5}
-
-
-
-
-The reason is that the point of tangency of the envelope with the sliding segment is necessarily the point of the segment moving parallel to the segment in the direction of the envelope.
-
-This observation and the answer to our first question answers the second. The length of the longest ladder is
-
-
-shortest tangent segment to the ellipse
-\[
-       \frac{x^2}{p^2} + \frac{y^2}{q^2} = 1
-\]
- is $L=p+q$. The upper part of the tangent segment $PA$, from the point of tangency to the $y$-axis has length $p$, the lower part $PB$ length $q$ (Figure 7).  
-
-To see why
-
-
-When I ask students to first sketch the path of a point on the sliding ladder, the almost universal response is to 
-\end{enumerate}
 
 \section{Conclusion}
 
