@@ -492,7 +492,7 @@ Roll a circle ${\cal C}_1$ with radius $a$ around the \emph{inside} of a circle 
 
 %Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent. But Robinson gives a more insightful description. He shows the transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the semi-major $OX$ and semi-minor axes $OY$ (see Figure ???). To see why, we turn to a more practical way of drawing an ellipse, one discovered some two millenia ago but still in use today.
 
-Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent and the rotation arm $\overline{Q_1P^*}$ is perpendicular to the radius $\overline{C_1Q_1}$. Robinson gives a more insightful description of these points.
+Figure ?? shows $P^*$ at a transition point where it crosses the rolling tangent and the rotation arm $\overline{Q_1P^*}$ is perpendicular to the radius $\overline{C_1Q_1}$. But Robinson gives a better description of these points.
 
 \begin{theorem21}
 The transition points divide the segments tangent to the ellipse, those with their endpoints on the extended axes, into segments $P^*B = b+a$ and $P^*A = b-a$, with lengths respectively equal to the ellipse's semi-major $OX$ and semi-minor axes $OY$ (see Figure ???).
@@ -642,6 +642,8 @@ Figure ?? shows the velocities of several points on the sliding trammel as it ro
 
 \item There is another way to describe the transition points for the ellipse and the roulette in Figure above. They are the points where the tangent segments running between the coordinate axes are the shortest.
 
+\item DOUBLE GENERATION THEOREM
+
 \end{enumerate}
 
 
@@ -703,6 +705,28 @@ Double Generation:
 
 
 \section{Curtate Cycloids}
+
+The difficulty I faced in looking for an arclength theorem for curtate cycloids was to find a substitute for the inclination angle. For when the tracing point lies inside a circle rolling on a line, the tangents to the roulette oscillate between two extremes instead of turning through complete revolutions. This makes it impossible to use the inclination angle to pair points of the curtate cycloid with all the points of the ordinary cycloid.
+
+It did not even occur to me to pair points of the curtate cycloid at the same inclination angle. Had I thought of this pairing, the global theorem illustrated in Figure 2 might have suggested itself; that the difference in the concave up and concave down arclengths of the curtate cycloid would be equal to the arclength of the cycloid. But even had I thought to do this, a local version of such a theorem might have remained elusive. 
+
+The double-generation animation of Figure ?? suggested a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggested the apparent the differences between curtate and prolate cycloids were really superficial. More specifically, tracing one ellipse in the same way as two hypocycloids implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+
+The key is to remember the scaling factor. For a hypoclcloid, arclengths get halved in switching the fixed fixed centrode from a line to a circle with twice the radius as the rolling circle. So since the arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, the arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are equal (Figure ??). 
+
+In hindight, this should have been obvious without the double-generation theorem. Figure ?? illustrates why.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{s6agxwwc4s}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/s6agxwwc4s}{Curtate Cycloid ArcLength 35}
+s6agxwwc4s
+
+
+
 
 There appears to be an arclength theorem for curtate cycloids that might follow from the double generation theorem.
 
