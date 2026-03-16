@@ -706,15 +706,15 @@ Double Generation:
 
 \section{Curtate Cycloids}
 
-The difficulty I faced in looking for an arclength theorem for curtate cycloids was to find a substitute for the inclination angle. For when the tracing point lies inside a circle rolling on a line, the tangents to the roulette oscillate between two extremes instead of turning through complete revolutions. This makes it impossible to use the inclination angle to pair points of the curtate cycloid with all the points of the ordinary cycloid.
+The challenge I faced in seeking an arclength theorem for curtate cycloids was to find a substitute for the inclination angle. For when the tracing point lies inside a circle rolling on a line, the tangents to the cycloid oscillate between two extremes instead of making complete revolutions. This makes it impossible to use the inclination angle to pair points of a curtate cycloid with all the points of an ordinary cycloid.
 
-It did not even occur to me to pair points of the curtate cycloid at the same inclination angle. Had I thought of this pairing, the global theorem illustrated in Figure 2 might have suggested itself; that the difference in the concave up and concave down arclengths of the curtate cycloid would be equal to the arclength of the cycloid. But even had I thought to do this, a local version of such a theorem might have remained elusive. 
+It did not occur to me to pair points of the curtate cycloid at the same inclination angle. This pairing might have suggested the global theorem illustrated in Figure 2; that the difference in the concave up and concave down arclengths of the curtate cycloid would equal the arclength of the sister cycloid. But even with this, a local version of such a theorem might have remained elusive. 
 
-The double-generation animation of Figure ?? suggested a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggested the apparent the differences between curtate and prolate cycloids were really superficial. More specifically, tracing one ellipse in the same way as two hypocycloids implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+The double-generation animation of Figure ?? suggested a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggested the apparent the differences between curtate and prolate cycloids were superficial. More specifically, tracing an ellipse in two ways as hypocycloids implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
 
-The key is to remember the scaling factor. For a hypoclcloid, arclengths get halved in switching the fixed fixed centrode from a line to a circle with twice the radius as the rolling circle. So since the arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, the arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are equal (Figure ??). 
+The key is the scaling factor. Remember for a hypoclcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
 
-In hindight, this should have been obvious without the double-generation theorem. Figure ?? illustrates why.
+In hindsight, this should have been obvious without the double-generation theorem. Figure ?? illustrates why. The two circles, ${\cal C}_1$ with radius $a$ and tracing distance $b$, and ${\cal C}_4$ with radius $b$ and tracing distance $a$, have equal rotation angles (the marked angles at centers $C_1$, $C_2$). Since $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$, the cycloids have equal $Q_1P_1 = Q_4P_4$ rotation arms. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the angle $d\theta$. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -723,7 +723,41 @@ In hindight, this should have been obvious without the double-generation theorem
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/s6agxwwc4s}{Curtate Cycloid ArcLength 35}
-s6agxwwc4s
+
+
+Need some explanation here.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{ee9rmqgmbw}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/ee9rmqgmbw}{Curtate Cycloid ArcLength 4B}
+
+OR THIS
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{d1kzu52vf4}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/d1kzu52vf4}{Curtate Cycloid ArcLength 36}
+
+
+
+
+
+This is the final figure:
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{xxybrtbt0o}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/xxybrtbt0o}{Cardioid with Curtate and Oblate EpiCycloids 2}
 
 
 
