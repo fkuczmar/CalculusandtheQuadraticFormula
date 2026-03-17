@@ -6,6 +6,7 @@
 \newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids, Local Version}
 \newtheorem{theorem20}{An Arclength Theorem for Prolate Epi and Hypocycloids}
 \newtheorem{theorem21}{Robinson's Lemma}
+\newtheorem{theorem22}{The Inclination Lemma}
 
 \begin{document}
 \begin{abstract}
@@ -112,8 +113,9 @@ You can almost see the equality $s_1 - s_2 = s_3$ of arclengths in the figure be
 
 
 \begin{theorem19}
+%As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between inclination angles $0$ and $\phi$.
 
-As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between inclination angles $0$ and $\phi$. Then
+As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi$ and $\pi+\phi$. And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
 \[
 s_1 - s_2 = s_3.
 \]
@@ -399,14 +401,16 @@ between the differential arclength $ds$ of a general $(a,b)$-cycloid (traced by 
 An immediate consequence is an arclength theorem for prolate epicycloids (hypocycloids), provided we define the \emph{same} (respectively \emph{opposite}) side arclengths to lie on the same (resp. opposite) side of the rolling tangent line as the rolling circle.
 
 \begin{theorem20}
-Let $s_1^*=s_1^*(\phi)$ and $s_2^* = s_2^*(\phi)$ be respectively the same and opposite side arclengths of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $\phi$ and $\phi + d\phi$. %, the former on the same side of the tangent line as the rolling circle, the latter on the opposite side. 
 
-Let $s_3 = s_3(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between the same inclination angles. % traced by a point attached to the circumference of a same rolling circle in the reference frame of the rolling tangent.
-
-Then 
+Let $s_1 = s_1(\phi)$ be the same-side arclength of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the same curve between inclination angles $\pi$ and $\pi+\phi$. And let $s_3 = s_3(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between inclination angles $0$ and $\phi$. Then
 \[
        s_1^* - s_2^* = s_3^* .
 \]
+
+%Let $s_1^*=s_1^*(\phi)$ and $s_2^* = s_2^*(\phi)$ be respectively the same and opposite side arclengths of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $\phi$ and $\phi + d\phi$. %, the former on the same side of the tangent line as the rolling circle, the latter on the opposite side. 
+
+%Let $s_3 = s_3(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between the same inclination angles. % traced by a point attached to the circumference of a same rolling circle in the reference frame of the rolling tangent.
+
 \end{theorem20}
 
 \begin{proof}
@@ -706,15 +710,21 @@ Double Generation:
 
 \section{Curtate Cycloids}
 
-The challenge I faced in seeking an arclength theorem for curtate cycloids was to find a substitute for the inclination angle. For when the tracing point lies inside a circle rolling on a line, the tangents to the cycloid oscillate between two extremes instead of making complete revolutions. This makes it impossible to use the inclination angle to pair points of a curtate cycloid with all the points of an ordinary cycloid.
+The challenge in seeking an arclength theorem for curtate cycloids was to find a substitute for the inclination angle. For when the tracing point lies inside a circle rolling on a line, the tangents to the roulette oscillate between two extremes instead of making complete revolutions. This makes it impossible to use the inclination angle to pair points of a curtate cycloid with all the points of an ordinary cycloid.
 
-It did not occur to me to pair points of the curtate cycloid at the same inclination angle. This pairing might have suggested the global theorem illustrated in Figure 2; that the difference in the concave up and concave down arclengths of the curtate cycloid would equal the arclength of the sister cycloid. But even with this, a local version of such a theorem might have remained elusive. 
 
-The double-generation animation of Figure ?? suggested a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggested the apparent the differences between curtate and prolate cycloids were superficial. More specifically, tracing an ellipse in two ways as hypocycloids implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+Had it occured to me to pair points of the curtate cycloid at the same inclination angle, the global theorem illustrated in Figure ??, that the difference in the concave up and down arclengths of the curtate cycloid equals the arclength of the cycloid, might have suggested itself. But even so, a local version of such a theorem might have remained elusive.
+ 
+%It did not even occur to me to pair points of the curtate cycloid at the same inclination angle. This pairing might have suggested the global theorem illustrated in Figure 2; that the difference in the concave up and concave down arclengths of the curtate cycloid would equal the arclength of the sister cycloid. But even with this, a local version of such a theorem might have remained elusive. 
+
+The double-generation animation of Figure ?? suggested a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggested the apparent the differences between curtate and prolate cycloids were really superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
 
 The key is the scaling factor. Remember for a hypoclcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
 
-In hindsight, this should have been obvious without the double-generation theorem. Figure ?? illustrates why. The two circles, ${\cal C}_1$ with radius $a$ and tracing distance $b$, and ${\cal C}_4$ with radius $b$ and tracing distance $a$, have equal rotation angles (the marked angles at centers $C_1$, $C_2$). Since $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$, the cycloids have equal $Q_1P_1 = Q_4P_4$ rotation arms. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the angle $d\theta$. 
+In hindsight, this should have been obvious without the double-generation theorem. Figure ?? illustrates why. The two circles roll at the same rate, so that their rotation angles (marked at the centers $C_1$ and $C_4)$ are always equal. The upper circle has radius $a$ and tracing distance $b$, the lower radius $b$ and tracing distance $a$. So $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$ and their rotation arms $Q_1P_1$ and $Q_4P_4$ are equal. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the same differential angle $d\theta$.
+
+
+%The two circles, ${\cal C}_1$ with radius $a$ and tracing distance $b$, and ${\cal C}_4$ with radius $b$ and tracing distance $a$, have equal rotation angles (the marked angles at centers $C_1$, $C_2$). Since $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$, the cycloids have equal $Q_1P_1 = Q_4P_4$ rotation arms. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the angle $d\theta$. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -723,6 +733,21 @@ In hindsight, this should have been obvious without the double-generation theore
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/s6agxwwc4s}{Curtate Cycloid ArcLength 35}
+
+So proving an arclength theorem for curtate cycloids rests on the following lemma.
+
+\begin{theorem22}
+Let $\phi$ and $\alpha$ be the repective inclination angles for the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid of Figure ??? at the rotation angle $\theta = \phi + \alpha$, $0\leq \theta \leq \pi$. Then the cycloids have these respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
+\end{theorem22} 
+
+\begin{proof}
+First note that since the rotation angle is an exterior angle of congruent triangles $\Delta P_1 C_1 Q_1$ and $Q_4 C_4P_4$, $\theta  = \phi + \alpha$ as claimed. 
+
+Now the key point is that
+\[
+   \theta^\prime =   \angle B_1 C_1 P_1^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha . 
+\]
+\end{proof}
 
 
 Need some explanation here.
