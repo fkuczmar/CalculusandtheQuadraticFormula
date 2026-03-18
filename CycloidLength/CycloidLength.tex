@@ -721,7 +721,7 @@ The double-generation animation of Figure ?? suggested a way forward. Most of al
 
 The key is the scaling factor. Remember for a hypoclcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
 
-In hindsight, this should have been obvious without the double-generation theorem. Figure ?? illustrates why. The two circles roll at the same rate, so that their rotation angles (marked at the centers $C_1$ and $C_4)$ are always equal. The upper circle has radius $a$ and tracing distance $b$, the lower radius $b$ and tracing distance $a$. So $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$ and their rotation arms $Q_1P_1$ and $Q_4P_4$ are equal. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the same differential angle $d\theta$.
+In hindsight, we do not need the double-generation theorem. Figure ?? illustrates why. Animate the motion and you'll see the two circles roll at the same rate, so that their rotation angles $\theta$ are always equal. The upper circle has radius $a$ and tracing distance $b$, the lower radius $b$ and tracing distance $a$. So $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$ and the rotation arms $Q_1P_1$ and $Q_4P_4$ are equal. Hence, the tracing points $P_1$ and $P_4$ traverse the same differential arclengths as the circles turn through the same differential angle $d\theta$.
 
 
 %The two circles, ${\cal C}_1$ with radius $a$ and tracing distance $b$, and ${\cal C}_4$ with radius $b$ and tracing distance $a$, have equal rotation angles (the marked angles at centers $C_1$, $C_2$). Since $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$, the cycloids have equal $Q_1P_1 = Q_4P_4$ rotation arms. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the angle $d\theta$. 
@@ -737,20 +737,36 @@ In hindsight, this should have been obvious without the double-generation theore
 So proving an arclength theorem for curtate cycloids rests on the following lemma.
 
 \begin{theorem22}
-Let $\phi$ and $\alpha$ be the repective inclination angles for the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid of Figure ??? at the rotation angle $\theta = \phi + \alpha$, $0\leq \theta \leq \pi$. Then the cycloids have these respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
+Let $\phi$ and $\alpha$ be the repective inclination angles for the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid of Figure ??? at their common rotation angle $\theta$, $0\leq \theta \leq \pi$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
 \end{theorem22} 
 
 \begin{proof}
-First note that since the rotation angle is an exterior angle of congruent triangles $\Delta P_1 C_1 Q_1$ and $Q_4 C_4P_4$, $\theta  = \phi + \alpha$ as claimed. 
+First note that since $\theta$ is an exterior angle of congruent triangles $\Delta P_1 C_1 Q_1$ and $\Delta Q_4 C_4P_4$, $\theta  = \phi + \alpha$. 
 
-Now the key point is that
+Now let $P_4^\prime$ be the second point where the rotation arm $\overline{Q_4P_4}$ intersects the circle of radius $a$ centered at $C_4$. Then a rotation about $C_4$ through the angle
 \[
-   \theta^\prime =   \angle B_1 C_1 P_1^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha . 
+    \angle P_4 C_4 P_4^\prime = \pi - 2\phi
 \]
+takes $P_4$ to $P_4^\prime$. So at rotation angle
+\[
+   \theta^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha,
+\]
+the curtate cycloid has inclination angle $\alpha$ as illustrated in the upper frame of Figure ?? below. So at rotation angle $\theta^\prime$, the prolate cycloid has inclination angle
+\[
+  \phi^\prime = \theta^\prime - \alpha = \pi - \phi.
+\]
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{e1ibc0ze9o}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/e1ibc0ze9o}{Curtate Cycloid ArcLength 36}
+
 \end{proof}
 
 
-Need some explanation here.
 
 \begin{onlineOnly}
     \begin{center}
