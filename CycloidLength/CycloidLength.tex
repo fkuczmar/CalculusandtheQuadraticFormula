@@ -7,6 +7,7 @@
 \newtheorem{theorem20}{An Arclength Theorem for Prolate Epi and Hypocycloids}
 \newtheorem{theorem21}{Robinson's Lemma}
 \newtheorem{theorem22}{The Inclination Lemma}
+\newtheorem{theorem23}{An Arclength Theorem for General Cycloids}
 
 \begin{document}
 \begin{abstract}
@@ -88,7 +89,7 @@ Near the end of his paper Robinson asks for a heuristic explanation of his arcle
 
 Our first step in proving Robinson's arclength thoeorem was to look for a more general equality of arclengths by associating each point of a prolate cycloid above the $x$-axis with a point below. It seemed like the simplest choice was to pair points with same inclination angle (the angle a curve makes with the horizontal) and experiments with desmos suggested the same equality of arclengths between any two inclination angles.
 
-In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ of the prolate cycloid between inclination angles $0$ and $\phi$ equals the arclength $s_3$ of its sister cycloid between these same angles. 
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ of the $(a,b) = (2,3.6)$ prolate cycloid between inclination angles $0$ and $\phi$ equals the arclength $s_3$ of its \emph{sister} cycloid (with radius $a=2$) between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -98,7 +99,7 @@ In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $
 
 \href{https://www.desmos.com/calculator/0vodc6gvp5}{Limacon Cylcoid Arclength 2B}
 
-You can almost see the equality $s_1 - s_2 = s_3$ of arclengths in the figure below by looking at arcs of the same color between the same inclination angles.
+You can almost see the equality $s_1 - s_2 = s_3$ of small arclengths in the figure below by looking at arcs of the same color between the same inclination angles.
 
 %The figure below makes the equality of arclengths plausible if you focus on the short arcs of the same color between the same inclination angles.
 
@@ -115,7 +116,7 @@ You can almost see the equality $s_1 - s_2 = s_3$ of arclengths in the figure be
 \begin{theorem19}
 %As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between inclination angles $0$ and $\phi$.
 
-As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi$ and $\pi+\phi$. And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
+As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi - \phi$ . And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
 \[
 s_1 - s_2 = s_3.
 \]
@@ -402,7 +403,7 @@ An immediate consequence is an arclength theorem for prolate epicycloids (hypocy
 
 \begin{theorem20}
 
-Let $s_1 = s_1(\phi)$ be the same-side arclength of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the same curve between inclination angles $\pi$ and $\pi+\phi$. And let $s_3 = s_3(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between inclination angles $0$ and $\phi$. Then
+Let $s_1^* = s_1^*(\phi)$ be the same-side arclength of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2^* = s_2^*(\phi)$ be the opposite-side arclength of the same curve between inclination angles $\pi$ and $\pi+\phi$. And let $s_3^* = s_3^*(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between inclination angles $0$ and $\phi$. Then
 \[
        s_1^* - s_2^* = s_3^* .
 \]
@@ -759,8 +760,54 @@ the curtate cycloid has inclination angle $\alpha$ as illustrated in the upper f
 \end{onlineOnly}
 
 \href{https://www.desmos.com/calculator/w1yxsaqafj}{Curtate Cycloid ArcLength 37}
-
 \end{proof}
+
+The following theorem holds if we define the same-side arclength of 
+
+And the inclination angles are measured relative to the rolling tangent.
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{g7cb6r89xl}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/g7cb6r89xl}{Curtate Cycloid Inflection Points}
+
+
+\begin{theorem23}
+Let $s_1 = s_1(\alpha)$ and $s_2 = s_2(\alpha)$ be respectively the same and opposite-side arclengths of an $(a,b,r)$ curtate ($a>b$) epi or hypocylcoid between inclination angles $0$ and $\alpha$ , $0< \alpha \leq \arccos(-b/a)$. Let $s_3 = s_3(\phi)$ be the arclength of the sister $(a,a,r)$ epicycloid (resp. hypocylcoid) curve between inclination angles $0$ and $\arcsin((b/a)\sin\alpha)$. Then
+\[
+   s_1 - s_2 = s_3 .
+\]
+
+Start again:
+
+For lengths $b>a$,  inclination angles $0\leq \phi \leq \pi/2$ and
+\[
+    \alpha = \arcsin\left( \frac{a}{b}\sin\phi  \right) ,
+\]
+and rotation angles $0\leq \theta\leq \pi$, the following are equal:
+
+\begin{enumerate}
+\item the arclength of the $a$-cycloid between inclinations angles $0$ and $\phi$
+
+\item the difference in the same-side ($0\leq \theta \leq \phi + \alpha$) and opposite-side ($\pi- \phi + \alpha \leq \theta \leq \pi$) arclengths of the prolate $(a,b)$-cycloid between inclination angles $0$ and $\phi$
+
+\item  the difference in the same-side ($0\leq \theta \leq \phi + \alpha$) and opposite-side ($\pi- \phi + \alpha \leq \theta \leq \pi$) arclengths of the curtate $(b,a)$-cycloid between inclination angles $0$ and $\alpha$ .
+
+\end{enumerate}
+
+\end{theorem23}
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{rytjk2xes8}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/rytjk2xes8}{Curtate Cycloid ArcLength 4}
+
 
 
 
