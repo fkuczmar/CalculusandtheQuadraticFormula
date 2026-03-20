@@ -89,7 +89,7 @@ Near the end of his paper Robinson asks for a heuristic explanation of his arcle
 
 Our first step in proving Robinson's arclength thoeorem was to look for a more general equality of arclengths by associating each point of a prolate cycloid above the $x$-axis with a point below. It seemed like the simplest choice was to pair points with same inclination angle (the angle a curve makes with the horizontal) and experiments with desmos suggested the same equality of arclengths between any two inclination angles.
 
-In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ of the $(a,b) = (2,3.6)$ prolate cycloid between inclination angles $0$ and $\phi$ equals the arclength $s_3$ of its \emph{sister} cycloid (with radius $a=2$) between these same angles. 
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ of the $(a,b) = (2,3.6)$ prolate cycloid between inclination angles $0$ and $\phi$ equals the arclength $s_3  = A_3P_3$ of its \emph{sister} cycloid (with radius $a=2$) between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -99,7 +99,7 @@ In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $
 
 \href{https://www.desmos.com/calculator/0vodc6gvp5}{Limacon Cylcoid Arclength 2B}
 
-You can almost see the equality $s_1 - s_2 = s_3$ of small arclengths in the figure below by looking at arcs of the same color between the same inclination angles.
+You can almost see the equality $s_1 - s_2 = s_3$ of small arclengths in the figure below by looking at parallel arcs of the same color between the same inclination angles.
 
 %The figure below makes the equality of arclengths plausible if you focus on the short arcs of the same color between the same inclination angles.
 
@@ -116,7 +116,7 @@ You can almost see the equality $s_1 - s_2 = s_3$ of small arclengths in the fig
 \begin{theorem19}
 %As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between inclination angles $0$ and $\phi$.
 
-As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi - \phi$ . And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
+As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi - \phi$ and $\pi$ . And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
 \[
 s_1 - s_2 = s_3.
 \]
@@ -146,7 +146,7 @@ Part 2-- and this is a hint-- what part of the car is traveling at 120 mph?}
 
 
 
-It might seem counterintuitive that at any moment a rolling wheel is rotating \emph{not} about its center but about its point of contact with the ground. This point, the wheel's \emph{instantaneous center of rotation}, is the point in the reference frame of the rolling wheel momentarily at rest (In Figure 1 the point $P_3$ is the wheel's center of rotation at the cusps, when it bounces off the $x$-axis and comes to a stop and reverses direction.) And at any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation. This has two implications.         %The cusps of the ordinary cycloid in Figure 1 reveal why, because as the tracing point bounces off the $x$-axis it reverses direction and comes to a stop.
+It might seem counterintuitive that at any moment a rolling wheel is rotating \emph{not} about its center but about its point of contact with the ground. This point, the wheel's \emph{instantaneous center of rotation}, is the point in the reference frame of the rolling wheel momentarily at rest (In Figure 1 the point $P_3$ is the wheel's center of rotation at the cusps, where it comes to a stop and reverses direction.) And at any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, is rotating about this center. This has two implications.         %The cusps of the ordinary cycloid in Figure 1 reveal why, because as the tracing point bounces off the $x$-axis it reverses direction and comes to a stop.
 
 %At any moment, each point $P$ at rest in the reference frame of the rolling wheel,  like a pebble stuck in a tire, rotates about this center of rotation.  This has two implications. 
 
@@ -172,9 +172,7 @@ The figure below suggests the motion of a point $P$ attaced to the circumference
 
 %To prove the arclength theorem, it helps to think differentially. Then (a) is equivalent to saying
 
-Locally (a) says that as the wheel turns through the differential angle $d\theta>0$, the tracing point traverses the differential distance $ds = \rho \, d\theta$. 
-
-For the cycloid above, for example, traced by a point attached to a circle of radius $a$,
+Locally (a) says that as the wheel turns through the differential angle $d\theta>0$, the tracing point traverses the differential distance $ds = \rho \, d\theta$. For the $a$-cycloid above, for example, traced by a point attached to a circle of radius $a$,
 \begin{align*}
      ds = &\rho \, d\theta \\
              &= 2a \cos\phi\, d\theta \\
@@ -200,9 +198,9 @@ My favorite way to prove this equality is to compare the differential arclength 
 
 Imagine an ideal tire where one point is touching the road. That very point of the tire that's touching the road must not be moving in relation to the road. In fact, it is moving at zero miles an hour. And when you point it 180 degrees away, it has to be moving at twice that speed, or 120 miles an hour.}
 
-The last remark seems suspect, but it follows from the observation that the arithmetic mean (or more generally, the weighted average) of the velocities of two points at rest in the reference frame of the rolling wheel is equal to the velocity of the mean (or the same weighted average) of these points.
+The last remark needs justification, but it follows from the observation that the arithmetic mean (or more generally, the weighted average) of the velocities of two points at rest in the reference frame of the rolling wheel is equal to the velocity of the mean (or the same weighted average) of these points.
 
-Rolling a book along the top of a cylinder is a convincing way to demonstrate that a pebble stuck in a tire is moving twice as fast as the axle when it reaches the top of its path (and is twice as far from the center of rotation as the axle).  See Figure ??. %As illustrated in Figure ?, you can see the book advance twice as far as the cylinders.
+Rolling a book along the top of a cylinder is a convincing way to demonstrate this claim, that a pebble stuck in a tire is moving twice as fast as the axle when it reaches the top of its path (and is twice as far from the center of rotation as the axle).  See Figure ??. %As illustrated in Figure ?, you can see the book advance twice as far as the cylinders.
 
 %Roll a book on the tops of two cyinders (oatmeal containers work well) and you can see the book advance twice as far as the cylinders, a convincing way to demonstrate a pebble stuck in a tire moves twice as fast as the axle when it reaches the top of the wheel (and therefore twice as far from the center of rotation as the axle). %that at the top of its motion a pebble stuck in a tire moves twice as fast as the axle. 
 
@@ -223,7 +221,10 @@ Rolling a book along the top of a cylinder is a convincing way to demonstrate th
 \section{A Proof of Robinson's Theorem}
 
 \begin{proof}
-To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, rolling along the $x$-axis as the points $P_i$ (at rest in the reference frames of these circles) respectively sweep out the upper and lower parts of the prolate cycloid and its sister cycloid.  Imagine also the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points make the same angle $\phi$ with the vertical at all times as in Figure 3. In the animated version of this figure, the circle for the ordinary cycloid (centered at $C_3$) rotates at a constant rate, but the others do not. The key to our proof, and to creating the animation, is to relate the rotation rates of the three circles. 
+Animate Figure ?? and you'll see circles ${\cal C}_i$, $i=1,2,3$ rolling along the $x$-axis as the points $P_i$ sweep out the upper and lower parts of the prolate cycloid and its sister cycloid.  Look carefully and you'll notice the rotation arms $\rho_i = Q_iP_i$ always make the same angle $\phi$ with the vertical. But while the circle for the ordinary cycloid rotates at a constant rate, the others do not. The key to our proof, and to creating the animation, is to relate the rotation rates of the three circles. 
+
+
+%To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, rolling along the $x$-axis as the points $P_i$ (at rest in the reference frames of these circles) respectively sweep out the upper and lower parts of the prolate cycloid and its sister cycloid.  Imagine also the rotation arms $\overline{Q_iP_i}$ make the same angle $\phi$ with the vertical at all times as in Figure 3. In the animated version of this figure, the circle for the ordinary cycloid (centered at $C_3$) rotates at a constant rate, but the others do not. The key to our proof, and to creating the animation, is to relate the rotation rates of the three circles. 
 
 
 %We suppose the circles start with the points $P_i$ at the same inclination angle $\phi=0$ and the segments $Q_iP_i$ vertical. And we also assume as illustrated in Figure 3, the segments $\overline{Q_iP_i}$ from the centers of rotation to the tracing points remain parallel at all times.
@@ -237,17 +238,16 @@ To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, r
 
 \href{https://www.desmos.com/calculator/qtse3eivit}{Limacon Cylcoid Arclength 3C}
 
-To prove the theorem, it suffices to show
+To prove the arclength theorem, it suffices to show
 \begin{equation} \label{Eq:DiffArcs}
       ds_1 - ds_2 = ds_3 ,
 \end{equation}
 where  $ds_i$ are the differential arclengths along the respective curves between inclination angles $\phi$ and $\phi + d\phi$. 
-Let these differential arclengths have rotation arms $\rho_i = Q_iP_i$. A key point in what follows (see Figure ?? above) is that %by the symmetry of the first (red) circle about the diameter perpendicular to $\overline{P_1R_1}$,
+A key point in what follows (see Figure ?? above) is that %by the symmetry of the first (red) circle about the diameter perpendicular to $\overline{P_1R_1}$,
 \[
    \rho_2 = Q_2P_2 = Q_1R_1 = S_1P_1 ,
 \]
-where the last equality follows from the symmetry of ${\cal C}_1$ about the diameter perpendicular to chord $\overline{P_1R_1}$,
-This equality has three consequences:
+where the last equality follows from the symmetry of ${\cal C}_1$ about the diameter perpendicular to chord $\overline{P_1R_1}$. This equality has three consequences:
 
 \begin{enumerate}
 \item  $\rho_1 - \rho_2 = \rho_3$ ,
@@ -274,7 +274,7 @@ Assuming (a)-(c),
 
 We are left with proving (b) and (c).     %It remains to prove (b) and (c).
 
-The proof of (b) follows from the figure below showing the three rotation angles $\theta_i$ and the inclination angle $\phi$ in one static (non-rolling) circle. As the circles in Figure ?? (the previous figure) roll in tandem, segment $\overline{P_1P_2}$ through the three tracing points below turns at a constant rate.
+The proof of (b) follows from the figure below that records the three rotation angles $\theta_i$ and the inclination angle $\phi$ in one static (non-rolling) circle. As the circles in Figure ?? (the previous figure) roll in tandem, the tracing points $P_i$ roll around the static circle as the chord $\overline{P_1P_3P_2}$ turns at a constant rate.
 
 Now since $\overline{P_3P_1}\cong \overline{Q_1P_2}$, we know $\Delta C_1P_3P_1\cong \Delta C_1Q_1P_2$. Therefore, $m\angle P_1C_1P_3 = \theta_2$ and 
 \[
@@ -348,7 +348,7 @@ in the radii of curvature of the upper and lower prolate cycloid, all at the sam
 \section{Prolate Epicycloids}
 A classic problem asks how many rotations one quarter makes as it rolls once around another. 
 
-The rolling quarter picks up an extra rotation and makes two rotations as it rolls once around the other.This is because as the quarter rolls through its circumference it makes one clockwise rotation in the reference frame of the rolling tangent line as this tangent makes one clockwise rotation around the fixed quarter.
+The rolling quarter picks up an extra rotation and makes two rotations as it rolls once around the other. This is because as the quarter rolls through its circumference it makes one clockwise rotation in the reference frame of the rolling tangent line and this tangent makes one clockwise rotation around the fixed quarter.
 
 %As the quarter rolls through its circumference, it makes one clockwise rotation in the reference frame of the rolling tangent line (Figure ??). But since this tangent makes one clockwise rotation around the fixed quarter, the quarter makes not one but two rotations as it rolls once around the other. 
 
@@ -403,7 +403,7 @@ An immediate consequence is an arclength theorem for prolate epicycloids (hypocy
 
 \begin{theorem20}
 
-Let $s_1^* = s_1^*(\phi)$ be the same-side arclength of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2^* = s_2^*(\phi)$ be the opposite-side arclength of the same curve between inclination angles $\pi$ and $\pi+\phi$. And let $s_3^* = s_3^*(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between inclination angles $0$ and $\phi$. Then
+Let $s_1^* = s_1^*(\phi)$ be the same-side arclength of an $(a,b,r)$ prolate ($b>a$) epi or hypocycloid between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2^* = s_2^*(\phi)$ be the opposite-side arclength of the same curve between inclination angles $\pi-\phi$ and $\pi$. And let $s_3^* = s_3^*(\phi)$ be the arclength of the sister $(a,a,r)$ epicylcoid (or hypocycloid) between inclination angles $0$ and $\phi$. Then
 \[
        s_1^* - s_2^* = s_3^* .
 \]
@@ -428,7 +428,7 @@ and proves the theorem.
 
 
 
-Figure 5 illustrtes an example with the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its sister $(2,2,4)$ epicycloid is a nephroid, traced by a point on a circle rolling around the outside of a circle with twice the radius. The same-side (red) arclength of the prolate epicycloid exceeds its opposite-side (blue) length by the length of the nephroid (dashed). The figure shows the rolling circle at a transition point between the same and opposite-side arcs when $P^*$ crosses the rolling tangent.
+Figure 5 illustrates an example with the $(a,b,r) = (2,3.6,4)$ prolate epicycloid. Its sister $(2,2,4)$ epicycloid is a nephroid, traced by a point on a circle rolling around the outside of a circle with twice the radius. The same-side (red) arclength of the prolate epicycloid exceeds its opposite-side (blue) length by the length of the nephroid (dashed). The figure shows the rolling circle at a transition point between the same and opposite-side arcs when $P^*$ crosses the rolling tangent.
 
 \begin{onlineOnly}
     \begin{center}
@@ -513,7 +513,7 @@ The transition points divide the segments tangent to the ellipse, those with the
 
 To understand why, we turn to a more practical way of drawing an ellipse, one discovered some two millenia ago but still in use today.
 
-In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A \emph{trammel} is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse. A trammel of Archimedes hides in Figure ??. As ${\cal C}_1$ rolls around the inside of ${\cal C}_1^\prime$, the endpoints of the diameter $\overline{P_1R_1}$ through the tracing point slide along the axes of the ellipse (see Figure ?? for an explanation. CAPTION: Because an angle inscribed in a semi-circle a right angle, the normals to the moment arms $\overline{QP_i}$ pass through $O$ So points on the rolling circle always move directly toward or away from $O$. Each therefore moves along a diameter.) This trammel, with arm $\overline{P_1R_1}$, is half of what we need to understand Robinson's description of the transition points.
+In an episode of \emph{Ask This Old House} Tom Silva uses the trammel of Archimedes to construct an ellipse. A \emph{trammel} is a restraint or hindrance, and restraining two points on a thin rod (the trammel's arm) to slide along two usually perpendicular tracks forces any third point on that rod to trace an ellipse. A trammel of Archimedes hides in Figure ??. As ${\cal C}_1$ rolls around the inside of ${\cal C}_1^\prime$, the endpoints of the diameter $\overline{P_1R_1}$ through the tracing point slide along the axes of the ellipse (see Figure ?? for an explanation. CAPTION: Because an angle inscribed in a semi-circle a right angle, the normals to the moment arms $\overline{QP_i}$ pass through $O$. So points on the rolling circle always move directly toward or away from $O$. Each therefore moves along a diameter.) This trammel, with arm $\overline{P_1R_1}$, is half of what we need to understand Robinson's description of the transition points.
 
 \begin{onlineOnly}
     \begin{center}
@@ -634,15 +634,15 @@ Figure ?? shows the velocities of several points on the sliding trammel as it ro
 
 \item The transition points of the ellipse have an equivalent description. They are the points where the tangent segments to the ellipse are the shortest.
 
-\item Robinson's description of the the transition points also applies to the epicycloid of Figure ??., generated by a circle of radius $a$ rolling around the \emph{outside} of a circle of radius $2a$.  EXPLAIN WHY.
+\item Robinson's lemma also applies to the $(a,b,2a)$-epicycloid of Figure ??, where $YP^* = b+a$ and $P^*A=b-a$. This is because the epicyloid and the $(a,b,-2a$ ellipse share the same transition points and tangent segments at these points.
  
 \begin{onlineOnly}
     \begin{center}
-\desmos{ire5efu5ig}{900}{600}   
+\desmos{mdmsv1cqu3}{900}{600}   
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/ire5efu5ig}{Ellipse and Nephroid 2}
+\href{https://www.desmos.com/calculator/mdmsv1cqu3}{Ellipse and Nephroid 33}
 
 \item Tracing an ellipse as a hypocyloid in two ways is a special case of the Bernoulli-Euler double generation theorem. This theorem describes how to trace any hypo or epicyloid a second way. Reference needed here.
 \end{enumerate}
@@ -728,7 +728,7 @@ In hindsight, we did not need the double-generation theorem to see this. Animate
 
 \href{https://www.desmos.com/calculator/s6agxwwc4s}{Curtate Cycloid ArcLength 35}
 
-Proving an arclength theorem for curtate cycloids now rests on the following lemma.
+An arclength theorem for curtate cycloids almos follws directly from this equality of arclengths and the arclength theorem for prolate cycloids. We just need the following lemma.% follows almost directly from this equality of arclengths. now  rests on the following lemma.
 
 \begin{theorem22}
 Let $\phi$ and $\alpha$ be the repective inclination angles for the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid of Figure ??? at their common rotation angle $\theta$, $0\leq \theta \leq \pi$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
