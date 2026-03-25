@@ -19,7 +19,7 @@ Relationship between their arclengths.
 
 %Figure 1 shows a \emph{prolate cycloid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle). It is the curve traced by a point $P_1$ outside a circle rolling on a line
 
-Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out one arch of a \emph{general cylcoid}. When $P_1$ is outside the circle, the \emph{prolate cylcoid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) crosses ${\cal L}$. In a recent article,  D. Robinson showed the length of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the opposite-side length by $8a$. The excess surprisingly does not depend on the distance $b>a$ of the tracing point from the center of ${\cal C}_1$.  Choosing $b=a$ shows the excess equals the length of the cycloid traced by a point $P_3$ on the circumference of the same rolling circle (see Figure 1, where ${\cal L}$ is the $x$-axis, $a=2$, and $b=3.6$).
+Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out one arch of a \emph{general cylcoid}. When $P_1$ is outside the circle, the \emph{prolate cylcoid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) crosses ${\cal L}$. In a recent article,  D. Robinson showed the one-arch length of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the opposite-side length by $8a$. The excess surprisingly does not depend on the distance $b>a$ of the tracing point from the center of ${\cal C}_1$.  Choosing $b=a$ shows the excess equals the one-arch length of the \emph{ordinary} cycloid traced by a point $P_3$ on the circumference of the same rolling circle (see Figure 1, where ${\cal L}$ is the $x$-axis, $a=2$, and $b=3.6$).
 
 \begin{onlineOnly}
     \begin{center}
@@ -29,7 +29,9 @@ Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference on a lin
 
 \href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid Arclength 1B}
 
-What if $b<a$? Then the tracing point lies inside the rolling circle and the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this and so we save this discussion for last (Section 7). %let alone to stumble upon the second theorem. So we save this discussion for last (Section 7).
+%What if $b<a$?. Then the tracing point lies inside the rolling circle and the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this and so we save this discussion for last (Section 7). %let alone to stumble upon the second theorem. So we save this discussion for last (Section 7).
+
+If we reverse the rolls of $a$ and $b$ so the tracing point lies inside the rolling circle (with radius $b$) $a$ units from its center, the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this and so we save this discussion for last (Section 7).
 
 \begin{onlineOnly}
     \begin{center}
@@ -89,7 +91,7 @@ Near the end of his paper Robinson asks for a heuristic explanation of his arcle
 
 Our first step in proving Robinson's arclength thoeorem was to look for a more general equality of arclengths by associating each point of a prolate cycloid above the $x$-axis with a point below. It seemed like the simplest choice was to pair points with same inclination angle (the angle a curve makes with the horizontal) and experiments with desmos suggested the same equality of arclengths between any two inclination angles.
 
-In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $A_1P_1$ and $A_2P_2$ of the $(a,b) = (2,3.6)$ prolate cycloid between inclination angles $0$ and $\phi$ equals the arclength $s_3  = A_3P_3$ of its \emph{sister} cycloid (with radius $a=2$) between these same angles. 
+In the figure below, for example, the difference $s_1 - s_2$ in the arclengths $s_1=A_1P_1$ and $s_2 = A_2P_2$ of the $(a,b) = (2,3.6)$ prolate cycloid between inclination angles $\pi$ and $\pi+ \phi$ equals the arclength $s_3  = A_3P_3$ of its \emph{sister} cycloid (with radius $a=2$) between these same angles. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -111,16 +113,18 @@ You can almost see the equality $s_1 - s_2 = s_3$ of small arclengths in the fig
 
 \href{https://www.desmos.com/calculator/yqw8ektvps}{Cylcoid Trochoid Color 2}
 
-
+%These equalities of arclengths gives a local version of Robinson's theorem. This local version below pairs
 
 \begin{theorem19}
 %As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Similarly, let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid and $s_3 = s_3(\phi)$ the arclength of the sister cylcoid, both between inclination angles $0$ and $\phi$.
 
-As in Figure 2, let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi - \phi$ and $\pi$ . And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
+Let $s_1 = s_1(\phi)$ be the arclength of a prolate cycloid on the same side of the $x$-axis as its rolling circle between inclination angles $0$ and $\phi$, $0\leq \phi \leq \pi/2$. Let $s_2 = s_2(\phi)$ be the opposite-side arclength of the prolate cycloid between inclination angles $\pi - \phi$ and $\pi$ . And let $s_3 = s_3(\phi)$ be the arclength of the sister cylcoid between inclination angles $0$ and $\phi$. Then
 \[
 s_1 - s_2 = s_3.
 \]
 \end{theorem19}
+
+\emph{Note:} In Figure 2, the arclength $s_2=A_2P_2$ is between inclination angles $\pi$ and $\pi +\phi$ and lies outside on arch of the problate cycloid (where $-\pi \leq \phi \leq pi$, as in Figure 1). But by symmetry, that arclength is equal to the arclength between inclination angles $\pi-\phi$ and $\pi$. It's just that we found it more convenient in illustrating the proof of Robinson's theorem (see Figure ?? of Section 3) to replace the latter with the former.
 
 Trying to prove this more general result worked to our advantage as its shifted our focus from a global one (proving an equality of integrals) to  a local one (proving an equality of \emph{differential} arclengths). Our proof is primarily geometric and relies on the instantaneous center of rotation.
 
@@ -221,7 +225,7 @@ Rolling a book along the top of a cylinder is a convincing way to demonstrate th
 \section{A Proof of Robinson's Theorem}
 
 \begin{proof}
-Animate Figure ?? and you'll see circles ${\cal C}_i$, $i=1,2,3$ roll along the $x$-axis as the points $P_i$ sweep out the same and opposite-side arclengths of the prolate cycloid and its sister cycloid.  Look carefully and you'll notice the rotation arms $\rho_i = Q_iP_i$ make the same angle $\phi$ with the vertical at all times. But while the circle for the ordinary cycloid rotates at a constant rate, the others do not. The key to our proof, and to creating the animation, is to relate the three rotation rates. 
+Animate Figure ?? and you'll see circles ${\cal C}_i$, $i=1,2,3$ roll along the $x$-axis as the points $P_i$ sweep out the same and opposite-side arclengths of the prolate cycloid and its sister cycloid.  Look carefully and you'll notice the rotation arms $\rho_i = Q_iP_i$ make the same angle $\phi$ with the vertical at all times. But while the circle for the ordinary cycloid rotates at a constant rate, the others do not. The key to our proof is to relate the rotation rates. 
 
 
 %To prove the arclength theorem, imagine three circles ${\cal C}_i$, $i=1,2,3$, rolling along the $x$-axis as the points $P_i$ (at rest in the reference frames of these circles) respectively sweep out the upper and lower parts of the prolate cycloid and its sister cycloid.  Imagine also the rotation arms $\overline{Q_iP_i}$ make the same angle $\phi$ with the vertical at all times as in Figure 3. In the animated version of this figure, the circle for the ordinary cycloid (centered at $C_3$) rotates at a constant rate, but the others do not. The key to our proof, and to creating the animation, is to relate the rotation rates of the three circles. 
@@ -274,7 +278,7 @@ Assuming (a)-(c),
 
 We are left with proving (b) and (c).     %It remains to prove (b) and (c).
 
-The proof of (b) follows from the figure below that records the three rotation angles $\theta_i$ and the inclination angle $\phi$ in one static (non-rolling) circle. As the circles in Figure ?? (the previous figure) roll in tandem, the tracing points $P_i$ roll around the static circle as the chord $\overline{P_1P_3P_2}$ turns at a constant rate.
+The proof of (b) follows from the figure below that records the three rotation angles $\theta_i$ and the inclination angle $\phi$ in one static (non-rolling) circle. As the circles in Figure ?? (the previous figure) roll in tandem, the tracing points $P_i$ move around the static circle as the chord $\overline{P_1P_3P_2}$ turns at a constant rate.
 
 Now since $\overline{P_3P_1}\cong \overline{Q_1P_2}$, we know $\Delta C_1P_3P_1\cong \Delta C_1Q_1P_2$. Therefore, $m\angle P_1C_1P_3 = \theta_2$ and 
 \[
@@ -593,7 +597,7 @@ To prove (c), we focus our attention on the second trammel. With the coordinate 
 This shows $P^*$ traces an ellipse with semi-major/minor axes $P^*R_2=b+a$ and $P^*P_2 = b-a$. From here we can take either an algebraic or a geometric approach. In either case, the key observation is the same - the sliding arm is tangent to the ellipse exactly when $P^*$ moves parallel to the arm. I like the algebraic approach for a calculus class (where this problem is a variation of the one that relates the speeds of the ends of a sliding ladder), but here we'll take a geometric approach.% by appealing to the instantaneous center of rotation.
 
 
-The key idea is to find the arm's instantaneous center of rotation. This is the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ??. To find this center physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (think of segment $\overline{P_2R_2}$ as the trammel's arm and the adjacent edges as the trammel's axes). Now rotate the paper through a small angle about a random point $W$ and points $P_2$ and $R_2$ most likely move off the table. But choose the correct point $Q_2$ (the arm's instantaneneous center of rotation) and the trammel's endpoints move along circular paths tangent to the table's edges. This center of rotation is the point where the lines through $P_2$ and $R_2$ normal to the edges (and therefore normal to the velocities of $P_2$ and $R_2$) intersect.
+The key idea is to find the arm's instantaneous center of rotation. This is the point in the reference frame of the sliding arm momentarily at rest relative to the $xy$-plane in Figure ??. To find this center physically, place two adjacent vertices $P_2$, $R_2$ of a rectangular paper on adjacent edges of a tabe top (Figure ??) (think of segment $\overline{P_2R_2}$ as the trammel's arm and the adjacent edges as the trammel's axes). Now rotate the paper through a small angle about a random point $W$ and points $P_2$ and $R_2$ almost certainly move off the table. But choose the correct point $Q_2$ (the arm's instantaneneous center of rotation) and the trammel's endpoints move along circular paths tangent to the table's edges. This center of rotation is the point where the lines through $P_2$ and $R_2$ normal to the edges (and therefore normal to the velocities of $P_2$ and $R_2$) intersect.
 
 \begin{onlineOnly}
     \begin{center}
@@ -711,11 +715,15 @@ Had it occured to me to pair points of the curtate cycloid at the same inclinati
  
 %It did not even occur to me to pair points of the curtate cycloid at the same inclination angle. This pairing might have suggested the global theorem illustrated in Figure 2; that the difference in the concave up and concave down arclengths of the curtate cycloid would equal the arclength of the sister cycloid. But even with this, a local version of such a theorem might have remained elusive. 
 
-The double-generation animation of Figure ?? suggested a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggested the apparent the differences between curtate and prolate cycloids were really superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+%The double-generation animation of Figure ?? suggests a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggests the apparent the differences between curtate and prolate cycloids are really superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating the arclengths of an $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
 
-The key is the scaling factor. Remember for a hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
+%The key is the scaling factor. Remember for a hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
 
-In hindsight, we did not need the double-generation theorem to see this. Animate the motion in Figure ?? and you'll see the two circles roll at the same rate, with a common rotation angle $\theta$. The upper circle has radius $a$ and tracing distance $b$, the lower radius $b$ and tracing distance $a$. So $\Delta P_1 C_1 Q_1\cong \Delta Q_4 C_4 P_4$ and the rotation arms $Q_1P_1$ and $Q_4P_4$ are equal. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the differential angle $d\theta$ and the arclengths $s_1 A_1P_1$ and $s_4=A_4P_4$ are equal.
+The double-generation theorem of Figure ?? suggested a way forward. Tracing the same ellipse two ways as a hypocycloid implies both a global and local theorem equating the arclengths of an $(a,b)$-prolate cycloid and the $(b,a)$ curtate cycloid. The key is the scaling factor. Remember for a hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths betwen corresponding rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between correpsonding rotation angles of an $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
+
+
+
+In hindsight, we did not need the double-generation theorem. Animate the motion in Figure ?? and you'll see the two circles roll at the same rate, with a common rotation angle $\theta$. The upper circle has radius $a$ and tracing distance $b$, the lower radius $b$ and tracing distance $a$. So $\Delta P_1 C_1 Q_1\cong \Delta Q_4 C_4 P_4$ and the rotation arms $Q_1P_1$ and $Q_4P_4$ are equal. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the differential angle $d\theta$. So the arclengths $s_1= A_1P_1$ and $s_4=A_4P_4$ are equal.
 
 %The two circles, ${\cal C}_1$ with radius $a$ and tracing distance $b$, and ${\cal C}_4$ with radius $b$ and tracing distance $a$, have equal rotation angles (the marked angles at centers $C_1$, $C_2$). Since $\Delta C_1 Q_1 P\cong \Delta C_4P_4Q_4$, the cycloids have equal $Q_1P_1 = Q_4P_4$ rotation arms. Hence, the tracing points $P_1$ and $P_4$ traverse equal differential arclengths as the circles turn through the angle $d\theta$. 
 
@@ -727,7 +735,7 @@ In hindsight, we did not need the double-generation theorem to see this. Animate
 
 \href{https://www.desmos.com/calculator/s6agxwwc4s}{Curtate Cycloid ArcLength 35}
 
-An arclength theorem for curtate cycloids almost follws directly from this equality of arclengths and the arclength theorem for prolate cycloids. We just need the following lemma.% follows almost directly from this equality of arclengths. now  rests on the following lemma.
+An arclength theorem for curtate cycloids follows almost directly from this equality of arclengths and the arclength theorem for prolate cycloids. We just need the following lemma.% follows almost directly from this equality of arclengths. now  rests on the following lemma.
 
 \begin{theorem22}
 For $b>a$, let $\phi$ and $\alpha$ be the repective inclination angles for the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid of Figure ??? at their common rotation angle $\theta$, $0\leq \theta \leq \pi$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
@@ -762,7 +770,12 @@ the curtate cycloid has inclination angle $\alpha$ as illustrated in the upper f
 \]
 \end{proof}
 
-The corresondence $\theta \leftrightarrow \theta^\prime$ pairs each point on the concave-up side of a curtate cycloid with a point on the concave-down sid and the inflection point (where $\theta = \arccos(-a/b)$ and $\alpha = \arcsin(a/b)$ is a maximum) with itself. One the concave-up side, the tracing point and the center of the rolling circle lie on the same side of the tangent to the cycloid (represented by the dotted line through $P_4$ normal to $\overline{P_4Q_4}$ in Figure ??). On the concavde-down side these two points lie on opposite sides of the tangent line. And at an inflection point (point $P$ in Figure ??), the center and tracing point lie on the tangent line.
+The corresondence $\theta \leftrightarrow \theta^\prime$ pairs each point on the concave-up side of a curtate cycloid with a point on the concave-down side and the inflection point (where $\theta = \arccos(-a/b)$ and $\alpha = \arcsin(a/b)$ is a maximum) with itself. On the static circle, the correspondence pairs the endpoints $P_4$ and $P_4^\prime$ of the chords through $Q_4$. So instead of refering to the concave-up and concave-down sides of the cylcoid (which after all would reverse were the circle rolling on the other side of the $x$-axis), we refer instead to the far and near sides (traced respectively by the points $P_4$
+and $P_4^\prime$ farther from and nearer to $Q_4$. This same description applies also to the prolate cycloid, where the points $P_1$ and $P_1^\prime$ are respectively farther and nearer to $Q_1$.
+
+
+
+One the concave-up side, the tracing point and the center of the rolling circle lie on the same side of the tangent to the cycloid (represented by the dotted line through $P_4$ normal to $\overline{P_4Q_4}$ in Figure ??). On the concave-down side these two points lie on opposite sides of the tangent line. And at an inflection point (point $P$ in Figure ??), the center and tracing point lie on the tangent line.
 
 \begin{onlineOnly}
     \begin{center}
