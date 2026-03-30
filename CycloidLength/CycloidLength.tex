@@ -758,11 +758,11 @@ For $b>a$, let $\phi$ and $\alpha$ be the repective inclination angles of the $(
 
 
 \begin{proof}
-Let $P_4, P_4^\prime$ be points on the curtate cycloid with the same inclination angle $\alpha$ and respective rotation angles $\theta$, $\theta^\prime$, where $0\leq \theta \leq \theta^\prime \leq \pi$. Then in the reference frame of the sliding circle (radius $b$) where the center of rotation $Q_4$ is at rest, $P_4$, $P_4^\prime$, $Q_4$ are colinear and $Q_4P_4 \geq Q_4P_4^\prime$ (Figure ?? (a)). Since $\theta = \angle B_4C_4P_4$ is an exterior angle of $\Delta Q_4 C_4P_4$ , 
+Let $P_4, P_4^\prime$ be points on the curtate cycloid with the same inclination angle $\alpha$ and respective rotation angles $\theta$, $\theta^\prime$, where $0\leq \theta \leq \theta^\prime \leq \pi$. Then in the reference frame of the static circle (radius $b$) where the center of rotation $Q_4$ is at rest, $P_4$, $P_4^\prime$, $Q_4$ are colinear and $Q_4P_4 \geq Q_4P_4^\prime$ (Figure ?? (a)). Since $\theta = \angle B_4C_4P_4$ is an exterior angle of $\Delta Q_4 C_4P_4$ , 
 \[
   \theta  = \phi + \alpha
 \] 
-and
+and $P_4^\prime$ has rotation angle
 \[
    \theta^\prime = \angle B_4 C_4 P_4^\prime =  \theta + (\pi - 2\phi) = \pi - \phi + \alpha  .
 \]
@@ -775,17 +775,23 @@ and
 
 \href{https://www.desmos.com/calculator/uttndrcxjz}{Pairings Curtate Cycloid 5}
 
-The points $P_4$ and $P_4^\prime$ coincide at the inflection point of the curtate cycloid (as in Figure ?? (b) (where we label the points as $T_4$), Then $\overline{Q_4T_4}$ is tangent to the circle (radius $a$) centered at $C_4$, the inclination angle $\alpha_0 = \arcsin(a/b)$, and the rotation angle has measure $\theta_0 = \arccos(-a/b)$.
+At the inflection point $T_4$, the points $P_4$ and $P_4^\prime$ coincide (Figure ?? (b). Then $\overline{Q_4T_4}$ is tangent to the circle (radius $a$) centered at $C_4$, the inclination angle $\alpha_0 = \arcsin(a/b)$, and the rotation angle has measure $\theta_0 = \arccos(-a/b)$.
+
+Now let $P_1$, $P_1^\prime$ be the points on the prolate cycloid with respective rotation angles $\theta$, $\theta^\prime$. Then in the reference frame of the static circle (radius $a$) where the center of rotation $Q_1$ is at rest (Figure ??), the points $C_1$, $P_4$, and $P_1$ are colinear, as are the points $C_1 P_4^\prime P_1^\prime$. Thus, $P_1$ prime has incination angle 
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{grewshzmd7}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/grewshzmd7}{Pairings Curtate and Prolate 5}
 
 
-the points where the rotation arm, inclined at the angle $\alpha$ to the vertical, intersects the circle of radius $a$ centered at $C_4$ (Figure ?? (a)). This correspondence pairs tracing points of the curtate cycloid at the same inclination angle $\alpha$ and the inflection point with itself (Figure ??(b)). At the inflection point the inclination angle $\alpha_0 = \arcsin(a/b)$ is a maximum and the rotation angle is  
-\[
-  \theta_0 = \arccos(-a/b).
-\]
-And the correspondence pairs each point on the concave-up side at rotation angle $0\leq \theta < \theta_0$ with the point on the concave-down side at rotation angle
-\[
-   \theta^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha  .
-\]
+%And the correspondence pairs each point on the concave-up side at rotation angle $0\leq \theta < \theta_0$ with the point on the concave-down side at rotation angle
+%\[
+  % \theta^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha  .
+%\]
 
 
 
@@ -802,62 +808,31 @@ And the correspondence pairs each point on the concave-up side at rotation angle
 %   \theta^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha .
 %\]
 %See the upper frame of Figure ??.
-
-
-
 \end{proof}
 
 
 
+%\begin{proof}
+%Since $\theta$ is an exterior angle of congruent triangles $\Delta P_1 C_1 Q_1$ and $\Delta Q_4 C_4P_4$ (Figure ??), 
+%\[
+%  \theta  = \phi + \alpha.
+%\] 
 
-Figure ?? below shows  
+%Now let $P_4^\prime$ be the second point where the rotation arm $\overline{Q_4P_4}$ intersects the circle of radius $a$ centered at $C_4$. Then a rotation about $C_4$ through the angle
+%\[
+%    \angle P_4 C_4 P_4^\prime = \pi - 2\phi
+%\]
+%takes $P_4$ to $P_4^\prime$. So at rotation angle
+%\[
+%   \theta^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha,
+%\]
+%the curtate cycloid has inclination angle $\alpha$ as illustrated in the upper frame of Figure ??. And at rotation angle $\theta^\prime$, the prolate cycloid has inclination angle
+%\[
+ %\angle C_1Q_1P_1 = \theta^\prime - \alpha = \pi - \phi.
+%\]
+%\end{proof}
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{grewshzmd7}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/grewshzmd7}{Pairings Curtate and Prolate 5}
-
-%grewshzmd7
-
-
-
-\begin{theorem22}
-For $b>a$, let $\phi$ and $\alpha$ be the repective inclination angles of the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid at their common rotation angle $\theta$, $0\leq \theta \leq \arccos(-a/b)$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at the rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
-
-\begin{onlineOnly}
-    \begin{center}
-\desmos{w1yxsaqafj}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/w1yxsaqafj}{Curtate Cycloid ArcLength 37}
-
-\end{theorem22} 
-
-\begin{proof}
-Since $\theta$ is an exterior angle of congruent triangles $\Delta P_1 C_1 Q_1$ and $\Delta Q_4 C_4P_4$ (Figure ??), 
-\[
-  \theta  = \phi + \alpha.
-\] 
-
-Now let $P_4^\prime$ be the second point where the rotation arm $\overline{Q_4P_4}$ intersects the circle of radius $a$ centered at $C_4$. Then a rotation about $C_4$ through the angle
-\[
-    \angle P_4 C_4 P_4^\prime = \pi - 2\phi
-\]
-takes $P_4$ to $P_4^\prime$. So at rotation angle
-\[
-   \theta^\prime = \theta + (\pi - 2\phi) = \pi - \phi + \alpha,
-\]
-the curtate cycloid has inclination angle $\alpha$ as illustrated in the upper frame of Figure ??. And at rotation angle $\theta^\prime$, the prolate cycloid has inclination angle
-\[
- \angle C_1Q_1P_1 = \theta^\prime - \alpha = \pi - \phi.
-\]
-\end{proof}
-
-The correspondence $\theta \leftrightarrow \theta^\prime$ pairs each point on the concave-up side ($0\leq \theta < \theta_0 = \arccos(-a/b)$) of a curtate cycloid with a point on the concave-down side ($\theta_0 < \theta \leq \pi$) and the inflection point (where $\theta = \theta_0$ and $\alpha = \arcsin(a/b)$ is a maximum) with itself. On the static circle, the correspondence pairs the endpoints $P_4$ and $P_4^\prime$ of the chords through $Q_4$. So instead of refering to the concave-up and concave-down sides of the cylcoid (which depend on our viewpoint), we refer instead to the far and near sides, traced respectively by the points $P_4$ and $P_4^\prime$ farther from and nearer to $Q_4$. This same description applies also to the prolate cycloid, where the points $P_1$ and $P_1^\prime$ in Figure ?? are respectively farther and nearer to $Q_1$.
+{\bf Remark:} The correspondence $\theta \leftrightarrow \theta^\prime$ pairs each point on the concave-up side ($0\leq \theta < \theta_0 = \arccos(-a/b)$) of a curtate cycloid with a point on the concave-down side ($\theta_0 < \theta \leq \pi$) and the inflection point (where $\theta = \theta_0$ and $\alpha = \arcsin(a/b)$ is a maximum) with itself. On the static circle, the correspondence pairs the endpoints $P_4$ and $P_4^\prime$ of the chords through $Q_4$. So instead of refering to the concave-up and concave-down sides of the cylcoid (which depend on our viewpoint), we refer instead to the far and near sides, traced respectively by the points $P_4$ and $P_4^\prime$ farther from and nearer to $Q_4$. This same description applies also to the prolate cycloid, where the points $P_1$ and $P_1^\prime$ in Figure ?? are respectively farther and nearer to $Q_1$.
 
 
 
