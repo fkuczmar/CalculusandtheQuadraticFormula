@@ -777,7 +777,7 @@ Let $P_4$, $P_4^\prime$ be points on the curtate cycloid with inclination angle 
 \href{https://www.desmos.com/calculator/dqd3jjjsfs}{Curtate Cycloid ArcLength 38}
 
 
-Figure ?? shows these points in one static figure (in the reference frame where the centers of rotation of the rolling circles are at rest). Since $P_1$, $P_4$ share the same rotation angle, $P_4$ lies on radius $\overline{CP_1}$ of the static circle. Similarly,   $P_4^\prime$, lies on radius $\overline{CP_1^\prime}$. And since $P_4$, $P_4^\prime$ have the same inclination angle, $P_4^\prime$ lies on the rotation arm $\overline{Q_4P_4}$.
+Figure ?? shows these points in one static figure, in the reference frame where the centers of rotation of the rolling circles are at rest. Since $P_1$, $P_4$ share the same rotation angle, $P_4$ lies on radius $\overline{CP_1}$ of the static circle. Similarly,   $P_4^\prime$ lies on radius $\overline{CP_1^\prime}$. And since $P_4$, $P_4^\prime$ have the same inclination angle, $P_4^\prime$ lies on the rotation arm $\overline{Q_4P_4}$.
 
 
 \begin{onlineOnly}
@@ -797,50 +797,39 @@ Now since $\theta$ is an exterior angle of $\Delta P_4CQ_4$,
 \]
 and so
 \[
-     \theta^\prime = \angle B_4 C P_4^\prime =  \theta+ (\pi - 2\phi) = \pi + \alpha -\phi .
+     \theta^\prime = \angle B_4 C P_4^\prime =  \theta+ (\pi - 2\phi) = \pi -\phi + \alpha .
 \]
 
-
-
-
-Figure ?? shows these points on the static circles (ie. in the reference frame where the centers of rotation $Q_4$ and $Q_1$ are at rest). Since 
-
+Then since $\Delta CQ_1P_1^\prime \cong \Delta CP_4^\prime Q_4$ (SAS), $\angle CP_1^\prime Q_1 \cong \angle CQ_4P_4^\prime$ and $P_1^\prime$ has inclination angle 
 \[
-  \theta  = \phi + \alpha
-\] 
-and $P_4^\prime$ has rotation angle
-\[
-   \theta^\prime = \angle B_4 C_4 P_4^\prime =  \theta + (\pi - 2\phi) = \pi - \phi + \alpha  .
+     \angle CQ_1P_1^\prime = \theta^\prime - \alpha = \pi - \phi.
 \]
 
-
-
-
-
+To complete the proof, note at the inflection point of the curtate cycloid, $P_4 =P_4^\prime$ and $\overline{Q_4P_4}$ is tangent to the circle (radius $a$) centered at $C$ (Figure ??). Here the curtate cycloid has maximum inclination angle $\alpha_0 = \arcsin(a/b)$ and rotation angle $\theta_0 = \arccos(-a/b)$. Also, $P_1 = P_1^\prime$ and the prolate cycloid has inclination angle $\phi = \pi/2$.
 
 
 \begin{onlineOnly}
     \begin{center}
-\desmos{uttndrcxjz}{900}{600}   
+\desmos{bxdgsjmh1m}{900}{600}   
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/uttndrcxjz}{Pairings Curtate Cycloid 5}
+\href{https://www.desmos.com/calculator/bxdgsjmh1m}{Pairings Curtate Cycloid 7}
 
-At the inflection point $T_4$, the points $P_4$ and $P_4^\prime$ coincide (Figure ?? (b) and $\overline{Q_4T_4}$ is tangent to the circle (radius $a$) centered at $C_4$. The inclination angle $\alpha_0 = \arcsin(a/b)$ is a maximum, and the rotation angle has measure $\theta_0 = \arccos(-a/b)$.
+%At the inflection point $T_4$, the points $P_4$ and $P_4^\prime$ coincide (Figure ?? (b) and $\overline{Q_4T_4}$ is tangent to the circle (radius $a$) centered at $C_4$. The inclination angle $\alpha_0 = \arcsin(a/b)$ is a maximum, and the rotation angle has measure $\theta_0 = \arccos(-a/b)$.
 
-Now let $P_1$, $P_1^\prime$ be the points on the prolate cycloid with respective rotation angles $\theta$, $\theta^\prime$. Then in the reference frame of the static circle (radius $a$) where the center of rotation $Q_1$ is at rest (Figure ??), the points $C_1$, $P_4$, and $P_1$ are colinear, as are the points $C_1$, $P_4^\prime$, $P_1^\prime$. Thus, $P_1$ prime has incination angle 
-\[
-    \angle C_1Q_1P_1^\prime = \theta^\prime - \alpha = \pi - \phi.
-\]
+%Now let $P_1$, $P_1^\prime$ be the points on the prolate cycloid with respective rotation angles $\theta$, $\theta^\prime$. Then in the reference frame of the static circle (radius $a$) where the center of rotation $Q_1$ is at rest (Figure ??), the points $C_1$, $P_4$, and $P_1$ are colinear, as are the points $C_1$, $P_4^\prime$, $P_1^\prime$. Thus, $P_1$ prime has incination angle 
+%\[
+%    \angle C_1Q_1P_1^\prime = \theta^\prime - \alpha = \pi - \phi.
+%\]
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{grewshzmd7}{900}{600}   
-\end{center}
-\end{onlineOnly}
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmos{grewshzmd7}{900}{600}   
+%\end{center}
+%\end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/grewshzmd7}{Pairings Curtate and Prolate 5}
+%\href{https://www.desmos.com/calculator/grewshzmd7}{Pairings Curtate and Prolate 5}
 
 \end{proof}
 
@@ -907,7 +896,6 @@ Now let $P_1$, $P_1^\prime$ be the points on the prolate cycloid with respective
 
 %So defining the \emph{same-side}
 
-
 The law of sines in $\Delta P_4 C_4Q_4$ in Figure ?? and the arclength theorem for prolate cycloids, now imply the following.
 
 \begin{onlineOnly}
@@ -926,11 +914,11 @@ The law of sines in $\Delta P_4 C_4Q_4$ in Figure ?? and the arclength theorem f
 %\]
 
 \begin{enumerate}
-\item For lengths $b>a$,  inclination angles $0\leq \phi \leq \pi/2$ and
+\item For inclination angles $0\leq \phi \leq \pi/2$ of the $(a,b)$-prolate cycloid, let 
 \[
-    \alpha = \arcsin\left( \frac{a}{b}\sin\phi  \right) ,
+    \alpha = \arcsin\left( \frac{a}{b}\sin\phi  \right) 
 \]
-and rotation angles $0\leq \theta\leq \arccos(-a/b)$, the following are equal:
+be the inclination angle of the curtate cycloid at the same rotation angle $\theta$, $0\leq \theta\leq \arccos(-a/b)$. Then the following are equal:
 
 \begin{enumerate}
 \item the arclength of the ordinary cycloid (radius $a$) between inclinations angles $0$ and $\phi$
