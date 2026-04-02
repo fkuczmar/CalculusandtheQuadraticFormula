@@ -722,9 +722,13 @@ The challenge in seeking an arclength theorem for curtate cycloids (see Figure i
 
 %Instead it was the double-generation animation of Figure ?? that suggested an arclength theorem for curtate cycloids.
 
-The double-generation animation of Figure ?? suggests a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggests the apparent the differences between curtate and prolate cycloids are superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating the arclengths of the $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+But we can still pair points of a curtate cycloid with the same inclination angle. This correspondence pairs each point on the concave-up side with a point on the concave-down side and each inflection point with itself. And the double-generation theorem animated in Figure ?? suggests a way to pair these points with the points of an ordinary cycloid.
 
-The key is the scaling factor. Remember for a hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths between the same rotation angles of the two identical hypocycloids in Figure ?? are equal, arclengths between the same rotation angles of the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
+Since there are no curtate or prolate ellipses, the animation suggests the apparent the differences between curtate and prolate cycloids are mostly superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating corresponding arclengths of the $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+
+%The double-generation animation of Figure ?? suggests a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggests the apparent the differences between curtate and prolate cycloids are superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating the arclengths of the $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
+
+The key is the scaling factor. Remember for a hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arclengths between the same rotation angles of the two rolling circles in Figure ?? are equal, arclengths between the same rotation angles of the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are also equal. 
 
 %But we can still pair points of a curtate cycloid with the same inclination angle. This correspondence pairs each point on the concave-up side ($0\leq \theta < \theta_0 = \arccos(-a/b)$) of a curtate cycloid with a point on the concave-down side ($\theta_0 < \theta \leq \pi$) and the inflection point (where $\theta = \theta_0$ and $\alpha = \arcsin(a/b)$ is a maximum) with itself. On the static circle, the correspondence pairs the endpoints $P_4$ and $P_4^\prime$ of the chords through $Q_4$. So instead of refering to the concave-up and concave-down sides of the cylcoid (which depend on our viewpoint), we refer instead to the far and near sides, traced respectively by the points $P_4$ and $P_4^\prime$ farther from and nearer to $Q_4$. This same description applies also to the prolate cycloid, where the points $P_1$ and $P_1^\prime$ in Figure ?? are respectively farther and nearer to $Q_1$.
 
@@ -762,7 +766,7 @@ For lengths $b>a$, let $\phi$ and $\alpha$ respectively be the inclination angle
 \begin{proof}
 %Let $P_4, P_4^\prime$ be points on the curtate cycloid with the same inclination angle $\alpha$ and respective rotation angles $\theta$, $\theta^\prime$, where $0\leq \theta \leq \theta^\prime \leq \pi$. Then in the reference frame of the static circle (radius $b$) where the center of rotation $Q_4$ is at rest, the points $P_4$, $P_4^\prime$, $Q_4$ are colinear and $Q_4P_4 \geq Q_4P_4^\prime$ (Figure ?? (a)). Since $\theta = \angle B_4C_4P_4$ is an exterior angle of $\Delta Q_4 C_4P_4$ , 
 
-Let $P_4$, $P_4^\prime$ be points on the curtate cycloid with inclination angle $\alpha$ and respective rotation angles $\theta$, $\theta^\prime$, where $0\leq \theta \leq \theta^\prime \leq \pi$. Let $P_1$ , $P_1^\prime$ be the points on the prolate cycloid with respective rotation angles $\theta$, $\theta^\prime$ (Figure ?).
+Let $P_4$, $P_4^\prime$ be points on the curtate cycloid with inclination angle $\alpha$ and respective rotation angles $\theta$, $\theta^\prime$, where $0\leq \theta \leq \theta^\prime \leq \pi$. Let $P_1$, $P_1^\prime$ be the points on the prolate cycloid with respective rotation angles $\theta$, $\theta^\prime$ (Figure ?).
 
 \begin{onlineOnly}
     \begin{center}
@@ -772,7 +776,34 @@ Let $P_4$, $P_4^\prime$ be points on the curtate cycloid with inclination angle 
 
 \href{https://www.desmos.com/calculator/dqd3jjjsfs}{Curtate Cycloid ArcLength 38}
 
-Figure ?? shows these points on the static circles (ie. in the reference frame where the centers of rotation $Q_4$ and $Q_1$ are at rest). 
+
+Figure ?? shows these points in one static figure (in the reference frame where the centers of rotation of the rolling circles are at rest). Since $P_1$, $P_4$ share the same rotation angle, $P_4$ lies on radius $\overline{CP_1}$ of the static circle. Similarly,   $P_4^\prime$, lies on radius $\overline{CP_1^\prime}$. And since $P_4$, $P_4^\prime$ have the same inclination angle, $P_4^\prime$ lies on the rotation arm $\overline{Q_4P_4}$.
+
+
+\begin{onlineOnly}
+    \begin{center}
+\desmos{2hqmcmqihv}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/2hqmcmqihv}{Pairings Curtate and Prolate Cycloid 6}
+
+
+%In the static circles with common center $C$ (ie. in the reference frame where the centers of rotation of the rolling circles are at rest, Figure ??), $C$, $P_4$, $P_1$ are colinear since $P_1$, $P_4$ share the same rotation angle. Points $C$, $P_4^\prime$, $P_1^\prime$ are colinear for the same reason. And $Q_1$,$P_1$,$P_1^\prime$ are colinear since $P_1$, $P_1^\prime$ have the same inclination angle.
+
+Now since $\theta$ is an exterior angle of $\Delta P_4CQ_4$,
+\[
+    \theta =  \angle B_4 C P_4 = \alpha+\phi
+\]
+and so
+\[
+     \theta^\prime = \angle B_4 C P_4^\prime =  \theta+ (\pi - 2\phi) = \pi + \alpha -\phi .
+\]
+
+
+
+
+Figure ?? shows these points on the static circles (ie. in the reference frame where the centers of rotation $Q_4$ and $Q_1$ are at rest). Since 
 
 \[
   \theta  = \phi + \alpha
