@@ -720,11 +720,11 @@ The challenge in seeking an arclength theorem for curtate cycloids (see Figure i
 
 %Instead it was the double-generation animation of Figure ?? that suggested an arclength theorem for curtate cycloids.
 
-But we can still pair points of a curtate cycloid with the same inclination angle. This correspondence pairs each point on the concave-up side with a point on the concave-down side and each inflection point with itself. And the double-generation theorem animated in Figure ?? suggests a way to pair these with the points of an ordinary cycloid. The idea is to pair points of a $(b,a)$ curtate cycloid (traced by a point $a<b$ units from the center of a circle of radius $b$ rolling on a line) with points of an $(a,b)$ prolate cycloid at the same \emph{rotation} angle. Then we use the inclination angle to pair the points of the prolate cycloid with the points of an ordinary cycloid.
+But we can still pair points of a curtate cycloid with the same inclination angle. This correspondence pairs each point on the concave-up side with a point on the concave-down side and each inflection point with itself. And the double-generation theorem animated in Figure ?? suggests a way to pair these with the points of an ordinary cycloid. The idea is to pair points of a $(b,a)$ curtate cycloid (traced by a point $a<b$ units from the center of a circle of radius $b$ rolling on a line) with points of an $(a,b)$ prolate cycloid at the same \emph{rotation} angle. Then we can use the inclination angle to pair the points of the prolate cycloid with those of an ordinary cycloid.
 
 %Since there are no curtate or prolate ellipses, the animation suggests the apparent the differences between curtate and prolate cycloids are mostly superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating corresponding arclengths of the $(a,b)$ prolate cycloid  and the $(b,a)$ curtate cycloid (traced by a point $a<b$ units from the center of a circle with radius $b$ rolling on a line). 
 
-Because the double-generation animation of Figure ?? traces an ellipse in two ways as a hypocycloid, this implies an equality of arclengths of the curtate and prolate cycloids between the same rotation angles. The scaling factor explains why.  Remember for any hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arcs of the ellipse between the same rotation angles of the two rolling circles in Figure ?? are identical, arclengths between the same rotation angles of the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are equal. 
+Because the double-generation animation of Figure ?? traces an ellipse in two ways as a hypocycloid it implies an equality of arclengths of the curtate and prolate cycloids between the same rotation angles. The scaling factor explains why.  Remember for any hypocylcloid, arclengths get halved in switching the fixed centrode from a line to a circle with twice the radius of the rolling circle. So since arcs of the ellipse between the same rotation angles of the two rolling circles in Figure ?? are identical, arclengths between the same rotation angles of the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid are equal. 
 
 %The double-generation animation of Figure ?? suggests a way forward. Most of all, since there are no curtate or prolate ellipses, the animation suggests the apparent the differences between curtate and prolate cycloids are superficial. More specifically, tracing an ellipse in two ways as a hypocycloid implies both a global and local theorem equating the arclengths of the $(a,b)$ prolate cycloid (traced by a point $b>a$ units from the center of a circle with radius $a$ rolling on a line) and the $(b,a)$ curtate cycloid. 
 
@@ -759,7 +759,7 @@ $\Delta P_1 C_1 Q_1\cong \Delta Q_4 C_4 P_4$. So the rotation arms $Q_1P_1$ and 
 We can use this equality of arclengths to translate the arclength theorem for prolate cycloids into one about curtate cycloids. The key is to relate the rotation and inclination angles of the two curves. 
 
 \begin{theorem22}
-Let $\phi$, $0\leq \phi \leq \pi/2$, be the inclination angle of the $(a,b)$ prolate cycloid and $\alpha$ the inclination angle of the $(b,a)$ curtate cycloid at the same rotation angle $\theta$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$.
+Let $\phi$ ($0\leq \phi \leq \pi/2$) and $\alpha$ be respectively the inclination angles of the $(a,b)$ prolate cycloid and $(b,a)$ curtate cycloid at rotation angle $\theta = \alpha + \phi$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$.
 
 
 %For lengths $b>a$, let $\phi$ and $\alpha$ respectively be the inclination angles of the $(a,b)$-prolate cycloid and the $(b,a)$-curtate cycloid at the rotation angle $\theta$, $0\leq \theta \leq \arccos(-a/b)$. Then the cycloids have respective inclination angles $\pi - \phi$ and $\alpha$ at rotation angle $\theta^\prime = \pi - \phi + \alpha$. 
@@ -811,14 +811,6 @@ Then since $\Delta CQ_1P_1^\prime \cong \Delta CP_4^\prime Q_4$ (SAS), $\angle C
 %To complete the proof, note at the inflection point of the curtate cycloid, $P_4 =P_4^\prime$ and $\overline{Q_4P_4}$ is tangent to the circle (radius $a$) centered at $C$ (Figure ??). Here the curtate cycloid has maximum inclination angle $\alpha_0 = \arcsin(a/b)$ and rotation angle $\theta_0 = \arccos(-a/b)$. At the same rotation angle, $P_1 = P_1^\prime$ and the prolate cycloid has inclination angle $\phi_0 = \pi/2$.
 
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{bxdgsjmh1m}{900}{600}   
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/bxdgsjmh1m}{Pairings Curtate Cycloid 7}
-
 %At the inflection point $T_4$, the points $P_4$ and $P_4^\prime$ coincide (Figure ?? (b) and $\overline{Q_4T_4}$ is tangent to the circle (radius $a$) centered at $C_4$. The inclination angle $\alpha_0 = \arcsin(a/b)$ is a maximum, and the rotation angle has measure $\theta_0 = \arccos(-a/b)$.
 
 %Now let $P_1$, $P_1^\prime$ be the points on the prolate cycloid with respective rotation angles $\theta$, $\theta^\prime$. Then in the reference frame of the static circle (radius $a$) where the center of rotation $Q_1$ is at rest (Figure ??), the points $C_1$, $P_4$, and $P_1$ are colinear, as are the points $C_1$, $P_4^\prime$, $P_1^\prime$. Thus, $P_1$ prime has incination angle 
@@ -841,7 +833,15 @@ Then since $\Delta CQ_1P_1^\prime \cong \Delta CP_4^\prime Q_4$ (SAS), $\angle C
 
 \item At the inflection point of the curtate cycloid, $P_4 =P_4^\prime$ and $\overline{Q_4P_4}$ is tangent to the circle (radius $a$) centered at $C$ (Figure ??). Here the curtate cycloid has maximum inclination angle $\alpha_0 = \arcsin(a/b)$ and rotation angle $\theta_0 = \arccos(-a/b)$. At the same rotation angle, $P_1 = P_1^\prime$ and the prolate cycloid has inclination angle $\phi_0 = \pi/2$.
 
-\item Instead of refering to the concave-up and concave-down sides of a curtate cylcoid (which depend on our viewpoint), we refer instead to the far and near sides, traced respectively by the points $P_4$ and $P_4^\prime$ farther from and nearer to $Q_4$. This same description applies also to the prolate cycloid, where the points $P_1$ and $P_1^\prime$ in Figure ?? are respectively farther and nearer to $Q_1$.
+\begin{onlineOnly}
+    \begin{center}
+\desmos{bxdgsjmh1m}{900}{600}   
+\end{center}
+\end{onlineOnly}
+
+\href{https://www.desmos.com/calculator/bxdgsjmh1m}{Pairings Curtate Cycloid 7}
+
+\item Instead of refering to the concave-up and concave-down sides of a curtate cylcoid (which depend on our viewpoint), we refer instead to the far and near sides, traced respectively by the points $P_4$ and $P_4^\prime$ farther from and nearer to $Q_4$. This same far-near description applies also to the prolate cycloid, where the points $P_1$ and $P_1^\prime$ in Figure ?? are respectively farther and nearer to $Q_1$.
 
 \end{enumerate}
 
@@ -930,7 +930,7 @@ The law of sines in $\Delta P_4 C_4Q_4$ in Figure ?? and the arclength theorem f
 be the inclination angle of the curtate cycloid at the same rotation angle $\theta$, $0\leq \theta\leq \arccos(-a/b)$. Then the following are equal:
 
 \begin{enumerate}
-\item the arclength of the ordinary $a$-cycloid between inclinations angles $0$ and $\phi$, 
+\item the arclength of the ordinary $a$-cycloid between inclinations angles $0$ and $\phi$ (and rotation anlges $0\leq \theta \leq 2\phi$), 
 
 \item the difference in the far-side ($0\leq \theta \leq \phi + \alpha$) and near-side ($\pi- \phi + \alpha \leq \theta \leq \pi$) arclengths of the prolate $(a,b)$-cycloid between inclination angles $0$ and $\phi$, and
 
@@ -938,13 +938,13 @@ be the inclination angle of the curtate cycloid at the same rotation angle $\the
 
 \end{enumerate}
 
-\item The same ????
+\item A similar statement holds for the arclengths of an ordinary $(a,a,r)$ epicycloid (or hyocycloid), the prolate $(a,b,r)$ epicyloid (hypocycloid), and the curtate $(b,a,r)$ epicycloid (or hypocyloid).
 
 \end{enumerate}
 
 \end{theorem23}
 
-Figure ?? shows an example, where with arclengths $s_i = A_iP_i$, $i=1,\ldots , 5$, 
+Figure ?? illustrates the local version of part (a),  where with arclengths $s_i = A_iP_i$, $i=1,\ldots , 5$, 
 \[
      s_1  -  s_2 = s_3 = s_4 -  s_5.  
 \]
@@ -955,7 +955,7 @@ Figure ?? shows an example, where with arclengths $s_i = A_iP_i$, $i=1,\ldots , 
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/opaijymtyr}{Curtate Cycloid ArcLength 5}
+\href{https://www.desmos.com/calculator/dfmyahqves}{Ordinary Prolte Curtate ArcLengths 2}
 
 
 
@@ -979,7 +979,7 @@ Figure ?? shows an example, where with arclengths $s_i = A_iP_i$, $i=1,\ldots , 
 
 
 
-Finally, a similar equalities of arclengths hold for epi and hypocycloids. Figure ?? illustrates the global version.
+Figure ?? illustrates the global version of part (b).
 
 \begin{onlineOnly}
     \begin{center}
