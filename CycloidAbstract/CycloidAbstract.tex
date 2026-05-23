@@ -14,7 +14,18 @@
 \end{abstract}
 \maketitle
  
-\begin{exploration}
+\begin{exploration} \label{SlidingLadders}
+There is exactly one point $P$ on the quarter-ellipse
+\[
+ \frac{x^2}{u^2} + \frac{y^2}{b^2} = 1 \, , \, x,y\geq 0,
+\]
+where the tangent segments $\overline{PA}$ and $\overline{PB}$ from $P$ to the coordinate axes have lengths $PA=v$ and $PB=u$. At this point the difference $s_y - s_x$ in the arclengths $PY$ and $PX$ of the ellipse from $P$ to the coordinate axes is equal to the difference $u-v$ in the lengths of the semi-axes. This paper is partly about proving this theorem. But it is mostly about thinking differentially and taking a local approach to calclulus.
+
+The first step is to animate the figure below, either by dragging the slider $\phi$ in Line 2 or pressing the play button in that line. As the endpoints of segments $\overline{AB}$ and $\overline{CD}$ slide along the coordinate axes, the point $P$, attached to the longer segment $\overline{AB}$ and to an extension of the shorter $\overline{CD}$, sweeps out the quarter-ellipse. 
+
+Drag the sliders $a=(u-v)/2$ and $b=(u+v)/2$ to change the shape and size of the ellipse.
+
+
 \begin{onlineOnly}
     \begin{center}
 \desmos{b8xr2fpea3}{900}{600}
@@ -25,7 +36,9 @@
 \end{exploration}
 
 
-\begin{exploration}
+\begin{exploration} \label{LadderwithCircles}
+The second animation gives another perspecive of the first. It shows each sliding segments as a fixed diameter of a circle rolling around the inside of another with twice the radius.
+
 \begin{onlineOnly}
     \begin{center}
 \desmos{exj0ey5hjf}{900}{600}
@@ -35,7 +48,13 @@
 \href{https://www.desmos.com/calculator/exj0ey5hjf}{Cylcoid Abstract Sliding Ladders with Circles}
 \end{exploration}
 
-\begin{exploration}
+\begin{exploration} \label{CurtateProlateCyloidsStatic}
+The static figure below shows the paths traced by the circles of the second animation rolling on a line. The first is one arch of a curtate cycloid, traced by a point $a<b$ units from the center of a rolling circle with radius $b$. The second is the dual of the first, one arch of a  prolate cycloid, traced by a point $b>a$ units from the center of a rolling circle with radius $a$. The third is an ordinary $a$-cycloid, traced by point on a rolling circle with radius $a$. 
+
+Robinson showed the the difference $s_1-s_2$ in the arclengths of the prolate cycloid on the same and opposite sides of the fixed line equals the arclength $s_3$ of the $a$-cycloid. The difference in the concave up and concave down arclengths of the curate cycloids is the same. In fact, these arclengths are respectively equal to the same and opposite side arclengths of the dual prolate cycloid.
+
+Drag sliders $a$ and $b$ in LInes 2 and 3 to change the shapes and sizes of the cycloids.
+
 \begin{onlineOnly}
     \begin{center}
 \desmos{fw0cfv3wk3}{900}{600}
