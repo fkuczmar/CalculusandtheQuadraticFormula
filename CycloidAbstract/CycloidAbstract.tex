@@ -53,9 +53,9 @@ This animation gives another perspective of the first. Each sliding segment is a
 
 
 \begin{exploration}  \label{EllipseProlateCycloid}
-Play the slider $\phi_2$ in Line 2 to see the circle on diameter $\overline{CD}$ rolling in the reference frames of the fixed circle (radius $2a$) and the rolling tangent line.
+Play the slider $\phi_2$ in Line 2 to see the circle on diameter $\overline{CD}$ rolling in the reference frames of the fixed circle (top) and of the rolling tangent line (bottom).
 
-Because the rolling circle has half the radius of the fixed circle, it rotates half as fast in the first frame as it does in the second. So any point at rest in the reference frame of the rolling circle moves half as fast in the first frame as it does in the second and
+Because the rolling circle has half the radius of the fixed circle, it rotates half as fast in the first frame as it does in the second. So any point at rest in the reference frame of the rolling circle moves half as fast in the first frame as it does in the second. Thus,
 \[
   \text{arc}(XP) =0.5 \text{arc}(X_2P_2)  \hskip 0.3 in \text{and} \hskip 0.3 in \text{arc}(ZC) = \frac{1}{2}\text{arc}(Z_2C_2).
 \]
@@ -72,11 +72,17 @@ Because the rolling circle has half the radius of the fixed circle, it rotates h
 
 
 \begin{exploration} \label{CurtateProlateCyloidsRolling}
-Play the slider $u$ in Line 1 to see the circles of Exploration 2 roll in the reference frames of their rolling tangent lines ${\cal L}_1$ and ${\cal L}_2$. The top path is one arch of a curtate cycloid, traced by the point $P$, $a<b$ units from the center of the rolling circle with radius $b$. The middle, dual to the first, is one arch of a  prolate cycloid, traced by the point $P$, $b>a$ units from the center of the rolling circle with radius $a$. The last is an ordinary $a$-cycloid, traced by a point on a rolling circle with radius $a$. 
+The figure below shows the paths traced by the point $P$ in the reference frames of the rolling tangent lines of Exploration 2. The first path is one arch of a curtate cycloid, where $P$ is $a<b$ units from the center of the rolling circle (radius $b$). The second, dual to the first, is one arch of a  prolate cycloid, where $P$ is $b>a$ units from the center of the rolling circle (radius $a$). The third is an ordinary $a$-cycloid, traced by a point on a rolling circle with radius $a$. 
+
+Proving Theorem 1 amounts to showing the arclengths $\sigma_1, \sigma_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arclengths $s_1$, $s_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $\sigma_1 - \sigma_2 = s_1-s_2$ equals the arclength $s_3$ of the $a$-cycloid.
+
+Play the slider $u$ in Line 1 to see the circles roll in the reference frames of the rolling tangent lines ${\cal L}_1$ and ${\cal L}_2$. The first two circles rotate at the same rate and because each arclength $A_1P_1$ and $A_2P_2$ is half the corresponding arclength of the semi-ellipse in Exploration 2,  $A_1P_1=A_2P_2$. 
+
+%The first path is one arch of a curtate cycloid, traced by the point $P$, $a<b$ units from the center of the rolling circle with radius $b$. The second, dual to the first, is one arch of a  prolate cycloid, traced by the point $P$, $b>a$ units from the center of the rolling circle with radius $a$. The third is an ordinary $a$-cycloid, traced by a point on a rolling circle with radius $a$. 
 
 %Proving Theorem 1 amouts to showing the difference $s_1-s_2$ in the arclengths of the prolate cycloid above and below the fixed line equals the arclength $s_3$ of the $a$-cycloid. The difference in the concave up and concave down arclengths of the curate cycloid is the same. In fact, these arclengths are respectively equal to the same and opposite side arclengths of its dual prolate cycloid.
 
-Proving Theorem 1 amounts to showing the arclengths $s_1, s_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arclengths $\sigma_1$, $\sigma_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $s_1-s_2$ equals the arclength $s_3$ of the $a$-cycloid. %The difference in the concave up and concave down arclengths of the curate cycloid is the same. In fact, these arclengths are respectively equal to the same and opposite side arclengths of its dual prolate cycloid.
+%Proving Theorem 1 amounts to showing the arclengths $\sigma_1, \sigma_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arclengths $s_1$, $s_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $\sigma_1 - \sigma_2 = s_1-s_2$ equals the arclength $s_3$ of the $a$-cycloid. %The difference in the concave up and concave down arclengths of the curate cycloid is the same. In fact, these arclengths are respectively equal to the same and opposite side arclengths of its dual prolate cycloid.
 
 %Drag sliders $a$ and $b$ in Lines 2 and 3 to change the shapes and sizes of the cycloids.
 
@@ -92,7 +98,7 @@ Proving Theorem 1 amounts to showing the arclengths $s_1, s_2$ of the prolate cy
 
 
 \begin{exploration} \label{Theorem2Local}
-The fourth animation illustrates the local version of Theorem 2.
+The figure here illustrates the local version of Theorem 2.
 
 \begin{onlineOnly}
     \begin{center}
@@ -104,28 +110,26 @@ The fourth animation illustrates the local version of Theorem 2.
 \end{exploration}
 
 
-%Figure 1 shows a \emph{prolate cycloid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle). It is the curve traced by a point $P_1$ outside a circle rolling on a line
+%Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out one arch of a \emph{general cylcoid}. When $P_1$ is outside the circle, the \emph{prolate cylcoid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) crosses ${\cal L}$. In a recent article,  D. Robinson showed the one-arch length of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the opposite-side length by $8a$. The excess surprisingly does not depend on the distance $b>a$ of the tracing point from the center of ${\cal C}_1$.  Choosing $b=a$ shows the excess equals the one-arch length of the \emph{ordinary} $a$-cycloid traced by a point on the circumference of the same rolling circle (see Figure 1, where ${\cal L}$ is the $x$-axis, $a=2$, and $b=3.6$).
 
-Roll a circle ${\cal C}_1$ of radius $a$ once through its circumference on a line ${\cal L}$ and a point $P_1$ fixed in the reference frame of the circle sweeps out one arch of a \emph{general cylcoid}. When $P_1$ is outside the circle, the \emph{prolate cylcoid} (from the Latin \emph{poferre}, to extend and the Greek \emph{kyklos}, circle) crosses ${\cal L}$. In a recent article,  D. Robinson showed the one-arch length of the prolate cycloid on the same side of ${\cal L}$ as ${\cal C}_1$ exceeds the opposite-side length by $8a$. The excess surprisingly does not depend on the distance $b>a$ of the tracing point from the center of ${\cal C}_1$.  Choosing $b=a$ shows the excess equals the one-arch length of the \emph{ordinary} $a$-cycloid traced by a point on the circumference of the same rolling circle (see Figure 1, where ${\cal L}$ is the $x$-axis, $a=2$, and $b=3.6$).
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmos{ty0hdz7uyj}{900}{600}
+%\end{center}
+%\end{onlineOnly}
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{ty0hdz7uyj}{900}{600}
-\end{center}
-\end{onlineOnly}
-
-\href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid Arclength 1B}
+%\href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid Arclength 1B}
 
 %What if $b<a$?. Then the tracing point lies inside the rolling circle and the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this and so we save this discussion for last (Section 7). %let alone to stumble upon the second theorem. So we save this discussion for last (Section 7).
 
-If instead the rolling circle has radius $b$ and the tracing point lies $a<b$ units from its center,  the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8a$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took a long time for me to realize this, so we'll save this discussion for last (Section 7).
+%If instead the rolling circle has radius $b$ and the tracing point lies $a<b$ units from its center,  the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8a$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took a long time for me to realize this, so we'll save this discussion for last (Section 7).
 
-\begin{onlineOnly}
-    \begin{center}
-\desmos{0eosvsfm9r}{900}{600}
-\end{center}
-\end{onlineOnly}
+%\begin{onlineOnly}
+%    \begin{center}
+%\desmos{0eosvsfm9r}{900}{600}
+%\end{center}
+%\end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/0eosvsfm9r}{Curtate Cycloid 33}
+%\href{https://www.desmos.com/calculator/0eosvsfm9r}{Curtate Cycloid 33}
 
 \end{document}
