@@ -23,7 +23,7 @@ where the tangent segments $\overline{PA}$ and $\overline{PB}$ from $P$ to the c
 
 %At this point the difference $s_y - s_x$ in the arclengths $PY$ and $PX$ of the ellipse from $P$ to the coordinate axes equals the difference $u-v$ in the lengths of the semi-axes. This paper is partly about proving this theorem. But it is mostly about taking a local approach to this and other calculus problems.
 
-Animate the figure, either by dragging the slider $\phi$ in Line 2 or pressing the play button, and you'll see the endpoints of segment $\overline{AB}$ and another $\overline{CD}$ slide along the coordinate axes as the point $P$, attached to the longer segment $\overline{AB}$ (length $u+v$) and to an extension of the shorter $\overline{CD}$ (length $u-v$), sweeps out the quarter-ellipse. 
+The first step in understanding why is to animate the figure, either by dragging the slider $\phi$ in Line 2 or pressing the play button. Then you'll see the endpoints of segment $\overline{AB}$ and another segment $\overline{CD}$ slide along the coordinate axes as the point $P$, attached to the longer segment $\overline{AB}$ (length $u+v$) and to an extension of the shorter $\overline{CD}$ (length $u-v$), sweeps out the quarter-ellipse. 
 
 You can drag the sliders $a=(u-v)/2$ (Line 7) and $b=(u+v)/2$ (Line 8) to change the shape and size of the ellipse.
 
@@ -39,7 +39,13 @@ You can drag the sliders $a=(u-v)/2$ (Line 7) and $b=(u+v)/2$ (Line 8) to change
 
 
 \begin{exploration} \label{LadderwithCircles}
-This animation gives another perspective of the first. Each sliding segment is a fixed diameter of a circle rolling around the inside of another with twice the radius. The circles roll once through their circumferences as the point $P$ traces a semi-ellipse. The circle on diameter $CD=2a = u-v$ helps establish the arclength equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ identifies the transition point geometrically.
+This animation gives another perspective of the first. Each sliding segment is a fixed diameter of a circle rolling around the inside of another with twice the radius. The circles each roll once through their circumference as the point $P$ traces a semi-ellipse. 
+
+The animation begins at the transition point in the second quadrant where $\overline{AB}$ is tangent to the ellipse and the tracing point $P$ crosses the rolling tangent line ${\cal L}_2$. 
+
+The circle on diameter $CD=2a = u-v$ helps establish the arclength equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ helps identify the transition point geometrically.
+
+Play the slider $\phi_2$ in Line 2 to start the motion.
 %In this animation the sliding segments $\overline{AB}$ and $\overline{CD}$ are each fixed diameters of circles rolling around the inside of other circles another with twice the radius. Each circle rolls once through its circumference as the point $P$ traces a semi-ellipse. The circle on diameter $CD=2a = u-v$ helps establish the arclength equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ identifies the transition point geometrically. %Each rolls once through its circumference as they rotate at the same constant rate.
 
 \begin{onlineOnly}
@@ -53,11 +59,11 @@ This animation gives another perspective of the first. Each sliding segment is a
 
 
 \begin{exploration}  \label{EllipseProlateCycloid}
-Play the slider $\phi_2$ in Line 2 to see the circle on diameter $\overline{CD}$ rolling in the reference frames of the fixed circle (top) and of the rolling tangent line (bottom).
+Play the slider $\phi_2$ in Line 2 to see the circle on diameter $\overline{CD}$ rolling in the reference frame of the fixed circle (top) and in the reference frame of the rolling tangent line (bottom).
 
-Because the rolling circle has half the radius of the fixed circle, it rotates half as fast in the first frame as it does in the second. So any point at rest in the reference frame of the rolling circle moves half as fast in the first frame as it does in the second. Thus,
+Because the rolling circle has half the radius of the fixed, it rotates half as fast in the top frame as it does in the bottom. So any point at rest in the reference frame of the rolling circle moves half as fast in the top frame as it does in the bottom. Thus,
 \[
-  \text{arc}(XP) =0.5 \text{arc}(X_2P_2)  \hskip 0.3 in \text{and} \hskip 0.3 in \text{arc}(ZC) = \frac{1}{2}\text{arc}(Z_2C_2).
+  \text{arc}(XP) =0.5 \text{arc}(X_2P_2)  \hskip 0.3 in \text{and} \hskip 0.3 in ZC = \frac{1}{2}\text{arc}(Z_2C_2).
 \]
 
 \begin{onlineOnly}
@@ -76,7 +82,7 @@ The figure below shows the paths traced by the point $P$ in the reference frames
 
 Proving Theorem 1 amounts to showing the arclengths $\sigma_1, \sigma_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arclengths $s_1$, $s_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $\sigma_1 - \sigma_2 = s_1-s_2$ equals the arclength $s_3$ of the $a$-cycloid.
 
-Play the slider $u$ in Line 1 to see the circles roll in the reference frames of the rolling tangent lines ${\cal L}_1$ and ${\cal L}_2$. The first two circles rotate at the same rate and because each arclength $A_1P_1$ and $A_2P_2$ is half the corresponding arclength of the semi-ellipse in Exploration 2,  $A_1P_1=A_2P_2$. 
+Play the slider $u$ in Line 1 to see the circles roll in the reference frames of the rolling tangent lines ${\cal L}_1$ and ${\cal L}_2$. The first two circles rotate at the same rate and because the arclengths $A_1P_1$ and $A_2P_2$ are each half the arclength $XP$ of the semi-ellipse in Exploration 2,  $A_1P_1=A_2P_2$. 
 
 %The first path is one arch of a curtate cycloid, traced by the point $P$, $a<b$ units from the center of the rolling circle with radius $b$. The second, dual to the first, is one arch of a  prolate cycloid, traced by the point $P$, $b>a$ units from the center of the rolling circle with radius $a$. The third is an ordinary $a$-cycloid, traced by a point on a rolling circle with radius $a$. 
 
