@@ -1,13 +1,13 @@
 \documentclass{ximera}
-\title{Cycloidal Arclengths: An Animated Approach, Abstract}
+\title{Cycloidal arc lengths: An Animated Approach, Abstract}
 
 \newcommand{\pskip}{\vskip 0.1 in}
 
-%\newtheorem{theorem19}{Robinson's Arclength Theorem for Prolate Cycloids, Local Version}
-%\newtheorem{theorem20}{An Arclength Theorem for Prolate Epi and Hypocycloids}
+%\newtheorem{theorem19}{Robinson's arc length Theorem for Prolate Cycloids, Local Version}
+%\newtheorem{theorem20}{An arc length Theorem for Prolate Epi and Hypocycloids}
 %\newtheorem{theorem21}{Robinson's Lemma}
 %\newtheorem{theorem22}{The Inclination Lemma}
-%\newtheorem{theorem23}{An Arclength Theorem for General Cycloids}
+%\newtheorem{theorem23}{An arc length Theorem for General Cycloids}
 
 \begin{document}
 \begin{abstract}
@@ -19,9 +19,9 @@ There is exactly one point $P$ on the quarter-ellipse
 \[
  \frac{x^2}{u^2} + \frac{y^2}{v^2} = 1 \, , \, x,y\geq 0,
 \]
-where the tangent segments $\overline{PA}$ and $\overline{PB}$ from $P$ to the coordinate axes have lengths $PA=v$ and $PB=u$ equal to the semi-axes. As illustrated in the figure below, this \emph{transition point} divides the quarter-ellipse into arclengths $PA=s_x$ and $PB=s_y$ whose difference $s_y - s_x$ is equal to the difference  $u-v$ in the semi-axes.
+where the tangent segments $\overline{PA}$ and $\overline{PB}$ from $P$ to the coordinate axes have lengths $PA=v$ and $PB=u$ equal to the semi-axes. As illustrated in the figure below, this \emph{transition point} divides the quarter-ellipse into arc lengths $PA=s_x$ and $PB=s_y$ whose difference $s_y - s_x$ is equal to the difference  $u-v$ in the semi-axes.
 
-%At this point the difference $s_y - s_x$ in the arclengths $PY$ and $PX$ of the ellipse from $P$ to the coordinate axes equals the difference $u-v$ in the lengths of the semi-axes. This paper is partly about proving this theorem. But it is mostly about taking a local approach to this and other calculus problems.
+%At this point the difference $s_y - s_x$ in the arc lengths $PY$ and $PX$ of the ellipse from $P$ to the coordinate axes equals the difference $u-v$ in the lengths of the semi-axes. This paper is partly about proving this theorem. But it is mostly about taking a local approach to this and other calculus problems.
 
 The first step in understanding why is to animate the figure, either by dragging the slider $\phi$ in Line 2 or pressing the play button. Then you'll see the endpoints of segment $\overline{AB}$ and another segment $\overline{CD}$ slide along the coordinate axes as the point $P$, attached to the longer segment $\overline{AB}$ (length $u+v$) and to an extension of the shorter $\overline{CD}$ (length $u-v$), sweeps out the quarter-ellipse. 
 
@@ -43,10 +43,10 @@ This animation gives another perspective of the first. Each sliding segment is a
 
 The animation begins at the transition point in the second quadrant where $\overline{AB}$ is tangent to the ellipse and the tracing point $P$ crosses the rolling tangent line ${\cal L}_2$. 
 
-The circle on diameter $CD=2a = u-v$ helps establish the arclength equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ helps identify the transition point geometrically.
+The circle on diameter $CD=2a = u-v$ helps establish the arc length equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ helps identify the transition point separating the negative and positive parts of the arc length.
 
 Play the slider $\phi_2$ in Line 2 to start the motion.
-%In this animation the sliding segments $\overline{AB}$ and $\overline{CD}$ are each fixed diameters of circles rolling around the inside of other circles another with twice the radius. Each circle rolls once through its circumference as the point $P$ traces a semi-ellipse. The circle on diameter $CD=2a = u-v$ helps establish the arclength equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ identifies the transition point geometrically. %Each rolls once through its circumference as they rotate at the same constant rate.
+%In this animation the sliding segments $\overline{AB}$ and $\overline{CD}$ are each fixed diameters of circles rolling around the inside of other circles another with twice the radius. Each circle rolls once through its circumference as the point $P$ traces a semi-ellipse. The circle on diameter $CD=2a = u-v$ helps establish the arc length equality in Theorem 1. The circle on diameter $AB = 2b = u+v$ identifies the transition point geometrically. %Each rolls once through its circumference as they rotate at the same constant rate.
 
 \begin{onlineOnly}
     \begin{center}
@@ -59,14 +59,21 @@ Play the slider $\phi_2$ in Line 2 to start the motion.
 
 
 \begin{exploration}  \label{EllipseProlateCycloid}
-Play the slider $\phi_2$ in Line 2 to see the circle on diameter $\overline{CD}$ rolling in the reference frame of the fixed circle (top) and in the reference frame of the rolling tangent line (bottom).
+The second figure below shows the starts of the paths traced by the points $P$ and $C$ in the reference frames of the rolling tangent line ${\cal L}_2$ in Exploration 2. The first path is one arch of a prolate cycloid, traced by the point $P_2$ inside the rolling circle (radius $a = (u-v)/2$) at a distance $b=(u+v)/2$ from its center. The second is one arch of an ordinary cycloid, traced by the point $C_2$ on the rolling circle
+
+Play the slider $\phi_2$ in Line 2 to complete the paths as the circle on diameter $\overline{CD}$ rolls in the reference frame of the fixed circle (top) and in the reference frame of the rolling tangent line (bottom).
 
 %Because the rolling circle has half the radius of the fixed, it rotates half as fast in the top frame as it does in the bottom. So any point at rest in the reference frame of the rolling circle moves half as fast in the top frame as it does in the bottom. Thus,
 
-The rolling circle rotates  half as fast in the top frame as it does in the bottom. So any point at rest in the reference frame of the rolling circle moves half as fast in the top frame as it does in the bottom, and
-\[
-  \text{arc}(XP) =0.5 \text{arc}(X_2P_2)  \hskip 0.3 in \text{and} \hskip 0.3 in ZC = \frac{1}{2}\text{arc}(Z_2C_2).
-\]
+Because the circle rotates twice as fast in the second frame as it does in the first, any point at rest in the reference frame of the rolling circle moves twice as fast in the second frame as it does in the first. So at any stage of the motion, the length $A_2P_2$
+of the prolate cycloid is twice the corresponding length $AP$ of the ellipse and the length $Z_2C_2$ of the ordinary cycloid is twice the length of segment $\overline{ZC}$.
+
+Proving Theorem 1 then essentially amounts to showing the difference in the lengths of the prolate cycloid above and below ${\cal L}_2$ equals the length of the ordinary cycloid.  
+
+%In particular,
+%\[
+%  \text{arc}(XP) =0.5 \text{arc}(X_2P_2)  \hskip 0.3 in \text{and} \hskip 0.3 in ZC = \frac{1}{2}\text{arc}(Z_2C_2).
+%\]
 
 \begin{onlineOnly}
     \begin{center}
@@ -74,25 +81,19 @@ The rolling circle rotates  half as fast in the top frame as it does in the bott
 \end{center}
 \end{onlineOnly}
 
-\href{https://www.desmos.com/calculator/jrcqvu50gh}{Ellipse and Prolate Cylcoid 3}
+\href{https://www.desmos.com/calculator/jrcqvu50gh}{Ellipse and Prolate Cycloid 3}
 
 \end{exploration}
 
+\iffalse
+******************************************************************************************************
 
 \begin{exploration} \label{CurtateProlateCyloidsRolling}
 The figure below shows the paths traced by the point $P$ in the reference frames of the rolling tangent lines of Exploration 2. The first path is one arch of a curtate cycloid, where $P$ is inside the rolling circle (radius $b = (u+v)/2$), at a distance $a=(u-v)/2$ units from its center. The second, dual to the first, is one arch of a  prolate cycloid, where $P$ is outside the rolling circle (radius $a$), $b$ units from its center. The third is an ordinary $a$-cycloid, traced by a point on a rolling circle with radius $a$. 
 
-Proving Theorem 1 amounts to showing the arclengths $\sigma_1, \sigma_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arclengths $s_1$, $s_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $\sigma_1 - \sigma_2 = s_1-s_2$ equals the arclength $s_3$ of the $a$-cycloid.
+Proving Theorem 1 amounts to showing the arc lengths $\sigma_1, \sigma_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arc lengths $s_1$, $s_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $\sigma_1 - \sigma_2 = s_1-s_2$ equals the arc length $s_3$ of the $a$-cycloid.
 
-Play the slider $u$ in Line 1 to see the circles roll in the reference frames of the rolling tangent lines ${\cal L}_1$ and ${\cal L}_2$. The first two circles rotate at the same rate and because the arclengths $A_1P_1$ and $A_2P_2$ are each twice the arclength $XP$ of the semi-ellipse in Exploration 2,  $A_1P_1=A_2P_2$. 
-
-%The first path is one arch of a curtate cycloid, traced by the point $P$, $a<b$ units from the center of the rolling circle with radius $b$. The second, dual to the first, is one arch of a  prolate cycloid, traced by the point $P$, $b>a$ units from the center of the rolling circle with radius $a$. The third is an ordinary $a$-cycloid, traced by a point on a rolling circle with radius $a$. 
-
-%Proving Theorem 1 amouts to showing the difference $s_1-s_2$ in the arclengths of the prolate cycloid above and below the fixed line equals the arclength $s_3$ of the $a$-cycloid. The difference in the concave up and concave down arclengths of the curate cycloid is the same. In fact, these arclengths are respectively equal to the same and opposite side arclengths of its dual prolate cycloid.
-
-%Proving Theorem 1 amounts to showing the arclengths $\sigma_1, \sigma_2$ of the prolate cycloid above and below ${\cal L}_2$ respectively equal the arclengths $s_1$, $s_2$ of the concave-up and concave-down arcs of the curtate cycloid, and that the difference $\sigma_1 - \sigma_2 = s_1-s_2$ equals the arclength $s_3$ of the $a$-cycloid. %The difference in the concave up and concave down arclengths of the curate cycloid is the same. In fact, these arclengths are respectively equal to the same and opposite side arclengths of its dual prolate cycloid.
-
-%Drag sliders $a$ and $b$ in Lines 2 and 3 to change the shapes and sizes of the cycloids.
+Play the slider $u$ in Line 1 to see the circles roll in the reference frames of the rolling tangent lines ${\cal L}_1$ and ${\cal L}_2$. The first two circles rotate at the same rate and because the arc lengths $A_1P_1$ and $A_2P_2$ are each twice the arc length $XP$ of the semi-ellipse in Exploration 2,  $A_1P_1=A_2P_2$. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -103,6 +104,8 @@ Play the slider $u$ in Line 1 to see the circles roll in the reference frames of
 \href{https://www.desmos.com/calculator/b9xvjd6s16}{Cylcoid Abstract Prolate Curtate Cycloids Two Frames}
 \end{exploration}
 
+***************************************************************************************************
+\fi
 
 
 \begin{exploration} \label{Theorem2Local}
@@ -126,11 +129,11 @@ The figure here illustrates the local version of Theorem 2.
 %\end{center}
 %\end{onlineOnly}
 
-%\href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid Arclength 1B}
+%\href{https://www.desmos.com/calculator/ty0hdz7uyj}{Limacon Cylcoid arc length 1B}
 
-%What if $b<a$?. Then the tracing point lies inside the rolling circle and the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took us a long time to realize this and so we save this discussion for last (Section 7). %let alone to stumble upon the second theorem. So we save this discussion for last (Section 7).
+%What if $b<a$?. Then the tracing point lies inside the rolling circle and the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arc length of one arch exceeds the concave-up length by $8b$ (Figure ??). Each of these arc length theorems follows quickly from the other. But it took us a long time to realize this and so we save this discussion for last (Section 7). %let alone to stumble upon the second theorem. So we save this discussion for last (Section 7).
 
-%If instead the rolling circle has radius $b$ and the tracing point lies $a<b$ units from its center,  the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arclength of one arch exceeds the concave-up length by $8a$ (Figure ??). Each of these arclength theorems follows quickly from the other. But it took a long time for me to realize this, so we'll save this discussion for last (Section 7).
+%If instead the rolling circle has radius $b$ and the tracing point lies $a<b$ units from its center,  the \emph{curtate} (from the Latin \emph{curtus}, cut short) cycloid does not cross the $x$-axis. But it does have inflection points. And the convave-down arc length of one arch exceeds the concave-up length by $8a$ (Figure ??). Each of these arc length theorems follows quickly from the other. But it took a long time for me to realize this, so we'll save this discussion for last (Section 7).
 
 %\begin{onlineOnly}
 %    \begin{center}
