@@ -19,11 +19,11 @@ There is exactly one point $P$ on the quarter-ellipse
 \[
  \frac{x^2}{u^2} + \frac{y^2}{v^2} = 1 \, , \, x,y\geq 0,
 \]
-where the tangent segments $\overline{PA}$ and $\overline{PB}$ from $P$ to the coordinate axes have lengths $PA=v$ and $PB=u$ equal to the semi-axes. As illustrated in the figure below, this \emph{transition point} divides the quarter-ellipse into arc lengths $PA=s_x$ and $PB=s_y$ whose difference $s_y - s_x$ is equal to the difference  $u-v$ in the semi-axes.
+where the tangent segments $\overline{PA}$ and $\overline{PB}$ from $P$ to the coordinate axes have lengths $PA=v$ and $PB=u$ equal to the semi-axes. As illustrated in the figure below, this \emph{transition point} divides the quarter-ellipse into arc lengths $PX=s_x$ and $PY=s_y$ whose difference $s_y - s_x$ is equal to the difference  $u-v$ in the semi-axes.
 
 %At this point the difference $s_y - s_x$ in the arc lengths $PY$ and $PX$ of the ellipse from $P$ to the coordinate axes equals the difference $u-v$ in the lengths of the semi-axes. This paper is partly about proving this theorem. But it is mostly about taking a local approach to this and other calculus problems.
 
-The first step in understanding why is to animate the figure, either by dragging the slider $\phi$ in Line 2 or pressing the play button. Then you'll see the endpoints of segment $\overline{AB}$ and another segment $\overline{CD}$ slide along the coordinate axes as the point $P$, attached to the longer segment $\overline{AB}$ (length $u+v$) and to an extension of the shorter $\overline{CD}$ (length $u-v$), sweeps out the quarter-ellipse. 
+The first step in understanding why is to animate the figure, either by dragging the slider $\phi$ in Line 2 or pressing the play button. You'll see the endpoints of segment $\overline{AB}$ and another segment $\overline{CD}$ slide along the coordinate axes as the point $P$, attached to the longer segment $\overline{AB}$ (length $u+v$) and to an extension of the shorter $\overline{CD}$ (length $u-v$), sweeps out the quarter-ellipse. 
 
 You can drag the sliders $a=(u-v)/2$ (Line 7) and $b=(u+v)/2$ (Line 8) to change the shape and size of the ellipse.
 
@@ -39,7 +39,7 @@ You can drag the sliders $a=(u-v)/2$ (Line 7) and $b=(u+v)/2$ (Line 8) to change
 
 
 \begin{exploration} \label{LadderwithCircles}
-This animation gives another perspective of the first. Each sliding segment is a fixed diameter of a circle rolling around the inside of another with twice the radius. The circles each roll once through their circumference as the point $P$ traces a semi-ellipse. 
+This animation gives another perspective of the motion in the first. Here each sliding segment is a fixed diameter of a circle rolling around the inside of another with twice the radius. The circles each roll once through their circumferences as the point $P$ traces a semi-ellipse. 
 
 The animation begins at the transition point in the second quadrant where $\overline{AB}$ is tangent to the ellipse and the tracing point $P$ crosses the rolling tangent line ${\cal L}_2$. 
 
@@ -65,9 +65,9 @@ The second figure below shows the paths traced by the points $P$ and $C$ in the 
 
 %Because the circle rotates twice as fast in the second frame as it does in the first, any point at rest in the reference frame of the rolling circle moves twice as fast in the second frame as in the first. So at any stage of the motion, the length $A_2P_2$ of the prolate cycloid is twice the corresponding length $AP$ of the ellipse and the length $Z_2C_2$ of the ordinary cycloid is twice the length of segment $\overline{ZC}$.
 
-Because the bottom circle rotates twice as fast as the top, a point at rest in the reference frame of the rolling circle moves twice as fast in the reference frame of the rolling tangent as it does in the reference frame of the fixed circle. So at any stage of the motion, the length $A_2P_2$ of the prolate cycloid is twice the corresponding length $AP$ of the ellipse and the length $Z_2C_2$ of the ordinary cycloid is twice the length of segment $\overline{ZC}$.
+Because the bottom circle rotates twice as fast as the top, a point at rest in the reference frame of the rolling circle moves twice as fast in the reference frame of the rolling tangent as it does in the reference frame of the fixed circle. So at any stage of the motion, the length $X_2P$ of the prolate cycloid is twice the corresponding length $XP$ of the ellipse and the length $Z_2C$ of the ordinary cycloid is twice the length of segment $\overline{ZC}$.
 
-Proving Theorem 1 then essentially amounts to showing the difference $2s_1-2s_2$ in the lengths of the prolate cycloid above and below ${\cal L}_2$ equals the length $2s_3$ of the ordinary cycloid (Theorem 2).  
+Proving Theorem 1 mostly amounts to showing the difference $2s_1-2s_2$ in the lengths of the prolate cycloid above and below ${\cal L}_2$ equals the length $2s_3$ of the ordinary cycloid (Theorem 2).  
 
 %In particular,
 %\[
@@ -108,7 +108,7 @@ Play the slider $u$ in Line 1 to see the circles roll in the reference frames of
 
 
 \begin{exploration} \label{Theorem2Local}
-This figure illustrates the local version of Theorem 2. Here $s_1 = A_2P$ is the length of the prolate cycloid above ${\cal L}_2$ between inclination angles $0$ and $\phi$, $s_2= A_2^\prime P^\prime$ the length of the same curve below ${\cal L}$ between the same inclination angles. And $s_3 = A_3C$ is the length of the ordinary cycloid between these inclination angles. 
+This figure illustrates the local version of Theorem 2. Here $s_1 = A_2P$ is the length of the prolate cycloid above ${\cal L}_2$ between inclination angles $0$ and $\phi$, $s_2= A_2^\prime P^\prime$ the length of the same curve below ${\cal L}$ between the same inclination angles, and $s_3 = A_3C$ the length of the ordinary cycloid between these inclination angles. 
 
 The same equality $s_1 - s_2 = s_3$ of arc lengths holds for any inclination angle $\phi$, $0\leq \phi \leq \pi/2$. Drag the slider $\phi$ in Line 1 to change the inclination angle.
 
