@@ -9,9 +9,9 @@ Rotating gears.
 \end{abstract}
 \maketitle
 
-Most calculus students learn to sketch a graph of a function's derivative from the graph of the function. Later on, they might sketch graphs of anti-derivatives thinking about signed area instead of slopes. But few, if any, ever sketch the derivative of a motion from a sketch of the motion itself.
+Calculus students learn to sketch a graph of a function's derivative from the graph of the function. Later they sketch graphs of anti-derivatives thinking about signed area instead of slopes. But few ever sketch the derivative of a motion from a sketch of the motion itself.
 
-It's easy enough to draw the path of a motion and to suggest movement along the path by plotting points or position vectors at equally-spaced time intervals. And students often use this information to sketch velocity vectors along the path, drawing them with their tails attached to the tips of the position vectors.
+It's easy enough to draw the path of a motion and to suggest movement along the path by plotting points or position vectors at equally-spaced time intervals. And students use this information to sketch velocity vectors along the path, drawing them with their tails attached to the tips of the position vectors.
 
 But the velocity vectors are themselves the position vectors of another curve. This curve is called the \emph{hodograph}, but it's just a way to suggest the derivative of the motion. Like all position vectors, we draw these velocity vectors with their tails pinned at a common origin $O$, and their tips sweep out the hodograph. Drawing pinned velocity vectors at equal time intervals gives some sense of the derivative of the motion along the hodograph, ie. of the acceleration.
 
@@ -21,9 +21,9 @@ Many other motions have circular hodographs. A motion traced by a point $P$ on t
 
 The hodograph of any constant-speed curve lies on a circle centered at the origin with a radius equal to the speed. This image makes it clear that the derivative of the motion along the hodograph, ie. the acceleration, is perpendicular to the velocity vector. But apart from uniform circular motion, the acceleration vector does not have constant magnitude. It is longer where the motion's path changes direction faster and it's the magnitude of this acceleration vector that gives the curvature of the motion's path.
 
-William R. Hamilton is credited with introducing the hodograph in a 1837???? paper, where he uses it to prove \emph{geometrically} that planetary orbits are conic sections.
+William R. Hamilton is credited with introducing the hodograph in a 1847 paper, \emph{The Hodograph, or a New Method of Expressing in Symbolic Language the Newtonian Law of Attraction},where he uses it to prove \emph{geometrically} that planetary orbits are conic sections.
 
-The proof starts in the standard way. Hamilton claims without proof that the position vector of a motion driven by a central force (ie. one with acceleration vectors all pointing directly toward a common origin) sweeps out area at a constant rate. Newton gave a geometric proof of this in his \emph{Principia}, but the modern proof is quick work with vectors. The key is to recognize that for any motion, the magnitude $|{\bf r}\times {\bf v}|$ of the vector product of the position and velocity vectors (with SI units $\text{m}^2/text{sec}$) measures twice the rate at which the position vector sweeps out area (see Figure ??). Differentiating the vector product
+Hamilton starts, by claiming without proof that the position vector of a motion driven by a central force (ie. one with acceleration vectors all pointing directly toward a common origin) sweeps out area at a constant rate. Newton gave a geometric proof of this in his \emph{Principia}, but the modern proof is quick work with vectors. The key is to recognize that for any motion, the magnitude $|{\bf r}\times {\bf v}|$ of the vector product of the position and velocity vectors (with SI units $\text{m}^2/text{sec}$) measures twice the rate at which the position vector sweeps out area (see Figure ??). Differentiating the vector product
 \[
         {\bf L} = {\bf r} \times {\bf v}
 \]
@@ -33,15 +33,62 @@ with respect to time shows that
 \]
 and proves the claim about the area swept by a central force. It's also quick work from here to show the trajectory of a central-force motion lies in a plane.
 
-Ignoring this omission then, Hamilton starts his proof by showing planetary motions all have circular hodographs. Or more precisely that the hodograph of a planetary motion lies on a circle. He does this by proving the hodograph has constant curvature.
+Ignoring this omission then, Hamilton starts his proof by showing planetary motions all have circular hodographs. Or more precisely that the hodograph of a planetary motion lies on a circle. He does this twice, each time by proving the hodograph has constant curvature. We'll start with the second proof (it's easier) after a briefly reviewing curvature.
 
-For this part of the proof, it might help to think about the curvature of a plane curve dynamically, as if you were driving a car along a winding road. At some instant, for example, your speed might be $v = 20$ meters/sec while you car is turning at the rate of $\omega = 0.25$ rad/sec. Then at this particular spot the road has curvature 
+We can think about the curvature of a plane curve dynamically, as if driving a car along a winding road. At some instant, for example, your speed might be $v = 20$ meters/sec while you car is turning at the rate of $\omega = 0.25$ rad/sec. Then at this particular spot the road has curvature 
 \[
     \kappa = \frac{\omega}{v} = \frac{0.25\text{ rad./sec}}{20 \text{ meters/sec}} = 0.0125 \text{ rad/meter}
 \]
 and radius of curvature $1/\kappa = 80$ meters. Note that curvature is a property of the road itself and does not depend upon how one drives along it. It measures the rate at which the road changes direction with respect to distance (as measured along the road and as recorded by a car's odometer).
 
 NOTE: I need to measure the curvature of our street.
+
+\emph{Hamilton: Another method of arriving at the same simple but important result is to observe, that because the radius of curvature of the hodograph is equal to the element of that curve divided by the angle between the tangents at its extremities, or (in the case of a central force) by the angle between the two corresponding vectors of the orbit, which angle is equal to the double of the elementary area divided by the square of the distance (of the body from the centre of force), while the element of the hodograph has been seen to be equal to the force multiplied by the element of time, or multiplied by the same double element of orbital area divided by the constant of double area velocity, therefore this radius of curvature of the hodograph must, for any central force, be equal to the force multiplied by the square of the distance, and divided by the double areal velocity.
+} 
+
+
+\begin{enumerate}
+\item \emph{The radius of curvature of the hodograph is equal to the element of that curve divided by the angle between the tangents at its extremities, ...}  
+
+Here Hamilton is saying the hodograph's radius of curvature is
+\[
+   \rho = \frac{ds}{d\theta},
+\]
+where $ds$ is the differential arc length along the hodograph between times $t$ and $t+dt$ and $d \theta$ the differential angle between the velocity vectors of the hodgraph (ie. between the acceleration vectors of the motion) at these times.
+
+Keep in mind that Hamilton is describing the hodograph and its radius of curvature, not the radius of curvature of the motion. So the differeneital arclength $ds  =a \, dt$ along the hodograph is the product of the speed $a=|{\bf a}|$ along the hodograph (ie. the magnitude of the motion's accelaration) and the differential time interval $dt$. So the hodograph has radius of curvature %we can write the radius of curvature as we can write this radius as the quotient of the speed $a = |{\bf a}|$ along the hodograph and the rotation rate of the acceleration vector. Because, by thae assumption of a central force, the velocity points opposite the positon vector
+ 
+\[
+    \rho = \frac{a \, dt}{d\theta} = \frac{a}{d\theta /dt},
+\]
+where $d\theta/dt$ is the rotation rate of the acceleration vector.
+
+\item \emph{or (in the case of a central force) by the angle between the two corresponding vectors of the orbit, which angle is equal to the double of the elementary area divided by the square of the distance (of the body from the centre of force, ...}
+
+\vskip 0.1 in
+
+Since for a central force the tangent to the hodograph (ie. the acceleration) points toward the center of force, the differential angle $d\theta$ between the acceleration vectors at times $t$ and $t+dt$ is also the angle between the position vectors of the motion at these times. And $d\theta/dt$ is the rotation rate of both the acceleration and position vectors.
+
+\item \emph{which angle is equal to the double of the elementary area divided by the square of the distance (of the body from the centre of force) ...}
+ 
+\vskip 0.1 in
+
+Since the position vector for a motion with a central force sweeps out area at the contant rate
+\[
+  K = \frac{1}{2} r^2 \frac{d\theta}{dt} ,
+\]
+we have
+\[
+     d\theta = \frac{2K \, dt}{r^2} .
+\]
+
+
+\vskip 0.1 in
+
+
+
+
+\end{enumerate}
 
 Now for a planetary motion with central force
 \[
