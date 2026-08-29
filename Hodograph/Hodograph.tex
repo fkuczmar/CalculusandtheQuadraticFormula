@@ -194,7 +194,10 @@ From the introduction,
 \emph{The opposite angles of a parallelogram being equal, it is evident, that if the central force be attractive, any one vector of position is inclined to the next following element of the orbit at the same angle as that at which the corresponding vector of velocity in inclined to the next preceeding element of the hodograph. Also, if from either extremity of any small element of the curve, a chord of the circle which osculates to that curve along the element be drawn and bisected, the element subtends, at the middle point of this chord, an angle equal to the angle between the two tangents drawn at the extremities of the element; that is, here, if the curve be the hodograph, to the angle between the two near vectors of position, which are parallel to the two extreme tangents of its element. We have, therefore, two small and similar triangles, from which results the following proposition, that \emph{the half chord of curvature of the hodograph} (passing through, or tending toward the fixed center of force) \emph{is to the radius vector of the orbit} as the element of the hodograph is to the element of the orbit, that is, by what was lately seen, \emph{as the force is to the velocity.}\footnote{By an exactly similar reasoning, the following know proposition may be proved anew, namely, that the force is to the velocity as that velocity is to the half chord of curvature of the orbit, whatever the law of central force may be.}}
 
 
-{\bf Interpretation:}
+{\bf Interpretation:} Need to start with Hamilton's method.
+
+
+Or we can obtain the same result without differential triangles as follows. Let ${\bf r}=\overrightarrow{AR}$ be the position vector of the orbit, $\rho$ be the radius of the osculating circle to the hodograph at the extremity $P$ of the velocity vector ${\bf v}$, and $\alpha$ the measure of the marked angles at $P$ and $R$. 
 
 \begin{onlineOnly}
     \begin{center}
@@ -204,11 +207,57 @@ From the introduction,
 
 \href{https://www.desmos.com/calculator/synarqkbip}{Hamilton Hodograph 5}
 
+The hodograph has radius of curvature 
+\[
+   \rho = \frac{ds}{d\theta} .
+\] 
+
+For the differential arc length $ds_o$ along the orbit (from polar coordinates)
+\[
+     ds_o = (r \, d\theta) \csc\alpha .
+\]
+or maybe write as
+\[
+   \sin\alpha = \frac{r \, d\theta}{ds_o}.
+\]
+Multiplying the two equalitites gives Hamilton's conclusion
+\[
+   \frac{c}{r} =  \frac{\rho \sin\alpha}{r} = \frac{ds}{ds_o} = \frac{a}{v}, 
+\]
+where the half chord of curvature is $c = \rho\sin\alpha = PP^\prime/2$.
+
+For an inverse-square central force $a=k/r^2$, the last equation gives
+\[
+     \rho = \frac{r a}{v\sin\alpha} = \frac{k}{rv\sin\alpha} = \frac{k}{2K},
+\] 
+showing that the hodograph has constant radius of curvature. But this is not what Hamilton does, continuing rather as follows. Or maybe he does.
+
+\pskip
+
+\emph{Hamilton:} But also, the radius of curvature of the hodograph is to the half chord of curvature of the same curve, as the radius vector of the orbit is to the perpendicular let fall from the fixed centre on the tangent to the same orbit; therefore, by compounding equal ratios, we obtain this other proportion; \emph{the radius of curvature of the hodograph is to the radius vector of the orbit, as the rectangle under the same radius vector and the force is to the rectangle under the velocity and the perpendicular}, or to the constant parallelogram under the vectors of position and velocity.
 
 
+\pskip
 
+{\bf Interpretation:} With $c=\rho\sin\alpha$ the half chord of curvature and $p = r\sin\alpha$ the perpendicular let fall from the center of force to the tangent of the orbit, Hamilton is saying
+\[
+   \frac{\rho}{c} = \frac{r}{p} 
+\]
+since each ratio equals $\csc \alpha$. Then multiplying the left side by $c/r$ and the right by $a/v$ gives Hamilton's result
+\[
+   \frac{\rho}{r} = \frac{ra}{pv},
+\]
+that \emph{the radius of curvature of the hodograph is to the radius vector of the orbit, as the rectangle under the same radius vector and the force is to the rectangle under the velocity and the perpendicular, or to the constant parallelogram under the vectors of position and velocity.}
 
+\emph{Hamilton:} If, therefore, the law of the inverse square hold good, so that the second and third terms of this last proportion vary inversely as each other, while the fourth term remains unchanged, the first term must also be constant; that is, \emph{with Newton's law of force} (supposed here to act toward a fexed centre) \emph{the curvature of the hodograph is constant:} and, consequently, this curve, having been already seen to be \emph{plane}, is now perceived to be a \emph{circle}, of which the radius is equal to the attracting mass divided by the constant double areal velocity of the orbit. Reciprocally, we see that \emph{no other law} of force would conduct to the same result: so that the Newtonian law may be \emph{characterized} as being the \emph{Law of the Circular Hodograph.}
 
+\pskip
+
+{\bf Interpretation:} Since the product $r^2 a = k $of the second ($r$) and third ($ra$) terms in the proportion is constant as is the fourth ($pv = 2K$), the radius of curvature of the hodograph
+\[
+     \rho = \frac{r^2a}{pv} = \frac{k}{2K}
+\]
+is constant and equal to the \emph{attracing mass} ($k$) divided by the constant double areal velocity $2K$ of the orbit.
 
 
 \section*{The Orbit, Feynman}
@@ -299,6 +348,19 @@ along the hodograph
 
 
 
+\section{The Orbital Period}
 
+The period for an elliptical orbit with major/minor semi-axes $p$, $q$ and eccentricity $e$ is
+\[
+     T = \frac{\pi p q}{K} =   \frac{\pi  p^2\sqrt{1-e^2}}{K}  = \frac{\pi p^2 \sqrt{\rho^2 - a^2}}{\rho K} = \frac{2\pi p^2 \sqrt{\rho^2 - a^2}}{k}.
+\]
+
+Since
+\[
+    p = \frac{K}{\rho - a} + \frac{K}{\rho+a} = \frac{2K\rho}{\rho^2 - a^2} = \frac{k}{\rho^2 - a^2},
+\]
+\[
+  T = 2\pi \sqrt{\frac{p^3}{k}} .
+\]
 
 \end{document}
