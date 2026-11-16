@@ -15,11 +15,39 @@
 \maketitle
  
 
-It seems intuitive that the curvature of the cylindrical helix
+The curvature of the cylindrical helix
 \[
        {\bf p}(t) = (a \cos\theta, a \sin\theta, b\theta) \, \, \theta\in \mathbb{R}, a,b\geq 0,
 \]
-decreases if $a$ increases (holding $b$ fixed) and decreases if $b$ increases (holding $a$ fixed). The latter is true, but as Michael Vincent noticed, the former is not. With the height $b$ of the helix at rotation angle $\theta=1$ held constant, the curvature is a maximum for $a=b$. Here's one explanation.
+is a decreasing function of the cylinder's radius $a$, but \emph{not} a decreasing function of $b$. As Michael Vincent noticed, if the height $b$ of the helix at rotation angle $\theta=1$ is held constant, the curvature is a maximum when $a=b$. This seems surprising, particularly if we start increasing the radius of the cylinder from some large initial value. But looking at the extreme cases explains why our intuition fails. For as $a\to 0$, the helix looks more like a vertical line and we would expect its curvature to approach zero. And as $a\to \infty$, the helix looks more like a horizontal line. So the curvature function $\kappa = f(a)$ must have a maximum. The aim of this note is to \emph{see} why the curvature is maximum when $a=b$.
+
+When Michael and I had previously discussed the curvature of a helix, our conversations always started with drawing a segment on a rectangular sheet of paper. Rolling the paper around a cylinder turns the segment into a helix and our aim had been to express the helix's curvature in terms of its inclination angle $\phi$ and the radius $a$ of the cylinder. But it had never occurred to us to include the radius of curvature in our two-dimensional picture. And figuring out how to consturct this radius seemed like a promising way to explain Michael's observation.
+
+% inclined at the angle $\phi$ to the horizontal edge of a rectangular sheet of paper (see Figure ??). Rolling the paper around a cylinder turns the segment into a helix. While we had used this idea to find the curvature of the helix geometrically, it had never occured to us to include (or even think about) the radius of curvature as it related to that inclined segment.
+
+To start at the beginning, curvature measures the rate at which the tangent to a curve changes direction relative to distance along the curve. For a plane curve with $s$ the arclength and $\theta$ the angle the forward-pointing tangent makes with a fixed direction, the derivative $d\theta/ds$ measures the signed curvature and $|d\theta/ds|$ the curvature.
+
+For a space curve, it is impossible to visualize the rotation angle $\theta$ in the same way; it is \emph{not} the angle from some fixed direction to the forward-pointing tangent. And this obstruction usually makes for challenges in visualizing and understanding the angle.
+
+But for a curve with constant curvature, like a circle in the plane or a cylindrical helix in space, we can replace the derivative $ds/d\theta$ with an average rate of change. In turning once about a circle of radius $a$ meters, for example, the tangent turns through an angle of $2\pi$ radians. So the circle has curvature 
+\[
+ \kappa = \frac{\Delta \theta}{\Delta s} = \frac{2\pi \text{ radians}}{a \text{ meters}} = \frac{1}{a} \text{ radians/meter}.             %\frac{\text{ rad}}{\text{meter}}.
+\]
+Or in moving $a$ meters around a circle of radius $a$ the radius, and therefore the tangent (always perpendicular to the radius), each turns through an angle of one radian, an effective way to remind students of what it means to measure an angle in radians.
+
+A similar method works for computing the curvature of a cylindrical helix, but the challenge is to determine the rotation angle of the forward-pointing tangent as it turns once around the helix. Most students the angle is $2\pi$, even with physical models of two cylindrical helices, one with a steep pitch on cylinder five-feet tall with a six-inch diameter, another with a pitch of about $\pi/4$ radians following the seam of a Quaker oats container. This seems reasonable because one turn about the helix returns each tangent to its original orientation.
+
+But both angles fall short of $2\pi$, the one with the steep pitch significantly more so. To get a feel for this, hold a second copy of the tangent vector, this one with its tail pinned at a fixed point. Now turn this pinned vector, keeping it parallel to the sliding tangent at all times, and you can feel the pinned vector turn through a small angle, significantly less than $2\pi$, in one turn of the steep helix. 
+
+NEED TO MODIFY THE REST. THIS IS ALL I HAVE FOR NOW.
+
+********************************************************
+
+
+we can focus on the rotational motion of the tangent by pinning its tail and changing only its direction as another copy slides along the helix. Keeping the length of the pinned tangent vector fixed, its t
+
+
+
 
 With $b$ held constant, the helix's radius of curvature  as a function  $\rho=f(\phi)$ of its inclination angle is is symmetric about $\phi=\pi/4$. To see why geometrically, we represent a one-radian arc ($\Delta \theta=1$) of a helix with pitch angle $\phi_1$ as segment $AC$ with length $s_1 = b\csc\phi_1$ in the figure below. Wrapping the segment around a cyclinder of radius $a=b\cot\phi_1$ gives the helical arc. The key now is to add the radius of curvature to the figure.
 
